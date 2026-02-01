@@ -1,0 +1,12 @@
+{
+  "corpus_path": "SAT/aligner/data/FB15k-237N/id3text.txt",
+  "num_chunks": 173,
+  "num_entities": 5088,
+  "num_relations": 8,
+  "num_triples": 8452,
+  "kg_nodes": 5088,
+  "kg_edges": 8451,
+  "graph_transformer_dim": 128,
+  "graph_transformer_layers": 3,
+  "device": "cpu"
+}

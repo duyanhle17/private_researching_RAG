@@ -1,0 +1,5090 @@
+0	any public university
+1	the university of central florida
+2	the fall 2022 semester
+3	0
+4	central florida
+5	the international press academy
+6	annual
+7	doctoral universities
+8	the united states
+9	unincorporated orange county
+10	one
+11	the annual satellite awards
+12	the southern association
+13	68,442 students
+14	very high research activity
+15	its main campus
+16	2
+17	a public research university
+18	2	the satellite award
+19	schools
+20	best cinematography
+21	fourth
+22	the commission
+23	satellite awards
+24	a government
+25	florida
+26	an organized community
+27	1
+28	orange county
+29	ucf
+30	1	the university
+31	68,442
+32	the satellite award for best cinematography
+33	generally a state
+34	the state university system
+35	the commission on colleges of the southern association of colleges
+36	the system
+37	r1: doctoral universities
+38	the original plate glass universities
+39	the university shield
+40	joe 90
+41	the kingdom of essex
+42	colchester
+43	the keener
+44	4
+45	the tantrums
+46	record producer
+47	the lead vocalist
+48	"the battle
+49	the neo-soul band fitz
+50	1965
+51	its primary campus
+52	gods child
+53	the motto
+54	essex
+55	american
+56	low stars
+57	the university of essex
+58	three campuses
+59	the county
+60	the anglo-saxon poem
+61	the kingdom
+62	4	chris seefried
+63	royal charter
+64	three
+65	the battle of maldon
+66	england
+67	anglo
+68	wivenhoe park
+69	3	the university
+70	3
+71	chris seefried
+72	the ancient arms
+73	an american singer
+74	fitz
+75	the university
+76	tantrums
+77	the bands
+78	loughton
+79	the team
+80	6	the village
+81	brendan gleeson
+82	bryce dallas howard
+83	m. night shyamalan
+84	62,850
+85	the new stadium
+86	its home matches
+87	the top flight
+88	2004
+89	the same site
+90	adrien brody
+91	white hart lane
+92	5
+93	english football
+94	spurs
+95	m. night shyamalan's the village
+96	joaquin phoenix
+97	william hurt
+98	simply tottenham
+99	the 62,850-capacity tottenham hotspur stadium
+100	sigourney weaver
+101	tottenham hotspur stadium
+102	tottenham
+103	a professional football club
+104	5	tottenham hotspur football club
+105	a 2004 american period thriller film
+106	london
+107	english
+108	april 2019
+109	the premier league
+110	tottenham hotspur football club
+111	6
+112	their former home
+113	i love huckabees
+114	heart huckabees
+115	7	i
+116	the screenplay
+117	9	grindhouse
+118	questlove" thompson in
+119	jeff baena
+120	love huckabees
+121	late night
+122	tariq "black thought"
+123	2009
+124	2007
+125	a village
+126	trotter
+127	robert rodriguez
+128	8
+129	nbc
+130	pennsylvania
+131	2014
+132	the same role
+133	ahmir
+134	the woods
+135	9
+136	the film
+137	jimmy fallon
+138	roots
+139	whose population
+140	the house band
+141	the tonight show starring jimmy fallon
+142	quentin tarantino
+143	i heart huckabees
+144	1987
+145	7
+146	a 2007 american film
+147	a 2004 independent black comedy film
+148	david o. russell
+149	philadelphia
+150	the roots
+151	nbc's "the tonight show
+152	8	the roots
+153	an american hip hop band
+154	tariq "black thought" trotter and ahmir "questlove" thompson
+155	a double feature
+156	mary elizabeth winstead
+157	an action thriller
+158	vanessa ferlito
+159	rodriguez's "planet terror
+160	rose mcgowan
+161	zoë bell
+162	young women
+163	a murderous stuntman
+164	such films
+165	tarantino
+166	rodriguez
+167	kurt russell
+168	the former stars
+169	the 1970s
+170	josh brolin
+171	michael biehn
+172	marley shelton
+173	jordan ladd
+174	its title
+175	a group
+176	modified vehicles
+177	jeff fahey
+178	zombie-like creatures
+179	death proof
+180	tarantino's "death proof
+181	sydney tamiia poitier
+182	a horror comedy
+183	the latter stars
+184	freddy rodriguez
+185	exploitation films
+186	the now-defunct theaters
+187	rosario dawson
+188	tracie thoms
+189	1978
+190	the italian-american mafia
+191	most notably "the godfather
+192	rob zombie
+193	mario francis puzo
+194	the academy award for best adapted screenplay
+195	"part ii
+196	10	mario francis puzo
+197	italian
+198	jason eisener
+199	the family
+200	edgar wright
+201	francis ford coppola
+202	the first film
+203	10
+204	the original screenplay
+205	2001
+206	its theatrical presentation
+207	its 1980 sequel
+208	the godfather
+209	the 1978 "superman" film
+210	superman
+211	october 15, 1920 –
+212	eli roth
+213	best adapted screenplay
+214	a film trilogy
+215	sicilian mafia
+216	an american author
+217	fictitious exploitation trailers
+218	1974
+219	july 2, 1999
+220	first
+221	1969
+222	his final novel
+223	1980
+224	1972
+225	the academy award
+226	crime novels
+227	brandon flowers
+228	12	nanjing
+229	nanjing
+230	the bass drum
+231	new order
+232	11	the killers
+233	a megacity
+234	rhythm guitar
+235	12
+236	the music video
+237	both mark stoermer
+238	their early days
+239	the people's republic
+240	the new order song
+241	13	cornell iral haynes jr.
+242	11 districts
+243	9,423,400
+244	mark stoermer
+245	a population
+246	a logo
+247	2002
+248	a number
+249	the band's name
+250	an american rock band
+251	jiangsu
+252	an administrative area
+253	the capital
+254	11
+255	ronnie vannucci jr.
+256	the band
+257	lead guitar
+258	las vegas
+259	cornell iral haynes jr.
+260	short-term bass players
+261	13
+262	a sub-provincial city
+263	crystal
+264	the city
+265	lead vocals
+266	the people's republic of china
+267	jiangsu province
+268	dave keuning
+269	a fictitious band
+270	its namesake
+271	his musical career
+272	2000
+273	november 2, 1974
+274	june
+275	city spud
+276	a solo act
+277	the following year
+278	1993
+279	his debut studio album
+280	the "billboard
+281	nelly
+282	a member
+283	the midwest hip hop group st. lunatics
+284	ten
+285	the recording industry association of america
+286	the album
+287	universal records
+288	100
+289	an american rapper
+290	the recording industry association
+291	diamond certification
+292	missouri
+293	200
+294	country grammar
+295	1999
+296	st. louis
+297	his stage name
+298	midwest
+299	single and follow-up
+300	ride wit me
+301	riaa
+302	st. lunatics
+303	lisbeth salander
+304	14
+305	the 2005 novel
+306	air force ones
+307	a screenplay
+308	2011
+309	15
+310	40 years ago
+311	david fincher
+312	u.s.
+313	the dragon
+314	a 2011 mystery thriller film
+315	stieg larsson
+316	rooney mara
+317	a girl
+318	two
+319	two consecutive "billboard" hot 100 number-one singles
+320	hot in herre
+321	the u.s.
+322	a wealthy family
+323	journalist mikael blomkvist
+324	salander
+325	mikael blomkvist
+326	, "air force ones
+327	blomkvist
+328	kelly rowland
+329	15	baldwin county
+330	daniel craig
+331	the southwestern part
+332	steven zaillian
+333	second
+334	the story
+335	baldwin county
+336	blomkvist's investigation
+337	14	the girl
+338	a county
+339	swedish writer stieg larsson
+340	a computer hacker
+341	five
+342	swedish
+343	his second album
+344	murphy lee
+345	2005
+346	nellyville
+347	the help
+348	the university of georgia
+349	a specific style
+350	mobile county
+351	the secular polyphonic french songs
+352	any lyric-driven french song
+353	only two
+354	only two counties
+355	the gulf coast
+356	16
+357	2020
+358	the 2020 census
+359	the gulf of mexico
+360	the 1950s and 1960s
+361	renaissance
+362	alabama
+363	abraham baldwin
+364	french pop music
+365	the 1950s
+366	the term
+367	231,767
+368	the population
+369	16	a
+370	late medieval and renaissance music
+371	the county seat
+372	the gulf
+373	the founder
+374	french
+375	bay minette
+376	small, lower-priced hotels
+377	adam de la halle
+378	a short-term basis
+379	16 works
+380	a modest-quality mattress
+381	17
+382	a refrigerator
+383	bigger, higher-quality beds
+384	only the most basic guest services
+385	a small room
+386	a dresser
+387	jehan de lescurel
+388	en-suite bathrooms
+389	the genre
+390	a flat-screen television
+391	the "ars nova" composer guillaume de machaut
+392	17	a hotel
+393	the only polyphonic precedents
+394	large suites
+395	other kitchen facilities
+396	the monophonic songs
+397	upholstered chairs
+398	paid lodging
+399	an establishment
+400	nova
+401	polyphonic chansons
+402	guillaume de machaut
+403	a hotel room
+404	any composer
+405	a significant number
+406	a room
+407	additional guest facilities
+408	larger, higher-priced hotels
+409	shared bathroom facilities
+410	hotel rooms
+411	a tiny room
+412	other office equipment
+413	day spa
+414	a swimming pool
+415	a business center
+416	high-end hotels
+417	some hotels
+418	social function services
+419	some smaller hotels
+420	their room
+421	basketball courts
+422	capsule hotels
+423	japan
+424	custom decorated rooms
+425	some boutique
+426	board arrangement
+427	one person's mind
+428	physical interaction
+429	the society for psychical research
+430	1882
+431	the bounty
+432	uncredited input
+433	18
+434	lewis milestone
+435	any known human sensory channels
+436	william l.
+437	telepathy
+438	psychical research
+439	a founder
+440	the society
+441	the classical scholar frederic w. h. myers
+442	trevor howard
+443	the purported vicarious transmission
+444	the earlier expression
+445	19
+446	a 1962 american technicolor epic historical drama film
+447	1962
+448	18	telepathy
+449	marlon brando
+450	frederic w. h. myers
+451	spr
+452	metro-goldwyn-mayer
+453	richard harris
+454	charles lederer
+455	19	mutiny
+456	eric ambler
+457	21	hip-hop
+458	mutiny on the bounty
+459	land area
+460	the contiguous united states
+461	new york harbor
+462	both population
+463	the island
+464	united states
+465	afro-caribbean
+466	borden chase
+467	the largest island
+468	a borough
+469	a land area
+470	hip hop music
+471	driscoll
+472	21
+473	afro-caribbean immigrants
+474	south width
+475	the new york metropolitan area
+476	the novel
+477	southeastern new york state
+478	20
+479	the score
+480	popular music
+481	the bronx
+482	ben hecht
+483	a genre
+484	20	long island
+485	new york
+486	charles nordhoff
+487	long island
+488	bronisław kaper
+489	an island
+490	john gay
+491	disco rap
+492	new york city
+493	the north atlantic ocean
+494	james norman hall
+495	the early 1970s
+496	bronx
+497	a significant share
+498	african americans
+499	a maximum north
+500	an anti-drug and anti-violence genre
+501	the practice
+502	a rhythmic delivery
+503	stylized rhythmic music
+504	poetic speech
+505	hip-hop music
+506	four key stylistic elements
+507	african american studies
+508	"hip hop
+509	african american
+510	drum beats
+511	both race
+512	the music
+513	the entire subculture
+514	four
+515	the early 1990s
+516	a professor
+517	hip hop
+518	temple university
+519	the field
+520	a subculture
+521	the 21st century
+522	rapping and rap music
+523	the broader hip hop culture
+524	ra
+525	"cosmic" philosophy
+526	the arkestra
+527	the southernmost state
+528	23	tamil nadu
+529	an ever-changing name
+530	23
+531	herman poole blount
+532	sun ra
+533	other elements
+534	prolific output
+535	india
+536	22
+537	theatrical performances
+538	an american jazz composer
+539	le sony'r ra
+540	may 22, 1914
+541	djing
+542	flexible line-up
+543	tamil nadu
+544	"rap music
+545	an ensemble
+546	"hip hop music
+547	synthesizer player
+548	may 30, 1993
+549	his career
+550	arkestra
+551	the culture
+552	his experimental music
+553	instrumental tracks
+554	tn
+555	a required component
+556	24	the university
+557	the longest surviving classical languages
+558	a confederal university
+559	the united kingdom
+560	uk
+561	the uk
+562	the university of wales (welsh
+563	prifysgol cymru
+564	bangor
+565	the tamil language
+566	sixth
+567	the break
+568	the first university
+569	a federal university
+570	the federation
+571	chennai
+572	the home
+573	wales
+574	tamil
+575	its official language
+576	indian
+577	the four countries
+578	tenth
+579	1893
+580	24
+581	three constituent colleges
+582	aberystwyth
+583	the tamil people
+584	largest city
+585	an english philosopher
+586	an english composer
+587	20th-century british music
+588	peter grimes
+589	27
+590	26	edward benjamin britten
+591	the young person's guide
+592	25
+593	the "war requiem
+594	5 april 1588
+595	december 1679
+596	20th-century
+597	a range
+598	david maxwell kirschner
+599	child's
+600	britten
+601	his producing credits
+602	his best-known works
+603	orchestral and chamber pieces
+604	an american film and television producer
+605	may 29, 1955
+606	don bluth's "an american tail
+607	december 1976
+608	"peter grimes
+609	a central figure
+610	an american tail
+611	edward benjamin britten
+612	22 november
+613	the opera
+614	don bluth's
+615	other vocal music
+616	22 november 1913
+617	baron britten
+618	the orchestral showpiece
+619	titan a.e.
+620	25	david maxwell kirschner
+621	1945
+622	british
+623	63
+624	26
+625	thomas hobbes
+626	"the young person's guide
+627	orchestra
+628	the "child's play" horror film series
+629	27	thomas hobbes
+630	"titan a.e." animated features
+631	the orchestra
+632	galatasaray spor kulübü
+633	the larger galatasaray sports club
+634	his 1651 book
+635	social contract theory
+636	european
+637	the association football branch
+638	october 1905
+639	the european side
+640	the founders
+641	the galatasaray community cooperation committee
+642	galatasaray sports club
+643	modern political philosophy
+644	1651
+645	galatasaray high school
+646	turkish
+647	istanbul
+648	an influential formulation
+649	a part
+650	28	galatasaray spor kulübü
+651	uefa competitions
+652	a turkish professional football club
+653	28
+654	the football club
+655	galatasaray aş
+656	leviathan
+657	the same name
+658	student members
+659	uefa
+660	mark kennedy
+661	a 2005 american animated science fiction comedy film
+662	dark shades
+663	the sky
+664	the title character
+665	ron anderson
+666	this version
+667	his reputation
+668	29
+669	buena vista pictures distribution
+670	29	chicken little
+671	his past
+672	steve bencich
+673	ron j. friedman
+674	chicken little
+675	his town
+676	walt disney feature animation
+677	the european folk tale
+678	"henny penny
+679	an unexpected truth
+680	mark dindal
+681	the middle
+682	the shirts
+683	the two colours
+684	dindal and mark kennedy
+685	dindal
+686	a year later
+687	a story
+688	a panic
+689	henny penny
+690	his next and final film
+691	disney
+692	writer joe grant
+693	30	british folk rock
+694	the film's release
+695	the final film appearance
+696	30
+697	"air buddies
+698	a form
+699	don knotts
+700	disney artist
+701	folk rock
+702	joe grant
+703	the mid 1960s
+704	another disney-produced film
+705	his lifetime
+706	just over a year later
+707	air buddies
+708	april 1965
+709	byrds
+710	the house of the rising sun
+711	british band
+712	the animals
+713	rock music
+714	beatles
+715	the mid-1960s american folk rock movement
+716	the merging
+717	other musicians
+718	the beatles
+719	the american band
+720	the house
+721	the success
+722	dylan's "mr. tambourine man
+723	several sources
+724	dylan
+725	their recording
+726	a catalyst
+727	bob dylan
+728	the rising sun
+729	their music
+730	1964
+731	beatles for sale
+732	the same year
+733	other british invasion bands
+734	the byrds
+735	overt folk influences
+736	tambourine man
+737	mid-1960s
+738	"san mamés
+739	the lions
+740	romans
+741	the san mamés stadium
+742	the strawbs
+743	red and white-striped shirts
+744	black shorts
+745	usually those
+746	31
+747	san mamés
+748	athletic club
+749	the british folk revival
+750	the mid-1960s
+751	an early christian
+752	the romans
+753	saint mammes
+754	a saint
+755	its home colours
+756	athletic
+757	athletic bilbao
+758	their stadium
+759	the basque country
+760	pentangle
+761	"los leones
+762	spain
+763	bilbao
+764	a church
+765	fairport convention
+766	british groups
+767	31	athletic club
+768	christian
+769	abby aldrich rockefeller
+770	modern art (moma
+771	laura harris
+772	a free-reed musical instrument
+773	elijah wood
+774	clea duvall
+775	the institution
+776	1929
+777	shawn hatosy
+778	an art museum
+779	32	the faculty
+780	robert patrick
+781	jordana brewster
+782	32
+783	the front
+784	a 1998 american science fiction horror film
+785	33	a concertina
+786	kevin williamson
+787	accordion buttons
+788	the various accordions
+789	34	the museum
+790	usher raymond
+791	the harmonica
+792	josh hartnett
+793	33
+794	piper laurie
+795	midtown manhattan
+796	lillie p.
+797	53rd street
+798	bebe neuwirth
+799	fifth and sixth avenues
+800	the museum of modern art (moma
+801	contracting bellows
+802	1998
+803	34
+804	fifth
+805	famke janssen
+806	jon stewart
+807	the heckscher building
+808	barr
+809	bliss
+810	the wall street crash
+811	mary quinn sullivan
+812	35	sterling price holloway jr.
+813	fifth avenue
+814	the museum's collection
+815	several temporary locations
+816	just days
+817	the land
+818	modern art
+819	35
+820	barr's leadership
+821	an inaugural exhibition
+822	a. conger goodyear
+823	john d. rockefeller jr.
+824	early years
+825	its permanent site
+826	its early years
+827	alfred h. barr jr.
+828	european modernists
+829	financial challenges
+830	america
+831	the museum
+832	abby rockefeller
+833	its first director
+834	barney bear
+835	the jungle book
+836	japanese
+837	kyoto
+838	winnie the pooh
+839	over 100 films
+840	nintendo co., ltd.
+841	the jungle book"
+842	the cheshire cat
+843	adult flower
+844	bambi
+845	screwy squirrel
+846	mgm
+847	november 22, 1992
+848	dumbo
+849	many others
+850	many one-off cartoons
+851	both video games
+852	droopy
+853	the aristocats
+854	bradley
+855	the mouse
+856	over 100
+857	jerry
+858	an american actor
+859	alice in wonderland
+860	tom
+861	mr. stork
+862	the walt disney company
+863	36
+864	40 television shows
+865	january 14, 1905
+866	george and junior
+867	roquefort the mouse
+868	stork
+869	36	bradley
+870	37	nintendo co.
+871	a japanese multinational video game company
+872	40
+873	37
+874	video game consoles
+875	judge reinhold
+876	short story writer
+877	the principal actors
+878	speculative fiction novels
+879	a sequel
+880	39
+881	16 august 1934
+882	literary critic
+883	tim allen
+884	the second installment
+885	diana wynne jones
+886	26 march 2011
+887	michael lembeck
+888	christmas
+889	wendy crewson
+890	spencer breslin
+891	eric lloyd
+892	a british novelist
+893	the santa clause
+894	1994
+895	26 march
+896	her work
+897	young adults
+898	38
+899	science fiction themes
+900	38	the santa clause
+901	a 2002 american christmas comedy film
+902	his directorial debut
+903	elizabeth mitchell
+904	liliana mumy
+905	reinhold
+906	their roles
+907	16 august
+908	39	diana wynne jones
+909	"the santa clause
+910	david krumholtz
+911	1996
+912	king of the hill
+913	the "dalemark" series
+914	1995
+915	rat race
+916	dark lord
+917	2000–2010
+918	franklin &amp
+919	derkholm
+920	the "dalemark
+921	ghosts of girlfriends past
+922	road trip
+923	chrestomanci
+924	dark lord of
+925	his roles
+926	jones
+927	the hill
+928	joseph gribble
+929	40	breckin meyer
+930	time travel
+931	the live-action
+932	"robot chicken
+933	the "chrestomanci" series
+934	the tough guide to fantasyland
+935	bash
+936	may 7, 1974
+937	"the craft
+938	the three "moving castle" novels
+939	jon arbuckle
+940	jones's work
+941	girlfriends past
+942	her better-known works
+943	jared franklin
+944	"the tough guide
+945	breckin meyer
+946	undergraduate higher education institution
+947	"the shawshank redemption
+948	timothy francis robbins
+949	andy dufresne
+950	an academy award and golden globe award
+951	the player
+952	1992
+953	an associate degree
+954	"mystic river
+955	a type
+956	another golden globe
+957	1990
+958	"jacob's ladder
+959	2003
+960	jacob's ladder
+961	his role
+962	41
+963	"the player
+964	different meanings
+965	different countries
+966	an academy award and
+967	senior secondary school
+968	an "open enrollment
+969	41	timothy francis robbins
+970	mystic river
+971	high school
+972	many community colleges
+973	upper secondary school
+974	42	a community college
+975	jacob singer
+976	october 16, 1958
+977	42
+978	simply jahn
+979	ssv
+980	michael radford
+981	massimo troisi
+982	workforce education and college transfer academic programs
+983	athletic teams
+984	bavaria
+985	jahn regensburg
+986	a 1994 comedy-drama film
+987	a german football club
+988	their university counterparts
+989	jahn
+990	us
+991	the postman
+992	schwimmverein jahn regensburg e.v.
+993	44
+994	43
+995	the original us release
+996	ssv jahn
+997	a higher educational institution
+998	german
+999	regensburg
+1000	the title
+1001	il postino
+1002	some institutions
+1003	43	sport- und schwimmverein jahn regensburg e.v.
+1004	english filmmaker michael radford
+1005	ssv jahn regensburg
+1006	the alabama crimson tide
+1007	procida
+1008	maria grazia cucinotta
+1009	radford
+1010	giacomo scarpelli
+1011	a 1983 film
+1012	a simple procida postman
+1013	pablo neruda
+1014	a fictional story
+1015	45	the alabama crimson tide football program
+1016	english translation
+1017	american football
+1018	antonio skármeta
+1019	chilean
+1020	ua
+1021	(variously alabama
+1022	skármeta
+1023	the 1985 novel
+1024	the real life chilean poet pablo neruda
+1025	furio scarpelli
+1026	philippe noiret
+1027	the cast
+1028	45
+1029	1983
+1030	bama
+1031	troisi
+1032	the university of alabama
+1033	1985
+1034	"ardiente paciencia
+1035	the sport
+1036	anna pavignano
+1037	a friendship
+1038	1892
+1039	ncaa
+1040	the program
+1041	sec
+1042	six further national titles
+1043	the crimson tide
+1044	between 2007 and 2023
+1045	the southeastern conference
+1046	ap
+1047	bear" bryant
+1048	five other titles
+1049	hall of fame
+1050	the most storied and decorated football programs
+1051	1982
+1052	kalen deboer
+1053	six
+1054	the poll-era
+1055	the western division of the southeastern conference
+1056	the national collegiate athletic association
+1057	18 national championships
+1058	the western division
+1059	the football bowl subdivision
+1060	paul
+1061	head coach nick saban
+1062	fbs
+1063	nick saban
+1064	ncaa history
+1065	a dominant run
+1066	six national titles
+1067	13 wire-service (ap or coaches') national titles
+1068	1958
+1069	the titular character
+1070	46	cleopatra records
+1071	seth rogen
+1072	cleopatra records
+1073	47
+1074	starring pegg
+1075	a 2011 comic science fiction road film
+1076	california
+1077	a family
+1078	frost
+1079	hypnotic records
+1080	goldenlane records
+1081	brian perera
+1082	46
+1083	an alien
+1084	deadline music records
+1085	the record label
+1086	nick frost
+1087	the voice and motion capture
+1088	two science fiction geeks
+1089	an american independent record label
+1090	x-ray records
+1091	greg mottola
+1092	simon pegg
+1093	unique and experimental artists
+1094	los angeles
+1095	47	paul
+1096	purple pyramid records
+1097	a variety
+1098	steven spielberg
+1099	2 october 1950
+1100	earl hefner
+1101	other science-fiction films
+1102	a parody
+1103	an american film
+1104	jersey boys
+1105	clint eastwood's film adaptation
+1106	the secret service
+1107	an english film and television actor
+1108	his portrayal
+1109	48
+1110	clint eastwood's
+1111	48	vincent piazza
+1112	dramedy
+1113	the secret service agents
+1114	the comedy-drama "rocket science
+1115	hbo
+1116	49	ian mcneice
+1117	"doc martin
+1118	ian mcneice
+1119	the alien escape
+1120	lucky luciano
+1121	vincent piazza
+1122	49
+1123	his home planet
+1124	gangster lucky luciano
+1125	bert large
+1126	the hbo television series
+1127	science fiction fandom
+1128	especially those
+1129	tommy devito
+1130	boardwalk empire
+1131	rocket science
+1132	louis j. horvitz
+1133	gil cates
+1134	actor billy crystal
+1135	the englishman
+1136	6:00 p.m. pst /
+1137	"frank herbert's dune
+1138	harcourt
+1139	march 23, 1998
+1140	the sixth time
+1141	9:00 p.m. est
+1142	24 categories
+1143	50
+1144	/ 9:00 p.m.
+1145	frank herbert's
+1146	academy awards
+1147	oscars
+1148	the 70th academy awards
+1149	the show
+1150	a mountain
+1151	popular films
+1152	the englishman who went
+1153	billy crystal
+1154	1997
+1155	the 1985 television series
+1156	the academy of motion picture arts and sciences
+1157	a hill
+1158	fame portraying government agent harcourt
+1159	the shrine auditorium
+1160	50	the 70th academy awards ceremony
+1161	ampas
+1162	abc
+1163	edge of darkness
+1164	hill
+1165	the ceremony
+1166	strindberg
+1167	four decades
+1168	the 62nd ceremony
+1169	more than 60 plays
+1170	more than 60
+1171	michelle patrick
+1172	the academy awards for technical achievement
+1173	host ashley judd
+1174	more than 30 works
+1175	51	michelle patrick
+1176	a swedish playwright
+1177	nearly a month earlier
+1178	african-american
+1179	22 january 184914 may 1912
+1180	the previous year's
+1181	a prolific writer
+1182	the regent beverly wilshire hotel
+1183	february 28
+1184	most recently the previous year's awards
+1185	52
+1186	51
+1187	november 20, 1949
+1188	technical achievement
+1189	beverly hills
+1190	johan august strindberg
+1191	22 january
+1192	62nd
+1193	more than 30
+1194	an event
+1195	cultural analysis
+1196	an african-american television soap opera writer
+1197	his personal experience
+1198	the academy awards
+1199	ashley judd
+1200	the first modern swedish novel
+1201	whose length
+1202	an essayist
+1203	naturalistic tragedy
+1204	a narrative prose fiction
+1205	sweden
+1206	1879
+1207	especially novelist
+1208	his earliest work
+1209	other countries
+1210	a playwright
+1211	53	a novella
+1212	expressionist and surrealist dramatic techniques
+1213	most novels
+1214	innovative forms
+1215	visual composition
+1216	dramatic methods
+1217	his anticipations
+1218	his "the red room
+1219	modern swedish literature
+1220	a wide range
+1221	53
+1222	short stories
+1223	dramatic action
+1224	most novelettes
+1225	the red room
+1226	the "father
+1227	manchester
+1228	third
+1229	tom rowlands
+1230	franklin county
+1231	the second-most populous city
+1232	phoenix
+1233	a short story
+1234	the midwest
+1235	1989
+1236	905,748
+1237	ohio
+1238	a 2020 census population
+1239	the seat
+1240	the chemical brothers
+1241	austin
+1242	54
+1243	the 14th-most populous city
+1244	true (or apparently so) facts
+1245	ed simons
+1246	delaware
+1247	fairfield
+1248	the english word
+1249	54	the chemical brothers
+1250	columbus
+1251	chicago
+1252	the forefront
+1253	texas
+1254	55	columbus
+1255	delaware and fairfield counties
+1256	an english electronic music duo
+1257	the u.s. state
+1258	arizona
+1259	pop culture
+1260	most populous city
+1261	14th
+1262	55
+1263	the big beat genre
+1264	the third-most populous u.s. state capital
+1265	56
+1266	the partners
+1267	corporate entities
+1268	a highly ranked position
+1269	consulting firm
+1270	tvb
+1271	accounting firm
+1272	57	television broadcasts limited
+1273	hong kong
+1274	central ohio
+1275	32nd
+1276	the profits
+1277	financial firm
+1278	the u.s. 56	a partner
+1279	ten counties
+1280	a law firm
+1281	a television broadcasting company
+1282	2,138,926
+1283	television broadcasts limited
+1284	a share
+1285	"equity partners
+1286	the columbus metropolitan area
+1287	57
+1288	a partnership
+1289	the core city
+1290	case closed
+1291	tvb pearl
+1292	59	mgmt
+1293	a box office income
+1294	tvb city
+1295	december 29, 2009
+1296	this film
+1297	58	case
+1298	cantonese
+1299	middletown
+1300	connecticut
+1301	its main cantonese language service
+1302	mgmt
+1303	58
+1304	her eyes
+1305	59
+1306	ben goldwasser
+1307	the company
+1308	its main english service
+1309	andrew vanwyngarden
+1310	the "case closed" series
+1311	tvb jade
+1312	a japanese anime feature film
+1313	2.5 billion japanese yen
+1314	pearl
+1315	the tseung kwan o industrial estate
+1316	his life
+1317	keyboardist james richardson
+1318	60
+1319	30 march 185329 july 1890
+1320	approximately 2100 artworks
+1321	dutch post-impressionist
+1322	bassist simon o’connor
+1323	western art
+1324	will berman
+1325	dramatic brushwork
+1326	the rise
+1327	drummer will berman
+1328	the history
+1329	his oeuvre
+1330	the most famous and influential figures
+1331	just over a decade
+1332	bold colors
+1333	vincent willem van gogh
+1334	james richardson
+1335	around 860 oil paintings
+1336	goldwasser
+1337	the last two years
+1338	60	vincent willem van gogh
+1339	mgmt's live lineup
+1340	vanwyngarden
+1341	simon o’connor
+1342	860
+1343	a dutch post-impressionist painter
+1344	the cigarette smoking man
+1345	william davis centre
+1346	van gogh's paintings
+1347	smoke
+1348	a canadian actor
+1349	his personal life
+1350	canadian
+1351	his memoir
+1352	william bruce davis
+1353	the committee for skeptical inquiry's
+1354	the x
+1355	only one
+1356	the william davis centre
+1357	van gogh's work
+1358	critical attention
+1359	the time
+1360	61
+1361	61	william bruce davis
+1362	van gogh's
+1363	a cigarette smoking man
+1364	the red vineyard
+1365	the x-files
+1366	january 13, 1938
+1367	a suicide
+1368	many tv programs
+1369	actors study
+1370	an avid water-skier
+1371	climate change
+1372	age 37
+1373	skeptical inquiry's csicon
+1374	the committee
+1375	the musings
+1376	his own acting school
+1377	strong's voice roles
+1378	the fairly oddparents
+1379	interactive arts
+1380	tara lyn strong
+1381	a canadian and american actress
+1382	video games
+1383	february 12, 1973
+1384	the new batman adventures
+1385	"ultimate marvel
+1386	an award
+1387	", "x-2
+1388	chowder
+1389	, "rugrats
+1390	teen titans go
+1391	62
+1392	ben 10
+1393	final fantasy x
+1394	x-2
+1395	the video games
+1396	the proud family
+1397	teen titans
+1398	her voice work
+1399	the academy
+1400	annie award and daytime emmy nominations
+1401	the powerpuff girls
+1402	mortal kombat x
+1403	jak and daxter
+1404	blue dragon
+1405	capcom
+1406	daytime emmy
+1407	animated series
+1408	xiaolin showdown
+1409	strong
+1410	ultimate marvel
+1411	62	tara lyn strong
+1412	annie award
+1413	"the new batman adventures
+1414	the academy of interactive arts &amp
+1415	sciences
+1416	cindy williams
+1417	the world's human population
+1418	frederic forrest
+1419	hackman
+1420	a surveillance expert
+1421	allen garfield
+1422	the world's second largest and second-most populous continent
+1423	harrison ford
+1424	11.7 million square miles
+1425	about 30.3 million
+1426	john cazale
+1427	about 30.3 million km2 (11.7 million square miles
+1428	adjacent islands
+1429	a potential murder
+1430	teri garr
+1431	his recordings
+1432	64	africa
+1433	6%
+1434	a 1974 american neo-noir mystery thriller film
+1435	20%
+1436	earth
+1437	earth's land area
+1438	63	the conversation
+1439	asia
+1440	its total surface area
+1441	robert duvall
+1442	africa
+1443	gene hackman
+1444	a moral dilemma
+1445	billion people
+1446	different factors
+1447	africa's population
+1448	2012
+1449	oceania
+1450	the large and young population
+1451	michael figgis
+1452	natural resources
+1453	the broader global context
+1454	65
+1455	28 february 1948
+1456	the cold war
+1457	19.7
+1458	this low concentration
+1459	all the continents
+1460	recent economic expansion
+1461	the least wealthy continent
+1462	an english film director
+1463	the worldwide median age
+1464	65	michael figgis
+1465	the median age
+1466	total wealth
+1467	30.4
+1468	fullerton
+1469	the founding patron
+1470	the public
+1471	more than 41,000
+1472	csuf
+1473	more than 5,000
+1474	the california state university (csu) system
+1475	cal state fullerton
+1476	leaving las vegas
+1477	figgis
+1478	the independent filmmakers' online community
+1479	the csu
+1480	two academy awards
+1481	a person
+1482	his work
+1483	california state university
+1484	67	california state university
+1485	the largest student body
+1486	a journalist
+1487	the form
+1488	the california state university
+1489	66
+1490	a total enrollment
+1491	a newsworthy form
+1492	67
+1493	its graduate student body
+1494	shooting people
+1495	csu
+1496	the first installment
+1497	55 undergraduate degrees
+1498	54 graduate degrees
+1499	the title character's war
+1500	robert wuhl
+1501	the tenure track
+1502	fall 2016
+1503	warner bros.'
+1504	jon peters
+1505	bob kane
+1506	jack nicholson
+1507	pat hingle
+1508	tim burton
+1509	2,083
+1510	jack palance
+1511	warner bros.' initial "batman" film series
+1512	billy dee williams
+1513	his conflict
+1514	69
+1515	batman
+1516	109 degree programs
+1517	his archenemy
+1518	the joker
+1519	the dc comics character
+1520	the dc comics
+1521	68
+1522	782
+1523	68	batman
+1524	michael keaton
+1525	3 doctoral programs
+1526	2,083 faculty
+1527	peter guber
+1528	kim basinger
+1529	69	michael c.
+1530	a 1989 superhero film
+1531	bill finger
+1532	michael c.
+1533	the school
+1534	michael gough
+1535	109 degree
+1536	kristen wiig
+1537	70	bridesmaids
+1538	west springfield
+1539	a 2011 american comedy film
+1540	maya rudolph
+1541	bridesmaids
+1542	a stand-up comic
+1543	clayton townsend
+1544	1997 to 2001
+1545	massachusetts
+1546	an american television writer
+1547	a series
+1548	judd apatow
+1549	simpsons
+1550	an underachiever
+1551	paul feig
+1552	an interest
+1553	the animated sitcom
+1554	yakov smirnoff
+1555	october 2, 1956
+1556	wiig
+1557	ellie kemper
+1558	70
+1559	chris o'dowd
+1560	rose byrne
+1561	executive producer
+1562	annie mumolo
+1563	melissa mccarthy
+1564	barry mendel
+1565	"the simpsons
+1566	1986
+1567	wendi mclendon-covey
+1568	a state dinner
+1569	israeli
+1570	itzhak perlman
+1571	the westchester philharmonic
+1572	the presidential medal
+1573	71
+1574	august 31, 1945
+1575	a german heavy metal record label
+1576	the detroit symphony orchestra
+1577	elizabeth ii
+1578	72
+1579	germany
+1580	a grammy lifetime achievement award
+1581	four emmy awards
+1582	an israeli-american violinist
+1583	her best friend
+1584	barack obama
+1585	the 2009 inauguration
+1586	the white house
+1587	a woman
+1588	century media records
+1589	perlman
+1590	71	itzhak perlman
+1591	the philadelphia orchestra
+1592	16 grammy awards
+1593	2015
+1594	the presidential medal of freedom
+1595	72	century media records
+1596	the general manager
+1597	super trio
+1598	eric darnell
+1599	74	madagascar
+1600	mcgrath
+1601	pdi/dreamworks
+1602	18 years
+1603	dreamworks animation skg
+1604	mark burton
+1605	film director
+1606	august 2015
+1607	tom mcgrath
+1608	us$17 million
+1609	74
+1610	mcgrath's feature directorial debut
+1611	century media
+1612	sony music
+1613	14 april 1953
+1614	darnell
+1615	mh
+1616	eric tsang chi-wai
+1617	the variety show
+1618	a hong kong actor
+1619	madagascar
+1620	super trio series
+1621	billy frolick
+1622	television host
+1623	the hong kong television network
+1624	73	eric tsang chi-wai mh
+1625	73
+1626	a 2005 american animated survival comedy film
+1627	dreamworks pictures
+1628	dark comedy
+1629	the entertainer
+1630	75	a comedy film
+1631	jada pinkett smith
+1632	an exception
+1633	david schwimmer
+1634	75
+1635	sacha baron cohen
+1636	the oldest genres
+1637	a film genre
+1638	cohen
+1639	chris rock
+1640	these films
+1641	this rule
+1642	ben stiller
+1643	a happy ending
+1644	the central park zoo
+1645	sacha
+1646	this genre
+1647	andy richter
+1648	the wild
+1649	classical comedy
+1650	cedric
+1651	the voices
+1652	other instruments
+1653	an australian singer
+1654	the screen
+1655	live music
+1656	the earliest silent films
+1657	20 october 1971
+1658	humorous dialogue
+1659	sight gags
+1660	silent movies
+1661	76
+1662	television personality
+1663	the 1920s
+1664	comedy films
+1665	australian
+1666	both burlesque situations
+1667	76	dannii minogue
+1668	slapstick comedies
+1669	dannii minogue
+1670	visual depictions
+1671	sound films
+1672	the action
+1673	theatre productions
+1674	minogue's popularity
+1675	her appearances
+1676	june 26, 1980
+1677	home and away
+1678	jump to the beat
+1679	77	jason schwartzman
+1680	1982–1988
+1681	her role
+1682	emma jackson
+1683	the beat
+1684	love
+1685	the soap opera
+1686	a singer
+1687	minogue
+1688	jason schwartzman
+1689	her debut studio album
+1690	her second album
+1691	1991
+1692	young talent time
+1693	the hit singles
+1694	the british phonographic industry
+1695	1989–1990
+1696	success
+1697	her music career
+1698	early success
+1699	77
+1700	baby love
+1701	the television show
+1702	a name
+1703	the release
+1704	award-winning performances
+1705	"the darjeeling limited
+1706	nordic
+1707	norse
+1708	the viking age
+1709	"the grand budapest hotel
+1710	wes anderson's 1998 film
+1711	six other anderson films
+1712	a musical style
+1713	norse mythology
+1714	fantastic
+1715	the darjeeling limited
+1716	his film
+1717	a lyrical and thematic focus
+1718	wes anderson's
+1719	"the french dispatch
+1720	78	viking metal
+1721	co-writing credit
+1722	moonrise kingdom
+1723	nordic folk music
+1724	78
+1725	the point
+1726	fantastic mr. fox
+1727	"asteroid city
+1728	rushmore
+1729	a subgenre
+1730	heavy metal music
+1731	anderson
+1732	the french dispatch
+1733	viking metal
+1734	fox
+1735	black metal
+1736	2021
+1737	2023
+1738	"moonrise kingdom
+1739	norse paganism
+1740	a cross-genre term
+1741	the grand budapest hotel
+1742	pete
+1743	1977
+1744	a place
+1745	the night of the hunter
+1746	the diary
+1747	greenwich village
+1748	a double life
+1749	whose career
+1750	"the poseidon adventure
+1751	next stop, greenwich village
+1752	both sung and harsh vocals
+1753	a place in the sun
+1754	seven decades
+1755	1951
+1756	the poseidon adventure
+1757	1955
+1758	1959
+1759	a reliance
+1760	born shirley schrift
+1761	shelley winters
+1762	folk instrumentation
+1763	79	shelley winters
+1764	anthemic choruses
+1765	the diary of anne frank
+1766	lolita
+1767	a slow-paced and heavy riffing style
+1768	august 18, 1920 – january 14, 2006
+1769	79
+1770	common traits
+1771	often the use
+1772	alfie
+1773	shirley schrift
+1774	1976
+1775	an american film actress
+1776	1947
+1777	anne frank
+1778	the sun
+1779	next stop
+1780	1966
+1781	the hunter
+1782	atmospheric effect
+1783	a patch of blue
+1784	"a patch
+1785	81
+1786	prohibited drugs
+1787	between us$426 and us$652billion
+1788	an american film composer
+1789	the size
+1790	80	frank skinner
+1791	global financial integrity's
+1792	frank skinner
+1793	the think tank global financial integrity's "transnational crime and the developing world" report
+1794	the global illicit drug market
+1795	roseanne
+1796	drug trafficking
+1797	the sitcom
+1798	most jurisdictions
+1799	us$426 and us$652billion
+1800	80
+1801	drug prohibition laws
+1802	december 31, 1897
+1803	81	the illegal drug trade
+1804	a tenure
+1805	the cultivation
+1806	the use
+1807	many types
+1808	three autobiographical books
+1809	winters
+1810	a global black market
+1811	october 9, 1968
+1812	transnational crime
+1813	a world gdp
+1814	82
+1815	83
+1816	a 2008 american animated action adventure film
+1817	williams
+1818	new mexico
+1819	total global trade
+1820	clark spencer
+1821	walt disney pictures
+1822	the rates
+1823	sandoval county
+1824	bolt
+1825	byron howard
+1826	local authorities
+1827	us$78 trillion
+1828	2008
+1829	82	sandoval county
+1830	bernalillo
+1831	their feature directorial debuts
+1832	drug consumption
+1833	dan fogelman
+1834	the illegal drug trade
+1835	83	bolt
+1836	nearly 1%
+1837	walt disney animation studios
+1838	chris williams
+1839	148,834
+1840	illegal drugs
+1841	greg germann
+1842	amitabh srivastava
+1843	11 october 1942
+1844	pivotal roles
+1845	indian cinema
+1846	an indian actor
+1847	malcolm mcdowell
+1848	over 200
+1849	the final film roles
+1850	11 october
+1851	john travolta
+1852	susie essman
+1853	james lipton
+1854	lipton
+1855	amitabh bachchan
+1856	84	amitabh bachchan
+1857	hindi cinema
+1858	all time
+1859	hindi
+1860	the greatest actors
+1861	his death
+1862	mark walton
+1863	the most accomplished and influential actors
+1864	miley cyrus
+1865	five decades
+1866	over 200 films
+1867	a cinematic journey
+1868	84
+1869	the new york city department
+1870	sadi ke mahanayak
+1871	north-western italy
+1872	italy
+1873	the indian film industry
+1874	bachchan
+1875	recording artists
+1876	its capital
+1877	the french director
+1878	85	the grammy award
+1879	the millennium
+1880	greatest actor
+1881	87	liguria
+1882	85
+1883	the grammy award for best hard rock performance
+1884	bronx science
+1885	86	the bronx high school
+1886	87
+1887	the shahenshah
+1888	his dominance
+1889	genoa
+1890	the grammy awards
+1891	86
+1892	specialized
+1893	a region
+1894	the century
+1895	a public specialized high school
+1896	the new york city department of education
+1897	the 1970s–80s
+1898	liguria
+1899	best hard rock performance
+1900	the specialized high schools admissions test
+1901	the shahenshah of bollywood
+1902	françois truffaut
+1903	the bronx high school of science
+1904	a "one-man industry
+1905	the former territory
+1906	the west
+1907	alps
+1908	the eastern carpathians
+1909	the dniester river
+1910	romanian cyrillic
+1911	tuscany
+1912	central and eastern europe
+1913	the north
+1914	mediterranean euroregion
+1915	emilia-romagna
+1916	literally "the country
+1917	the alps
+1918	a historical region
+1919	apennines
+1920	the country of moldavia
+1921	former principality
+1922	piedmont
+1923	88	moldavia
+1924	88
+1925	the republic of genoa
+1926	its territory
+1927	moldavia
+1928	the republic
+1929	eastern europe
+1930	france
+1931	the apennines mountain range
+1932	the territory
+1933	the region
+1934	the ligurian sea
+1935	1,557,533
+1936	the east
+1937	romanian
+1938	the basis
+1939	the budjak
+1940	substantive rights
+1941	bukovina and hertsa
+1942	municipal and international law
+1943	moral principles
+1944	certain standards
+1945	human behaviour
+1946	89
+1947	pokuttya
+1948	89	human rights
+1949	the modern romanian state
+1950	the 14th century
+1951	the regions
+1952	substantive law
+1953	a period
+1954	various times
+1955	bessarabia
+1956	budjak
+1957	wallachia
+1958	the 14th century to 1859
+1959	due process
+1960	specific circumstances
+1961	an obligation
+1962	a state
+1963	a human being
+1964	every time
+1965	upper midwestern
+1966	the human rights
+1967	the sense
+1968	a result
+1969	their age
+1970	90
+1971	the upper midwestern region
+1972	the rule
+1973	egalitarian
+1974	minnesota
+1975	inalienable, fundamental rights
+1976	90	minnesota
+1977	all human beings
+1978	about 3.7 million
+1979	12th
+1980	the 16th-largest metropolitan area
+1981	over 5.75 million residents
+1982	roughly a third
+1983	more than 60%
+1984	at least ten
+1985	over 5.75 million
+1986	more than 14,000 bodies
+1987	fresh water
+1988	other minor metropolitan and micropolitan statistical areas
+1989	91	halloween
+1990	minnesotans
+1991	the "twin cities
+1992	halloween
+1993	john carpenter
+1994	duluth
+1995	the 12th largest u.s. state
+1996	the remainder
+1997	16th
+1998	moorhead
+1999	the minneapolis–saint paul metropolitan area
+2000	91
+2001	10,000 lakes
+2002	the state
+2003	saint paul
+2004	minneapolis
+2005	the "land of 10,000
+2006	the "land
+2007	the state's main political, economic, and cultural hub
+2008	at least ten acres
+2009	micropolitan
+2010	rochester
+2011	st. cloud
+2012	the 22nd
+2013	a 1978 american independent slasher film
+2014	more than 14,000
+2015	fifteen years later
+2016	north carolina
+2017	nancy loomis
+2018	teenage babysitter laurie strode
+2019	michael myers
+2020	her friends
+2021	92	eastern north carolina
+2022	his hometown
+2023	92
+2024	laurie strode
+2025	illinois
+2026	starring donald pleasence
+2027	a mental patient
+2028	the state's coastal plain region
+2029	coastal plain
+2030	the fictional town
+2031	his psychiatrist
+2032	eastern north carolina
+2033	haddonfield
+2034	her film debut
+2035	enc
+2036	a child
+2037	samuel loomis
+2038	jamie lee curtis
+2039	supporting roles
+2040	dr. samuel loomis
+2041	the eastern tier
+2042	a sanitarium
+2043	his teenage sister
+2044	donald pleasence
+2045	halloween night
+2046	p. j. soles
+2047	the plot centers
+2048	the outer banks
+2049	talent manager
+2050	emmys
+2051	93	jerome charles weintraub
+2052	north carolina's first capital
+2053	the founding
+2054	93
+2055	jerome charles weintraub
+2056	a 2008 american television miniseries
+2057	the crystal coast
+2058	the title role
+2059	three emmys
+2060	u.s. president john adams's political life
+2061	jacksonville
+2062	whose television films
+2063	the inner banks
+2064	the miniseries
+2065	an american film producer
+2066	greenville
+2067	john adams's
+2068	paul giamatti
+2069	september 26, 1937 – july 6, 2015
+2070	the sandhills
+2071	john adams
+2072	sandhills
+2073	rocky mount
+2074	the 41 most eastern counties
+2075	new bern
+2076	north carolina's
+2077	tom hooper
+2078	94	john adams
+2079	wilmington area
+2080	the lower cape fear
+2081	94
+2082	primary subregions
+2083	wilmington
+2084	mls
+2085	the city's population
+2086	202,591
+2087	the league
+2088	an american professional soccer club
+2089	the six-county little rock metropolitan area
+2090	95	the new england revolution
+2091	greater boston
+2092	the ten charter clubs
+2093	96
+2094	little rock
+2095	the 2001 book
+2096	kirk ellis
+2097	arkansas
+2098	major league soccer
+2099	81st
+2100	the greater boston area
+2101	its inaugural season
+2102	748,031 residents
+2103	the eastern conference
+2104	david mccullough
+2105	748,031
+2106	"john adams
+2107	95
+2108	the new england revolution
+2109	a city
+2110	96	little rock
+2111	the round shield
+2112	the stream
+2113	downton abbey
+2114	the district
+2115	97
+2116	bologna
+2117	parma
+2118	198,292 inhabitants
+2119	its architecture
+2120	two parts
+2121	the university of parma
+2122	the region's capital
+2123	198,292
+2124	the west side
+2125	the world
+2126	98	downton abbey
+2127	julian fellowes
+2128	emilia
+2129	97	parma
+2130	the northern italian region
+2131	parma's etruscan name
+2132	the early 20th century
+2133	the oldest universities
+2134	a british historical drama television series
+2135	the river
+2136	surrounding countryside
+2137	etruscan
+2138	98
+2139	the second most populous city
+2140	mitch
+2141	six series
+2142	tennessee williams' "a streetcar named desire
+2143	fifty-two episodes
+2144	movie and television actor
+2145	arthur miller's
+2146	streetcar
+2147	the academy award for best supporting actor
+2148	the 1951 film
+2149	arthur miller's "all my sons
+2150	1946-7
+2151	five christmas
+2152	karl malden
+2153	26 september
+2154	five christmas specials
+2155	george sekulovich
+2156	pbs
+2157	a streetcar named desire
+2158	march 22, 1912 – july 1, 2009
+2159	tennessee williams'
+2160	the original broadway productions
+2161	an american stage
+2162	99	karl malden
+2163	9 january
+2164	the role
+2165	99
+2166	fifty-two
+2167	broadway
+2168	itv
+2169	26 september 2010
+2170	its production
+2171	mladen george sekulovich
+2172	9 january 2011
+2173	best supporting actor
+2174	masterpiece classic
+2175	its "masterpiece classic" anthology
+2176	all my sons
+2177	the music industry
+2178	sporadic reunions
+2179	bass guitar
+2180	an american musician
+2181	july 31, 1958
+2182	r.e.m.
+2183	the industry
+2184	a low profile
+2185	a farmer
+2186	his departure
+2187	the alternative rock band
+2188	william thomas berry
+2189	berry
+2190	his economical drumming style
+2191	other artists' recordings
+2192	two years later
+2193	a cerebral aneurysm onstage
+2194	2022
+2195	r.e.m. albums
+2196	100	william thomas berry
+2197	a successful recovery
+2198	the drummer
+2199	their entire run
+2200	a film
+2201	the 9th academy awards
+2202	the 16th academy awards
+2203	101	the academy award
+2204	the previous year's best supporting actress winner
+2205	a supporting role
+2206	101
+2207	annually
+2208	the traditional oscar statuette
+2209	that year
+2210	oscar
+2211	an actor
+2212	best supporting actress
+2213	each category
+2214	an outstanding performance
+2215	acting recipients
+2216	the award
+2217	old recordings
+2218	the year
+2219	102	the latin grammy award
+2220	51 percent
+2221	albums packages
+2222	latin recording artists
+2223	previously released recordings
+2224	the latin grammy awards
+2225	102
+2226	vocal or instrumental albums
+2227	a ceremony
+2228	a wider awareness
+2229	an honor
+2230	cultural diversity
+2231	new recorded songs
+2232	the performers
+2233	latin
+2234	audio engineers
+2235	103	adam horowitz
+2236	the playing time
+2237	the increasing musical changes
+2238	its seven-year run
+2239	the accolade
+2240	2018
+2241	seven-year
+2242	days
+2243	his writing partner
+2244	33%
+2245	best new artist
+2246	edward kitsis
+2247	a restructuration
+2248	horowitz
+2249	the four general categories
+2250	a time
+2251	103
+2252	apple tv's "amazing stories
+2253	amazing stories
+2254	the category
+2255	kitsis
+2256	10 nominees
+2257	december 4, 1971
+2258	an american screenwriter
+2259	adam horowitz
+2260	the abc fairy tale drama series
+2261	apple tv's
+2262	104	prometheus
+2263	charlize theron
+2264	logan marshall-green
+2265	theron
+2266	the fifth installment
+2267	a 2012 science fiction horror film
+2268	prometheus
+2269	guy pearce
+2270	idris elba
+2271	the "alien" franchise
+2272	a star map
+2273	the artifacts
+2274	a threat
+2275	the human species
+2276	jon spaihts
+2277	the extinction
+2278	the late 21st century
+2279	michael fassbender
+2280	the origins
+2281	the crew
+2282	a distant world
+2283	104
+2284	several ancient earth cultures
+2285	noomi rapace
+2286	an ensemble cast
+2287	ridley scott
+2288	the spaceship
+2289	damon lindelof
+2290	the north-central part
+2291	sunday
+2292	106
+2293	best comedian
+2294	vadivelu
+2295	at least 200 credits
+2296	a 2004 french-american romantic war drama film
+2297	105	a very long engagement
+2298	a young woman's desperate search
+2299	gaspard ulliel
+2300	jean-pierre jeunet
+2301	marion cotillard
+2302	a fictional tale
+2303	105
+2304	natarajan
+2305	107
+2306	french-american
+2307	106	kumaravadivel natarajan
+2308	several awards
+2309	somerset county
+2310	"a long sunday
+2311	audrey tautou
+2312	tamil nadu state film awards
+2313	kumaravadivel
+2314	three tamil nadu state film awards
+2315	her fiancé
+2316	a very long engagement
+2317	sébastien japrisot
+2318	tamil movies
+2319	at least 200
+2320	his filmography
+2321	occasional playback singer
+2322	the 1991 novel
+2323	world war i.
+2324	68,364 residents
+2325	its county seat
+2326	any municipality
+2327	the columbia university graduate school of journalism
+2328	pulitzer hall
+2329	franklin township
+2330	new jersey
+2331	somerville
+2332	the 2010 census count
+2333	the state's 13th-most-populous county
+2334	21,917
+2335	68,364
+2336	the largest total area
+2337	2010
+2338	the university's morningside heights campus
+2339	the central jersey region
+2340	345,361
+2341	central jersey
+2342	the most populous place
+2343	323,444
+2344	hillsborough township
+2345	13th
+2346	108
+2347	morningside heights
+2348	108	the columbia university graduate school
+2349	wilson yip
+2350	chinese
+2351	109	ip man
+2352	ip's life
+2353	simon yam
+2354	donnie yen
+2355	joseph pulitzer
+2356	columbia journalism school
+2357	ip man (
+2358	ip man
+2359	1912
+2360	foshan
+2361	109
+2362	bruce lee
+2363	the sino-japanese war
+2364	lynn hung
+2365	martial arts choreography
+2366	hiroyuki ikeuchi
+2367	ip
+2368	the oldest journalism schools
+2369	lam ka-tung
+2370	a 2008 hong kong biographical martial arts film
+2371	wing chun
+2372	the martial art wing chun
+2373	the supporting cast
+2374	the only journalism school
+2375	the ivy league
+2376	xing yu
+2377	four graduate degree programs
+2378	a grandmaster
+2379	the life
+2380	sammo hung
+2381	tenma shibuya
+2382	the association
+2383	hks
+2384	the last film
+2385	an endowment
+2386	various executive education programs
+2387	apsia
+2388	professional schools
+2389	$1.7 billion
+2390	mandarin films
+2391	cambridge
+2392	a global consortium
+2393	110
+2394	110	harvard kennedy school
+2395	officially the john f. kennedy school
+2396	china
+2397	public administration
+2398	four doctoral degrees
+2399	public policy
+2400	the association of professional schools of international affairs
+2401	master's degrees
+2402	harvard kennedy school
+2403	international affairs
+2404	a co
+2405	international development
+2406	harvard university
+2407	melodee spevack
+2408	111	michael mcconnohie
+2409	the only public historically black university
+2410	hunter x hunter
+2411	florida a&amp;m
+2412	bobobo-bo bo-bobo
+2413	112	florida agricultural and mechanical university
+2414	1887
+2415	the narrator
+2416	narrator
+2417	florida agricultural
+2418	many voice roles
+2419	a production company
+2420	mechanical university
+2421	111
+2422	tallahassee
+2423	an american voice actor
+2424	a public historically black land-grant university
+2425	his major works
+2426	the third largest historically black university
+2427	fellow actress
+2428	voxworks
+2429	"hunter x hunter
+2430	112
+2431	michael mcconnohie
+2432	the estadi mallorca son
+2433	la liga
+2434	the state's land grant universities
+2435	royal sporting club mallorca
+2436	a regulation basketball game
+2437	23,142
+2438	spanish
+2439	a member institution
+2440	a spanish professional football club
+2441	palma
+2442	master's and doctoral degrees
+2443	5 march 1916
+2444	5 march
+2445	mallorca
+2446	the estadi mallorca son moix
+2447	real mallorca
+2448	award baccalaureate
+2449	sf
+2450	114	the small forward (sf
+2451	113
+2452	a 23,142-seat capacity
+2453	114
+2454	the five positions
+2455	just mallorca
+2456	113	real club deportivo mallorca
+2457	home games
+2458	the balearic islands
+2459	115
+2460	the keys
+2461	115	the celesta
+2462	open lanes
+2463	wooden resonators
+2464	the sound
+2465	a damper pedal
+2466	an upright piano
+2467	a large wooden music box
+2468	small forwards
+2469	the guard positions
+2470	smaller keys
+2471	a graduated set
+2472	a bell-piano
+2473	a much smaller cabinet
+2474	a keyboard
+2475	a struck idiophone
+2476	their team
+2477	(usually steel) plates
+2478	four- or five-octave models
+2479	2006–2011
+2480	meredith
+2481	pyotr ilyich tchaikovskys
+2482	the nbc morning news program
+2483	"who wants to be a millionaire
+2484	weekday
+2485	pyotr ilyich
+2486	25 words
+2487	the celesta
+2488	"the nutcracker
+2489	2002–2013
+2490	december 30, 1953
+2491	morning
+2492	"the view
+2493	today
+2494	a millionaire
+2495	their small "table-top" design
+2496	the three-octave instruments
+2497	a pedal
+2498	the game show
+2499	the syndicated weekday game show
+2500	116
+2501	the original moderator
+2502	the sugar plum fairy
+2503	the view
+2504	the original host
+2505	the nutcracker
+2506	116	meredith louise vieira
+2507	1997–2006
+2508	the best-known works
+2509	the daytime talk show
+2510	an american broadcast journalist and television personality
+2511	louise vieira
+2512	dance of the sugar plum fairy
+2513	the syndicated daytime version
+2514	daytime
+2515	futuristic weapons
+2516	a backdrop
+2517	117	space opera
+2518	117
+2519	fictional galaxies
+2520	opera music
+2521	space warfare
+2522	chivalric romance
+2523	the melodrama
+2524	science fiction
+2525	fictional aliens
+2526	horse opera
+2527	1930s
+2528	galactic empires
+2529	interstellar wars
+2530	a melodramatic television series
+2531	outer space
+2532	technological and social advancements
+2533	melodramatic, risk-taking space adventures
+2534	faster-than-light travel
+2535	sophisticated technology
+2536	a clichéd and formulaic western film
+2537	"mobile suit gundam
+2538	mamoru miyano
+2539	no prince-sama
+2540	the 2nd seiyu awards
+2541	tokyo international anime fair
+2542	setsuna f. seiei
+2543	"ouran high school host club
+2544	the "best voice actor" award
+2545	hakugen rikuson
+2546	", "soul eater
+2547	118
+2548	best lead actor award
+2549	zombieland saga
+2550	chihayafuru
+2551	the 1st seiyu awards
+2552	ouran high school host club
+2553	wolf's rain
+2554	uta no prince-sama
+2555	board games
+2556	"death note
+2557	wolf
+2558	the "best voice
+2559	soul eater
+2560	the 2008 tokyo international anime fair
+2561	"zombieland saga
+2562	kōtetsu sangokushi
+2563	space operas
+2564	mobile suit gundam 00
+2565	mobile suit gundam
+2566	bungo stray dogs
+2567	death note
+2568	2nd
+2569	a japanese actor
+2570	the 1930s
+2571	118	mamoru miyano
+2572	its football department
+2573	a german professional sports club
+2574	march 2009
+2575	canadian cinema
+2576	break
+2577	the canadian screen award for best achievement
+2578	leibesübungen wolfsburg e. v.
+2579	king records
+2580	the club
+2581	120
+2582	his debut album
+2583	volkswagen
+2584	verein
+2585	art direction
+2586	his debut
+2587	lower saxony
+2588	wolfsburg
+2589	a multi-sports club
+2590	volkswagen workers
+2591	119
+2592	best achievement
+2593	120	verein für leibesübungen wolfsburg e. v.
+2594	art direction/production design
+2595	vfl wolfsburg
+2596	other departments
+2597	the academy of canadian cinema and television
+2598	dreamworks
+2599	123
+2600	horror writer
+2601	dan simmons
+2602	an american science fiction
+2603	the author
+2604	a 2005 miniseries
+2605	december 4, 1954
+2606	the "candyman" film series
+2607	1992–2021
+2608	the world fantasy award
+2609	121
+2610	west
+2611	simmons's genre-intermingling" song
+2612	the science fiction
+2613	122	dan simmons
+2614	two-hour
+2615	simmons
+2616	122
+2617	fantasy genres
+2618	other works
+2619	the continuing character
+2620	april 4, 1948
+2621	a single novel
+2622	the hyperion cantos
+2623	song of kali
+2624	121	tony todd
+2625	six two-hour episodes
+2626	candyman
+2627	the ilium/olympos cycles
+2628	joe kurtz
+2629	the series
+2630	honorary césar
+2631	an honorary césar
+2632	september/october
+2633	124	hugh john mungo grant
+2634	characteristic physical mannerisms
+2635	june 10, 2005
+2636	grant's comic skills
+2637	cbc television
+2638	a character actor
+2639	canada
+2640	a charming and vulnerable romantic leading man
+2641	124
+2642	a golden globe award
+2643	a british academy film award
+2644	bbc2
+2645	six fridays
+2646	hallmarks of grant
+2647	hugh
+2648	turner network television
+2649	tnt
+2650	the summer
+2651	november 4, 2006
+2652	bbc
+2653	a nonchalant touch
+2654	fall (autumn
+2655	september 1960
+2656	his accolades
+2657	the summer (june/july
+2658	british academy film award
+2659	bbc hd
+2660	an english actor
+2661	amc
+2662	his parents' divorce
+2663	125
+2664	his three main loves
+2665	jaco van dormael
+2666	juno temple
+2667	his films
+2668	sarah polley
+2669	125	mr. nobody
+2670	the life story
+2671	in 2022, "time out" magazine
+2672	a 2009 science fiction drama film
+2673	rhys ifans
+2674	diane kruger
+2675	a total
+2676	nobody
+2677	natasha little
+2678	a 118-year-old man
+2679	jared leto
+2680	memory fading
+2681	nearly us$3 billion
+2682	grant
+2683	nemo nobody
+2684	a doctor
+2685	the human race
+2686	the last mortal
+2687	linh dan pham
+2688	britain's 50 greatest actors
+2689	toby regbo
+2690	the subsequent hardships
+2691	118-year-old
+2692	britain
+2693	nine
+2694	126
+2695	the site
+2696	the philadelphia metropolitan area
+2697	the confluence
+2698	the delaware valley metropolitan area
+2699	the alternate life paths
+2700	the christina river
+2701	delaware valley
+2702	the first swedish settlement
+2703	different decisions
+2704	a nonlinear narrative
+2705	new castle county
+2706	the christina river and brandywine creek
+2707	north america
+2708	126	wilmington
+2709	the delaware river
+2710	brandywine creek
+2711	the christina
+2712	thirty-four
+2713	fort christina
+2714	christina
+2715	the largest city
+2716	the multiverse hypothesis
+2717	the major cities
+2718	the speculative narrative
+2719	128
+2720	mexico
+2721	isadore
+2722	officially just mexico
+2723	an american record label
+2724	elliot roberts
+2725	elektra/asylum records
+2726	129	isadore "friz" freleng
+2727	his friend
+2728	127	the state
+2729	the united mexican states
+2730	david geffen
+2731	elektra records
+2732	earl
+2733	1971
+2734	asylum records
+2735	the country
+2736	1905may 26, 1995
+2737	proprietor thomas penn
+2738	the state of mexico
+2739	128	asylum records
+2740	the whole country
+2741	the most populous, as well as the most densely populated, state
+2742	i.
+2743	partner elliot roberts
+2744	the warner music group
+2745	thomas penn
+2746	friz" freleng (
+2747	prime minister
+2748	warner communications
+2749	the name
+2750	the reign
+2751	129
+2752	the 32 federal entities
+2753	george ii
+2754	edomex
+2755	august 21
+2756	spencer compton
+2757	(now the warner music group
+2758	great britain
+2759	127
+2760	warner bros. cartoons
+2761	130
+2762	more than 300
+2763	wong kar-wai
+2764	sight &
+2765	nonlinear narratives
+2766	a contemporary auteur
+2767	hong kong cinema
+2768	17 july 1958
+2769	131	yahoo
+2770	, saturated colours
+2771	a pivotal figure
+2772	best-of lists
+2773	the greatest filmmakers
+2774	131
+2775	the previous 25 years
+2776	the "looney tunes
+2777	atmospheric music
+2778	vivid cinematography
+2779	an american animator
+2780	sound"s 2002 poll
+2781	"merrie melodies" series
+2782	a hong kong film director
+2783	the early 1960s
+2784	yahoo
+2785	merrie melodies
+2786	wong
+2787	more than 300 cartoons
+2788	133
+2789	(styled yahoo
+2790	shane
+2791	1942
+2792	heflin
+2793	character parts
+2794	the namesake company yahoo! inc.
+2795	132	emmett evan "van" heflin jr.
+2796	an american theatre
+2797	132
+2798	gunman's walk
+2799	johnny eager
+2800	film actor
+2801	apollo global management
+2802	10%
+2803	1957
+2804	december 13, 1908 –
+2805	his performance
+2806	the winnipeg jets
+2807	sunnyvale
+2808	memorable roles
+2809	the 1940s
+2810	heflin jr.
+2811	verizon communications
+2812	its logo
+2813	a leading man
+2814	"johnny eager
+2815	133	the winnipeg jets
+2816	july 23, 1971
+2817	emmett evan
+2818	winnipeg
+2819	investment funds
+2820	1953
+2821	the course
+2822	an american web services provider
+2823	a professional ice hockey team
+2824	a string
+2825	westerns
+2826	yahoo! inc.
+2827	his film career
+2828	90%
+2829	"gunman's walk
+2830	the western conference
+2831	an intercollegiate men's social fraternity
+2832	canada life centre
+2833	134
+2834	videogame writers
+2835	true north sports
+2836	60th
+2837	yale
+2838	alpha sig
+2839	the national hockey league
+2840	true north sports &
+2841	134	alpha sigma phi
+2842	181
+2843	provisional chapters
+2844	greek
+2845	the 10th oldest greek letter fraternity
+2846	its home games
+2847	the jets
+2848	1845
+2849	181 active chapters
+2850	the best film
+2851	nhl
+2852	135
+2853	jets
+2854	10th
+2855	the central division
+2856	february 9, 2008
+2857	the mysterious slaughter
+2858	hundreds
+2859	a screenwriter and executive producer
+2860	a 2001 french period action horror film
+2861	the chevalier de fronsac
+2862	the supernatural drama series
+2863	gans
+2864	samuel le bihan
+2865	vincent cassel
+2866	1997–2003
+2867	gévaudan
+2868	an unknown creature
+2869	136	brotherhood
+2870	137	martha mills noxon
+2871	mark dacascos
+2872	martha mills noxon
+2873	émilie dequenne
+2874	mani
+2875	the wolf
+2876	monica bellucci
+2877	136
+2878	buffy the vampire slayer
+2879	137
+2880	christophe gans
+2881	18th-century france
+2882	the iroquois tribe
+2883	august 25, 1964
+2884	18th-century
+2885	stéphane cabel
+2886	iroquois
+2887	an american television and film writer
+2888	the baroque period
+2889	dominant style
+2890	three major phases
+2891	cbs
+2892	bravo
+2893	138
+2894	the classical period
+2895	baroque
+2896	the galant style
+2897	139
+2898	an executive producer
+2899	139	baroque music
+2900	june 28, 1948 – june 7, 2012
+2901	the bravo comedy-drama series "girlfriends' guide
+2902	the renaissance period
+2903	girlfriends' guide to divorce
+2904	the baroque style
+2905	western classical music
+2906	a short transition
+2907	john michael riva
+2908	an american production designer
+2909	138	john michael riva
+2910	the lifetime drama series
+2911	lifetime
+2912	j. michael riva
+2913	about 1600 to 1750
+2914	the cbs medical drama series "code black
+2915	the period
+2916	johann sebastian bach
+2917	the "classical music" canon
+2918	"misshapen pearl
+2919	1580 to 1650
+2920	1680 to 1750
+2921	portuguese
+2922	george frideric handel
+2923	a major portion
+2924	the works
+2925	the term "baroque
+2926	the portuguese word
+2927	the pinnacle
+2928	1630 to 1700
+2929	baroque music
+2930	dieterich buxtehude
+2931	tomaso albinoni
+2932	alessandro scarlatti
+2933	antonio vivaldi
+2934	outstanding writing
+2935	josé de nebra
+2936	television arts
+2937	antonio soler
+2938	a drama series
+2939	other key composers
+2940	gaspar sanz
+2941	carlos seixas
+2942	atas
+2943	jean-baptiste lully
+2944	140
+2945	140	the primetime emmy award
+2946	françois couperin
+2947	samuel scheidt
+2948	the academy of television arts &amp
+2949	georg philipp telemann
+2950	jean-philippe rameau
+2951	henry purcell
+2952	domenico scarlatti
+2953	the baroque era
+2954	alessandro stradella
+2955	marc-antoine charpentier
+2956	arcangelo corelli
+2957	claudio monteverdi
+2958	the primetime emmy award for outstanding writing
+2959	johann pachelbel
+2960	johann hermann schein
+2961	heinrich schütz
+2962	the primetime network season
+2963	the third place
+2964	the 7th primetime emmy awards ceremony
+2965	141	a silver medal
+2966	a medal
+2967	its current title
+2968	the 48th primetime emmy awards
+2969	a writer
+2970	a television drama series
+2971	an outstanding story
+2972	a gold medal
+2973	several name changes
+2974	the olympic games
+2975	the second-place finisher
+2976	primetime emmy awards
+2977	other similar areas
+2978	48th
+2979	7th
+2980	an episode
+2981	the outright winner
+2982	a bronze medal
+2983	141
+2984	commonwealth games
+2985	the razzie award for worst remake,
+2986	artistic ones
+2987	october 4, 1941
+2988	the annual golden raspberry awards
+2989	nearly any high concept film
+2990	high-quality medals
+2991	anne rice
+2992	all types
+2993	worst remake
+2994	142
+2995	143
+2996	other media franchises
+2997	gothic fiction
+2998	sequel
+2999	previous material
+3000	the worst film
+3001	143	anne rice
+3002	frances o'brien
+3003	a metal
+3004	golden raspberry awards
+3005	howard allen frances o'brien
+3006	bible fiction
+3007	erotic literature
+3008	142	the razzie award
+3009	any other work
+3010	a superficial resemblance
+3011	film adaptations
+3012	december 11, 2021
+3013	some form
+3014	howard allen
+3015	(derivative work
+3016	144
+3017	die hard 2
+3018	predator 2
+3019	the vampire chronicles
+3020	motion picture executive
+3021	action-oriented films
+3022	1988
+3023	lawrence gordon
+3024	other genres
+3025	boogie nights
+3026	the vampire
+3027	48 hours
+3028	his most popular productions
+3029	march 25, 1936
+3030	rice
+3031	a commercially successful eponymous film
+3032	"the vampire chronicles
+3033	"48 hours
+3034	die hard
+3035	the first novel
+3036	point break
+3037	144	lawrence gordon
+3038	an american producer
+3039	predator
+3040	harry potter
+3041	david heyman
+3042	a famous wizard
+3043	his formal wizarding education
+3044	the philosopher's stone
+3045	j. k. rowling
+3046	hogwarts school
+3047	chris columbus
+3048	hermione granger
+3049	its story
+3050	the first instalment
+3051	145	harry potter
+3052	harry
+3053	ron weasley
+3054	145
+3055	the 1997 novel
+3056	the "harry potter" film series
+3057	first year
+3058	wizardry
+3059	daniel radcliffe
+3060	steve kloves
+3061	emma watson
+3062	a 2001 fantasy film
+3063	harry's first year
+3064	hogwarts school of witchcraft
+3065	the sorcerer's stone
+3066	rupert grint
+3067	miranda otto
+3068	the king
+3069	1955's "the return
+3070	philippa boyens
+3071	dominic monaghan
+3072	john rhys-davies
+3073	orlando bloom
+3074	sean bean
+3075	the third instalment
+3076	david wenham
+3077	the lord
+3078	the rings
+3079	the lord of the rings
+3080	billy boyd
+3081	the return
+3082	john noble
+3083	the sequel
+3084	fran walsh
+3085	cate blanchett
+3086	a 2003 epic high fantasy adventure film
+3087	the third volume
+3088	hugo weaving
+3089	viggo mortensen
+3090	bernard hill
+3091	jackson
+3092	ian holm
+3093	ian mckellen
+3094	146
+3095	j. r. r. tolkien
+3096	andy serkis
+3097	sean astin
+3098	karl urban
+3099	the return of the king
+3100	liv tyler
+3101	peter jackson
+3102	gollum's true intentions
+3103	gimli
+3104	pacific
+3105	147	the pacific
+3106	the previous film
+3107	living organisms
+3108	merry
+3109	a 2010 american war drama miniseries
+3110	gollum
+3111	148	biochemistry
+3112	their final way
+3113	his legions
+3114	playtone
+3115	march 14, 2010
+3116	frodo
+3117	147
+3118	the one ring
+3119	structural biology
+3120	both chemistry
+3121	mount doom
+3122	chemical processes
+3123	legolas
+3124	the plot
+3125	biological chemistry
+3126	mordor
+3127	their allies
+3128	sam
+3129	three fields
+3130	the study
+3131	148
+3132	the chemical basis
+3133	molecular biology
+3134	almost all areas
+3135	living processes
+3136	biochemical methodology
+3137	biological molecules
+3138	living cells
+3139	biological phenomena
+3140	the molecular mechanisms
+3141	organism structure
+3142	the last decades of the 20th century
+3143	the 20th century
+3144	the last decades
+3145	the processes
+3146	these three disciplines
+3147	the understanding
+3148	the life sciences
+3149	harlan anderson
+3150	151	athens
+3151	a river
+3152	downtown atlanta
+3153	149
+3154	digital equipment corporation
+3155	the computer industry
+3156	digital
+3157	atlanta
+3158	dec
+3159	athens
+3160	149	digital equipment corporation
+3161	precipitous decline
+3162	georgia
+3163	a consolidated city-county and college town
+3164	the river isis
+3165	the 1990s
+3166	olsen
+3167	the trademark digital
+3168	a major american company
+3169	the longest river
+3170	the river severn
+3171	150
+3172	150	the river thames
+3173	southern england
+3174	downtown athens
+3175	151
+3176	ken olsen
+3177	the 1960s
+3178	kotb
+3179	fourth hour
+3180	the nbc news morning show
+3181	an american broadcast journalist
+3182	hudā quṭb
+3183	nbc news
+3184	the state's flagship public university
+3185	the original city
+3186	its charter
+3187	a correspondent
+3188	the television news magazine program
+3189	a vote
+3190	its entertainment-focused fourth hour
+3191	clarke county
+3192	153	toledo
+3193	a unified government
+3194	153
+3195	( "hudā quṭb
+3196	lucas county
+3197	august 9, 1964
+3198	152	hoda kotb
+3199	dateline nbc
+3200	an r1 research institution
+3201	a main co
+3202	the preceding year
+3203	152
+3204	toledo
+3205	its initial growth
+3206	the great lakes
+3207	oltenia
+3208	84th
+3209	cleveland
+3210	the southern carpathians
+3211	the toledo metropolitan area
+3212	606,240 residents
+3213	walachia
+3214	modern-day
+3215	the 84th-most populous city
+3216	a major trade center
+3217	lesser wallachia
+3218	the principal city
+3219	154	wallachia
+3220	a historical and geographical region
+3221	270,871
+3222	the lower danube
+3223	its port
+3224	606,240
+3225	romania
+3226	modern-day romania
+3227	, romanian cyrillic alphabet
+3228	greater wallachia
+3229	154
+3230	old romanian
+3231	cincinnati
+3232	muntenia (greater wallachia
+3233	two sections
+3234	155
+3235	santa clarita
+3236	musical arts
+3237	theater
+3238	155	the california institute
+3239	russia
+3240	a third section
+3241	a private art university
+3242	the arts (calarts
+3243	156
+3244	dobruja
+3245	1961
+3246	bachelor of fine arts
+3247	critical studies
+3248	156	moscow state university
+3249	fine arts
+3250	both the visual and performing arts
+3251	dance
+3252	its proximity
+3253	a whole
+3254	brief rule
+3255	the first degree-granting institution
+3256	msu
+3257	the two traditional sections
+3258	the us
+3259	its six schools
+3260	muntenia
+3261	moscow
+3262	higher learning
+3263	moscow state university
+3264	the california institute of the arts (calarts
+3265	atomic number
+3266	clint eastwood
+3267	158	midnight
+3268	pure ore compounds
+3269	1817
+3270	a metalloid
+3271	158
+3272	the garden of good and evil
+3273	its elemental state
+3274	se
+3275	the earth
+3276	a chemical element
+3277	a 1997 american mystery thriller film
+3278	the symbol
+3279	the periodic table
+3280	the previously discovered tellurium
+3281	the new element
+3282	john cusack
+3283	the elements
+3284	the garden
+3285	the similarity
+3286	157
+3287	earth's crust
+3288	kevin spacey
+3289	157	selenium
+3290	antiques dealer jim williams
+3291	the all-star game mvp award
+3292	answer
+3293	mvp
+3294	159
+3295	john berendt's 1994 book
+3296	berendt
+3297	point guard positions
+3298	nba rookie
+3299	june 7, 1975
+3300	the national basketball association
+3301	allen ezail iverson
+3302	both the shooting guard
+3303	14 seasons
+3304	a male prostitute
+3305	the year award
+3306	john berendt's
+3307	the murder
+3308	his lover
+3309	the multiple trials
+3310	159	allen ezail iverson
+3311	berendt's book
+3312	most valuable player
+3313	an 11-time nba all-star
+3314	iverson
+3315	"the answer
+3316	the nba's most valuable player
+3317	one trial
+3318	jim williams
+3319	nba
+3320	john lee hancock
+3321	an american former professional basketball player
+3322	seventh
+3323	an american writer
+3324	october 2021
+3325	the host
+3326	an american 501(c)(3
+3327	the naismith memorial basketball hall of fame
+3328	the wiki software
+3329	the development
+3330	the most influential athletes
+3331	the seventh most visited website
+3332	the naismith memorial basketball hall
+3333	wmf
+3334	the game's greatest scorers
+3335	160
+3336	ball handlers
+3337	wikipedia
+3338	the nba 75th anniversary team
+3339	the wikimedia foundation, inc.
+3340	a charitable foundation
+3341	161
+3342	160	the wikimedia foundation, inc.
+3343	14 other related content projects
+3344	american sports
+3345	march 23, 1952
+3346	161	kim stanley robinson
+3347	nonprofit organization
+3348	mediawiki
+3349	kim stanley robinson
+3350	2016
+3351	san francisco
+3352	the hugo award
+3353	mars
+3354	the hugo award for best novel
+3355	numerous short stories
+3356	24 languages
+3357	feature scientists
+3358	numerous awards
+3359	the nebula award
+3360	robinson
+3361	his "mars" trilogy
+3362	best novel
+3363	22 novels
+3364	his novels
+3365	ecological, cultural, and political themes
+3366	ratnam
+3367	162	gopalaratnam subramaniam
+3368	the new yorker
+3369	an article
+3370	an indian film director
+3371	the greatest living science-fiction writers
+3372	four filmfare awards
+3373	"the gold standard
+3374	the atlantic
+3375	2 june 1956
+3376	hindi, telugu
+3377	malayalam
+3378	few hindi
+3379	gopalaratnam subramaniam
+3380	filmfare awards
+3381	india's most acclaimed and commercially successful filmmakers
+3382	various film festivals
+3383	robinson's work
+3384	six filmfare awards south
+3385	mani ratnam
+3386	tamil cinema
+3387	kannada
+3388	science-fiction writing
+3389	162
+3390	film producer
+3391	six national film awards
+3392	occitania
+3393	rhône-alpes
+3394	the primetime emmy award for outstanding costumes for a series
+3395	1 january
+3396	provence-alpes-côte
+3397	mainland france
+3398	the other french regions
+3399	the primetime emmy awards
+3400	the government of india
+3401	163	languedoc-roussillon
+3402	outstanding costumes
+3403	a former administrative region
+3404	163
+3405	five departments
+3406	andorra
+3407	164
+3408	164	the primetime emmy award
+3409	1 january 2016
+3410	midi-pyrénées
+3411	languedoc-roussillon
+3412	the mediterranean sea
+3413	auvergne
+3414	his contributions
+3415	the padma shri
+3416	a retired award
+3417	provence-alpes-côte d'azur
+3418	the south
+3419	the southernmost region
+3420	the government
+3421	five to eight
+3422	february 22, 1967
+3423	its population
+3424	a period/fantasy series
+3425	a minster church
+3426	television producer
+3427	the office
+3428	a miniseries
+3429	television director
+3430	166
+3431	cast member toby flenderson
+3432	toby flenderson
+3433	the county town
+3434	165
+3435	166	taunton
+3436	movie
+3437	the nbc sitcom
+3438	64,621
+3439	outstanding costumes for a miniseries, movie
+3440	165	paul bevan lieberstein
+3441	a contemporary series, limited series
+3442	the series' showrunner
+3443	somerset
+3444	paul bevan lieberstein
+3445	this category
+3446	limited series
+3447	a market town
+3448	taunton
+3449	"the office
+3450	the second cornish uprising
+3451	a 10th-century monastic foundation
+3452	thousand-year
+3453	the inner ward house
+3454	henry vii
+3455	jeffreys
+3456	a priory
+3457	4 october
+3458	10th-century
+3459	the bloody assizes
+3460	the castle's great hall
+3461	judge jeffreys
+3462	20 june 1685
+3463	the battle
+3464	1497
+3465	king of england
+3466	somerset military museum
+3467	the bishops
+3468	the museum of somerset
+3469	4 october 1497
+3470	its thousand-year history
+3471	the duke
+3472	taunton castle
+3473	the normans
+3474	monmouth
+3475	20 june
+3476	an army
+3477	normans
+3478	perkin warbeck
+3479	great hall
+3480	6,000
+3481	the battle of sedgemoor
+3482	a castle
+3483	a rebellion
+3484	24 february
+3485	an indian actress
+3486	sridevi
+3487	kannada language films
+3488	ayyapan
+3489	various accolades
+3490	the recipient
+3491	a national film award
+3492	her reticent
+3493	13 august 1963
+3494	two tamil nadu state film awards
+3495	telugu
+3496	13 august
+3497	sridevi's career
+3498	strong-willed women
+3499	a filmfare lifetime achievement award
+3500	three filmfare awards south
+3501	50 years
+3502	a kerala state film award
+3503	167
+3504	a nandi award
+3505	off-screen personality
+3506	24 february 2018
+3507	167	shree amma yanger ayyapan
+3508	kerala state film award
+3509	the "first female superstar
+3510	laccadive sea
+3511	ibn
+3512	the southern ocean
+3513	its core
+3514	greatest actress
+3515	the indian ocean
+3516	the world's five oceanic divisions
+3517	earth's surface
+3518	antarctica
+3519	169	james edward carter
+3520	the definition
+3521	168	the indian ocean
+3522	large marginal, or regional seas
+3523	2013
+3524	168
+3525	100 years
+3526	australia
+3527	james edward carter
+3528	169
+3529	the water
+3530	the country's fourth highest civilian honour
+3531	cnn
+3532	andaman sea
+3533	a cnn-ibn national poll
+3534	india's greatest actress
+3535	the arabian sea
+3536	19 august 1948
+3537	bengal
+3538	death cab for cutie
+3539	mr carson
+3540	benjamin gibbard
+3541	2012–2015
+3542	outstanding supporting actor
+3543	former lives
+3544	170	benjamin gibbard
+3545	170
+3546	august 11, 1976
+3547	gibbard
+3548	four nominations
+3549	the itv historical drama series
+3550	2019
+3551	the feature films
+3552	the postal service
+3553	one fast move
+3554	a collaborative studio album
+3555	jay farrar
+3556	the primetime emmy award for
+3557	the supergroup
+3558	his debut solo album
+3559	the indie rock band
+3560	carson
+3561	the primetime emmy award
+3562	ten studio albums
+3563	"downton abbey
+3564	2010–2015
+3565	death cab
+3566	their flying machines
+3567	performance
+3568	james william fox
+3569	william fox
+3570	the servant
+3571	172	sri lanka
+3572	171
+3573	19 may 1939
+3574	a bafta award
+3575	"the chase
+3576	the gulf of mannar
+3577	1968
+3578	the loneliness
+3579	chase
+3580	1963
+3581	"the miniver story
+3582	other credits
+3583	an island country
+3584	the miniver story
+3585	171	james william fox
+3586	the bay
+3587	the indian peninsula
+3588	sri lanka
+3589	thoroughly modern millie
+3590	1950
+3591	1967
+3592	those magnificent men in their flying machines
+3593	an evangelical christian
+3594	172
+3595	the palk strait
+3596	isadora
+3597	ceylon
+3598	the democratic socialist republic of sri lanka
+3599	the bay of
+3600	"thoroughly modern millie
+3601	those magnificent men
+3602	king rat
+3603	south asia
+3604	film roles
+3605	most promising newcomer
+3606	the loneliness of the long distance runner
+3607	1970
+3608	the long distance runner
+3609	"the servant
+3610	several years
+3611	the northwest
+3612	a maritime border
+3613	752,035
+3614	174
+3615	the finger lakes region
+3616	173
+3617	the fifth president
+3618	june 13, 1986
+3619	the rochester, ny metropolitan statistical area
+3620	lake ontario's southern shore
+3621	fashion designer
+3622	equestrian
+3623	monroe county
+3624	the southwest
+3625	mary-kate olsen
+3626	ny metropolitan statistical area
+3627	census bureau
+3628	an american businesswoman
+3629	173	monroe county
+3630	maldives
+3631	174	mary-kate olsen
+3632	james monroe
+3633	the maldives
+3634	former actress
+3635	lake ontario's
+3636	grace kelly
+3637	paramount pictures
+3638	wendell corey
+3639	1987–1995
+3640	cornell woolrich's 1942 short story
+3641	a founding member
+3642	an israeli football club
+3643	netanya
+3644	a 1954 american mystery thriller film
+3645	venice film festival
+3646	james stewart
+3647	the israeli league
+3648	raymond burr
+3649	john michael hayes
+3650	alfred hitchcock
+3651	nine months
+3652	her acting career
+3653	rear window
+3654	numerous films
+3655	the age
+3656	the age of nine months
+3657	1954
+3658	it had to be murder
+3659	her twin sister
+3660	the 1954 venice film festival
+3661	full house
+3662	thelma ritter
+3663	176	maccabi netanya f.c.
+3664	176
+3665	the television sitcom
+3666	1934
+3667	cornell woolrich's
+3668	175	rear window
+3669	michelle tanner
+3670	1949
+3671	175
+3672	ashley olsen
+3673	maccabi netanya f.c.
+3674	the iron age
+3675	sicily
+3676	177
+3677	"regione siciliana
+3678	an up-tempo style
+3679	a rich and unique culture
+3680	the largest and most populous island
+3681	the sicels
+3682	horn instruments
+3683	4.8 million
+3684	their first championship
+3685	the iron age.
+3686	boogie woogie
+3687	sicels
+3688	the late 80s
+3689	178	jump blues
+3690	four more league titles
+3691	the eastern part
+3692	its capital city
+3693	the club's golden period
+3694	178
+3695	regione siciliana
+3696	the 20 regions
+3697	177	sicily
+3698	4.8 million inhabitants
+3699	palermo
+3700	the five italian autonomous regions
+3701	small groups
+3702	jason michael lee
+3703	the international press
+3704	campbell
+3705	"vogue france
+3706	jump blues
+3707	the swing revival
+3708	179
+3709	six models
+3710	a precursor
+3711	22 may 1970
+3712	naomi elaine campbell
+3713	the covers
+3714	the first black woman
+3715	an english model and media personality
+3716	former professional skateboarder
+3717	180
+3718	her career
+3719	the age of 8
+3720	april 25, 1970
+3721	vogue france
+3722	180	jason michael lee
+3723	her generation
+3724	179	naomi elaine campbell
+3725	a model
+3726	the fashion industry
+3727	camden
+3728	the television comedy series
+3729	the london plan
+3730	an area
+3731	roman watling street
+3732	the golden globes
+3733	hampstead heath
+3734	romandy
+3735	inner london
+3736	geneva
+3737	182	geneva
+3738	the area
+3739	comedy tv
+3740	a5
+3741	a large, hilly expanse
+3742	the live-action films
+3743	a musical or comedy tv series
+3744	2006
+3745	the french-speaking romandy
+3746	the purposes
+3747	charing cross
+3748	musical
+3749	181	hampstead
+3750	the a5 road
+3751	central london
+3752	earl hickey
+3753	zürich
+3754	best actor
+3755	182
+3756	the london borough
+3757	switzerland
+3758	the northwest part
+3759	my name
+3760	dave
+3761	leonardo dicaprio
+3762	alain delon
+3763	rhône
+3764	many franchises
+3765	183
+3766	the most handsome actors
+3767	1980s
+3768	the highest number
+3769	a french actor
+3770	international organizations
+3771	keanu reeves
+3772	a centre
+3773	jackie chan
+3774	alain fabien maurice marcel delon
+3775	1970s
+3776	international diplomacy
+3777	the rhône
+3778	world cinema
+3779	8 november 1935
+3780	europe's most prominent actors
+3781	europe
+3782	canton
+3783	183	alain fabien maurice marcel delon
+3784	screen sex symbols
+3785	lake leman
+3786	great actors
+3787	185	attention deficit hyperactivity disorder
+3788	the line
+3789	the linebackers
+3790	185
+3791	the defensive side
+3792	defensive backs
+3793	multiple contexts
+3794	defensive players
+3795	the defensive backs
+3796	the players
+3797	184
+3798	the other two sets
+3799	the defense
+3800	gridiron football
+3801	scrimmage
+3802	emotional dysregulation
+3803	a neurodevelopmental disorder
+3804	executive dysfunction occasioning symptoms
+3805	the ball
+3806	the defensive line
+3807	the defensive linemen
+3808	his early songs
+3809	two grammy awards
+3810	jim messina
+3811	georgia middleman
+3812	the nitty gritty dirt band
+3813	1972 to 1977
+3814	seven
+3815	january 7, 1948
+3816	kenneth clark loggins
+3817	messina
+3818	blue sky riders
+3819	an academy award
+3820	a solo artist
+3821	a star is born
+3822	his early soundtrack contributions date
+3823	grammy awards
+3824	seven albums
+3825	the group
+3826	the king of
+3827	gary burr
+3828	finally home
+3829	academy award
+3830	footloose
+3831	tony award
+3832	a star
+3833	a daytime emmy award
+3834	the movie soundtrack
+3835	an academy award nomination
+3836	186	kenneth clark loggins
+3837	186
+3838	soundtrack successes
+3839	loggins
+3840	a tony award
+3841	mike leigh
+3842	the haifa metropolitan area
+3843	unesco world heritage site
+3844	the third-largest city
+3845	vera drake
+3846	187	haifa
+3847	a working-class woman
+3848	baháʼí
+3849	the venice film festival
+3850	a unesco world heritage site
+3851	three baftas
+3852	a 2004 british period drama film
+3853	phil davis
+3854	illegal abortions
+3855	baháʼí pilgrimage
+3856	tel aviv
+3857	the baháʼí faith's
+3858	the golden lion
+3859	imelda staunton
+3860	187
+3861	jerusalem
+3862	188	vera drake
+3863	a destination
+3864	israel
+3865	the baháʼí faith's baháʼí world centre
+3866	eddie marsan
+3867	three academy awards
+3868	baháʼí world centre
+3869	daniel mays
+3870	haifa
+3871	188
+3872	1897
+3873	digital monster
+3874	a national research university
+3875	an australian territory
+3876	189
+3877	a 1999 japanese anime television series
+3878	wiz
+3879	the former imperial universities
+3880	hepburn
+3881	the northern territory
+3882	191
+3883	191	the northern territory
+3884	digimon
+3885	digital monsters season
+3886	the digimon media franchise
+3887	189	digimon adventure
+3888	the central and central northern regions
+3889	the digital monster virtual pet
+3890	formally the northern territory
+3891	bandai
+3892	dejimon adobenchā
+3893	190
+3894	toei animation
+3895	fuji television
+3896	digital monsters season 1[4
+3897	the first anime series
+3898	imperial universities
+3899	english-speaking territories
+3900	the second oldest university
+3901	territory
+3902	digimon adventure
+3903	129th meridian east
+3904	paul reubens
+3905	western australia
+3906	weber state university
+3907	129th meridian
+3908	192
+3909	western new guinea
+3910	july 30, 2023
+3911	the indonesian archipelago
+3912	the gulf of carpentaria
+3913	193
+3914	ogden
+3915	the arafura sea
+3916	26th
+3917	other islands
+3918	south australia
+3919	262,223
+3920	indonesian
+3921	weber county
+3922	utah
+3923	138th meridian
+3924	138th meridian east
+3925	193	weber county
+3926	its borders
+3927	the character pee-wee herman
+3928	the timor sea
+3929	(26th parallel south
+3930	192	paul reubens
+3931	august 27, 1952
+3932	queensland
+3933	6 june
+3934	chris masterson
+3935	regina hall
+3936	a fur trapper
+3937	chris elliott
+3938	his contribution
+3939	a 2001 american supernatural parody film
+3940	the "scary movie" film series
+3941	their characters
+3942	james woods
+3943	the second film
+3944	194
+3945	padma shri
+3946	194	sunil dutt
+3947	195	scary movie
+3948	the "scary movie
+3949	shawn wayans
+3950	john weber
+3951	marlon wayans
+3952	"scary movie
+3953	keenen ivory wayans
+3954	david cross
+3955	195
+3956	anna faris
+3957	may 2005
+3958	tori spelling
+3959	6 june 1929
+3960	kathleen robertson
+3961	balraj dutt
+3962	tim curry
+3963	the bundesliga
+3964	the latter film
+3965	a haunted house
+3966	bundesliga
+3967	a similar horror-themed parody
+3968	berliner sport-club e. v.
+3969	hertha berlin
+3970	berlin
+3971	wayans
+3972	simply hertha
+3973	hertha
+3974	stars marlon and shawn wayans
+3975	german football
+3976	the borough
+3977	director keenan
+3978	196	hertha
+3979	the second tier
+3980	the "scary movie" series' decline
+3981	hertha bsc
+3982	196
+3983	keenan
+3984	a german professional football club
+3985	the locality
+3986	its sequel
+3987	hertha bsc berlin
+3988	the involvement
+3989	charlottenburg-wilmersdorf
+3990	his family's departure
+3991	french americans
+3992	americans
+3993	1973
+3994	syria
+3995	an armed conflict
+3996	6 to 25 october 1973
+3997	the german football association
+3998	french-canadian heritage
+3999	french-canadian
+4000	whose experience
+4001	the 1973 arab–israeli war
+4002	198	the yom kippur war
+4003	the broader community
+4004	french-canadian americans
+4005	ancestral ties
+4006	egypt
+4007	the ramadan war
+4008	197	french americans
+4009	the fourth arab–israeli war
+4010	197
+4011	1900
+4012	franco-americans
+4013	leipzig
+4014	198
+4015	the yom kippur war
+4016	a coalition
+4017	arab
+4018	the october war
+4019	arab states
+4020	199
+4021	northern israel
+4022	sinai peninsula
+4023	a master-planned city
+4024	the suez canal
+4025	the los angeles metropolitan area
+4026	the irvine company
+4027	african
+4028	december 28, 1971
+4029	the war
+4030	african egypt
+4031	the rest
+4032	the golan heights
+4033	the two sides
+4034	the eastern bank
+4035	199	irvine
+4036	some fighting
+4037	egypt's initial objective
+4038	the majority
+4039	these gains
+4040	a foothold
+4041	irvine
+4042	the sinai peninsula
+4043	central orange county
+4044	the israeli-occupied sinai peninsula
+4045	patriot
+4046	tom wilkinson
+4047	robert rodat
+4048	mel gibson
+4049	april 17, 1795
+4050	the 63rd most populous city
+4051	joely richardson
+4052	chris cooper
+4053	a 2000 american epic historical drama war film
+4054	63rd
+4055	74,129
+4056	200	somerset county
+4057	201	the patriot
+4058	jason isaacs
+4059	bedford county
+4060	southwest pennsylvania
+4061	somerset kaundi
+4062	307,670
+4063	the commonwealth of pennsylvania
+4064	roland emmerich
+4065	the commonwealth
+4066	heath ledger
+4067	201
+4068	the southwest pennsylvania region
+4069	pennsylvania german
+4070	microsoft's windows nt operating system
+4071	his home life
+4072	rodat
+4073	microsoft
+4074	gabriel
+4075	benjamin martin
+4076	south carolina
+4077	a cruel british officer
+4078	gibson
+4079	202	windows xp
+4080	his son
+4081	andrew pickens
+4082	thomas sumter
+4083	an american colonist
+4084	four historical men
+4085	the american revolutionary war
+4086	francis marion
+4087	october 25, 2001
+4088	202
+4089	august 24, 2001
+4090	a major release
+4091	daniel morgan
+4092	windows xp
+4093	martin
+4094	his sons
+4095	berkeley county
+4096	windows nt
+4097	a composite character
+4098	203	sherlock holmes
+4099	logical reasoning
+4100	a direct upgrade
+4101	windows 2000
+4102	high-end and business users
+4103	arthur conan doyle
+4104	windows nt 4.0
+4105	forensic science
+4106	holmes
+4107	a wide variety
+4108	windows 98
+4109	his stories
+4110	the new windows xp system requirements
+4111	the fantastic
+4112	a "consulting detective
+4113	its predecessors
+4114	a fictional detective
+4115	british author arthur conan doyle
+4116	home users
+4117	windows me
+4118	any devices
+4119	his proficiency
+4120	203
+4121	scotland yard
+4122	overall excellence
+4123	the grammy award for best jazz vocal album
+4124	artistic achievement
+4125	a portmanteau
+4126	voice encryption
+4127	album sales
+4128	205	the grammy award
+4129	quality works
+4130	the human voice signal
+4131	205
+4132	recording arts
+4133	several categories
+4134	chart position
+4135	audio data compression
+4136	a category
+4137	the national academy
+4138	204
+4139	the gramophone awards
+4140	204	a vocoder
+4141	voice transformation
+4142	the recording industry
+4143	the national academy of recording arts and sciences
+4144	technical proficiency
+4145	best jazz vocal album
+4146	other post-secondary education and research institutions
+4147	vocal harmonies
+4148	the 1980s
+4149	skate culture
+4150	most countries
+4151	originally a form
+4152	skate punk
+4153	punk rock subgenre
+4154	207
+4155	guitar riffs
+4156	the catchy hooks
+4157	guitar solos
+4158	hardcore punk
+4159	punk rock
+4160	fast drumming
+4161	guitar playing
+4162	a skater subculture
+4163	a more melodic genre
+4164	207	professor
+4165	an academic rank
+4166	fast tempos
+4167	melodic hardcore
+4168	206	skate punk
+4169	the fast tempos
+4170	skatecore and skate rock
+4171	prof.
+4172	206
+4173	a 2002 black comedy-drama film
+4174	the canes
+4175	roger avary
+4176	208
+4177	a love triangle
+4178	camden college
+4179	their field
+4180	raleigh
+4181	the hurricanes
+4182	canes
+4183	208	the carolina hurricanes
+4184	the rules of attraction
+4185	pnc arena
+4186	lions gate films
+4187	a bisexual classmate
+4188	the same title
+4189	a drug dealer
+4190	hurricanes
+4191	their home games
+4192	the highest rank
+4193	209	the rules
+4194	bret easton ellis's 1987 novel
+4195	the metropolitan division
+4196	a virgin
+4197	209
+4198	three camden college students
+4199	the carolina hurricanes
+4200	a "person
+4201	bret easton ellis's
+4202	ian somerhalder
+4203	nwt
+4204	210
+4205	the professional name
+4206	formerly north-west territories
+4207	211
+4208	joel michaely
+4209	kip pardue
+4210	an american costume designer
+4211	abbreviated nt
+4212	james van der beek
+4213	his father's forename
+4214	the northwest territories
+4215	the phrase
+4216	adolph greenburg
+4217	metro-goldwyn-mayer films
+4218	september 13, 1959
+4219	north-west territories
+4220	adrian
+4221	211	the northwest territories
+4222	the wizard of oz
+4223	the wizard
+4224	a combination
+4225	jessica biel
+4226	210	adrian adolph greenburg
+4227	between 1928 and 1941
+4228	gilbert adrian
+4229	kate bosworth
+4230	shannyn sossamon
+4231	whose most famous costumes
+4232	march 3, 1903
+4233	a federal territory
+4234	a 2016 census population
+4235	212
+4236	19,569
+4237	walt disney
+4238	the carrothers commission
+4239	its estimated population
+4240	most populous community
+4241	212	disneyland
+4242	july 17, 1955
+4243	only city
+4244	the disneyland resort
+4245	the direct supervision
+4246	41,790
+4247	anaheim
+4248	45,668
+4249	disneyland
+4250	the first theme park
+4251	northern canada
+4252	the 2016 census
+4253	the three territories
+4254	the territorial capital
+4255	a theme park
+4256	214	ashok kumar
+4257	the 27th academy awards
+4258	kumudlal ganguly
+4259	cinema artists
+4260	the first big star
+4261	iconic status
+4262	ashok kumar
+4263	the best films
+4264	hollywood
+4265	the nbc century theatre
+4266	march 30, 1955
+4267	the rko pantages theatre
+4268	13 october 1911
+4269	the dadasaheb phalke award
+4270	213	the 27th academy awards
+4271	the first star
+4272	213
+4273	ganguly
+4274	214
+4275	the cinematic ganguly family
+4276	the first lead actor
+4277	a long and hugely successful career
+4278	the highest national award
+4279	december 2001
+4280	bob hope
+4281	13 october
+4282	berea
+4283	south africa
+4284	south africa's
+4285	the harbour and city centre
+4286	the hills
+4287	the east coast
+4288	port natal
+4289	the natal bay
+4290	johannesburg
+4291	south africa's busiest port
+4292	215	durban
+4293	the coast
+4294	the bluff
+4295	the umgeni river
+4296	kwazulu-natal
+4297	the third-most populous city
+4298	bhushan
+4299	the flat city centre
+4300	the province
+4301	the padma bhushan
+4302	durban
+4303	bluff
+4304	cape town
+4305	the berea
+4306	the mouth
+4307	simply enterprise
+4308	the larger ethekwini metropolitan municipality
+4309	216
+4310	rick berman
+4311	4.2million
+4312	durban's population
+4313	217	star trek: enterprise
+4314	217
+4315	ethekwini metropolitan municipality
+4316	upn
+4317	richard thompson
+4318	september 26, 2001 to may 13, 2005
+4319	216	richard thompson
+4320	united paramount network
+4321	mild, dry winters
+4322	brannon braga
+4323	the metropolitan population
+4324	3 april 1949
+4325	the city limits
+4326	hot, wet summers
+4327	595,061
+4328	a humid subtropical climate
+4329	an english singer
+4330	an american science fiction television series
+4331	its first two seasons
+4332	a prequel
+4333	the "star trek
+4334	the events
+4335	various alien species
+4336	frasier
+4337	wings
+4338	emmy awards
+4339	the creator
+4340	218
+4341	earth's first starship
+4342	david lee
+4343	peter casey
+4344	the adventures
+4345	multiple emmy awards
+4346	the sitcoms "wings
+4347	an american screenwriter and television producer
+4348	"the original series
+4349	the galaxy
+4350	a hundred years
+4351	the original series
+4352	the "enterprise
+4353	the 22nd century
+4354	april 10, 1946
+4355	david lawrence angell
+4356	the "star trek" franchise
+4357	september 11, 2001
+4358	218	david lawrence angell
+4359	219
+4360	geoffrey rush
+4361	richard roxburgh
+4362	american airlines flight
+4363	zack snyder
+4364	american airlines
+4365	a 2010 animated fantasy adventure film
+4366	miriam margolyes
+4367	kathryn lasky
+4368	his wife
+4369	emil stern
+4370	anthony lapaglia
+4371	the september 11
+4372	abbie cornish
+4373	jim sturgess
+4374	lynn
+4375	the "guardians of ga'hoole
+4376	their vacation
+4377	helen mirren
+4378	emily barclay
+4379	cape cod
+4380	the world trade center
+4381	the september 11 attacks
+4382	the owls
+4383	john orloff
+4384	angell
+4385	flight 11
+4386	the guardians
+4387	sam neill
+4388	ryan kwanten
+4389	"happy feet
+4390	orphaned owls
+4391	220	the 11th satellite awards
+4392	gylfie
+4393	sturgess
+4394	december 18, 2006
+4395	soren
+4396	joel edgerton
+4397	a fellow owl
+4398	nyra
+4399	the facility
+4400	metal beak
+4401	st. aegolius academy
+4402	new-found friends
+4403	the 11th satellite awards
+4404	the 2006 film "happy feet
+4405	animal logic
+4406	a barn owl
+4407	their success
+4408	village roadshow pictures
+4409	220
+4410	the evil army
+4411	the island of ga'hoole
+4412	fred tatasciore
+4413	september 11, 1961
+4414	masasa moyo
+4415	virginia gayle madsen
+4416	world police
+4417	his coalition
+4418	american militarism
+4419	222
+4420	221
+4421	the titular international counterterrorism force
+4422	pam brady
+4423	jeremy shada
+4424	trey parker
+4425	222	virginia gayle madsen
+4426	a 2004 puppetry comedy film
+4427	kim jong il
+4428	kristen miller
+4429	parker
+4430	islamic
+4431	maurice lamarche
+4432	islamic terrorists
+4433	an american actress
+4434	the foreign policy
+4435	phil hendrie
+4436	a satire
+4437	liberal hollywood actors
+4438	team america
+4439	stone
+4440	action film archetypes
+4441	daran norris
+4442	a broadway actor
+4443	matt stone
+4444	224	gimcheon sangmu fc
+4445	imagined "battlestar galactica" television series
+4446	the novels
+4447	south korean football
+4448	all mankind
+4449	223	ronald dowl moore
+4450	one academy award
+4451	critics' choice awards
+4452	golden globe award
+4453	one golden globe award
+4454	224
+4455	an independent spirit award
+4456	south korean
+4457	a south korean professional football club
+4458	the top tier
+4459	star trek
+4460	guild award
+4461	apple tv+
+4462	july 5, 1964
+4463	diana gabaldon
+4464	for all mankind
+4465	a screen actors guild award
+4466	223
+4467	battlestar galactica
+4468	k league 1
+4469	the k league
+4470	two critics' choice awards
+4471	a peabody award
+4472	the republic of korea armed forces
+4473	lethem
+4474	the fortress of solitude
+4475	a "new york times" best seller
+4476	mixed elements
+4477	a macarthur fellowship
+4478	occasional music
+4479	the sports division
+4480	"the fortress
+4481	february 19, 1964
+4482	an american novelist
+4483	a national book critics circle award-winning novel
+4484	korea armed forces
+4485	motherless brooklyn
+4486	225	jonathan allen lethem
+4487	detective fiction
+4488	best seller
+4489	mainstream success
+4490	his first novel
+4491	a genre work
+4492	macarthur fellowship
+4493	225
+4494	gun
+4495	pomona college
+4496	creative writing
+4497	jonathan allen lethem
+4498	queen mary
+4499	queen mary university of london
+4500	formerly queen mary
+4501	university of london
+4502	danny smith
+4503	voice actor
+4504	the giant chicken
+4505	the north pole
+4506	227	danny smith
+4507	226	queen mary university
+4508	family guy
+4509	"family guy"
+4510	the father
+4511	al harrington
+4512	many episodes
+4513	smith
+4514	westfield college
+4515	chitty chitty death bang
+4516	the son
+4517	the years
+4518	east london
+4519	mile end
+4520	227
+4521	the christmas
+4522	the american animated television series
+4523	the federal university
+4524	road to the north pole
+4525	a very special family guy freakin' christmas
+4526	the evil monkey
+4527	informally qm
+4528	its inception
+4529	"holy crap
+4530	226
+4531	buzz killington
+4532	the holy fonz
+4533	228
+4534	seth macfarlane
+4535	"drunken irish dad
+4536	country music
+4537	228	waylon arnold jennings
+4538	rhode island college
+4539	june 15, 1937
+4540	drunken irish dad
+4541	an emmy award
+4542	waylon arnold jennings
+4543	the rhode island school of design
+4544	prom night dumpster baby
+4545	rhode island
+4546	the only "family guy" writer
+4547	creator seth macfarlane
+4548	the pioneers
+4549	a grammy award
+4550	the outlaw movement
+4551	the rhode island school
+4552	1981
+4553	february 13, 2002
+4554	smithfield high school
+4555	many songs
+4556	christmastime is killing us
+4557	southern asia
+4558	229
+4559	lauren holly
+4560	231	lauren holly
+4561	a musical tone
+4562	230	conch
+4563	april 5, 1977
+4564	quantity entertainment
+4565	ncis
+4566	sea snails
+4567	a "seashell horn
+4568	pacific island
+4569	several different kinds
+4570	"shell trumpet
+4571	betty rogers
+4572	maxine stewart
+4573	jenny shepard
+4574	a conch
+4575	dr. betty rogers
+4576	a wind instrument
+4577	many pacific island countries
+4578	231
+4579	an american–canadian actress
+4580	the roles
+4581	television writer
+4582	picket fences
+4583	south america
+4584	lee eisenberg
+4585	230
+4586	conch shell trumpets
+4587	the shell
+4588	their natural conical bore
+4589	the television series
+4590	deputy sheriff maxine stewart
+4591	conch
+4592	229	lee eisenberg
+4593	gene stupnitsky
+4594	october 28, 1963
+4595	childhood marching bands
+4596	bruce lee's
+4597	what women want
+4598	15 studio albums
+4599	the foundations
+4600	the branch
+4601	mary swanson
+4602	u2
+4603	"beautiful girls
+4604	dumb and dumber
+4605	his playing martial beats
+4606	darian smalls
+4607	233	philosophy
+4608	233
+4609	laurence joseph mullen jr.
+4610	bruce lee's wife
+4611	mullen
+4612	an irish musician
+4613	irish
+4614	232	laurence joseph mullen jr.
+4615	232
+4616	gigi
+4617	mullen's distinctive, almost military drumming style
+4618	the rock band u2
+4619	31 october 1961
+4620	linda lee
+4621	its central questions
+4622	science studies
+4623	a human endeavour
+4624	metaphysical, epistemic and semantic aspects
+4625	the reliability
+4626	scientific practice
+4627	the concept
+4628	the ultimate purpose
+4629	the philosophy
+4630	the difference
+4631	a theoretical and empirical discipline
+4632	scientific misconduct
+4633	philosophical theorising
+4634	ethical issues
+4635	the relationship
+4636	scientific theories
+4637	the age of 33
+4638	disney channel
+4639	disney branded television
+4640	a 1996 american musical-historical film
+4641	the film's narrator
+4642	evita
+4643	234	disney channel
+4644	antonio banderas
+4645	her beginnings
+4646	a unit
+4647	eva's husband
+4648	alan parker
+4649	235
+4650	tim rice
+4651	jonathan pryce
+4652	madonna
+4653	parker and oliver stone, "evita" stars
+4654	an american pay television channel
+4655	andrew lloyd webber
+4656	235	evita
+4657	the 1976 concept album
+4658	eva perón
+4659	the disney entertainment
+4660	234
+4661	an everyman
+4662	juan perón
+4663	the flagship property
+4664	political career
+4665	oliver stone
+4666	the disney entertainment division
+4667	a host
+4668	the reception
+4669	an american film director
+4670	237	gus green van sant jr.
+4671	de jaucourt
+4672	gus green van sant jr.
+4673	a great soul
+4674	236	hospitality
+4675	july 24, 1952
+4676	some amount
+4677	the guest
+4678	the whole universe
+4679	the volume
+4680	an independent filmmaker
+4681	the virtue
+4682	237
+4683	the way
+4684	236
+4685	an organization
+4686	louis
+4687	a guest
+4688	chevalier de jaucourt
+4689	the service
+4690	the ties
+4691	a role
+4692	columbia records
+4693	238
+4694	seventeen
+4695	van sant
+4696	single track
+4697	the new queer cinema
+4698	church choirs
+4699	two million copies
+4700	a more mature image
+4701	the "billboard" hot 100
+4702	two million
+4703	the chart
+4704	marginalized subcultures
+4705	jessica ann simpson
+4706	the "billboard" hot 100-top three single "i wanna love
+4707	"i wanna love you forever
+4708	july 10, 1980
+4709	the new queer cinema movement
+4710	238	jessica ann simpson
+4711	sweet kisses
+4712	the most prominent auteurs
+4713	simpson
+4714	particular homosexuality
+4715	her second studio album
+4716	songwriting contributions
+4717	brian harold
+4718	this skin
+4719	animal rights activist
+4720	music history
+4721	singer freddie mercury
+4722	worldwide fame
+4723	freddie mercury
+4724	gold certification
+4725	his guitar work
+4726	roger taylor
+4727	simpson's third studio album
+4728	three million copies
+4729	an english musician
+4730	drummer roger taylor
+4731	the rock band queen
+4732	239
+4733	the most successful acts
+4734	queen
+4735	three million
+4736	19 july 1947
+4737	the lead guitarist
+4738	may 25, 1970
+4739	cc
+4740	the protonated form
+4741	(symbol pro
+4742	the carboxyl group
+4743	a pyrrolidine loop
+4744	the deprotonated −coo− form
+4745	a aliphatic amino acid
+4746	proline
+4747	the nitrogen
+4748	the body
+4749	240
+4750	all the codons
+4751	the α carbon
+4752	biological conditions
+4753	ccc
+4754	ccu
+4755	ccg
+4756	a secondary amine
+4757	the "side chain
+4758	the non-essential amino acid
+4759	james harvey kennedy
+4760	cca
+4761	secondary
+4762	the secondary amine nitrogen
+4763	the amino group
+4764	a proteinogenic amino acid
+4765	an organic acid
+4766	241
+4767	the biosynthesis
+4768	240	proline
+4769	241	james harvey kennedy
+4770	242
+4771	morgantown
+4772	the "scream" franchise
+4773	college football
+4774	milan puskar stadium
+4775	malibu's most wanted
+4776	good deeds
+4777	wb
+4778	the mask
+4779	"west virginia
+4780	a multitude
+4781	max keeble's
+4782	the campus
+4783	randy meeks
+4784	242	the west virginia mountaineers football team
+4785	the ncaa football bowl subdivision
+4786	west virginia
+4787	"good deeds
+4788	the wb
+4789	finding bliss
+4790	malibu
+4791	2002–2004
+4792	romeo + juliet
+4793	"the jamie kennedy experiment
+4794	1996–2000
+4795	west virginia university
+4796	the jamie kennedy experiment
+4797	his other film roles
+4798	max keeble's big move
+4799	243	the centre
+4800	southern conference
+4801	more ice surface
+4802	strong, fast skaters
+4803	the big 12 conference
+4804	any other player
+4805	eight
+4806	their positioning
+4807	whose primary zone
+4808	the sideboards
+4809	243
+4810	the ice
+4811	eight southern conference titles
+4812	a forward position
+4813	the mountaineers
+4814	more flexibility
+4815	seven big east conference titles
+4816	the opposing zone
+4817	neal brown
+4818	head coach neal brown
+4819	ice hockey
+4820	mountaineers
+4821	american english
+4822	a player
+4823	15 conference championships
+4824	the defencemen
+4825	goal scorers
+4826	a line
+4827	typically larger centres
+4828	formerly adobe systems incorporated
+4829	adobe systems incorporated
+4830	an american multinational computer software company
+4831	the net
+4832	hove albion football club
+4833	adobe inc.
+4834	gifted passers
+4835	exceptional "ice vision
+4836	the third player
+4837	244	adobe inc.
+4838	the most defensively-oriented forwards
+4839	the game
+4840	hockey iq
+4841	245
+4842	delaware
+245	brighton
+4843	brighton & hove albion football club
+4844	244
+4845	246	the arkansas razorbacks football program
+4846	an english professional football club
+4847	hove
+4848	247
+4849	the club's home ground
+4850	simply brighton
+4851	127,540
+4852	the lincoln district
+4853	the razorbacks
+4854	103,813
+4855	31,876
+4856	a cathedral city
+4857	lincoln
+4858	north hykeham
+4859	hohv
+4860	the 2021 census
+4861	waddington
+4862	the english football league system
+4863	the north east
+4864	the urban area
+4865	brighton
+4866	arkansas razorbacks
+4867	falmer stadium
+4868	the university of arkansas
+4869	the 31,876-capacity falmer stadium
+4870	246
+4871	a recorded population
+4872	the
+247	lincoln
+4873	razorbacks
+4874	lincolnshire
+4875	249
+4876	ninth
+4877	né dreyfus
+4878	1990s
+4879	248	richard stephen dreyfuss
+4880	"american graffiti
+4881	a remake
+4882	close encounters of the third kind
+4883	the 1970s,
+4884	october 29, 1947
+4885	john carpenter's 1978 horror film
+4886	"the goodbye girl
+4887	the competition
+4888	richard stephen dreyfuss
+4889	bob
+4890	john carpenter's
+4891	the american president
+4892	the "halloween" franchise
+4893	the goodbye girl
+4894	holland
+4895	stand by me
+4896	down and out
+4897	"the competition
+4898	248
+4899	the third kind
+4900	the ninth installment
+4901	1975
+4902	close encounters
+4903	jaws
+4904	249	halloween
+4905	a 2007 american slasher film
+4906	american graffiti
+4907	the olympics
+4908	native american
+4909	his family
+4910	thorpe
+4911	(sac and fox (sauk
+4912	sheri moon zombie
+4913	olympics
+4914	250	james francis thorpe
+4915	bright path
+4916	olympic
+4917	scout taylor-compton
+4918	tyler mane
+4919	the sac and fox nation
+4920	the first native american
+4921	1887march 28, 1953
+4922	brad dourif
+4923	wa-tho-huk
+4924	may 22 or
+4925	danielle harris
+4926	olympic gold medalist
+4927	"bright path
+4928	fox nation
+4929	william forsythe
+4930	an asylum
+4931	an american athlete
+4932	fox (sauk
+4933	james francis thorpe
+4934	250
+4935	disney xd
+4936	four seasons
+4937	four seasons between 2007 and
+4938	classic pentathlon
+4939	summer
+4940	an american animated musical-comedy television series
+4941	dan povenmire
+4942	two olympic gold medals
+4943	ferb
+4944	phineas flynn
+4945	jeff
+4946	251	jane espenson
+4947	jeff "swampy" marsh
+4948	july 14, 1964
+4949	251
+4950	jane espenson
+4951	ferb fletcher
+4952	summer vacation
+4953	phineas
+4954	252	phineas
+4955	swampy" marsh
+4956	modern sports
+4957	the 1912 summer olympics
+4958	the most versatile athletes
+4959	252
+4960	the last song
+4961	running gags
+4962	a standard plot system
+4963	a spectacular adventure
+4964	julie anne robinson
+4965	sparks
+4966	candace
+4967	nicholas sparks'
+4968	253
+4969	phineas's mother
+4970	the boys
+4971	a grand project
+4972	her feature film directorial debut
+4973	253	the last song
+4974	their controlling older sister
+4975	nicholas sparks' 2009 novel
+4976	every day
+4977	every episode
+4978	jeff van wie
+4979	the construction
+4980	their schemes
+4981	their time
+4982	a drama
+4983	254
+4984	coppola
+4985	april 9, 1987
+4986	254	talia rose shire
+4987	her estranged father
+4988	(née coppola
+4989	liam hemsworth
+4990	greg kinnear
+4991	a troubled teenager
+4992	a quiet southern united states beach town
+4993	southern united states
+4994	a summer
+4995	talia rose shire
+4996	adrian balboa
+4997	255	jesse mccartney
+4998	"the godfather part ii
+4999	connie corleone
+5000	shire
+5001	best actress
+5002	the "rocky" series
+5003	april 25, 1946
+5004	255
+5005	her roles
+5006	the golden globe award for best actress
+5007	academy awards for best supporting actress
+5008	mccartney
+5009	"the godfather" trilogy
+5010	the godfather part ii
+5011	the golden globe award
+5012	an annual choosing
+5013	a solo musical career
+5014	june 7, 2007
+5015	256	the 2007 major league baseball draft
+5016	theodore
+5017	256
+5018	the chipmunks
+5019	major league baseball
+5020	the late 1990s
+5021	all my children
+5022	square enix
+5023	horton hears a who
+5024	june 8, 2007
+5025	a who
+5026	boy band dream street
+5027	young justice
+5028	high school and college baseball players
+5029	jojo mcdodd
+5030	the daytime drama
+5031	jr chandler
+5032	robin/nightwing
+5033	his voice
+5034	summerland"
+5035	roxas
+5036	dream street
+5037	kingdom hearts
+5038	the video game series
+5039	alvin
+5040	ventus
+5041	the first 25 rounds
+5042	the first time
+5043	trudy monk
+5044	amazon prime video's
+5045	jan levinson
+5046	orlando
+5047	the first day session
+5048	257	melora diane hardin jackson
+5049	streaming audio
+5050	tammy cashman
+5051	espn2
+5052	1453 selections
+5053	a primetime emmy award nomination
+5054	the mlb.com website
+5055	nbc's "the office
+5056	2:00pm
+5057	6:00pm eastern daylight time
+5058	melora diane hardin jackson
+5059	the conference call format draft
+5060	both draft days
+5061	1453
+5062	amazon prime video's "transparent
+5063	50 rounds
+5064	usa network's "monk
+5065	1800–2200 utc
+5066	mlb.com
+5067	257
+5068	june 29, 1967
+5069	utc
+5070	the draft
+5071	monk
+5072	a.s.c.
+5073	258
+5074	june 2017 to june 2021
+5075	october 16, 1892
+5076	magazine editor
+5077	silent films
+5078	jacqueline carlyle
+5079	the bold type
+5080	an american cinematographer
+5081	the early 1950s
+5082	may 30, 1953
+5083	the freeform comedy-drama
+5084	george s. barnes
+5085	the era
+5086	258	george s. barnes
+5087	"the bold type
