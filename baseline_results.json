@@ -31,7 +31,7 @@
   },
   {
     "question": "Why might UCF’s 'R1' classification matter for interpreting what kind of university it is?",
-    "ans": "UCF’s \"R1: Doctoral Universities – Very high research activity\" classification signals that it is a top-tier research university.",
+    "ans": "UCF is classified among \"R1: Doctoral Universities – Very high research activity,\" indicating it is a major research university.",
     "groundtruth": "Because 'R1' indicates very high research activity, signaling a strong emphasis on doctoral-level research output."
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "question": "How is the University of Essex characterized in the passage?",
-    "ans": "It is characterized as a public research university in Essex, England.",
+    "ans": "The University of Essex is characterized as a public research university in Essex, England, established by royal charter in 1965 and one of the original plate glass universities.",
     "groundtruth": "It is described as a public research university in Essex, England."
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "question": "What are the two key symbolic elements mentioned on the University of Essex shield?",
-    "ans": "The university shield consists of the ancient arms attributed to the Kingdom of Essex and the motto: \"Thought the harder, heart the keener\".",
+    "ans": "The ancient arms attributed to the Kingdom of Essex and the motto \"Thought the harder, heart the keener\".",
     "groundtruth": "The ancient arms attributed to the Kingdom of Essex and the motto 'Thought the harder, heart the keener.'"
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "question": "Why might Chris Seefried be described as both a performer and behind-the-scenes contributor?",
-    "ans": "Chris Seefried is described as both a performer and behind-the-scenes contributor because he is the lead vocalist and frontman of bands and also works as a producer and co-writer.",
+    "ans": "Chris Seefried is an American singer, musician, songwriter, and record producer, best known as the lead vocalist and frontman of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
     "groundtruth": "Because the passage credits him as a frontman (performer) and also as a producer and co-writer (behind-the-scenes roles)."
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "question": "Where is Tottenham Hotspur based?",
-    "ans": "Tottenham Hotspur is based in Tottenham, London, England.",
+    "ans": "Tottenham, London, England",
     "groundtruth": "Tottenham, London, England."
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "question": "What is The Village (2004) described as in the text?",
-    "ans": "The Village (marketed as M. Night Shyamalan's The Village) is a 2004 American period thriller film.",
+    "ans": "The Village (marketed as M. Night Shyamalan's The Village) is a 2004 American period thriller film written, produced, and directed by M. Night Shyamalan.",
     "groundtruth": "A 2004 American period thriller film written, produced, and directed by M. Night Shyamalan."
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "question": "How is I Heart Huckabees described in the passage?",
-    "ans": "I Heart Huckabees is described as a 2004 independent black comedy film.",
+    "ans": "I Heart Huckabees (also I Love Huckabees) is a 2004 independent black comedy film directed and produced by David O. Russell, who cowrote the screenplay with Jeff Baena.",
     "groundtruth": "A 2004 independent black comedy film directed and produced by David O. Russell, who co-wrote the screenplay with Jeff Baena."
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "question": "How does the passage describe Grindhouse’s structure as a film project?",
-    "ans": "It is presented as a double feature combining Rodriguez’s “Planet Terror” and Tarantino’s “Death Proof.”",
+    "ans": "Presented as a double feature, it combines Rodriguez's \"Planet Terror\" and Tarantino's \"Death Proof\".",
     "groundtruth": "It is presented as a double feature combining Rodriguez’s Planet Terror and Tarantino’s Death Proof."
   },
   {
@@ -186,12 +186,12 @@
   },
   {
     "question": "How does the passage describe the plot of Planet Terror?",
-    "ans": "The passage describes the plot of Planet Terror as a horror comedy about a group of survivors who battle zombie-like creatures.",
+    "ans": "It is described as a horror comedy about a group of survivors who battle zombie-like creatures.",
     "groundtruth": "A horror comedy about survivors battling zombie-like creatures."
   },
   {
     "question": "How does the passage describe the plot of Death Proof?",
-    "ans": "an action thriller about a murderous stuntman who kills young women with modified vehicles",
+    "ans": "It is described as an action thriller about a murderous stuntman who kills young women with modified vehicles.",
     "groundtruth": "An action thriller about a murderous stuntman who kills young women with modified vehicles."
   },
   {
@@ -201,17 +201,17 @@
   },
   {
     "question": "How many Academy Awards for Best Adapted Screenplay does the passage say Mario Puzo received, and for which films?",
-    "ans": "He received two Academy Awards for Best Adapted Screenplay, for \"The Godfather\" in 1972 and for \"Part II\" in 1974.",
+    "ans": "Mario Puzo received the Academy Award for Best Adapted Screenplay for the first film in 1972 and for \"Part II\" in 1974.",
     "groundtruth": "Two: for the first film in 1972 and for Part II in 1974."
   },
   {
     "question": "Why might Mario Puzo be considered both an author and a screenwriter based on the passage?",
-    "ans": "Mario Puzo is described as both an author and a screenwriter because he wrote crime novels like \"The Godfather\" and also co-adapted them into films, in addition to writing original screenplays such as for the 1978 \"Superman\" film.",
+    "ans": "Mario Puzo is described as \"an American author and screenwriter\" who wrote crime novels and also co-adapted \"The Godfather\" into a film trilogy and wrote original screenplays for \"Superman\" films.",
     "groundtruth": "Because he wrote crime novels and also wrote/co-adapted screenplays, including award-winning adaptations."
   },
   {
     "question": "How were The Killers formed and in what year, according to the passage?",
-    "ans": "The Killers are an American rock band formed in Las Vegas in 2001 by Brandon Flowers and Dave Keuning.",
+    "ans": "The Killers are an American rock band formed in Las Vegas in 2001 by Brandon Flowers (lead vocals, keyboards, bass) and Dave Keuning (lead guitar, backing vocals).",
     "groundtruth": "They formed in 2001 in Las Vegas by Brandon Flowers and Dave Keuning."
   },
   {
@@ -246,12 +246,12 @@
   },
   {
     "question": "How does the passage describe the story setup of The Girl with the Dragon Tattoo (2011)?",
-    "ans": "It tells the story of Blomkvist's investigation to find out what happened to a girl from a wealthy family who disappeared 40 years ago, and he recruits the help of Salander, a computer hacker.",
+    "ans": "It tells the story of journalist Mikael Blomkvist's investigation to find out what happened to a girl from a wealthy family who disappeared 40 years ago, with the help of computer hacker Lisbeth Salander.",
     "groundtruth": "A journalist investigates a wealthy family’s decades-old disappearance case and recruits Lisbeth Salander, a computer hacker."
   },
   {
     "question": "Who directed The Girl with the Dragon Tattoo (2011) according to the passage?",
-    "ans": "It was directed by David Fincher.",
+    "ans": "David Fincher directed The Girl with the Dragon Tattoo (2011).",
     "groundtruth": "David Fincher."
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "question": "Why does the passage mention troubadours and trouvères when describing chanson?",
-    "ans": "The passage mentions troubadours and trouvères as the origins of the genre of monophonic songs that preceded the chanson.",
+    "ans": "The passage mentions troubadours and trouvères as the origins of the genre of monophonic songs that preceded the polyphonic chansons.",
     "groundtruth": "To point to early origins of the genre in monophonic songs associated with those traditions."
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "question": "Who coined the term 'telepathy' and in what year, according to the passage?",
-    "ans": "Frederic W. H. Myers coined the term 'telepathy' in 1882.",
+    "ans": "The term was first coined in 1882 by the classical scholar Frederic W. H. Myers.",
     "groundtruth": "Frederic W. H. Myers coined it in 1882."
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "question": "How does the passage describe Long Island’s relationship to the New York metropolitan area?",
-    "ans": "Long Island constitutes a significant share of the New York metropolitan area in both population and land area.",
+    "ans": "Long Island is described as constituting a significant share of the New York metropolitan area in both population and land area.",
     "groundtruth": "It says Long Island constitutes a significant share of the metropolitan area in population and land area."
   },
   {
@@ -311,7 +311,7 @@
   },
   {
     "question": "Why does the passage argue that 'hip hop' is broader than just 'rap'?",
-    "ans": "The passage argues that \"hip hop\" is broader than just \"rap\" because it denotes the practice of the entire subculture, which includes MCing/rapping, DJing/scratching with turntables, breakdancing, and graffiti art.",
+    "ans": "The passage states that while \"hip hop\" is often used to refer solely to rapping and rap music, it more properly denotes the practice of the entire subculture, which includes MCing/rapping, DJing/scratching with turntables, breakdancing, and graffiti art.",
     "groundtruth": "Because it describes hip hop as a subculture defined by multiple elements like DJing, breakdancing, and graffiti art, not only rapping."
   },
   {
