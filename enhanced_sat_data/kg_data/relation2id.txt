@@ -1,0 +1,8 @@
+co_occurs_with	0
+lead	1
+as	2
+after	3
+into	4
+of	5
+including	6
+in	7

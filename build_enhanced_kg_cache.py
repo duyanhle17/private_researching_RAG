@@ -43,7 +43,7 @@ def main():
     print("🚀 Initializing EnhancedGraphRAG...")
     rag = EnhancedGraphRAG(
         embedding_model_name="all-MiniLM-L6-v2",
-        use_graph_transformer=True,
+        use_graph_transformer=False,  # Tắt Graph Transformer để tránh segfault với large KG
         graph_transformer_dim=128,
         graph_transformer_layers=3,
         working_dir=out_dir
@@ -69,10 +69,14 @@ def main():
     print("   Building embeddings & FAISS index...")
     rag.build_embeddings(normalize=True, batch_size=32)
     
-    # 4. Build Graph Transformer embeddings
+    # 4. Build Graph Transformer embeddings (optional - có thể bỏ qua nếu gặp lỗi)
     print("   Building Graph Transformer embeddings...")
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    rag.build_graph_transformer(device=device)
+    device = "cpu"  # Dùng CPU để tránh segfault trên MPS
+    try:
+        rag.build_graph_transformer(device=device)
+    except Exception as e:
+        print(f"   ⚠️ Graph Transformer failed: {e}")
+        print("   Continuing without Graph Transformer embeddings...")
     
     # === SAVE ALL ARTIFACTS ===
     print("💾 Saving cache files...")

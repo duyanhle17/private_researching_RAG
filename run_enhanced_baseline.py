@@ -23,8 +23,8 @@ CACHE_DIR = "enhanced_sat_data"
 QA_PATH = "qa_eval.json"
 OUT_PATH = "enhanced_results.json"
 
-TOP_K = 6
-ALPHA = 0.7  # Có thể điều chỉnh (0.7 semantic + 0.3 graph)
+TOP_K = 10  # Tăng từ 6 lên 10 để lấy nhiều chunks hơn
+ALPHA = 0.6  # 0.6 semantic + 0.4 graph (tăng weight cho graph)
 SLEEP = 1.5
 MAX_RETRY = 3
 
@@ -160,12 +160,11 @@ def main():
 
         ans = kimi_answer(q, ctx, client)
 
+        # Output chỉ gồm question, answer, groundtruth
         outputs.append({
             "question": q,
-            "ans": ans,
-            "groundtruth": gt,
-            "kg_facts": kg_facts,  # Thêm KG facts để debug
-            "retrieval_scores": r.get("retrieval_scores", [])
+            "answer": ans,
+            "groundtruth": gt
         })
 
         time.sleep(SLEEP)
@@ -176,7 +175,7 @@ def main():
     print(f"\n✅ Saved: {OUT_PATH}")
     
     # Quick accuracy summary
-    correct = sum(1 for o in outputs if o["groundtruth"].lower() in o["ans"].lower())
+    correct = sum(1 for o in outputs if o["groundtruth"].lower() in o["answer"].lower())
     print(f"📊 Quick check: {correct}/{len(outputs)} answers contain groundtruth")
 
 if __name__ == "__main__":

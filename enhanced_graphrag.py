@@ -556,9 +556,12 @@ class EnhancedKGBuilder:
         # Save triples
         with open(os.path.join(output_dir, "triples.txt"), "w") as f:
             for t in self.triples:
-                h_id = self.entity2id[t.head]
-                r_id = self.relation2id[t.relation]
-                t_id = self.entity2id[t.tail]
+                h_id = self.entity2id.get(t.head)
+                r_id = self.relation2id.get(t.relation)
+                t_id = self.entity2id.get(t.tail)
+                # Skip if any ID is missing
+                if h_id is None or r_id is None or t_id is None:
+                    continue
                 f.write(f"{h_id}\t{r_id}\t{t_id}\t{t.confidence}\n")
         
         logger.info(f"KG data saved to {output_dir}")
@@ -651,16 +654,25 @@ class EnhancedGraphRAG:
             logger.warning("No KG data available, skipping Graph Transformer")
             return
         
-        logger.info("Building Graph Transformer embeddings...")
+        num_entities = kg_data["num_entities"]
+        num_relations = kg_data["num_relations"]
+        
+        # Nếu quá nhiều entities, bỏ qua để tránh memory issues
+        if num_entities > 10000:
+            logger.warning(f"Too many entities ({num_entities}), skipping Graph Transformer")
+            return
+        
+        logger.info(f"Building Graph Transformer embeddings for {num_entities} entities...")
         
         self.graph_transformer = GraphTransformer(
-            num_entities=kg_data["num_entities"],
-            num_relations=kg_data["num_relations"],
+            num_entities=num_entities,
+            num_relations=num_relations,
             input_dim=self.graph_transformer_dim,
             hidden_dim=self.graph_transformer_dim,
             output_dim=self.graph_transformer_dim,
             n_layers=self.graph_transformer_layers,
-            n_heads=8
+            n_heads=8,
+            use_pos_encoding=False  # Tắt pos encoding cho large graphs
         ).to(device)
         
         # Compute node embeddings (inference mode)
@@ -681,20 +693,66 @@ class EnhancedGraphRAG:
         D, I = self.index.search(q_emb, top_k)
         return [(int(i), float(D[0][idx])) for idx, i in enumerate(I[0])]
     
+    def _normalize_query_entity(self, text: str) -> str:
+        """Normalize entity text for matching - more aggressive than build-time"""
+        text = text.strip().lower()
+        # Remove common articles
+        for prefix in ['the ', 'a ', 'an ']:
+            if text.startswith(prefix):
+                text = text[len(prefix):]
+        return text
+    
+    def _fuzzy_entity_match(self, query_ent: str, kg_entities: set) -> List[str]:
+        """Find fuzzy matches for a query entity in KG entities"""
+        matches = []
+        q_norm = self._normalize_query_entity(query_ent)
+        
+        for kg_ent in kg_entities:
+            kg_norm = self._normalize_query_entity(kg_ent)
+            
+            # Exact match after normalization
+            if q_norm == kg_norm:
+                matches.append(kg_ent)
+            # Substring match (query in kg_entity or vice versa)
+            elif q_norm in kg_norm or kg_norm in q_norm:
+                matches.append(kg_ent)
+            # Word overlap for multi-word entities
+            elif len(q_norm.split()) >= 2:
+                q_words = set(q_norm.split())
+                kg_words = set(kg_norm.split())
+                overlap = len(q_words & kg_words) / max(len(q_words), 1)
+                if overlap >= 0.5:  # At least 50% word overlap
+                    matches.append(kg_ent)
+        
+        return matches
+    
     def _graph_search(self, query: str) -> np.ndarray:
-        """Graph-based scoring using entity overlap"""
+        """Graph-based scoring using entity overlap with fuzzy matching"""
         try:
             nlp = self.kg_builder.nlp
             doc = nlp(query)
-            q_entities = set(self.kg_builder._normalize_entity(ent.text) for ent in doc.ents)
+            q_entities_raw = [ent.text for ent in doc.ents]
         except:
             return np.zeros(len(self.chunks))
         
-        if not q_entities:
+        if not q_entities_raw:
             return np.zeros(len(self.chunks))
         
+        # Get all KG entities for fuzzy matching
+        all_kg_entities = set(self.kg_builder.entity2id.keys())
+        
+        # Find all matching KG entities for each query entity
+        matched_kg_entities = set()
+        for q_ent in q_entities_raw:
+            matches = self._fuzzy_entity_match(q_ent, all_kg_entities)
+            matched_kg_entities.update(matches)
+        
+        if not matched_kg_entities:
+            return np.zeros(len(self.chunks))
+        
+        # Score chunks based on entity overlap
         scores = np.array([
-            len(self.chunk_entities[i].intersection(q_entities)) 
+            len(self.chunk_entities[i].intersection(matched_kg_entities)) 
             for i in range(len(self.chunks))
         ], dtype=float)
         
@@ -704,18 +762,27 @@ class EnhancedGraphRAG:
         return scores
     
     def _get_kg_facts(self, query: str, max_facts: int = 10) -> List[str]:
-        """Get relevant KG facts for query entities"""
+        """Get relevant KG facts for query entities with fuzzy matching"""
         try:
             nlp = self.kg_builder.nlp
             doc = nlp(query)
-            q_entities = set(self.kg_builder._normalize_entity(ent.text) for ent in doc.ents)
+            q_entities_raw = [ent.text for ent in doc.ents]
         except:
             return []
+        
+        # Get all KG entities for fuzzy matching
+        all_kg_entities = set(self.kg_builder.entity2id.keys())
+        
+        # Find all matching KG entities
+        matched_kg_entities = set()
+        for q_ent in q_entities_raw:
+            matches = self._fuzzy_entity_match(q_ent, all_kg_entities)
+            matched_kg_entities.update(matches)
         
         facts = []
         kg = self.kg_builder.kg
         
-        for qe in q_entities:
+        for qe in matched_kg_entities:
             if qe in kg:
                 # Outgoing edges
                 for nb in list(kg.successors(qe))[:3]:
