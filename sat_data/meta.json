@@ -1,0 +1,6 @@
+{
+  "corpus_path": "SAT/aligner/data/FB15k-237N/id3text.txt",
+  "num_chunks": 173,
+  "kg_nodes": 5852,
+  "kg_edges": 8579
+}
