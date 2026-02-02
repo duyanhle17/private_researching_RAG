@@ -20,12 +20,43 @@ Text → Chunking → NER → Co-occurrence Graph → Node2Vec → FAISS → Que
 ```
 
 **Đặc điểm:**
-- ✅ Đơn giản, dễ hiểu
-- ✅ Sử dụng spaCy NER để trích xuất entities
-- ✅ Xây dựng graph dựa trên **co-occurrence** (các entities xuất hiện cùng chunk)
-- ❌ **Không có explicit relations** - chỉ có edges vô hướng
-- ❌ **Node2Vec embeddings tĩnh** - không học được từ structure
-- ❌ **Không có entity/relation ID mapping** - khó scale
+
+**✅ Ưu điểm:**
+
+1. **Đơn giản, dễ hiểu và triển khai nhanh**
+   - Kiến trúc pipeline thẳng, không có dependencies phức tạp
+   - Dễ debug và maintain do code không quá trừu tượng
+   - Phù hợp cho prototyping và baseline comparison
+
+2. **Sử dụng spaCy NER để trích xuất entities**
+   - Tận dụng pre-trained NER models của spaCy (en_core_web_sm/md/lg)
+   - Nhận diện được các entity types cơ bản: PERSON, ORG, GPE, DATE, etc.
+   - Không cần training data riêng, chạy được ngay "out-of-the-box"
+
+3. **Xây dựng graph dựa trên co-occurrence**
+   - Hai entities xuất hiện trong cùng một chunk sẽ được nối bằng một edge
+   - Giả định: entities trong cùng context có mối quan hệ ngữ nghĩa
+   - Đơn giản nhưng hiệu quả cho việc capture local context
+
+**❌ Hạn chế:**
+
+1. **Không có explicit relations - chỉ có edges vô hướng**
+   - Graph chỉ lưu `(entity1, entity2)` mà không biết **quan hệ gì** giữa chúng
+   - Ví dụ: "Aspirin treats headache" chỉ thành edge `(aspirin, headache)` - mất thông tin "treats"
+   - Không phân biệt được "A causes B" vs "A treats B" vs "A is part of B"
+   - Giảm khả năng reasoning và multi-hop query
+
+2. **Node2Vec embeddings tĩnh - không học được từ structure**
+   - Node2Vec dùng random walks để tạo embeddings, **không có gradient updates**
+   - Embeddings được tính một lần và frozen, không adapt theo downstream task
+   - Không capture được global graph structure, chỉ local neighborhoods
+   - Khác với Graph Transformer có thể fine-tune embeddings theo loss function
+
+3. **Không có entity/relation ID mapping - khó scale**
+   - Entities được lưu trực tiếp dưới dạng string trong NetworkX graph
+   - Khi KG lớn (>100k entities), việc lookup string rất chậm
+   - Không standardize entities (ví dụ: "COVID-19", "Covid19", "coronavirus" là 3 nodes khác nhau)
+   - Khó serialize và share KG giữa các hệ thống
 
 **Code snippet (entity extraction):**
 ```python
@@ -341,15 +372,30 @@ enhanced_sat_data/
 3. ✅ **Canonical relation mapping** - Standardize verbs → relations
 
 ### Hạn chế:
-1. ❌ **Graph Transformer disabled** - Segfault với large KG
-2. ❌ **Chưa train Text-Graph Aligner** - Chỉ dùng pre-computed embeddings
-3. ❌ **5/64 câu không tìm được context** - Cần cải thiện chunking
+
+1. ❌ **Graph Transformer bị vô hiệu hóa do lỗi bộ nhớ (Segfault)**
+   - **Vấn đề**: Khi Knowledge Graph có hơn ~5000 entities, Graph Transformer gặp lỗi segmentation fault do tiêu thụ bộ nhớ quá lớn khi tính attention matrix trên toàn bộ edges.
+   - **Nguyên nhân**: Thuật toán hiện tại tính attention O(E²) với E là số edges, không có cơ chế batching hay sparse attention.
+   - **Hệ quả**: Mất đi khả năng học **learnable node embeddings** từ cấu trúc graph, phải fallback về Node2Vec embeddings tĩnh như Simple GraphRAG.
+
+2. ❌ **Chưa train được Text-Graph Aligner (CLIP-style)**
+   - **Vấn đề**: Module alignment giữa text embeddings và graph embeddings chưa được huấn luyện, chỉ sử dụng pre-computed embeddings độc lập.
+   - **Nguyên nhân**: Thiếu dữ liệu training có nhãn (text-entity pairs), và cần computational resources đáng kể để train contrastive loss.
+   - **Hệ quả**: Không tận dụng được ưu điểm lớn nhất của SAT paper - khả năng query bằng ngôn ngữ tự nhiên nhưng tìm kiếm hiệu quả trên graph space thông qua shared embedding space.
+
+3. ❌ **5/64 câu hỏi (7.8%) không tìm được context phù hợp**
+   - **Vấn đề**: Một số câu hỏi không retrieve được chunks chứa thông tin cần thiết để trả lời.
+   - **Nguyên nhân gốc**:
+     - Chunking strategy hiện tại (fixed-size) có thể cắt ngang các đoạn thông tin liên quan
+     - Entity extraction bỏ sót một số entities do NER model không nhận diện được (đặc biệt với tiếng Việt hoặc thuật ngữ chuyên ngành)
+     - Semantic similarity giữa câu hỏi và answer chunks không đủ cao
+   - **Hệ quả**: Giới hạn recall tối đa của hệ thống ở mức ~92%
 
 ### Hướng phát triển:
 - [ ] Fix Graph Transformer cho large-scale KG (batching/sampling)
 - [ ] Train Text-Graph Aligner với contrastive loss
 - [ ] Thêm multi-hop reasoning
-- [ ] Cải thiện relation extraction với LLM
+- [ ] Cải thiện relation extraction với LLM 
 
 ---
 
