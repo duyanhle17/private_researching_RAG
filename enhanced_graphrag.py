@@ -33,6 +33,14 @@ import networkx as nx
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("EnhancedGraphRAG")
 
+# Import optimized Graph Transformer
+try:
+    from graph_transformer_v2 import GraphTransformerV2, GraphTransformerEmbedder
+    HAS_GT_V2 = True
+except ImportError:
+    HAS_GT_V2 = False
+    logger.warning("GraphTransformerV2 not found, using legacy implementation")
+
 # ============================================================================
 # PART 1: Graph Transformer Components (inspired by SAT)
 # ============================================================================
@@ -657,12 +665,41 @@ class EnhancedGraphRAG:
         num_entities = kg_data["num_entities"]
         num_relations = kg_data["num_relations"]
         
-        # Nếu quá nhiều entities, bỏ qua để tránh memory issues
-        if num_entities > 10000:
-            logger.warning(f"Too many entities ({num_entities}), skipping Graph Transformer")
+        logger.info(f"Building Graph Transformer embeddings for {num_entities} entities...")
+        
+        # Use optimized GraphTransformerV2 if available
+        if HAS_GT_V2:
+            logger.info("Using optimized GraphTransformerV2 (batched edge processing)")
+            from graph_transformer_v2 import GraphTransformerEmbedder
+            
+            embedder = GraphTransformerEmbedder(
+                num_entities=num_entities,
+                num_relations=num_relations,
+                d_model=self.graph_transformer_dim,
+                n_layers=self.graph_transformer_layers,
+                n_heads=4,  # Reduced heads for efficiency
+                device=device
+            )
+            
+            self.node_embeddings = embedder.compute_embeddings(
+                kg_data["edge_index"],
+                kg_data["edge_type"]
+            )
+            
+            # Save embeddings
+            torch.save(self.node_embeddings, os.path.join(self.working_dir, "node_embeddings.pt"))
+            logger.info(f"Graph Transformer V2 embeddings computed: {self.node_embeddings.shape}")
+            
+            # Store embedder for later use
+            self.graph_embedder = embedder
             return
         
-        logger.info(f"Building Graph Transformer embeddings for {num_entities} entities...")
+        # Legacy implementation (may segfault with large KGs)
+        if num_entities > 10000:
+            logger.warning(f"Too many entities ({num_entities}), skipping legacy Graph Transformer")
+            return
+        
+        logger.info("Using legacy GraphTransformer (may be slow for large KGs)")
         
         self.graph_transformer = GraphTransformer(
             num_entities=num_entities,
@@ -672,7 +709,7 @@ class EnhancedGraphRAG:
             output_dim=self.graph_transformer_dim,
             n_layers=self.graph_transformer_layers,
             n_heads=8,
-            use_pos_encoding=False  # Tắt pos encoding cho large graphs
+            use_pos_encoding=False
         ).to(device)
         
         # Compute node embeddings (inference mode)

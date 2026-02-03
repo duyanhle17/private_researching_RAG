@@ -88,13 +88,16 @@ def load_enhanced_cache() -> EnhancedGraphRAG:
 
 def kimi_answer(question: str, context: str, client, max_retry=MAX_RETRY) -> str:
     prompt = f"""
-You are a precise QA assistant.
+You are a precise QA assistant with strong reasoning abilities.
 
-Answer using ONLY the provided context.
-- If the answer is a number/date/location/name, copy it EXACTLY as in the context.
-- Do not guess or use outside knowledge.
-- If the context does not contain the answer, reply exactly:
-not stated in the text
+INSTRUCTIONS:
+1. Read the context carefully and answer based on it.
+2. For "WHAT/WHO/WHERE/WHEN" questions: Extract the answer directly from context.
+3. For "WHY/HOW" questions: Use reasoning to infer the answer from context clues.
+   - Look for cause-effect relationships, purposes, or explanations implied in the text.
+   - Even if not explicitly stated, derive logical conclusions from available information.
+4. If you can reasonably infer an answer from the context, provide it.
+5. ONLY say "not stated in the text" if there is absolutely NO relevant information.
 
 Context:
 {context}
@@ -102,7 +105,7 @@ Context:
 Question:
 {question}
 
-Answer (1 sentence max):
+Think step by step, then provide a concise answer (1-2 sentences):
 """.strip()
 
     for attempt in range(max_retry):

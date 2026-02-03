@@ -1,0 +1,367 @@
+# 📊 Báo Cáo Giai Đoạn 1: Tự Xây Dựng Knowledge Graph từ Văn Bản
+
+> **Mục tiêu**: Xây dựng Knowledge Graph (KG) từ văn bản thô và sử dụng KG hỗ trợ hệ thống Question Answering
+
+---
+
+## 🎯 Tóm Tắt Kết Quả
+
+| Thông số | Giá trị |
+|----------|---------|
+| **Nguồn dữ liệu** | Văn bản thô (Wikipedia articles) |
+| **Số chunks** | 173 đoạn văn bản |
+| **Số entities** | 5,088 thực thể |
+| **Số relations** | 8 loại quan hệ |
+| **Số triples (cạnh KG)** | 8,451 cạnh |
+| **Kết quả QA** | 67.2% accuracy |
+
+---
+
+## 📚 Phần 1: Các Kỹ Thuật Từ Paper SAT Đã Áp Dụng
+
+Paper SAT (Structure-Aware Alignment and Tuning) đề xuất nhiều kỹ thuật để liên kết text với knowledge graph. Trong giai đoạn này, tôi đã áp dụng **3 ý tưởng chính**:
+
+### 1.1. ID Mapping (Ánh Xạ ID)
+
+**Ý tưởng từ SAT:**
+- SAT sử dụng file `mid2id.txt` để map từ Freebase MID (ví dụ: `/m/01234`) sang số ID (ví dụ: `0, 1, 2, ...`)
+- Mục đích: Chuyển đổi entity names thành số để neural network xử lý được
+
+**Cách tôi áp dụng:**
+```python
+# Tạo mapping entity → ID
+entity2id = {
+    "ucf": 0,
+    "florida": 1, 
+    "public research university": 2,
+    ...
+}
+
+# Tạo mapping relation → ID
+relation2id = {
+    "co_occurs_with": 0,
+    "is_located_in": 1,
+    ...
+}
+```
+
+**Mục đích:**
+- Chuẩn hóa tên: "UCF", "ucf", "U.C.F." → cùng 1 ID
+- Chuẩn bị cho việc dùng Graph Transformer sau này
+- Lưu trữ hiệu quả hơn
+
+---
+
+### 1.2. Relation Extraction (Rút Trích Quan Hệ)
+
+**Ý tưởng từ SAT:**
+- SAT dùng KG có sẵn với 237 loại quan hệ (FB15k-237)
+- Mỗi triple: (head_entity, relation, tail_entity)
+
+**Cách tôi áp dụng:**
+- Dùng **Dependency Parsing** (phân tích cú pháp phụ thuộc) để tìm quan hệ
+- Ví dụ câu: "UCF is located in Florida"
+  - Phân tích: UCF (subject) → is located (verb) → Florida (object)
+  - Tạo triple: (UCF, is_located_in, Florida)
+
+```python
+# Code trong enhanced_graphrag.py
+for token in sent:
+    if "subj" in token.dep_:  # Tìm chủ ngữ
+        subj = token.text
+        verb = token.head.lemma_  # Động từ
+        for child in token.head.children:
+            if "obj" in child.dep_:  # Tìm tân ngữ
+                obj = child.text
+                relations.append((subj, verb, obj))
+```
+
+---
+
+### 1.3. Hybrid Retrieval (Tìm Kiếm Kết Hợp)
+
+**Ý tưởng từ SAT:**
+- SAT kết hợp text embeddings với graph embeddings
+- Công thức: `score = α × text_score + (1-α) × graph_score`
+
+**Cách tôi áp dụng:**
+```python
+# Công thức hybrid
+final_score = alpha * semantic_score + (1 - alpha) * graph_score
+# Với alpha = 0.6: 60% semantic + 40% graph
+```
+
+---
+
+## 🔄 Phần 2: Flow Xử Lý Query Chi Tiết
+
+### 2.1. Sơ Đồ Tổng Quan
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         INPUT: Question                              │
+│          "Where is UCF's main campus located?"                       │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│              BƯỚC 1: NER - Trích Xuất Entities từ Question          │
+│                                                                      │
+│   spaCy NER xử lý câu hỏi → Tìm entities                            │
+│   "Where is UCF's main campus located?"                              │
+│                    ↓                                                 │
+│   Entities tìm được: ["UCF"]                                         │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    ▼                           ▼
+┌────────────────────────────────┐    ┌────────────────────────────────────┐
+│   BƯỚC 2A: Semantic Search     │    │    BƯỚC 2B: Graph Search           │
+│                                │    │                                     │
+│ • Encode question → vector     │    │ • Lấy entities: ["UCF"]             │
+│ • FAISS tìm chunks gần nhất    │    │ • Đếm mỗi chunk có bao nhiêu       │
+│ • Trả về: [(chunk_idx,         │    │   entities trùng với query         │
+│            score), ...]        │    │ • Trả về: [0, 0, 1, 0, 1, ...]     │
+│                                │    │   (chunk 2 và 4 có "UCF")           │
+└────────────────────────────────┘    └────────────────────────────────────┘
+                    │                           │
+                    └─────────────┬─────────────┘
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    BƯỚC 3: Kết Hợp Điểm (Hybrid)                    │
+│                                                                      │
+│   final_score = 0.6 × semantic_score + 0.4 × graph_score            │
+│                                                                      │
+│   Ví dụ chunk #5:                                                   │
+│   - semantic_score = 0.75 (nghĩa gần)                               │
+│   - graph_score = 1.0 (có entity "UCF")                             │
+│   - final = 0.6 × 0.75 + 0.4 × 1.0 = 0.85                          │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    BƯỚC 4: Lấy KG Facts                              │
+│                                                                      │
+│   Với mỗi entity trong question, tìm các cạnh liên quan trong KG    │
+│   Entity "UCF" có cạnh:                                              │
+│   - UCF co_occurs_with Florida                                       │
+│   - UCF co_occurs_with Orange County                                 │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    BƯỚC 5: Tạo Context cho LLM                       │
+│                                                                      │
+│   context = top_chunks + kg_facts                                    │
+│                                                                      │
+│   "UCF is a public research university with its main campus in      │
+│    unincorporated Orange County, Florida..."                         │
+│   + "[KG Fact] UCF co_occurs_with Florida"                          │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    BƯỚC 6: LLM Trả Lời                               │
+│                                                                      │
+│   Gửi context + question cho Kimi LLM                                │
+│   → "UCF's main campus is located in unincorporated Orange County,  │
+│       Florida."                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ⚠️ Phần 3: Hạn Chế Phát Hiện - Graph KHÔNG Hoạt Động
+
+### 3.1. Vấn Đề Chính: Graph Score Gần Như Bằng 0
+
+Khi test với nhiều câu hỏi, phát hiện:
+
+| Question | Entities NER tìm được | Graph Score |
+|----------|----------------------|-------------|
+| "What is a government..." | ❌ **KHÔNG TÌM THẤY** | 0 |
+| "Where is UCF's..." | ✅ "UCF" | 1.0 |
+| "Who formed The Roots..." | ❌ "what year" (sai!) | 0 |
+| "What is Mario Puzo..." | ✅ "Mario Puzo" | 0 (không có trong KG) |
+
+**Kết quả test với các giá trị alpha:**
+```
+α = 1.0 (100% semantic, 0% graph): 6/64 đúng (9.4%)
+α = 0.7 (70% semantic, 30% graph): 6/64 đúng (9.4%)
+α = 0.0 (0% semantic, 100% graph): 6/64 đúng (9.4%)
+→ Thay đổi alpha KHÔNG ảnh hưởng gì vì graph_score = 0!
+```
+
+### 3.2. Nguyên Nhân: NER và spaCy Là Gì?
+
+#### NER (Named Entity Recognition) là gì?
+
+**NER** = Named Entity Recognition = **Nhận Diện Thực Thể Có Tên**
+
+Đây là một task trong NLP (Xử lý Ngôn ngữ Tự nhiên) với mục tiêu:
+- Đọc một câu văn bản
+- Tìm và đánh dấu các "thực thể có tên" như: người, địa điểm, tổ chức, ngày tháng, v.v.
+
+**Ví dụ:**
+```
+Input:  "Steve Jobs founded Apple in California."
+Output: 
+  - "Steve Jobs" → PERSON (người)
+  - "Apple" → ORG (tổ chức)  
+  - "California" → GPE (địa điểm)
+```
+
+#### spaCy là gì?
+
+**spaCy** là một thư viện Python mã nguồn mở cho NLP (https://spacy.io/)
+
+- Được phát triển bởi Explosion AI
+- Cung cấp các model pre-trained cho nhiều ngôn ngữ
+- Tích hợp sẵn nhiều chức năng: NER, POS tagging, Dependency Parsing, v.v.
+
+**Model tôi dùng: `en_core_web_sm`**
+- "en" = English (tiếng Anh)
+- "core" = model cơ bản
+- "web" = train trên dữ liệu web
+- "sm" = small (nhỏ, ~12MB)
+
+```python
+import spacy
+nlp = spacy.load("en_core_web_sm")  # Load model
+
+doc = nlp("UCF is located in Florida")
+for ent in doc.ents:
+    print(ent.text, ent.label_)
+# Output: UCF → ORG, Florida → GPE
+```
+
+### 3.3. Tại Sao NER/spaCy Gây Ra Vấn Đề?
+
+#### Vấn đề 1: Model quá nhỏ và yếu
+
+`en_core_web_sm` là model nhỏ nhất, accuracy thấp:
+- Chỉ ~86% F1-score cho NER trên benchmark
+- Không nhận ra nhiều entities không phổ biến
+
+**Ví dụ thất bại:**
+```python
+doc = nlp("What is a government?")
+print([ent.text for ent in doc.ents])
+# Output: [] ← Không tìm thấy gì!
+
+doc = nlp("Who formed The Roots?")  
+print([ent.text for ent in doc.ents])
+# Output: ['what year'] ← Nhận sai!
+```
+
+#### Vấn đề 2: Câu hỏi ngắn, thiếu context
+
+NER hoạt động tốt hơn khi có nhiều context:
+```python
+# Câu dài (có context) → NER tốt
+doc = nlp("The University of Central Florida (UCF) is a public research university.")
+# Tìm được: "The University of Central Florida", "UCF"
+
+# Câu hỏi ngắn → NER yếu
+doc = nlp("Where is UCF located?")
+# Chỉ tìm được: "UCF" (may mắn)
+```
+
+#### Vấn đề 3: Entity không match với KG
+
+Ngay cả khi NER tìm được entity, nó có thể không khớp với KG:
+```
+NER tìm được: "Mario Puzo"
+KG chứa: "mario puzo", "Mario Gennaro Puzo"
+→ Không match! (do normalize khác nhau)
+```
+
+### 3.4. Vấn Đề Với Relations
+
+**Phân tích edges trong KG:**
+```
+co_occurs_with: 8,442 edges (99.9%!)
+as: 2 edges
+of: 2 edges
+in: 1 edge
+...
+```
+
+**99.9% relations là `co_occurs_with`** - nghĩa là:
+- Dependency parsing KHÔNG hoạt động
+- Code fallback về: "Nếu A và B xuất hiện cùng câu → thêm cạnh co_occurs_with"
+- Đây là quan hệ VÔ NGHĨA, không mang thông tin gì hữu ích
+
+**Ví dụ:**
+```
+KG Facts trả về:
+- "UCF co_occurs_with Florida" ← Chỉ nói UCF và Florida xuất hiện cùng câu
+- "UCF co_occurs_with 68,442 students" ← Vô nghĩa
+
+Thay vì:
+- "UCF is_located_in Florida" ← Thông tin hữu ích
+- "UCF has_enrollment 68,442" ← Thông tin hữu ích
+```
+
+---
+
+## 📊 Phần 4: Kết Luận
+
+### 4.1. Thực Tế Hệ Thống Hoạt Động
+
+| Component | Đóng Góp Thực Sự |
+|-----------|------------------|
+| **Semantic Search (FAISS)** | ✅ **~100%** - Tìm đúng chunks chứa câu trả lời |
+| **Graph Search (Entity Overlap)** | ❌ **~0%** - NER không extract được entities |
+| **KG Facts** | ❌ **~0%** - Chỉ có co-occurrence vô nghĩa |
+| **LLM (Kimi)** | ✅ **100%** - Đọc context và trả lời |
+
+### 4.2. Tại Sao Vẫn Đạt 67.2% Accuracy?
+
+Mặc dù KG không hoạt động, hệ thống vẫn đạt 67.2% vì:
+
+1. **Dataset nhỏ**: Chỉ 173 chunks → Semantic search dễ tìm đúng
+2. **Chunks chứa đầy đủ thông tin**: Mỗi chunk ~700-800 ký tự, chứa nhiều thông tin liên quan
+3. **LLM mạnh**: Kimi K2 có khả năng suy luận tốt từ context
+
+**Kết luận: Giai đoạn 1 thực chất là PURE RAG, KG được xây dựng nhưng KHÔNG được sử dụng hiệu quả.**
+
+### 4.3. Cải Tiến Cần Thiết
+
+Để KG thực sự hữu ích, cần:
+
+1. **Nâng cấp NER model:**
+   - Dùng `en_core_web_lg` (lớn hơn, chính xác hơn)
+   - Hoặc dùng transformer-based NER (BERT, spaCy transformers)
+
+2. **Cải thiện Relation Extraction:**
+   - Dùng model chuyên cho relation extraction (OpenIE, REBEL)
+   - Hoặc dùng LLM để extract relations
+
+3. **Entity Linking:**
+   - Thêm bước match entities từ question với KG
+   - Dùng fuzzy matching, alias expansion
+
+4. **Hoặc dùng Pre-built KG:**
+   - Dùng KG có sẵn như FB15k-237 (Giai đoạn 2)
+   - KG chất lượng cao, có relations đa dạng
+
+---
+
+## 📁 Files Đã Tạo
+
+```
+enhanced_sat_data/
+├── chunks.json          # 173 đoạn văn bản
+├── embeddings.npy       # Vector 384-dim cho mỗi chunk
+├── faiss.index          # FAISS index để tìm kiếm nhanh
+├── kg.pkl               # NetworkX graph (5088 nodes, 8451 edges)
+├── entity2id.pkl        # Dict: entity_name → ID
+├── relation2id.pkl      # Dict: relation_name → ID
+├── chunk_entities.pkl   # List: mỗi chunk chứa entities nào
+└── meta.json            # Metadata
+```
+
+---
+
+*Cập nhật: 03/02/2026*

@@ -43,9 +43,9 @@ def main():
     print("🚀 Initializing EnhancedGraphRAG...")
     rag = EnhancedGraphRAG(
         embedding_model_name="all-MiniLM-L6-v2",
-        use_graph_transformer=False,  # Tắt Graph Transformer để tránh segfault với large KG
+        use_graph_transformer=True,  # Bật Graph Transformer (đã fix với V2)
         graph_transformer_dim=128,
-        graph_transformer_layers=3,
+        graph_transformer_layers=2,  # 2 layers đủ tốt và nhanh
         working_dir=out_dir
     )
     

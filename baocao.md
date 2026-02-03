@@ -581,11 +581,360 @@ enhanced_sat_data/
    - **Hệ quả**: Giới hạn recall tối đa của hệ thống ở mức ~92%
 
 ### Hướng phát triển:
-- [ ] Fix Graph Transformer cho large-scale KG (batching/sampling)
+- [x] Fix Graph Transformer cho large-scale KG (batching/sampling) ✅
 - [ ] Train Text-Graph Aligner với contrastive loss
 - [ ] Thêm multi-hop reasoning
 - [ ] Cải thiện relation extraction với LLM 
 
 ---
 
-*Báo cáo cập nhật: 02/02/2026*
+## 🚀 Giai Đoạn 2: Graph Transformer với FB15k-237N (03/02/2026)
+
+### 📝 Chi Tiết Giai Đoạn 1: Những Gì Đã Làm
+
+Ở giai đoạn 1, tôi **tự xây dựng Knowledge Graph từ đầu** bằng các kỹ thuật sau:
+
+#### 1. Entity/Relation ID Mapping - Tôi Đã Làm Gì?
+
+**Bước thực hiện:**
+- Đọc văn bản thô, dùng spaCy để nhận diện các thực thể (người, địa điểm, tổ chức...)
+- Mỗi lần gặp một thực thể mới, gán cho nó một số ID tăng dần
+- Tương tự với các quan hệ: mỗi động từ/quan hệ mới cũng được gán một ID
+
+**Mục đích:**
+- Chuyển từ lưu trữ bằng chuỗi ký tự sang lưu trữ bằng số, giúp máy tính xử lý nhanh hơn
+- Chuẩn hóa dữ liệu: "UCF", "ucf", "University of Central Florida" nếu là cùng một thực thể sẽ có cùng ID
+- Là bước bắt buộc nếu muốn dùng mạng neural sau này (neural network cần số, không nhận chuỗi)
+
+**Có trong quá trình build KG không?** ✅ CÓ - Đây là bước tôi tự làm, lưu vào `entity2id.pkl` và `relation2id.pkl`
+
+#### 2. Explicit Relation Extraction - Tôi Đã Làm Gì?
+
+**Bước thực hiện:**
+- Phân tích cú pháp câu (dependency parsing) để tìm chủ ngữ, động từ, tân ngữ
+- Từ đó rút ra bộ ba: (chủ thể, quan hệ, đối tượng)
+- Ví dụ: "UCF là một trường đại học công lập" → (UCF, là_loại, trường đại học công lập)
+
+**Mục đích:**
+- Biết được **quan hệ cụ thể** giữa các thực thể, không chỉ biết "chúng liên quan"
+- Phân biệt được "A gây ra B" với "A chữa được B" - rất quan trọng cho suy luận
+
+**Có trong quá trình build KG không?** ✅ CÓ - Tôi tự extract và lưu vào `triples.json`
+
+#### 3. Hybrid Retrieval - Tôi Đã Làm Gì?
+
+**Bước thực hiện:**
+- Kết hợp 2 cách tìm kiếm: semantic (ngữ nghĩa) + graph (đồ thị)
+- Semantic: tìm đoạn văn có nghĩa gần với câu hỏi
+- Graph: tìm đoạn văn chứa nhiều thực thể liên quan trong KG (**đếm entity overlap**)
+- Công thức: điểm = α × điểm_semantic + (1-α) × điểm_graph
+
+**Mục đích:**
+- Semantic giỏi tìm từ đồng nghĩa, paraphrase
+- Graph giỏi tìm quan hệ logic, thông tin liên kết
+- Kết hợp cả hai để tìm kiếm toàn diện hơn
+
+**Có trong quá trình build KG không?** ❌ KHÔNG - Đây là bước retrieval, dùng sau khi đã có KG
+
+**⚠️ Lưu ý quan trọng về Giai đoạn 1:**
+- KG được **TỰ BUILD** từ văn bản thô bằng NLP
+- Graph score = **entity overlap** (đếm số thực thể trùng), KHÔNG phải graph embedding
+- **CÓ DÙNG KG** khi retrieve (đếm entities trong chunks)
+
+---
+
+### 📝 Chi Tiết Giai Đoạn 2: Những Gì Khác Biệt
+
+#### Data Lấy Từ Đâu?
+
+```
+⚠️ QUAN TRỌNG: Giai đoạn 2 KHÔNG tự build KG!
+
+Dữ liệu lấy từ: FB15k-237N (dataset CÓ SẴN của SAT paper)
+- 14,541 thực thể với mô tả văn bản đầy đủ (id2text.txt)
+- 237 loại quan hệ đã định nghĩa sẵn (rel2id.txt)  
+- 87,282 bộ ba (triples) đã được gán nhãn sẵn (train.txt)
+
+Tôi KHÔNG extract entity, KHÔNG extract relation, KHÔNG build KG mới!
+```
+
+#### Graph Transformer Làm Gì?
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              GRAPH TRANSFORMER - VAI TRÒ THỰC SỰ                            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ĐẦU VÀO:  KG có sẵn (14541 entities, 87282 triples)                        │
+│            ↓                                                                │
+│  XỬ LÝ:    Học vector đặc trưng (embedding) cho mỗi thực thể                │
+│            - Nhìn vào cấu trúc đồ thị: ai kết nối với ai                    │
+│            - Dùng attention để tổng hợp thông tin từ các láng giềng         │
+│            ↓                                                                │
+│  ĐẦU RA:   Node embeddings (14541, 128) - mỗi entity 1 vector 128 chiều     │
+│                                                                             │
+│  ⚠️ KHÔNG LÀM:                                                              │
+│     ❌ Không đọc văn bản                                                    │
+│     ❌ Không nhận diện thực thể                                             │
+│     ❌ Không rút trích quan hệ                                              │
+│     ❌ Không xây dựng KG mới                                                │
+│                                                                             │
+│  → Graph Transformer CHỈ HỌC EMBEDDING từ KG đã có sẵn!                     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+#### ⚠️ Vấn Đề ALPHA = 1.0: Có Dùng KG Không?
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              THỰC TẾ: ALPHA = 1.0 → KHÔNG DÙNG GRAPH!                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Công thức: điểm = α × semantic + (1-α) × graph                             │
+│                                                                             │
+│  Khi α = 1.0:  điểm = 1.0 × semantic + 0 × graph = CHỈ semantic             │
+│                                                                             │
+│  → KẾT QUẢ 95.3% THỰC CHẤT LÀ RAG THUẦN TÚY!                               │
+│  → KHÔNG dùng Graph Transformer embeddings                                  │
+│  → KHÔNG dùng KG trong retrieval                                            │
+│  → Chỉ dùng semantic search (FAISS + SentenceTransformer)                   │
+│                                                                             │
+│  Tại sao vẫn đạt 95.3%?                                                     │
+│  - FB15k-237N có id2text.txt với mô tả văn bản đầy đủ cho mỗi entity        │
+│  - Semantic search trên 14541 mô tả này tìm được context chính xác          │
+│  - LLM với prompt cải tiến suy luận tốt từ context                          │
+│                                                                             │
+│  ⚠️ Graph Transformer embeddings ĐÃ TÍNH xong, chỉ KHÔNG ĐƯỢC DÙNG         │
+│     vì khi thử α < 1.0, kết quả tệ hơn (45.3% với α=0.6)                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### So Sánh 2 Giai Đoạn (Bản Rõ Ràng)
+
+| Aspect | Giai đoạn 1 (Enhanced GraphRAG) | Giai đoạn 2 (Graph Transformer QA) |
+|--------|--------------------------------|-----------------------------------|
+| **Nguồn KG** | **Tự build** từ raw text | **Có sẵn** (FB15k-237N) |
+| **Entity Extraction** | ✅ Có (spaCy NER) | ❌ Không cần |
+| **Relation Extraction** | ✅ Có (Dependency Parsing) | ❌ Không cần |
+| **ID Mapping** | ✅ Tự tạo | ✅ Có sẵn trong dataset |
+| **Graph score là gì?** | **Entity overlap** (đếm trùng) | **Graph Transformer** embeddings |
+| **Có dùng KG khi retrieve?** | ✅ CÓ (đếm entity overlap) | ❌ KHÔNG (α=1.0, pure semantic) |
+| **Thực chất là gì?** | Hybrid RAG (semantic + graph) | **Pure RAG** (chỉ semantic) |
+| **Kết quả** | 67.2% | 95.3% |
+
+---
+
+### Tại Sao Không Dùng Graph Embeddings (α < 1.0)?
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    VẤN ĐỀ: 2 KHÔNG GIAN KHÔNG LIÊN KẾT                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Text Embeddings (SentenceTransformer):                                     │
+│  ─────────────────────────────────────                                      │
+│  - Học từ: ngữ nghĩa của từ, câu                                            │
+│  - "government" gần với "state", "administration"                           │
+│  - Đo lường: độ giống về nghĩa                                              │
+│                                                                             │
+│  Graph Embeddings (Graph Transformer):                                      │
+│  ────────────────────────────────────                                       │
+│  - Học từ: cấu trúc đồ thị (ai nối với ai)                                  │
+│  - entity_0 gần entity_123 vì có chung nhiều láng giềng                     │
+│  - Đo lường: độ giống về vị trí trong đồ thị                                │
+│                                                                             │
+│  ❌ HAI KHÔNG GIAN NÀY KHÔNG CÙNG HỆ QUY CHIẾU!                             │
+│                                                                             │
+│  Kết quả test:                                                              │
+│  - α = 1.0 (chỉ semantic): 95.3% ✅                                         │
+│  - α = 0.6 (hybrid):       45.3% ❌ (tệ hơn rất nhiều!)                     │
+│                                                                             │
+│  → Kết hợp 2 embeddings chưa aligned = làm hỏng kết quả                     │
+│  → Cần TRAIN TEXT-GRAPH ALIGNMENT mới dùng được hybrid                      │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### FB15k-237N Dataset - KG Có Sẵn Của SAT
+
+```
+FB15k-237N/
+├── id2text.txt      # 14,541 entity descriptions (từ Wikipedia)
+├── mid2id.txt       # Freebase MID → Entity ID mapping
+├── rel2id.txt       # 237 relation types
+├── train.txt        # 87,282 triples (head, relation, tail)
+├── valid.txt        # 7,041 triples
+└── test.txt         # 8,226 triples
+```
+
+**Ví dụ dữ liệu:**
+```
+# id2text.txt - Entity descriptions
+0    A government is the system or group of people governing...
+1    The University of Central Florida (UCF) is a public research university...
+5    Tottenham Hotspur Football Club, commonly referred to as...
+
+# train.txt - Triples (đã có sẵn quan hệ)
+/m/0146hc    /education/educational_institution/colors    /m/067z2v
+/m/0146hc    /education/educational_institution/school_type    /m/05jxkf
+```
+
+### Graph Transformer - Vai Trò Thực Sự
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│              GRAPH TRANSFORMER KHÔNG TỰ BUILD KG!                           │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Graph Transformer CHỈ làm 1 việc:                                          │
+│  ─────────────────────────────────                                          │
+│                                                                             │
+│  INPUT:  KG đã có sẵn (entities, relations, triples)                        │
+│          ↓                                                                  │
+│  PROCESS: Học EMBEDDINGS từ cấu trúc graph                                  │
+│           - Multi-head attention trên edges                                 │
+│           - Aggregate thông tin từ neighbors                                │
+│           ↓                                                                 │
+│  OUTPUT: Node embeddings (14541, 128) - mỗi entity 1 vector                 │
+│                                                                             │
+│  ⚠️ KHÔNG LÀM:                                                              │
+│     - Không extract entities từ text                                        │
+│     - Không extract relations từ text                                       │
+│     - Không build KG mới                                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Tại Sao Hybrid Search Thất Bại?
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    VẤN ĐỀ: 2 EMBEDDING SPACES KHÔNG ALIGNED                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Text Embeddings (SentenceTransformer):                                     │
+│  ─────────────────────────────────────                                      │
+│  "government" → [0.2, 0.5, 0.1, ...] (384-dim)                              │
+│  Học từ: Ngữ nghĩa của từ, synonyms, context                                │
+│  "government" ≈ "state", "administration", "regime"                         │
+│                                                                             │
+│  Graph Embeddings (Graph Transformer):                                      │
+│  ────────────────────────────────────                                       │
+│  entity_0 → [0.8, -0.3, 0.4, ...] (128-dim)                                 │
+│  Học từ: Vị trí trong graph, neighbors, edge patterns                       │
+│  entity_0 gần entity_123 vì có chung nhiều neighbors                        │
+│                                                                             │
+│  ❌ 2 không gian này KHÔNG CÙNG HỆ QUY CHIẾU!                               │
+│                                                                             │
+│  Kết quả test:                                                              │
+│  ─────────────                                                              │
+│  α=1.0 (semantic only):  95.3% accuracy  ✅                                 │
+│  α=0.6 (hybrid):         45.3% accuracy  ❌                                 │
+│                                                                             │
+│  → Graph embeddings làm GIẢM hiệu quả khi chưa aligned!                     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Graph Transformer V2 - Giải Quyết Segfault
+
+**Vấn đề cũ:**
+```python
+# V1: Tính attention cho TẤT CẢ edges cùng lúc
+attention = softmax(Q @ K.T)  # O(E²) memory → SEGFAULT
+```
+
+**Giải pháp V2:**
+```python
+# V2: Batched edge processing
+for batch_edges in chunks(all_edges, batch_size=10000):
+    attention_batch = compute_attention(batch_edges)
+    aggregate(attention_batch)
+```
+
+**Kết quả:**
+- V1: Segfault với 5000+ entities
+- V2: Chạy được 14,541 entities trong **0.27 giây**
+
+### Cải Thiện Prompt - Giảm "Not Stated"
+
+**Prompt cũ:**
+```
+Answer using ONLY the provided context.
+If the context does not contain the answer, reply: "not stated in the text"
+```
+→ LLM quá nghiêm khắc, từ chối trả lời câu hỏi "WHY"
+
+**Prompt mới:**
+```
+For "WHY/HOW" questions: Use reasoning to infer from context clues.
+Even if not explicitly stated, derive logical conclusions.
+ONLY say "Not stated" if there is absolutely NO relevant information.
+Think step by step, then provide answer.
+```
+→ LLM được khuyến khích SUY LUẬN
+
+**Kết quả:**
+| Metric | Prompt Cũ | Prompt Mới |
+|--------|----------|------------|
+| Not stated | 7/64 | **1/64** |
+| Accuracy | 84.4% | **95.3%** |
+
+### Kết Quả Cuối Cùng
+
+| Hệ thống | KG Type | Accuracy | Not Stated |
+|----------|---------|----------|------------|
+| Enhanced GraphRAG | Tự build (5088 entities) | 67.2% | 1/64 |
+| **Graph Transformer QA** | FB15k-237N (14541 entities) | **95.3%** | 1/64 |
+
+### Files Mới Được Tạo
+
+| File | Mô tả |
+|------|-------|
+| `graph_transformer_v2.py` | Graph Transformer optimized với batched edge processing |
+| `run_qa_with_graph_transformer.py` | QA pipeline với FB15k-237N |
+| `test_graph_transformer_sat.py` | Test script cho Graph Transformer |
+| `sat_kg_data/` | Cache cho embeddings và graph data |
+| `qa_results_graph_transformer.json` | Kết quả QA (64 câu) |
+
+### Hướng Đi Tiếp Theo
+
+Để sử dụng Graph Embeddings hiệu quả, cần **train Text-Graph Alignment**:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    TEXT-GRAPH ALIGNMENT (CLIP-style)                        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Text: "government"  →  [Text Encoder]  →  text_emb  ─┐                     │
+│                              ↓                        │                     │
+│                        Projection Head                │                     │
+│                              ↓                        ↓                     │
+│                        ┌──────────────────────────────┐                     │
+│                        │      SHARED SPACE            │                     │
+│                        │   (Contrastive Loss)         │                     │
+│                        └──────────────────────────────┘                     │
+│                              ↑                        ↑                     │
+│                        Projection Head                │                     │
+│                              ↑                        │                     │
+│  Graph: entity_0  →  [Graph Transformer]  →  graph_emb ─┘                   │
+│                                                                             │
+│  Training data: (entity_id, entity_text) pairs từ id2text.txt              │
+│  Loss: InfoNCE Contrastive Loss                                            │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**Các bước cần làm:**
+- [ ] Tạo ProjectionHead module (MLP: 384 → 256 và 128 → 256)
+- [ ] Implement InfoNCE Contrastive Loss
+- [ ] Training loop với FB15k-237N id2text pairs
+- [ ] Evaluate hybrid retrieval sau khi align
+
+---
+
+*Báo cáo cập nhật: 03/02/2026*

@@ -1,52 +1,52 @@
 [
   {
     "question": "What is a government, according to the given definition?",
-    "answer": "A government is the system or group of people governing an organized community, generally a state.",
+    "answer": "A government is the system or group of people that governs an organized community, typically a state.",
     "groundtruth": "A government is the system or group of people governing an organized community, generally a state."
   },
   {
     "question": "How is the definition of government in the text framed in terms of who holds power?",
-    "answer": "A government is the system or group of people governing an organized community, generally a state.",
+    "answer": "The text frames government as “the system or group of people governing,” implying that power is held by the governing group itself rather than by any external entity.",
     "groundtruth": "It frames government as either a system or a group of people who govern an organized community."
   },
   {
     "question": "Why does the definition say a government is 'generally a state' rather than always a state?",
-    "answer": "not stated in the text",
+    "answer": "The phrase “generally a state” is used because governments can also govern other organized communities that are not full-fledged states (e.g., cities, territories, or other political subdivisions), so the definition allows for those exceptions.",
     "groundtruth": "Because the definition allows that governments can govern organized communities more broadly, though states are the typical case."
   },
   {
     "question": "What institutional type is the University of Central Florida (UCF)?",
-    "answer": "a public research university",
+    "answer": "UCF is a public research university and part of the State University System of Florida.",
     "groundtruth": "UCF is a public research university."
   },
   {
     "question": "Where is UCF’s main campus located, as described in the text?",
-    "answer": "UCF’s main campus is in unincorporated Orange County, Florida.",
+    "answer": "UCF’s main campus is located in unincorporated Orange County, Florida.",
     "groundtruth": "Its main campus is in unincorporated Orange County, Florida."
   },
   {
     "question": "How does the text connect UCF to the broader higher-education structure in Florida?",
-    "answer": "UCF is part of the State University System of Florida.",
+    "answer": "UCF is explicitly described as “part of the State University System of Florida,” placing it inside the state’s public higher-education framework.",
     "groundtruth": "It says UCF is part of the State University System of Florida."
   },
   {
     "question": "Why might UCF’s 'R1' classification matter for interpreting what kind of university it is?",
-    "answer": "UCF is classified among \"R1: Doctoral Universities – Very high research activity,\" indicating it is a major research-focused institution.",
+    "answer": "UCF’s R1 label signals “Very high research activity,” so it is not just a teaching-focused campus but a major research university where doctoral programs and sponsored research are central to its mission.",
     "groundtruth": "Because 'R1' indicates very high research activity, signaling a strong emphasis on doctoral-level research output."
   },
   {
     "question": "What accrediting body is said to accredit UCF?",
-    "answer": "UCF is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools.",
+    "answer": "The accrediting body that accredits UCF is the Commission on Colleges of the Southern Association of Colleges and Schools.",
     "groundtruth": "The Commission on Colleges of the Southern Association of Colleges and Schools."
   },
   {
     "question": "How many students did UCF have as of the fall 2022 semester?",
-    "answer": "68,442",
+    "answer": "UCF had 68,442 students as of the fall 2022 semester.",
     "groundtruth": "68,442 students."
   },
   {
     "question": "How does the text quantify UCF’s on-campus size relative to other U.S. public universities?",
-    "answer": "UCF has the fourth-largest on-campus student body of any public university in the United States.",
+    "answer": "The text states that UCF has the fourth-largest on-campus student body of any public university in the United States.",
     "groundtruth": "It states UCF has the fourth-largest on-campus student body of any public university in the United States."
   },
   {
@@ -61,47 +61,47 @@
   },
   {
     "question": "How is the University of Essex characterized in the passage?",
-    "answer": "The University of Essex is characterized as a public research university in Essex, England, established by royal charter in 1965 and one of the original plate glass universities.",
+    "answer": "The University of Essex is characterized as a public research university in Essex, England, established by royal charter in 1965 and noted as one of the original plate glass universities.",
     "groundtruth": "It is described as a public research university in Essex, England."
   },
   {
     "question": "When was the University of Essex established, and how was it established?",
-    "answer": "The University of Essex was established by royal charter in 1965.",
+    "answer": "The University of Essex was established in 1965 by royal charter.",
     "groundtruth": "It was established by royal charter in 1965."
   },
   {
     "question": "Why is the University of Essex called one of the 'original plate glass universities' in the text?",
-    "answer": "not stated in the text",
+    "answer": "The text does not explain why the University of Essex is labeled an “original plate glass university”; it only states that it is one of them.",
     "groundtruth": "Because it is included among the group of universities founded in that era that are commonly referred to as plate glass universities."
   },
   {
     "question": "What are the two key symbolic elements mentioned on the University of Essex shield?",
-    "answer": "The university shield consists of the ancient arms attributed to the Kingdom of Essex and the motto: \"Thought the harder, heart the keener\".",
+    "answer": "The two key symbolic elements on the University of Essex shield are the ancient arms attributed to the Kingdom of Essex and the motto \"Thought the harder, heart the keener,\" adapted from the Anglo-Saxon poem *The Battle of Maldon*.",
     "groundtruth": "The ancient arms attributed to the Kingdom of Essex and the motto 'Thought the harder, heart the keener.'"
   },
   {
     "question": "How is the University of Essex motto connected to literature in the passage?",
-    "answer": "The University of Essex motto, \"Thought the harder, heart the keener,\" is adapted from the Anglo-Saxon poem \"The Battle of Maldon.\"",
+    "answer": "The University of Essex motto, “Thought the harder, heart the keener,” is adapted from the Anglo-Saxon poem “The Battle of Maldon,” thereby linking it directly to early English literature.",
     "groundtruth": "It is adapted from the Anglo-Saxon poem 'The Battle of Maldon.'"
   },
   {
     "question": "What campuses are mentioned for the University of Essex, and where is its primary campus?",
-    "answer": "The University of Essex comprises three campuses in the county, in Southend-on-Sea and Loughton with its primary campus in Wivenhoe Park, Colchester.",
+    "answer": "The University of Essex has three campuses in the county: Southend-on-Sea, Loughton, and its primary campus in Wivenhoe Park, Colchester.",
     "groundtruth": "It comprises three campuses in the county, in Southend-on-Sea and Loughton, with its primary campus in Wivenhoe Park, Colchester."
   },
   {
     "question": "Who is Chris Seefried, according to the passage?",
-    "answer": "Chris Seefried is an American singer, musician, songwriter, and record producer best known as the lead vocalist and frontman of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
+    "answer": "Chris Seefried is an American singer, musician, songwriter, and record producer best known as the lead vocalist of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
     "groundtruth": "He is an American singer, musician, songwriter, and record producer."
   },
   {
     "question": "How does the text explain what Chris Seefried is best known for?",
-    "answer": "He is best known as the lead vocalist and frontman of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
+    "answer": "The text states that Chris Seefried is best known as the lead vocalist and frontman of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
     "groundtruth": "As lead vocalist/frontman of Gods Child, Joe 90, and Low Stars, and as producer and co-writer for Fitz and the Tantrums."
   },
   {
     "question": "Why might Chris Seefried be described as both a performer and behind-the-scenes contributor?",
-    "answer": "Chris Seefried is best known as the lead vocalist and frontman of bands and as producer and co-writer for Fitz and the Tantrums.",
+    "answer": "He is described as both because he performs as the lead vocalist/frontman of multiple bands and simultaneously works behind the scenes as a producer and co-writer for other groups.",
     "groundtruth": "Because the passage credits him as a frontman (performer) and also as a producer and co-writer (behind-the-scenes roles)."
   },
   {
@@ -116,142 +116,142 @@
   },
   {
     "question": "What league does Tottenham compete in, according to the text?",
-    "answer": "It competes in the Premier League.",
+    "answer": "Tottenham Hotspur Football Club competes in the Premier League, the top flight of English football.",
     "groundtruth": "The Premier League."
   },
   {
     "question": "How does the passage describe the significance of Tottenham’s stadium change in 2019?",
-    "answer": "The team has played its home matches in the 62,850-capacity Tottenham Hotspur Stadium since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site.",
+    "answer": "The passage presents the 2019 switch as a straightforward replacement: the club demolished the old White Hart Lane and built the new 62,850-seat Tottenham Hotspur Stadium on the same site, so the move simply updated the venue without relocating the team.",
     "groundtruth": "It says the club began playing home matches in Tottenham Hotspur Stadium in April 2019, replacing White Hart Lane after it was demolished for the new stadium on the same site."
   },
   {
     "question": "Why was White Hart Lane demolished, according to the passage?",
-    "answer": "not stated in the text",
+    "answer": "The passage does not mention White Hart Lane at all, so the reason for its demolition is not stated in the text.",
     "groundtruth": "To make way for the new stadium on the same site."
   },
   {
     "question": "What is The Village (2004) described as in the text?",
-    "answer": "The Village (marketed as M. Night Shyamalan's The Village) is a 2004 American period thriller film.",
+    "answer": "The Village (2004) is described as an American period thriller film written, produced, and directed by M. Night Shyamalan.",
     "groundtruth": "A 2004 American period thriller film written, produced, and directed by M. Night Shyamalan."
   },
   {
     "question": "How does the text summarize the central fear in The Village?",
-    "answer": "The film is about a village whose population lives in fear of creatures inhabiting the woods beyond it, referred to as \"Those We Don't Speak Of.\"",
+    "answer": "The text states that the villagers live in fear of creatures in the woods beyond the village, referred to as “Those We Don’t Speak Of.”",
     "groundtruth": "The villagers live in fear of creatures in the woods beyond them, called 'Those We Don't Speak Of.'"
   },
   {
     "question": "Why is the phrase 'Those We Don't Speak Of' important to understanding the film’s premise?",
-    "answer": "The phrase \"Those We Don't Speak Of\" refers to the creatures in the woods that the village population lives in fear of, which is central to the film’s premise.",
+    "answer": "The phrase “Those We Don’t Speak Of” is the villagers’ way of referring to the feared creatures in the woods, so it encapsulates the central conflict: the entire village lives in terror of these beings, which drives the film’s plot.",
     "groundtruth": "Because it names the creatures that drive the village’s fear and control how the community behaves."
   },
   {
     "question": "Name three actors listed as starring in The Village.",
-    "answer": "Bryce Dallas Howard, Joaquin Phoenix, Adrien Brody",
+    "answer": "The Village stars Bryce Dallas Howard, Joaquin Phoenix, and Adrien Brody.",
     "groundtruth": "Examples include Bryce Dallas Howard, Joaquin Phoenix, and Adrien Brody."
   },
   {
     "question": "How is I Heart Huckabees described in the passage?",
-    "answer": "I Heart Huckabees (also I Love Huckabees) is a 2004 independent black comedy film directed and produced by David O. Russell, who cowrote the screenplay with Jeff Baena.",
+    "answer": "It is described as a 2004 independent black comedy film directed and produced by David O. Russell, who also co-wrote the screenplay with Jeff Baena.",
     "groundtruth": "A 2004 independent black comedy film directed and produced by David O. Russell, who co-wrote the screenplay with Jeff Baena."
   },
   {
     "question": "Why does the passage explicitly mention that I Heart Huckabees is 'independent'?",
-    "answer": "not stated in the text",
+    "answer": "The passage labels *I Heart Huckabees* as “independent” to signal that it was produced outside the major studio system, a key detail for readers who follow or evaluate films by their production context.",
     "groundtruth": "To characterize it as an independent production rather than a studio blockbuster."
   },
   {
     "question": "Who formed The Roots and in what year, according to the passage?",
-    "answer": "The Roots are an American hip hop band formed in 1987 by Tariq \"Black Thought\" Trotter and Ahmir \"Questlove\" Thompson in Philadelphia, Pennsylvania.",
+    "answer": "The Roots were formed in 1987 by Tariq \"Black Thought\" Trotter and Ahmir \"Questlove\" Thompson.",
     "groundtruth": "They were formed in 1987 by Tariq 'Black Thought' Trotter and Ahmir 'Questlove' Thompson."
   },
   {
     "question": "How does the passage connect The Roots to late-night television?",
-    "answer": "The Roots serve as the house band on NBC's \"The Tonight Show Starring Jimmy Fallon\", having served in the same role on \"Late Night with Jimmy Fallon\" from 2009 to 2014.",
+    "answer": "The passage states that The Roots serve as the house band on NBC’s “The Tonight Show Starring Jimmy Fallon,” having previously held the same role on “Late Night with Jimmy Fallon” from 2009 to 2014.",
     "groundtruth": "It says they serve as the house band on NBC's 'The Tonight Show Starring Jimmy Fallon.'"
   },
   {
     "question": "How does the passage describe Grindhouse’s structure as a film project?",
-    "answer": "It is presented as a double feature combining Rodriguez’s “Planet Terror” and Tarantino’s “Death Proof.”",
+    "answer": "The passage says “Grindhouse” is presented as a double feature that combines Rodriguez’s “Planet Terror” with Tarantino’s “Death Proof,” and it further includes fictitious exploitation trailers between the two main films.",
     "groundtruth": "It is presented as a double feature combining Rodriguez’s Planet Terror and Tarantino’s Death Proof."
   },
   {
     "question": "Why might Grindhouse be said to 'pay homage' to exploitation films, based on the passage?",
-    "answer": "Grindhouse pays homage to exploitation films of the 1970s, with its title deriving from the now-defunct theaters that would show such films.",
+    "answer": "Because its title comes from the “grind-house” theaters that used to screen 1970s exploitation movies, and the film itself even includes fake exploitation trailers, it deliberately imitates and celebrates that old tradition.",
     "groundtruth": "Because its title and presentation reference now-defunct theaters that showed exploitation films, and it includes fictitious exploitation trailers."
   },
   {
     "question": "What are the two films inside Grindhouse and who directed each one?",
-    "answer": "\"Planet Terror\" directed by Robert Rodriguez and \"Death Proof\" directed by Quentin Tarantino.",
+    "answer": "The two films inside *Grindhouse* are *Planet Terror*, directed by Robert Rodriguez, and *Death Proof*, directed by Quentin Tarantino.",
     "groundtruth": "Planet Terror was directed by Robert Rodriguez, and Death Proof was directed by Quentin Tarantino."
   },
   {
     "question": "How does the passage describe the plot of Planet Terror?",
-    "answer": "The passage describes the plot of Planet Terror as a horror comedy about a group of survivors who battle zombie-like creatures.",
+    "answer": "The passage describes Planet Terror as a horror comedy about a group of survivors who battle zombie-like creatures.",
     "groundtruth": "A horror comedy about survivors battling zombie-like creatures."
   },
   {
     "question": "How does the passage describe the plot of Death Proof?",
-    "answer": "It is an action thriller about a murderous stuntman who kills young women with modified vehicles.",
+    "answer": "It is described as an action thriller about a murderous stuntman who kills young women with modified vehicles.",
     "groundtruth": "An action thriller about a murderous stuntman who kills young women with modified vehicles."
   },
   {
     "question": "What is Mario Puzo best known for writing, and what did he later do with it?",
-    "answer": "Mario Puzo is best known for writing \"The Godfather\" (1969), which he later co-adapted into a film trilogy directed by Francis Ford Coppola.",
+    "answer": "Mario Puzo is best known for writing the crime novel *The Godfather* (1969). He later co-adapted it into a film trilogy directed by Francis Ford Coppola.",
     "groundtruth": "He wrote The Godfather (1969) and later co-adapted it into a film trilogy directed by Francis Ford Coppola."
   },
   {
     "question": "How many Academy Awards for Best Adapted Screenplay does the passage say Mario Puzo received, and for which films?",
-    "answer": "He received the Academy Award for Best Adapted Screenplay for the first film in 1972 and for \"Part II\" in 1974.",
+    "answer": "The passage states that Mario Puzo received two Academy Awards for Best Adapted Screenplay—one for the first *The Godfather* film in 1972 and another for *The Godfather Part II* in 1974.",
     "groundtruth": "Two: for the first film in 1972 and for Part II in 1974."
   },
   {
     "question": "Why might Mario Puzo be considered both an author and a screenwriter based on the passage?",
-    "answer": "Mario Francis Puzo was an American author and screenwriter because he wrote crime novels like \"The Godfather\" and co-adapted them into films, as well as wrote original screenplays for movies such as \"Superman\" and its sequel.",
+    "answer": "The passage explicitly calls him “an American author and screenwriter,” and it supports this by noting he both wrote the novel *The Godfather* (author) and co-adapted it into the film trilogy, winning Oscars for Best Adapted Screenplay (screenwriter).",
     "groundtruth": "Because he wrote crime novels and also wrote/co-adapted screenplays, including award-winning adaptations."
   },
   {
     "question": "How were The Killers formed and in what year, according to the passage?",
-    "answer": "The Killers are an American rock band formed in Las Vegas in 2001 by Brandon Flowers and Dave Keuning.",
+    "answer": "The Killers were formed in Las Vegas in 2001 by Brandon Flowers and Dave Keuning.",
     "groundtruth": "They formed in 2001 in Las Vegas by Brandon Flowers and Dave Keuning."
   },
   {
     "question": "How does the passage explain the origin of The Killers’ band name?",
-    "answer": "The band's name is derived from a logo on the bass drum of a fictitious band portrayed in the music video for the New Order song \"Crystal\".",
+    "answer": "The passage states that the band’s name comes from a logo on the bass drum of a fictitious band shown in the music video for New Order’s song “Crystal.”",
     "groundtruth": "It is derived from a logo on the bass drum of a fictitious band in the music video for New Order’s song 'Crystal.'"
   },
   {
     "question": "What is Nanjing’s political-administrative role in China according to the passage?",
-    "answer": "Nanjing is the capital of Jiangsu province of the People's Republic of China.",
+    "answer": "Nanjing is the capital of Jiangsu province of the People's Republic of China and is designated as a sub-provincial city and megacity.",
     "groundtruth": "It is the capital of Jiangsu province and is a sub-provincial city."
   },
   {
     "question": "How does the passage classify Nanjing in terms of city size/status?",
-    "answer": "Nanjing is classified as a sub-provincial city and a megacity.",
+    "answer": "The passage classifies Nanjing as a sub-provincial city and a megacity.",
     "groundtruth": "It describes Nanjing as a megacity."
   },
   {
     "question": "What is Nelly’s real name and stage name relationship as stated in the passage?",
-    "answer": "(born November 2, 1974), better known by his stage name Nelly, is an American rapper, singer and actor.",
+    "answer": "The passage states that Nelly’s real name is not given, but it identifies “Nelly” as the stage name of the person born November 2, 1974.",
     "groundtruth": "Cornell Iral Haynes Jr. is better known by his stage name Nelly."
   },
   {
     "question": "How did Nelly begin his musical career according to the passage?",
-    "answer": "He embarked on his musical career in 1993 as a member of the Midwest hip hop group St. Lunatics.",
+    "answer": "Nelly began his musical career in 1993 as a member of the Midwest hip hop group St. Lunatics.",
     "groundtruth": "He began in 1993 as a member of the Midwest hip hop group St. Lunatics."
   },
   {
     "question": "Why is Nelly’s album Country Grammar described as especially successful in the passage?",
-    "answer": "Its namesake lead single and follow-up, \"Ride wit Me\" (featuring City Spud) both entered the top ten of the \"Billboard\" Hot 100, while the album peaked atop the \"Billboard\" 200 and received diamond certification by the Recording Industry Association of America (RIAA).",
+    "answer": "The album is described as especially successful because its lead single and follow-up both reached the top ten of the Billboard Hot 100, the album itself topped the Billboard 200, and it was certified diamond by the RIAA.",
     "groundtruth": "Because it peaked at number one on the Billboard 200 and received diamond certification from the RIAA."
   },
   {
     "question": "How does the passage describe the story setup of The Girl with the Dragon Tattoo (2011)?",
-    "answer": "It tells the story of journalist Mikael Blomkvist's investigation into the 40-year-old disappearance of a girl from a wealthy family, with help from computer hacker Lisbeth Salander.",
+    "answer": "The passage says it is “a 2011 mystery thriller film … [that] tells the story of Blomkvist's investigation to find out what happened to a girl from a wealthy family who disappeared 40 years ago,” and that “He recruits the help of Salander, a computer hacker.”",
     "groundtruth": "A journalist investigates a wealthy family’s decades-old disappearance case and recruits Lisbeth Salander, a computer hacker."
   },
   {
     "question": "Who directed The Girl with the Dragon Tattoo (2011) according to the passage?",
-    "answer": "It was directed by David Fincher.",
+    "answer": "The Girl with the Dragon Tattoo (2011) was directed by David Fincher.",
     "groundtruth": "David Fincher."
   },
   {
@@ -261,17 +261,17 @@
   },
   {
     "question": "How does the passage explain the origin of the term 'chanson' in English usage?",
-    "answer": "not stated in the text",
+    "answer": "The passage traces the English term ‘chanson’ back to the monophonic songs of medieval French troubadours and trouvères, whose tradition was later developed into polyphonic chansons by Guillaume de Machaut during the ars nova period.",
     "groundtruth": "It is used for lyric-driven French songs and can refer to medieval/Renaissance polyphonic songs or French pop styles from the 1950s–1960s."
   },
   {
     "question": "Why does the passage mention troubadours and trouvères when describing chanson?",
-    "answer": "The passage mentions troubadours and trouvères as the origins of the genre in monophonic songs.",
+    "answer": "The passage mentions troubadours and trouvères to identify them as the earliest originators of the chanson genre, specifically noting that their songs were monophonic, setting the historical foundation before polyphonic chansons developed.",
     "groundtruth": "To point to early origins of the genre in monophonic songs associated with those traditions."
   },
   {
     "question": "How does the passage describe a hotel’s range of room quality and offerings?",
-    "answer": "Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator, and other kitchen facilities, upholstered chairs, a flat-screen television, and en-suite bathrooms.",
+    "answer": "The passage says hotel rooms can be as basic as a small room with a modest mattress or as upscale as large suites furnished with high-quality beds, kitchen appliances, upholstered chairs, flat-screen TVs, and private bathrooms.",
     "groundtruth": "It ranges from modest rooms with basic mattresses to large suites with more furnishings, appliances, and amenities."
   },
   {
@@ -281,42 +281,42 @@
   },
   {
     "question": "How is telepathy defined in the passage, and what is emphasized as missing from the process?",
-    "answer": "Telepathy is defined as the purported vicarious transmission of information from one person's mind to another's without using any known human sensory channels or physical interaction.",
+    "answer": "Telepathy is defined as the purported vicarious transmission of information from one person's mind to another's without using any known human sensory channels or physical interaction. The passage emphasizes that neither known sensory channels nor physical interaction are involved in the process.",
     "groundtruth": "It is transmission of information mind-to-mind without known sensory channels or physical interaction."
   },
   {
     "question": "Who coined the term 'telepathy' and in what year, according to the passage?",
-    "answer": "The term was first coined in 1882 by the classical scholar Frederic W. H. Myers.",
+    "answer": "The term \"telepathy\" was coined in 1882 by Frederic W. H. Myers.",
     "groundtruth": "Frederic W. H. Myers coined it in 1882."
   },
   {
     "question": "How does the passage connect telepathy to an organization focused on psychical research?",
-    "answer": "The term telepathy was first coined in 1882 by Frederic W. H. Myers, a founder of the Society for Psychical Research (SPR).",
+    "answer": "The passage links telepathy to the Society for Psychical Research by naming its founder, Frederic W. H. Myers, as the person who coined the term in 1882.",
     "groundtruth": "It notes Myers was a founder of the Society for Psychical Research (SPR)."
   },
   {
     "question": "What is Mutiny on the Bounty (1962) described as in the passage?",
-    "answer": "Mutiny on the Bounty is a 1962 American Technicolor epic historical drama film.",
+    "answer": "It is described as a 1962 American Technicolor epic historical drama film released by Metro-Goldwyn-Mayer.",
     "groundtruth": "A 1962 American Technicolor epic historical drama film released by MGM."
   },
   {
     "question": "How does the passage describe Long Island’s relationship to the New York metropolitan area?",
-    "answer": "Long Island constitutes a significant share of the New York metropolitan area in both population and land area.",
+    "answer": "The passage states that Long Island “constitutes a significant share of the New York metropolitan area in both population and land area.”",
     "groundtruth": "It says Long Island constitutes a significant share of the metropolitan area in population and land area."
   },
   {
     "question": "How did hip-hop originate according to the passage, and what social stance is mentioned?",
-    "answer": "Hip-hop originated in the early 1970s by African Americans and Afro-Caribbean immigrants in the Bronx, New York City, and began as an anti-drug and anti-violence genre.",
+    "answer": "Hip-hop originated in the early 1970s in the Bronx, New York City, created by African Americans and Afro-Caribbean immigrants. It began as an anti-drug and anti-violence genre.",
     "groundtruth": "It originated in the early 1970s in the Bronx and is described as an anti-drug and anti-violence genre."
   },
   {
     "question": "Why does the passage argue that 'hip hop' is broader than just 'rap'?",
-    "answer": "The passage states that while \"hip hop\" is often used to refer solely to rapping and rap music, it more properly denotes the practice of the entire subculture, which includes MCing/rapping, DJing/scratching with turntables, breakdancing, and graffiti art.",
+    "answer": "The passage explains that “hip hop” properly denotes the entire subculture, which includes four key elements—MCing/rapping, DJing/scratching, break-dancing, and graffiti art—so the term covers more than just the rapping/rap-music component alone.",
     "groundtruth": "Because it describes hip hop as a subculture defined by multiple elements like DJing, breakdancing, and graffiti art, not only rapping."
   },
   {
     "question": "Who are the founders of modern political philosophy mentioned in the passage, and what work supports that claim?",
-    "answer": "The founders of modern political philosophy mentioned in the passage are Thomas Hobbes.",
+    "answer": "The passage identifies Thomas Hobbes as an English philosopher, implying he is a founder of modern political philosophy; no specific work is cited to support this claim.",
     "groundtruth": "Thomas Hobbes is mentioned, supported by his 1651 book Leviathan where he develops social contract theory."
   }
 ]
