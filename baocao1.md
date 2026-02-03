@@ -23,32 +23,94 @@ Paper SAT (Structure-Aware Alignment and Tuning) đề xuất nhiều kỹ thu�
 
 ### 1.1. ID Mapping (Ánh Xạ ID)
 
+#### 🎯 Vấn Đề Cần Giải Quyết
+
+Hãy tưởng tượng bạn có một **Đồ Thị Tri Thức** (Knowledge Graph) chứa hàng nghìn thực thể như: "Đại học Bách Khoa", "Thành phố Hồ Chí Minh", "Việt Nam"...
+
+**Vấn đề:** Máy tính (đặc biệt là mạng nơ-ron) **không hiểu được chữ**, nó chỉ hiểu **số**.
+
+Ví dụ: Bạn muốn máy tính học mối quan hệ `"Hà Nội" → nằm_tại → "Việt Nam"`, nhưng máy tính không thể tính toán với chuỗi ký tự "Hà Nội" hay "Việt Nam".
+
+#### 💡 Giải Pháp: Đánh Số Cho Mọi Thứ
+
+**Ánh xạ ID** là kỹ thuật **gán một số duy nhất cho mỗi thực thể và mỗi loại quan hệ**.
+
 **Ý tưởng từ SAT:**
-- SAT sử dụng file `mid2id.txt` để map từ Freebase MID (ví dụ: `/m/01234`) sang số ID (ví dụ: `0, 1, 2, ...`)
-- Mục đích: Chuyển đổi entity names thành số để neural network xử lý được
+- SAT sử dụng file `mid2id.txt` để ánh xạ từ Freebase MID (ví dụ: `/m/01234`) sang số ID (ví dụ: `0, 1, 2, ...`)
+- Mục đích: Chuyển đổi tên thực thể thành số để mạng nơ-ron xử lý được
 
-**Cách tôi áp dụng:**
-```python
-# Tạo mapping entity → ID
-entity2id = {
-    "ucf": 0,
-    "florida": 1, 
-    "public research university": 2,
-    ...
-}
+#### 🔧 Cách Tôi Áp Dụng Vào Code
 
-# Tạo mapping relation → ID
-relation2id = {
-    "co_occurs_with": 0,
-    "is_located_in": 1,
-    ...
-}
+Trong code của tôi (file `enhanced_graphrag.py`), tôi **tự xây dựng KG từ văn bản thô**, nên **ID được tự động sinh ra** khi trích xuất thực thể từ văn bản.
+
+**Quy trình cụ thể:**
+
+```
+Văn bản thô: "UCF is a public research university located in Florida..."
+       ↓
+   spaCy NER trích xuất thực thể: ["UCF", "Florida", "public research university"]
+       ↓
+   Mỗi thực thể được gán số ID tự động
+       ↓
+   entity2id = {"ucf": 0, "florida": 1, "public research university": 2, ...}
 ```
 
-**Mục đích:**
-- Chuẩn hóa tên: "UCF", "ucf", "U.C.F." → cùng 1 ID
-- Chuẩn bị cho việc dùng Graph Transformer sau này
-- Lưu trữ hiệu quả hơn
+**Code thực tế trong lớp `EnhancedKGBuilder`:**
+
+```python
+# Khi gặp thực thể mới, tự động gán số ID tiếp theo
+def _get_or_create_entity_id(self, entity: str) -> int:
+    """Lấy ID của thực thể, nếu chưa có thì tạo mới"""
+    entity = self._normalize_entity(entity)  # Chuẩn hóa: "UCF" → "ucf"
+    
+    if entity not in self.entity2id:
+        # Thực thể mới → gán số ID tiếp theo
+        idx = len(self.entity2id)  # Ví dụ: 0, 1, 2, ...
+        self.entity2id[entity] = idx
+        self.id2entity[idx] = entity  # Từ điển ngược để tra ngược
+    
+    return self.entity2id[entity]
+
+# Tương tự cho quan hệ
+def _get_or_create_relation_id(self, relation: str) -> int:
+    relation = relation.lower().strip()
+    if relation not in self.relation2id:
+        idx = len(self.relation2id)
+        self.relation2id[relation] = idx
+        self.id2relation[idx] = relation
+    return self.relation2id[relation]
+```
+
+**Ví dụ minh họa quá trình:**
+
+| Bước | Thực thể gặp được | `entity2id` sau bước này |
+|------|-------------------|--------------------------|
+| 1 | "ucf" | `{"ucf": 0}` |
+| 2 | "florida" | `{"ucf": 0, "florida": 1}` |
+| 3 | "public research university" | `{"ucf": 0, "florida": 1, "public research university": 2}` |
+| 4 | "ucf" (gặp lại) | Không thay đổi (đã có ID = 0) |
+
+**Kết quả cuối cùng được lưu:**
+- `entity2id.pkl`: Từ điển ánh xạ tên → số (5,088 thực thể)
+- `relation2id.pkl`: Từ điển ánh xạ quan hệ → số (8 loại quan hệ)
+
+#### 🎯 Mục Đích Của Bước Ánh Xạ ID Trong Dự Án
+
+| Mục đích | Giải thích |
+|----------|------------|
+| **Chuẩn hóa tên gọi** | "UCF", "ucf", "Ucf" → đều trở thành `"ucf"` → cùng 1 số ID |
+| **Chuyển KG sang dạng số** | Để đưa vào Graph Transformer (mạng nơ-ron trên đồ thị) |
+| **Tạo cạnh dạng số** | Triple `("ucf", "co_occurs_with", "florida")` → `(0, 0, 1)` |
+| **Tiết kiệm bộ nhớ** | Lưu số thay vì chuỗi ký tự |
+
+#### 📊 Khác Biệt So Với SAT Gốc
+
+| Tiêu chí | SAT gốc | Code của tôi |
+|----------|---------|--------------|
+| **Nguồn KG** | KG có sẵn (Freebase, FB15k-237) | Tự xây từ văn bản thô |
+| **Cách đánh ID** | Đọc từ file `mid2id.txt` có sẵn | Tự động sinh khi trích xuất thực thể |
+| **Số lượng thực thể** | Cố định theo KG gốc | Phụ thuộc vào văn bản đầu vào |
+| **Chất lượng** | Cao (KG chuẩn, đã được kiểm duyệt) | Thấp hơn (phụ thuộc spaCy NER) |
 
 ---
 
