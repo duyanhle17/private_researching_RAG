@@ -116,27 +116,203 @@ def _get_or_create_relation_id(self, relation: str) -> int:
 
 ### 1.2. Relation Extraction (Rút Trích Quan Hệ)
 
-**Ý tưởng từ SAT:**
-- SAT dùng KG có sẵn với 237 loại quan hệ (FB15k-237)
-- Mỗi triple: (head_entity, relation, tail_entity)
+#### 🎯 Vấn Đề Cần Giải Quyết
 
-**Cách tôi áp dụng:**
-- Dùng **Dependency Parsing** (phân tích cú pháp phụ thuộc) để tìm quan hệ
-- Ví dụ câu: "UCF is located in Florida"
-  - Phân tích: UCF (subject) → is located (verb) → Florida (object)
-  - Tạo triple: (UCF, is_located_in, Florida)
+Trong đồ thị tri thức, **quan hệ** (relation) là thứ kết nối các thực thể với nhau. Không có quan hệ, các thực thể chỉ là danh sách rời rạc, vô nghĩa.
+
+**Ví dụ:**
+- Có 2 thực thể: `"Hà Nội"` và `"Việt Nam"`
+- Nếu không có quan hệ → chỉ biết 2 cái tên, không biết liên quan gì
+- Nếu có quan hệ `"Hà Nội" --là_thủ_đô_của--> "Việt Nam"` → có ý nghĩa!
+
+**Vấn đề:** Làm sao máy tính tự động tìm ra quan hệ từ văn bản thô?
+
+#### 💡 SAT Làm Gì? (Không Có Relation Extraction!)
+
+**Quan trọng:** SAT **KHÔNG tự trích xuất quan hệ từ văn bản**. SAT dùng **KG có sẵn** (FB15k-237) với:
+- **237 loại quan hệ** đã được định nghĩa sẵn bởi Freebase
+- Các quan hệ được lưu trong file `rel2id.txt` và `train.txt`
+
+**Ví dụ file `rel2id.txt` của SAT:**
+```
+/people/person/profession                    4
+/film/film/genre                             8
+/location/location/contains                  13
+/people/person/nationality                   14
+/people/person/place_of_birth                30
+...
+(tổng cộng 237 loại quan hệ)
+```
+
+**Ví dụ file `train.txt` của SAT:**
+```
+/m/027rn    /location/country/form_of_government    /m/06cx9
+/m/0h3y     /location/country/capital               /m/0rtv
+```
+→ Các triple đã có sẵn, chỉ việc đọc vào!
+
+#### 🔧 Cách Tôi Làm: TỰ VIẾT CODE Trích Xuất Quan Hệ
+
+Vì tôi tự xây KG từ văn bản (không có sẵn như SAT), tôi phải **tự viết code** để trích xuất quan hệ. Tôi dùng **Dependency Parsing** (Phân tích cú pháp phụ thuộc).
+
+**⚠️ Lưu ý quan trọng:** Phần này **KHÔNG lấy từ code SAT**. Đây là code tôi tự viết dựa trên kiến thức NLP.
+
+##### Dependency Parsing là gì?
+
+**Dependency Parsing** = Phân tích cấu trúc ngữ pháp của câu, tìm ra từ nào phụ thuộc vào từ nào.
+
+**Ví dụ với câu:** `"UCF is located in Florida"`
+
+```
+       is located (ROOT - động từ chính)
+           │
+     ┌─────┼─────┐
+     │           │
+    UCF      in Florida
+  (nsubj)      (prep)
+  chủ ngữ    giới từ
+```
+
+- `"UCF"` là **chủ ngữ** (subject) của động từ `"is located"`
+- `"in Florida"` là **cụm giới từ** chỉ địa điểm
+- Từ đây suy ra: `UCF` có quan hệ `located_in` với `Florida`
+
+##### Quy Trình Trích Xuất Trong Code
+
+```
+Câu: "UCF is located in Florida"
+         ↓
+   spaCy phân tích dependency
+         ↓
+   Tìm pattern: Chủ ngữ - Động từ - Tân ngữ/Giới từ
+         ↓
+   Tạo triple: (UCF, in, Florida)
+```
+
+**Code thực tế trong `extract_relations_from_sentence()`:**
 
 ```python
-# Code trong enhanced_graphrag.py
-for token in sent:
-    if "subj" in token.dep_:  # Tìm chủ ngữ
-        subj = token.text
-        verb = token.head.lemma_  # Động từ
-        for child in token.head.children:
-            if "obj" in child.dep_:  # Tìm tân ngữ
-                obj = child.text
-                relations.append((subj, verb, obj))
+def extract_relations_from_sentence(self, sent):
+    """Trích xuất quan hệ từ 1 câu dùng dependency parsing"""
+    relations = []
+    
+    for token in sent:
+        # Tìm pattern: Chủ ngữ - Động từ - Tân ngữ
+        if "subj" in token.dep_:  # token là chủ ngữ
+            subj = token.text              # Lấy chủ ngữ: "UCF"
+            verb = token.head              # Lấy động từ: "located"
+            
+            for child in verb.children:
+                if "obj" in child.dep_:    # Tìm tân ngữ
+                    obj = child.text
+                    rel = verb.lemma_      # Lấy dạng gốc động từ
+                    
+                    # Tạo triple với độ tin cậy 0.8
+                    relations.append((subj, rel, obj, 0.8))
+        
+        # Tìm pattern: Danh từ - Giới từ - Danh từ
+        if token.dep_ == "prep":           # token là giới từ (in, at, of,...)
+            head = token.head.text         # Từ đứng trước giới từ
+            for child in token.children:
+                if child.dep_ == "pobj":   # Tân ngữ của giới từ
+                    rel = token.text       # Giới từ làm quan hệ
+                    
+                    # Tạo triple với độ tin cậy 0.6 (thấp hơn)
+                    relations.append((head, rel, child.text, 0.6))
+    
+    return relations
 ```
+
+##### Bảng Mẫu Quan Hệ Định Sẵn
+
+Code có định nghĩa sẵn một số mẫu để ánh xạ động từ → quan hệ chuẩn:
+
+```python
+relation_patterns = {
+    "treats": ["treat", "cure", "heal", "remedy"],      # chữa trị
+    "causes": ["cause", "lead to", "result in"],        # gây ra
+    "prevents": ["prevent", "avoid", "reduce risk"],    # ngăn ngừa
+    "part_of": ["part of", "component", "include"],     # là một phần của
+    "type_of": ["type of", "kind of", "is a"],          # là một loại
+    # ...
+}
+```
+
+**Ví dụ:** Nếu gặp động từ `"cure"` → ánh xạ thành quan hệ chuẩn `"treats"`
+
+##### Fallback: Quan Hệ Đồng Xuất Hiện (Co-occurrence)
+
+Khi **không tìm được quan hệ rõ ràng** từ dependency parsing, code sẽ **fallback** (dùng phương án dự phòng):
+
+> "Nếu 2 thực thể xuất hiện trong cùng 1 câu → tạo cạnh `co_occurs_with`"
+
+```python
+# Fallback: Co-occurrence relations
+if add_cooccurrence:
+    sent_ents_list = list(sent_entities & entities)
+    for i, e1 in enumerate(sent_ents_list):
+        for e2 in sent_ents_list[i+1:]:
+            # Nếu chưa có cạnh giữa e1 và e2
+            if not self.kg.has_edge(e1, e2) and not self.kg.has_edge(e2, e1):
+                # Tạo cạnh co_occurs_with với độ tin cậy thấp (0.3)
+                self._add_triple(e1, "co_occurs_with", e2, 0.3, chunk_idx)
+```
+
+#### 📊 Kết Quả Thực Tế: Vấn Đề Nghiêm Trọng
+
+Phân tích KG đã xây dựng:
+
+| Loại quan hệ | Số cạnh | Tỉ lệ |
+|--------------|---------|-------|
+| `co_occurs_with` | 8,442 | **99.9%** |
+| `as` | 2 | 0.02% |
+| `of` | 2 | 0.02% |
+| `in` | 1 | 0.01% |
+| Các quan hệ khác | 4 | 0.05% |
+| **Tổng** | **8,451** | 100% |
+
+**Kết luận đau lòng:** 
+
+- **99.9% quan hệ là `co_occurs_with`** (đồng xuất hiện)
+- Dependency parsing **gần như không hoạt động**
+- Code phải fallback về co-occurrence cho hầu hết trường hợp
+
+#### ❌ Tại Sao Dependency Parsing Thất Bại?
+
+**1. spaCy model quá yếu:**
+- `en_core_web_sm` là model nhỏ nhất, độ chính xác thấp
+- Không nhận diện đúng cấu trúc câu phức tạp
+
+**2. Văn bản Wikipedia có cấu trúc phức tạp:**
+```
+"The University of Central Florida, commonly known as UCF, 
+is a public research university with its main campus in 
+unincorporated Orange County, Florida."
+```
+- Câu dài, nhiều mệnh đề
+- Nhiều dấu phẩy, từ nối
+- spaCy khó parse đúng
+
+**3. Pattern quá đơn giản:**
+- Code chỉ tìm `Chủ ngữ - Động từ - Tân ngữ`
+- Nhiều quan hệ không theo pattern này
+
+#### 📊 So Sánh: SAT vs Code Của Tôi
+
+| Tiêu chí | SAT gốc | Code của tôi |
+|----------|---------|--------------|
+| **Nguồn quan hệ** | Có sẵn trong FB15k-237 (237 loại) | Tự trích xuất từ văn bản |
+| **Phương pháp** | Đọc từ file `train.txt` | Dependency parsing + co-occurrence |
+| **Code relation extraction** | ❌ **KHÔNG CÓ** (không cần) | ✅ **TỰ VIẾT** |
+| **Chất lượng quan hệ** | Cao, đa dạng, có ngữ nghĩa rõ ràng | Thấp, 99.9% là co-occurrence |
+| **Số loại quan hệ** | 237 loại | 8 loại (hầu hết vô nghĩa) |
+
+#### 💡 Bài Học Rút Ra
+
+1. **SAT không làm relation extraction** - họ dùng KG có sẵn
+2. **Dependency parsing không đủ mạnh** để trích xuất quan hệ từ văn bản thực tế
+3. **Co-occurrence không mang ngữ nghĩa** - chỉ nói 2 thực thể xuất hiện cùng nhau
+4. **Cần phương pháp mạnh hơn:** Dùng LLM để extract relations, hoặc dùng KG có sẵn như SAT
 
 ---
 
