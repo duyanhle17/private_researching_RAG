@@ -318,16 +318,130 @@ unincorporated Orange County, Florida."
 
 ### 1.3. Hybrid Retrieval (Tìm Kiếm Kết Hợp)
 
-**Ý tưởng từ SAT:**
-- SAT kết hợp text embeddings với graph embeddings
-- Công thức: `score = α × text_score + (1-α) × graph_score`
+#### 🎯 Vấn Đề Cần Giải Quyết
 
-**Cách tôi áp dụng:**
+Khi tìm kiếm thông tin để trả lời câu hỏi, có 2 cách tiếp cận:
+
+1. **Tìm kiếm ngữ nghĩa (Semantic Search):** Dựa trên ý nghĩa của câu hỏi
+2. **Tìm kiếm dựa trên đồ thị (Graph Search):** Dựa trên các thực thể được nhắc đến
+
+**Vấn đề:** Dùng riêng 1 cách có thể bỏ sót thông tin quan trọng.
+
+#### 💡 SAT Làm Gì? (Không Phải Hybrid Retrieval!)
+
+**Quan trọng:** SAT **KHÔNG làm hybrid retrieval** như code của tôi. SAT dùng phương pháp phức tạp hơn nhiều:
+
+**CLIP-style Contrastive Learning:**
+- SAT huấn luyện một mô hình để **căn chỉnh (align)** biểu diễn văn bản và biểu diễn đồ thị
+- Dùng **InfoNCE loss** (contrastive loss) để học
+- Text embedding và Graph embedding được đưa vào **cùng không gian vector**
+
 ```python
-# Công thức hybrid
-final_score = alpha * semantic_score + (1 - alpha) * graph_score
-# Với alpha = 0.6: 60% semantic + 40% graph
+# Code SAT (trong clip_graph.py) - Contrastive Learning
+def forward(self, g, src, rel, dst, src_text, dst_text, device):
+    # Encode graph nodes
+    s_graph_feats = self.encode_graph(src, g)
+    # Encode text 
+    s_text_feats = self.encode_text(src_text)
+    t_text_feats = self.encode_text(dst_text)
+    
+    # Normalize features
+    s_graph_feats = s_graph_feats / s_graph_feats.norm(dim=-1, keepdim=True)
+    s_text_feats = s_text_feats / s_text_feats.norm(dim=-1, keepdim=True)
+    
+    # Contrastive loss sẽ kéo text và graph embedding gần nhau
+    return s_graph_feats, s_text_feats, t_text_feats, text_labels
 ```
+
+**Đặc điểm của SAT:**
+- **Học được** (learnable): Mô hình được huấn luyện trên dữ liệu
+- **End-to-end**: Text encoder và Graph encoder được train cùng nhau
+- **Contrastive**: Học bằng cách so sánh cặp positive/negative
+
+#### 🔧 Cách Tôi Làm: TỰ VIẾT Hybrid Scoring Đơn Giản
+
+**⚠️ Lưu ý:** Phần này **KHÔNG lấy từ SAT**. Đây là công thức kết hợp đơn giản tôi tự viết.
+
+**Công thức:**
+```
+final_score = α × semantic_score + (1-α) × graph_score
+```
+
+Trong đó:
+- `semantic_score`: Điểm từ FAISS (độ tương đồng cosine giữa câu hỏi và chunk)
+- `graph_score`: Điểm dựa trên số thực thể trùng khớp giữa câu hỏi và chunk
+- `α` (alpha): Trọng số, mặc định = 0.7 (70% semantic, 30% graph)
+
+**Code thực tế:**
+
+```python
+def query(self, query: str, top_k: int = 5, alpha: float = 0.7):
+    # Bước 1: Tìm kiếm ngữ nghĩa
+    sem_results = self._semantic_search(query, top_k=top_k * 2)
+    
+    # Bước 2: Tính điểm dựa trên đồ thị
+    graph_scores = self._graph_search(query)
+    
+    # Bước 3: Kết hợp điểm
+    combined = []
+    for idx, sem_score in sem_results:
+        gscore = graph_scores[idx]
+        final_score = alpha * sem_score + (1 - alpha) * gscore
+        combined.append((idx, final_score))
+    
+    # Sắp xếp và lấy top-k
+    combined.sort(key=lambda x: x[1], reverse=True)
+    return combined[:top_k]
+```
+
+**Cách tính `graph_score`:**
+```python
+def _graph_search(self, query: str) -> np.ndarray:
+    # Trích xuất entities từ câu hỏi bằng NER
+    doc = self.nlp(query)
+    q_entities = [ent.text for ent in doc.ents]
+    
+    # Đếm số entities trùng khớp trong mỗi chunk
+    scores = []
+    for chunk_entities in self.chunk_entities:
+        overlap = len(set(q_entities) & chunk_entities)
+        scores.append(overlap)
+    
+    # Chuẩn hóa về [0, 1]
+    scores = np.array(scores) / (max(scores) + 1e-12)
+    return scores
+```
+
+#### 📊 So Sánh: SAT vs Code Của Tôi
+
+| Tiêu chí | SAT gốc | Code của tôi |
+|----------|---------|--------------|
+| **Phương pháp** | CLIP-style Contrastive Learning | Công thức cộng trọng số đơn giản |
+| **Có học (learnable)** | ✅ Có - train neural network | ❌ Không - công thức cố định |
+| **Text-Graph alignment** | Học để đưa vào cùng không gian | Chỉ cộng điểm, không align |
+| **Độ phức tạp** | Cao (cần train model) | Thấp (chỉ cần công thức) |
+| **Hiệu quả** | Cao (nếu train tốt) | Thấp (phụ thuộc NER) |
+
+#### ❌ Tại Sao Hybrid Của Tôi Không Hiệu Quả?
+
+Như đã phân tích ở Phần 3, `graph_score` gần như **luôn bằng 0** vì:
+1. NER không trích xuất được entities từ câu hỏi
+2. Entities trích xuất được không khớp với KG
+
+**Kết quả test:**
+```
+α = 1.0 (100% semantic): 6/64 đúng
+α = 0.7 (70% semantic): 6/64 đúng  
+α = 0.0 (100% graph):   6/64 đúng
+→ Thay đổi α không ảnh hưởng gì!
+```
+
+#### 💡 Bài Học Rút Ra
+
+1. **SAT dùng contrastive learning**, không phải hybrid scoring đơn giản
+2. **Công thức cộng trọng số** là cách tiếp cận naive, không hiệu quả
+3. **Cần học alignment** giữa text và graph thay vì chỉ cộng điểm
+4. **Graph score vô nghĩa** nếu NER không hoạt động
 
 ---
 
