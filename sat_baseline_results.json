@@ -1,0 +1,322 @@
+[
+  {
+    "question": "What is a government, according to the given definition?",
+    "answer": "A government is the system or group of people that governs an organized community, generally a state.",
+    "groundtruth": "A government is the system or group of people governing an organized community, generally a state."
+  },
+  {
+    "question": "How is the definition of government in the text framed in terms of who holds power?",
+    "answer": "The text frames government as “the system or group of people governing an organized community,” so power is held by the governing people or system itself.",
+    "groundtruth": "It frames government as either a system or a group of people who govern an organized community."
+  },
+  {
+    "question": "Why does the definition say a government is 'generally a state' rather than always a state?",
+    "answer": "Because some governments govern entities smaller than a state (e.g., provinces, cities, territories), so “generally” acknowledges that exceptions exist.",
+    "groundtruth": "Because the definition allows that governments can govern organized communities more broadly, though states are the typical case."
+  },
+  {
+    "question": "What institutional type is the University of Central Florida (UCF)?",
+    "answer": "UCF is a public research university.",
+    "groundtruth": "UCF is a public research university."
+  },
+  {
+    "question": "Where is UCF’s main campus located, as described in the text?",
+    "answer": "UCF’s main campus is in unincorporated Orange County, Florida.",
+    "groundtruth": "Its main campus is in unincorporated Orange County, Florida."
+  },
+  {
+    "question": "How does the text connect UCF to the broader higher-education structure in Florida?",
+    "answer": "UCF is explicitly identified as “part of the State University System of Florida,” situating it within the state’s public university network alongside the other SUS institutions described.",
+    "groundtruth": "It says UCF is part of the State University System of Florida."
+  },
+  {
+    "question": "Why might UCF’s 'R1' classification matter for interpreting what kind of university it is?",
+    "answer": "The R1 classification signals that UCF is a “Doctoral University – Very high research activity,” confirming it is a major research-intensive institution rather than a primarily teaching-focused one.",
+    "groundtruth": "Because 'R1' indicates very high research activity, signaling a strong emphasis on doctoral-level research output."
+  },
+  {
+    "question": "What accrediting body is said to accredit UCF?",
+    "answer": "UCF is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools.",
+    "groundtruth": "The Commission on Colleges of the Southern Association of Colleges and Schools."
+  },
+  {
+    "question": "How many students did UCF have as of the fall 2022 semester?",
+    "answer": "UCF had 68,442 students as of the fall 2022 semester.",
+    "groundtruth": "68,442 students."
+  },
+  {
+    "question": "How does the text quantify UCF’s on-campus size relative to other U.S. public universities?",
+    "answer": "UCF has the fourth-largest on-campus student body of any public university in the United States, with 68,442 students as of fall 2022.",
+    "groundtruth": "It states UCF has the fourth-largest on-campus student body of any public university in the United States."
+  },
+  {
+    "question": "What is the Satellite Award for Best Cinematography, based on the passage?",
+    "answer": "The Satellite Award for Best Cinematography is an annual award given by the International Press Academy.",
+    "groundtruth": "It is one of the annual Satellite Awards given by the International Press Academy."
+  },
+  {
+    "question": "Who gives the Satellite Awards, according to the text?",
+    "answer": "The Satellite Awards are given by the International Press Academy.",
+    "groundtruth": "The International Press Academy."
+  },
+  {
+    "question": "How is the University of Essex characterized in the passage?",
+    "answer": "The University of Essex is characterized as a public research university established by royal charter in 1965, noted for being one of the original plate glass universities with campuses in Colchester, Southend-on-Sea, and Loughton.",
+    "groundtruth": "It is described as a public research university in Essex, England."
+  },
+  {
+    "question": "When was the University of Essex established, and how was it established?",
+    "answer": "The University of Essex was established in 1965 by royal charter.",
+    "groundtruth": "It was established by royal charter in 1965."
+  },
+  {
+    "question": "Why is the University of Essex called one of the 'original plate glass universities' in the text?",
+    "answer": "It is labeled one of the “original plate glass universities” because it was established by royal charter in 1965, placing it in that first post-war cohort of new UK universities built in a modern, glass-and-concrete style.",
+    "groundtruth": "Because it is included among the group of universities founded in that era that are commonly referred to as plate glass universities."
+  },
+  {
+    "question": "What are the two key symbolic elements mentioned on the University of Essex shield?",
+    "answer": "The University of Essex shield displays the ancient arms attributed to the Kingdom of Essex and the motto \"Thought the harder, heart the keener.\"",
+    "groundtruth": "The ancient arms attributed to the Kingdom of Essex and the motto 'Thought the harder, heart the keener.'"
+  },
+  {
+    "question": "How is the University of Essex motto connected to literature in the passage?",
+    "answer": "The University of Essex motto, \"Thought the harder, heart the keener,\" is adapted from the Anglo-Saxon poem \"The Battle of Maldon.\"",
+    "groundtruth": "It is adapted from the Anglo-Saxon poem 'The Battle of Maldon.'"
+  },
+  {
+    "question": "What campuses are mentioned for the University of Essex, and where is its primary campus?",
+    "answer": "The University of Essex has campuses in Southend-on-Sea and Loughton, with its primary campus located in Wivenhoe Park, Colchester.",
+    "groundtruth": "It comprises three campuses in the county, in Southend-on-Sea and Loughton, with its primary campus in Wivenhoe Park, Colchester."
+  },
+  {
+    "question": "Who is Chris Seefried, according to the passage?",
+    "answer": "Chris Seefried is an American singer, musician, songwriter, and record producer best known as the lead vocalist of the bands Gods Child, Joe 90, and Low Stars, and as a producer and co-writer for Fitz and the Tantrums.",
+    "groundtruth": "He is an American singer, musician, songwriter, and record producer."
+  },
+  {
+    "question": "How does the text explain what Chris Seefried is best known for?",
+    "answer": "The text states that Chris Seefried is best known as the lead vocalist and frontman of the bands Gods Child, Joe 90, and Low Stars, and as producer and co-writer for the neo-soul band Fitz and the Tantrums.",
+    "groundtruth": "As lead vocalist/frontman of Gods Child, Joe 90, and Low Stars, and as producer and co-writer for Fitz and the Tantrums."
+  },
+  {
+    "question": "Why might Chris Seefried be described as both a performer and behind-the-scenes contributor?",
+    "answer": "He fronts the bands Gods Child, Joe 90, and Low Stars (performer) and also produces and co-writes for Fitz and the Tantrums (behind-the-scenes contributor).",
+    "groundtruth": "Because the passage credits him as a frontman (performer) and also as a producer and co-writer (behind-the-scenes roles)."
+  },
+  {
+    "question": "What is Tottenham Hotspur Football Club commonly referred to as?",
+    "answer": "Tottenham Hotspur Football Club is commonly referred to as simply Tottenham or Spurs.",
+    "groundtruth": "Tottenham or Spurs."
+  },
+  {
+    "question": "Where is Tottenham Hotspur based?",
+    "answer": "Tottenham Hotspur is based in Tottenham, London, England.",
+    "groundtruth": "Tottenham, London, England."
+  },
+  {
+    "question": "What league does Tottenham compete in, according to the text?",
+    "answer": "Tottenham competes in the Premier League, the top flight of English football.",
+    "groundtruth": "The Premier League."
+  },
+  {
+    "question": "How does the passage describe the significance of Tottenham’s stadium change in 2019?",
+    "answer": "The passage states that in April 2019 Tottenham moved into the new 62,850-capacity Tottenham Hotspur Stadium, which replaced the demolished White Hart Lane on the same site, indicating an upgrade to a larger, modern venue.",
+    "groundtruth": "It says the club began playing home matches in Tottenham Hotspur Stadium in April 2019, replacing White Hart Lane after it was demolished for the new stadium on the same site."
+  },
+  {
+    "question": "Why was White Hart Lane demolished, according to the passage?",
+    "answer": "Not stated in the text.",
+    "groundtruth": "To make way for the new stadium on the same site."
+  },
+  {
+    "question": "What is The Village (2004) described as in the text?",
+    "answer": "The Village (2004) is described as an American period thriller film written, produced, and directed by M. Night Shyamalan.",
+    "groundtruth": "A 2004 American period thriller film written, produced, and directed by M. Night Shyamalan."
+  },
+  {
+    "question": "How does the text summarize the central fear in The Village?",
+    "answer": "The text says the film is “about a village whose population lives in fear of creatures inhabiting the woods beyond it, referred to as ‘Those We Don’t Speak Of.’”",
+    "groundtruth": "The villagers live in fear of creatures in the woods beyond them, called 'Those We Don't Speak Of.'"
+  },
+  {
+    "question": "Why is the phrase 'Those We Don't Speak Of' important to understanding the film’s premise?",
+    "answer": "Not stated in the text.",
+    "groundtruth": "Because it names the creatures that drive the village’s fear and control how the community behaves."
+  },
+  {
+    "question": "Name three actors listed as starring in The Village.",
+    "answer": "Bryce Dallas Howard, Joaquin Phoenix, and Adrien Brody are listed as starring in The Village.",
+    "groundtruth": "Examples include Bryce Dallas Howard, Joaquin Phoenix, and Adrien Brody."
+  },
+  {
+    "question": "How is I Heart Huckabees described in the passage?",
+    "answer": "I Heart Huckabees is described as a 2004 independent black comedy film directed and produced by David O. Russell, who also co-wrote the screenplay.",
+    "groundtruth": "A 2004 independent black comedy film directed and produced by David O. Russell, who co-wrote the screenplay with Jeff Baena."
+  },
+  {
+    "question": "Why does the passage explicitly mention that I Heart Huckabees is 'independent'?",
+    "answer": "The passage calls *I Heart Huckabees* “independent” to signal that it was produced outside the major studio system, aligning it with the definition of an independent film given in the context.",
+    "groundtruth": "To characterize it as an independent production rather than a studio blockbuster."
+  },
+  {
+    "question": "Who formed The Roots and in what year, according to the passage?",
+    "answer": "The Roots were formed in 1987 by Tariq \"Black Thought\" Trotter and Ahmir \"Questlove\" Thompson.",
+    "groundtruth": "They were formed in 1987 by Tariq 'Black Thought' Trotter and Ahmir 'Questlove' Thompson."
+  },
+  {
+    "question": "How does the passage connect The Roots to late-night television?",
+    "answer": "The Roots serve as the house band on NBC’s “The Tonight Show Starring Jimmy Fallon,” having previously held the same role on “Late Night with Jimmy Fallon” from 2009 to 2014.",
+    "groundtruth": "It says they serve as the house band on NBC's 'The Tonight Show Starring Jimmy Fallon.'"
+  },
+  {
+    "question": "How does the passage describe Grindhouse’s structure as a film project?",
+    "answer": "It is presented as a double feature that combines two separate films—Rodriguez’s “Planet Terror” and Tarantino’s “Death Proof”—and also includes fictitious exploitation trailers between them.",
+    "groundtruth": "It is presented as a double feature combining Rodriguez’s Planet Terror and Tarantino’s Death Proof."
+  },
+  {
+    "question": "Why might Grindhouse be said to 'pay homage' to exploitation films, based on the passage?",
+    "answer": "Because its title comes from the “grind-house” theaters that used to screen 1970s exploitation movies, and it is itself a double feature packed with fake trailers in the same exploitative spirit, it deliberately imitates and celebrates that bygone era.",
+    "groundtruth": "Because its title and presentation reference now-defunct theaters that showed exploitation films, and it includes fictitious exploitation trailers."
+  },
+  {
+    "question": "What are the two films inside Grindhouse and who directed each one?",
+    "answer": "Grindhouse contains Robert Rodriguez’s “Planet Terror” and Quentin Tarantino’s “Death Proof,” each directed by its respective writer.",
+    "groundtruth": "Planet Terror was directed by Robert Rodriguez, and Death Proof was directed by Quentin Tarantino."
+  },
+  {
+    "question": "How does the passage describe the plot of Planet Terror?",
+    "answer": "The passage does not describe the plot of Planet Terror.",
+    "groundtruth": "A horror comedy about survivors battling zombie-like creatures."
+  },
+  {
+    "question": "How does the passage describe the plot of Death Proof?",
+    "answer": "The passage does not describe the plot of *Death Proof*; it is not mentioned in the text.",
+    "groundtruth": "An action thriller about a murderous stuntman who kills young women with modified vehicles."
+  },
+  {
+    "question": "What is Mario Puzo best known for writing, and what did he later do with it?",
+    "answer": "Mario Puzo is best known for writing the novel *The Godfather*, which he later co-adapted into a film trilogy directed by Francis Ford Coppola.",
+    "groundtruth": "He wrote The Godfather (1969) and later co-adapted it into a film trilogy directed by Francis Ford Coppola."
+  },
+  {
+    "question": "How many Academy Awards for Best Adapted Screenplay does the passage say Mario Puzo received, and for which films?",
+    "answer": "Mario Puzo received two Academy Awards for Best Adapted Screenplay: one for *The Godfather* in 1972 and another for *The Godfather Part II* in 1974.",
+    "groundtruth": "Two: for the first film in 1972 and for Part II in 1974."
+  },
+  {
+    "question": "Why might Mario Puzo be considered both an author and a screenwriter based on the passage?",
+    "answer": "Because he wrote the original novel *The Godfather* (making him an author) and then co-adapted it into the Oscar-winning screenplay for the film (making him a screenwriter).",
+    "groundtruth": "Because he wrote crime novels and also wrote/co-adapted screenplays, including award-winning adaptations."
+  },
+  {
+    "question": "How were The Killers formed and in what year, according to the passage?",
+    "answer": "The Killers were formed in Las Vegas in 2001 by Brandon Flowers and Dave Keuning.",
+    "groundtruth": "They formed in 2001 in Las Vegas by Brandon Flowers and Dave Keuning."
+  },
+  {
+    "question": "How does the passage explain the origin of The Killers’ band name?",
+    "answer": "The band’s name comes from a logo on the bass drum of a fictitious band shown in the music video for New Order’s song “Crystal.”",
+    "groundtruth": "It is derived from a logo on the bass drum of a fictitious band in the music video for New Order’s song 'Crystal.'"
+  },
+  {
+    "question": "What is Nanjing’s political-administrative role in China according to the passage?",
+    "answer": "Nanjing is the capital of Jiangsu province and a sub-provincial megacity, making it the top-level administrative center for that province.",
+    "groundtruth": "It is the capital of Jiangsu province and is a sub-provincial city."
+  },
+  {
+    "question": "How does the passage classify Nanjing in terms of city size/status?",
+    "answer": "The passage classifies Nanjing as a sub-provincial city and a megacity.",
+    "groundtruth": "It describes Nanjing as a megacity."
+  },
+  {
+    "question": "What is Nelly’s real name and stage name relationship as stated in the passage?",
+    "answer": "Nelly’s real name is Cornell Iral Haynes Jr., and he is better known by his stage name Nelly.",
+    "groundtruth": "Cornell Iral Haynes Jr. is better known by his stage name Nelly."
+  },
+  {
+    "question": "How did Nelly begin his musical career according to the passage?",
+    "answer": "Nelly began his musical career in 1993 as a member of the Midwest hip hop group St. Lunatics.",
+    "groundtruth": "He began in 1993 as a member of the Midwest hip hop group St. Lunatics."
+  },
+  {
+    "question": "Why is Nelly’s album Country Grammar described as especially successful in the passage?",
+    "answer": "Because its lead single and follow-up both reached the top ten of the Billboard Hot 100, while the album itself topped the Billboard 200 and was certified diamond by the RIAA.",
+    "groundtruth": "Because it peaked at number one on the Billboard 200 and received diamond certification from the RIAA."
+  },
+  {
+    "question": "How does the passage describe the story setup of The Girl with the Dragon Tattoo (2011)?",
+    "answer": "It follows journalist Mikael Blomkvist as he investigates the 40-year-old disappearance of a girl from a wealthy family, enlisting the help of computer hacker Lisbeth Salander.",
+    "groundtruth": "A journalist investigates a wealthy family’s decades-old disappearance case and recruits Lisbeth Salander, a computer hacker."
+  },
+  {
+    "question": "Who directed The Girl with the Dragon Tattoo (2011) according to the passage?",
+    "answer": "David Fincher directed The Girl with the Dragon Tattoo (2011).",
+    "groundtruth": "David Fincher."
+  },
+  {
+    "question": "Why might Baldwin County be described as geographically distinctive within Alabama in the passage?",
+    "answer": "Baldwin County is one of only two Alabama counties that border the Gulf of Mexico, giving it a unique coastal location within the state.",
+    "groundtruth": "Because it is one of only two counties in Alabama that border the Gulf of Mexico."
+  },
+  {
+    "question": "How does the passage explain the origin of the term 'chanson' in English usage?",
+    "answer": "The passage explains that in English the term “chanson” is used for either the secular polyphonic French songs of late-medieval/Renaissance music or for a 1950s-60s French pop style, both derived from the monophonic songs of troubadours and trouvères.",
+    "groundtruth": "It is used for lyric-driven French songs and can refer to medieval/Renaissance polyphonic songs or French pop styles from the 1950s–1960s."
+  },
+  {
+    "question": "Why does the passage mention troubadours and trouvères when describing chanson?",
+    "answer": "The passage mentions troubadours and trouvères because they are the originators of the monophonic songs from which the chanson genre developed.",
+    "groundtruth": "To point to early origins of the genre in monophonic songs associated with those traditions."
+  },
+  {
+    "question": "How does the passage describe a hotel’s range of room quality and offerings?",
+    "answer": "The passage says hotel rooms can vary from a modest mattress in a small space to large suites with high-quality beds, kitchen facilities, upholstered chairs, flat-screen TVs, and en-suite bathrooms.",
+    "groundtruth": "It ranges from modest rooms with basic mattresses to large suites with more furnishings, appliances, and amenities."
+  },
+  {
+    "question": "Why are hotel rooms usually numbered, according to the passage?",
+    "answer": "Hotel rooms are usually numbered to allow guests to identify their room.",
+    "groundtruth": "So guests can identify their room."
+  },
+  {
+    "question": "How is telepathy defined in the passage, and what is emphasized as missing from the process?",
+    "answer": "Telepathy is defined as the vicarious transmission of information from one person’s mind to another’s without using any known human sensory channels or physical interaction. The passage emphasizes that no known sensory channels or physical interaction are involved in the process.",
+    "groundtruth": "It is transmission of information mind-to-mind without known sensory channels or physical interaction."
+  },
+  {
+    "question": "Who coined the term 'telepathy' and in what year, according to the passage?",
+    "answer": "Frederic W. H. Myers coined the term \"telepathy\" in 1882.",
+    "groundtruth": "Frederic W. H. Myers coined it in 1882."
+  },
+  {
+    "question": "How does the passage connect telepathy to an organization focused on psychical research?",
+    "answer": "The passage states that the term “telepathy” was coined in 1882 by Frederic W. H. Myers, a founder of the Society for Psychical Research (SPR), thereby linking the concept directly to that organization.",
+    "groundtruth": "It notes Myers was a founder of the Society for Psychical Research (SPR)."
+  },
+  {
+    "question": "What is Mutiny on the Bounty (1962) described as in the passage?",
+    "answer": "Mutiny on the Bounty (1962) is described as an American Technicolor epic historical drama film.",
+    "groundtruth": "A 1962 American Technicolor epic historical drama film released by MGM."
+  },
+  {
+    "question": "How does the passage describe Long Island’s relationship to the New York metropolitan area?",
+    "answer": "Long Island is described as constituting “a significant share of the New York metropolitan area in both population and land area.”",
+    "groundtruth": "It says Long Island constitutes a significant share of the metropolitan area in population and land area."
+  },
+  {
+    "question": "How did hip-hop originate according to the passage, and what social stance is mentioned?",
+    "answer": "Hip-hop originated in the early 1970s in the Bronx, New York City, created by African Americans and Afro-Caribbean immigrants. It began as an anti-drug and anti-violence genre.",
+    "groundtruth": "It originated in the early 1970s in the Bronx and is described as an anti-drug and anti-violence genre."
+  },
+  {
+    "question": "Why does the passage argue that 'hip hop' is broader than just 'rap'?",
+    "answer": "The passage explains that “hip hop” properly denotes the entire subculture, which includes MCing/rapping, DJing/scratching, breakdancing, and graffiti art, whereas “rap” refers only to the musical component of rapping.",
+    "groundtruth": "Because it describes hip hop as a subculture defined by multiple elements like DJing, breakdancing, and graffiti art, not only rapping."
+  },
+  {
+    "question": "Who are the founders of modern political philosophy mentioned in the passage, and what work supports that claim?",
+    "answer": "Thomas Hobbes is identified as one of the founders of modern political philosophy, supported by the statement that he is “considered to be one of the founders of modern political philosophy.”",
+    "groundtruth": "Thomas Hobbes is mentioned, supported by his 1651 book Leviathan where he develops social contract theory."
+  }
+]
