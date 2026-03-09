@@ -1,0 +1,3082 @@
+abbreviated_as	0
+ability_to	1
+about	2
+absorb	3
+absorbs	4
+access	5
+accesses_report_through	6
+accompany_to	7
+accumulate_in	8
+action	9
+activates	10
+acts_as	11
+add to	12
+add_to	13
+address	14
+addresses	15
+adds	16
+adds_to	17
+adjusted_for	18
+administered_as	19
+administered_by	20
+administered_on	21
+administered_through	22
+administered_via	23
+administered_with	24
+administers	25
+administration	26
+administration_method	27
+advance	28
+advances	29
+advise_on	30
+advises_on	31
+advocates_for	32
+affect	33
+affected_by	34
+affects	35
+after	36
+age_range	37
+agrees_on	38
+aid	39
+aids_in	40
+aim	41
+aim_to	42
+aims_at	43
+aims_to	44
+allow	45
+allow_access_to	46
+allow_for	47
+allows	48
+allows for	49
+allows_exit_of	50
+allows_going_home_afterwards	51
+allows_to	52
+also known as	53
+also_called	54
+also_confirm	55
+also_known_as	56
+alternative	57
+alternative_to	58
+among	59
+analyzes	60
+answer	61
+answered	62
+answers	63
+appear	64
+appear on	65
+appear_as	66
+appear_differently	67
+appear_on	68
+appears as	69
+appears_as	70
+appears_in	71
+appears_on	72
+applies to	73
+applies_to	74
+apply_to	75
+appropriate_for	76
+approvedby	77
+approves	78
+are	79
+are a type of	80
+are accessed through	81
+are affected by	82
+are at	83
+are attended by	84
+are available for	85
+are called	86
+are categorized as	87
+are caused by	88
+are combined into	89
+are combined to	90
+are combined to make	91
+are diagnosed with	92
+are discussed with	93
+are for	94
+are formed in	95
+are found in	96
+are important for	97
+are important to report to	98
+are in	99
+are involved in	100
+are located	101
+are located in	102
+are made of	103
+are more common than	104
+are near	105
+are offered if	106
+are often done with	107
+are often found through	108
+are often high at	109
+are on surface of	110
+are part of	111
+are prescribed by	112
+are related to	113
+are removed during	114
+are reported to	115
+are seen by	116
+are studied using	117
+are tested for	118
+are told to	119
+are treated using	120
+are used against	121
+are used for	122
+are used in addition to	123
+are used to determine	124
+are usually	125
+are written as	126
+are_a	127
+are_a_group_of	128
+are_a_sign_of	129
+are_a_type_of	130
+are_about	131
+are_absent_in	132
+are_affected_by	133
+are_age_group	134
+are_also_known_as	135
+are_analyzed_by	136
+are_approved_by	137
+are_at	138
+are_at_risk_of	139
+are_available	140
+are_available_at	141
+are_available_for	142
+are_available_on	143
+are_avoided_by	144
+are_based_on	145
+are_bound_by	146
+are_called	147
+are_caused_by	148
+are_certified_by	149
+are_characteristics_of	150
+are_common_in	151
+are_compared_in	152
+are_compared_to	153
+are_connected_by	154
+are_connected_to	155
+are_deprived_of	156
+are_described_as	157
+are_described_by	158
+are_detected_by	159
+are_detected_in	160
+are_diagnosed_by	161
+are_discussed_at	162
+are_discussed_by	163
+are_discussed_with	164
+are_divided_into	165
+are_done	166
+are_examined_by	167
+are_experts_in	168
+are_fatal_for	169
+are_features_of	170
+are_for	171
+are_formed_in	172
+are_found_by	173
+are_found_in	174
+are_found_near	175
+are_found_on	176
+are_free	177
+are_from	178
+are_given_for	179
+are_helpful_to	180
+are_identified_like	181
+are_important	182
+are_in	183
+are_influenced_by	184
+are_involved_in	185
+are_learning_about	186
+are_less_likely_to_be_diagnosed_with	187
+are_likely_to	188
+are_linked_to	189
+are_located	190
+are_located_in	191
+are_located_near	192
+are_located_on	193
+are_made_based_on	194
+are_made_by	195
+are_managed_by	196
+are_measured_in	197
+are_more_likely_to	198
+are_more_likely_to_be	199
+are_more_likely_to_develop	200
+are_more_likely_to_die_from	201
+are_more_prepared_to_discuss_care_by	202
+are_mutations_in	203
+are_needed_after	204
+are_needed_by	205
+are_not	206
+are_not_inherited_from	207
+are_obtained_from	208
+are_of	209
+are_on	210
+are_packaged_into	211
+are_part_of	212
+are_performed_by	213
+are_performed_for	214
+are_potentially	215
+are_produced_by	216
+are_prohibited_in	217
+are_qualified_to_conduct	218
+are_qualified_to_evaluate	219
+are_recommended	220
+are_recommended_by	221
+are_recommended_for	222
+are_reduced_by	223
+are_related_to	224
+are_removed_by	225
+are_removed_in	226
+are_repeated	227
+are_reported_to	228
+are_required_for	229
+are_result_of	230
+are_seen_in	231
+are_seen_on	232
+are_sent_to	233
+are_shown_by	234
+are_similar_to	235
+are_stimulated_by	236
+are_stopped_before	237
+are_stored_in	238
+are_supported_by	239
+are_surrounded_by	240
+are_taken_from	241
+are_targeted_by	242
+are_targets_for	243
+are_tested_by	244
+are_tested_for	245
+are_tested_in	246
+are_trusted_by	247
+are_type_of	248
+are_used_by	249
+are_used_for	250
+are_used_in	251
+are_used_to	252
+are_used_to_create	253
+arise_from	254
+arise_in	255
+arises_from	256
+arises_in	257
+ask	258
+ask_about	259
+ask_questions	260
+asks	261
+asks about	262
+asks_about	263
+assesses	264
+assigns	265
+assisted_by	266
+assists	267
+associated_with	268
+assumes	269
+at	270
+at_higher_risk_of	271
+at_risk_for	272
+at_risk_of	273
+attach to	274
+attach_to	275
+attached_to	276
+attaches	277
+attaches to	278
+attaches_to	279
+attack	280
+attacks	281
+attended_by	282
+available_at	283
+available_for	284
+available_from	285
+available_in	286
+available_on	287
+available_through	288
+avoid	289
+avoids_dying	290
+avoids_effects_of	291
+balances	292
+based on	293
+based_on	294
+basedon	295
+be	296
+be prepared to list	297
+be used in	298
+be_about	299
+be_at_end_of	300
+be_available_in_case_of	301
+be_located_in	302
+be_part_of	303
+be_referred_for	304
+be_type_of	305
+become	306
+become_available	307
+becomes	308
+becomes_active_with	309
+becomes_available	310
+becomes_cancer_when	311
+begin	312
+begins_after	313
+begins_in	314
+begins_with	315
+behave_like	316
+below	317
+beneficial_for	318
+benefit	319
+benefit_from	320
+between	321
+bind	322
+bind_to	323
+binds_to	324
+blends into	325
+blends_into	326
+block	327
+blocked_by	328
+blocks	329
+branch into	330
+branch_into	331
+break	332
+break away from	333
+break_away	334
+break_away_from	335
+break_down	336
+break_off_from	337
+break_through	338
+breaks_down	339
+breaks_off	340
+bring	341
+brings	342
+brings_to	343
+brings_up	344
+brought_to	345
+can	346
+can affect	347
+can also affect	348
+can also occur in	349
+can avoid	350
+can be	351
+can be caused by	352
+can be combined with	353
+can be cured	354
+can be detected by	355
+can be grouped into	356
+can be in	357
+can be located in	358
+can be part of	359
+can be passed down from	360
+can be performed on	361
+can be seen by	362
+can be targeted with	363
+can be treated	364
+can be treated with	365
+can be used	366
+can be used as	367
+can be used on	368
+can become	369
+can cause	370
+can come from	371
+can crowd out	372
+can damage	373
+can detect	374
+can form	375
+can grow in	376
+can grow inwards and form	377
+can have	378
+can help	379
+can interact with	380
+can involve	381
+can make	382
+can metastasize to	383
+can occur at	384
+can occur in	385
+can produce	386
+can provide	387
+can refer to	388
+can run in	389
+can spread through	390
+can spread to	391
+can transform into	392
+can't have	393
+can't provide	394
+can't_be_done	395
+can't_be_removed_with	396
+can't_do	397
+can_access	398
+can_affect	399
+can_also_have	400
+can_answer	401
+can_avoid	402
+can_be	403
+can_be_administered_by	404
+can_be_affected_by	405
+can_be_avoided	406
+can_be_caused_by	407
+can_be_classified_by	408
+can_be_combined_with	409
+can_be_continued_as	410
+can_be_controlled_by	411
+can_be_cured	412
+can_be_cured_by	413
+can_be_detected_by	414
+can_be_difficult_to_diagnose	415
+can_be_found_at	416
+can_be_found_by	417
+can_be_found_in	418
+can_be_identified_by	419
+can_be_impaired_by	420
+can_be_increased	421
+can_be_inherited	422
+can_be_mistaken_for	423
+can_be_monitored_with	424
+can_be_multiple	425
+can_be_observed_without	426
+can_be_observed_without_treatment	427
+can_be_passed_down_from	428
+can_be_performed_on	429
+can_be_prevented	430
+can_be_reawakened_by	431
+can_be_removed_by	432
+can_be_repeated	433
+can_be_targeted_by	434
+can_be_targeted_with	435
+can_be_tested_for	436
+can_be_treated_at	437
+can_be_treated_by	438
+can_be_treated_in	439
+can_be_treated_with	440
+can_be_used_for	441
+can_be_used_in	442
+can_be_used_with	443
+can_become	444
+can_become_pregnant	445
+can_break	446
+can_break_away_from	447
+can_cause	448
+can_confirm	449
+can_copy	450
+can_damage	451
+can_detect	452
+can_determine	453
+can_develop_from	454
+can_develop_in	455
+can_develop_into	456
+can_display	457
+can_disrupt	458
+can_do	459
+can_find	460
+can_fine_tune	461
+can_form	462
+can_get_best_care_by	463
+can_grow_back_as	464
+can_grow_into	465
+can_grow_or_spread_into	466
+can_guide	467
+can_harm	468
+can_have	469
+can_help_find	470
+can_help_treat	471
+can_help_with	472
+can_hurt	473
+can_improve	474
+can_invade	475
+can_kill	476
+can_last	477
+can_lead	478
+can_lead_to	479
+can_leave	480
+can_limit	481
+can_make_copies_of	482
+can_metastasize	483
+can_metastasize_to	484
+can_minimize	485
+can_not_be_known_until	486
+can_occur_after	487
+can_occur_at	488
+can_occur_in	489
+can_prevent	490
+can_provide	491
+can_put_into	492
+can_raise	493
+can_reactivate	494
+can_reconstruct	495
+can_refer_to	496
+can_relapse_in	497
+can_remove	498
+can_repair	499
+can_restore	500
+can_return_to	501
+can_run_in	502
+can_seek_opinion_of	503
+can_show	504
+can_spread_outside	505
+can_spread_through	506
+can_spread_to	507
+can_start_in	508
+can_still_help	509
+can_store	510
+can_transform_into	511
+canbecured	512
+candiscuss	513
+canhelpwith	514
+cannot_be	515
+cannot_be_removed_by	516
+cannot_contain	517
+cannot_determine	518
+cannot_have	519
+cansoothe	520
+captures	521
+carried_by	522
+carried_to	523
+carries	524
+carry	525
+carry_from	526
+carry_to	527
+catches	528
+categorized_by	529
+caught_by	530
+cause	531
+caused by	532
+caused_by	533
+causedby	534
+causes	535
+cells_look	536
+changes_wound_shape	537
+characteristic	538
+characterized by	539
+characterized_by	540
+check	541
+check for	542
+check_for	543
+checked_by	544
+checked_for_by	545
+checks	546
+checks_for	547
+choose	548
+chooses	549
+circulates	550
+circulates throughout	551
+classified_as	552
+classified_by	553
+classifies	554
+classify_disease_by	555
+clean	556
+clears	557
+code_for	558
+codes_for	559
+collect_over	560
+collected_and_frozen_by	561
+collected_by	562
+collects	563
+collects_in	564
+collects_into	565
+combine	566
+combine_with	567
+combined_by	568
+combined_with	569
+combines	570
+come from	571
+come_from	572
+comes back	573
+comes_from	574
+communicate	575
+communicate_through	576
+communicate_with	577
+communicates_through	578
+communicates_with	579
+compare_with	580
+compared_to	581
+compares	582
+compares_to	583
+completed_within	584
+component_of	585
+composed of	586
+composed_of	587
+composition	588
+compresses	589
+comprises	590
+conduct	591
+confined_to	592
+confirmed_by	593
+confirms	594
+connect	595
+connect_to	596
+connected_to	597
+connection	598
+connects	599
+connects to	600
+connects_to	601
+consider	602
+considered_in	603
+considers	604
+consist_of	605
+consists of	606
+consists_of	607
+consult_for	608
+consulted_by	609
+consulted_for	610
+contain	611
+contain_in	612
+contains	613
+contains_info_about	614
+continue_training	615
+continue_training_in	616
+continued_as	617
+continued_until	618
+continues to make	619
+contracts_via	620
+contracts_with	621
+contraindicates	622
+contributes to	623
+contributes_to	624
+control	625
+controls	626
+convert	627
+converts	628
+convey	629
+convey_to	630
+conveys_results_to	631
+coordinates	632
+coordinates_with	633
+counsel	634
+counts	635
+covered_by	636
+covers	637
+covers_cost	638
+create	639
+created	640
+created_by	641
+creates	642
+creates a shortage of	643
+cross_over_into	644
+crowd out	645
+crowd_out	646
+crowds_out	647
+cuts	648
+damages	649
+decide	650
+decides with	651
+decides_on	652
+decides_with	653
+decreases risk of	654
+decreases_aggressiveness_of	655
+decreases_risk_of	656
+defined_as	657
+defined_by	658
+defines	659
+delays	660
+deliver	661
+delivers	662
+depend on	663
+depend_on	664
+depends on	665
+depends_on	666
+deprives	667
+describe	668
+described_as	669
+described_in	670
+describes	671
+description	672
+destroy	673
+destroys	674
+detect	675
+detected by	676
+detected_by	677
+detects	678
+determine	679
+determined by	680
+determined_by	681
+determines	682
+determines_need_for	683
+develop	684
+develop as	685
+develop for	686
+develop in	687
+develop into	688
+develop_from	689
+develop_into	690
+developed	691
+developed by	692
+developed_after	693
+developed_by	694
+develops	695
+develops from	696
+develops_from	697
+develops_in	698
+develops_into	699
+devises	700
+diagnose	701
+diagnose_and_treat	702
+diagnose_with	703
+diagnosed_by	704
+diagnosed_in	705
+diagnosed_with	706
+diagnoses	707
+diagnosis	708
+diagnosis_method	709
+diagnosis_requires	710
+die	711
+dies	712
+differ_from	713
+different_from	714
+differentiate into	715
+differentiates_into	716
+differs from	717
+differs_between	718
+differs_from	719
+disclaims	720
+discuss	721
+discuss_with	722
+discussed_with	723
+discusses	724
+discusses results with	725
+discusses_results_with	726
+discusses_with	727
+display	728
+displayed_on	729
+displays	730
+disrupts	731
+distance_from	732
+distributes	733
+diverts	734
+divide into	735
+divide_into	736
+divide_to_form	737
+divided into	738
+divided_into	739
+divides into	740
+divides_into	741
+do not	742
+do not die	743
+do not have	744
+do_not_cause	745
+do_not_die	746
+do_not_grow_in	747
+do_not_have	748
+do_not_provide	749
+do_not_recommend	750
+does not have	751
+does not improve with	752
+does not test	753
+does not use	754
+does_not_absorb	755
+does_not_affect	756
+does_not_diagnose	757
+does_not_follow	758
+does_not_get_absorbed_by	759
+does_not_get_absorbed_from	760
+does_not_go_into	761
+does_not_have	762
+does_not_look_for	763
+does_not_mean	764
+does_not_remove	765
+does_not_tell	766
+does_not_treat	767
+does_not_undergo	768
+does_not_use	769
+does_not_use_device	770
+does_not_work_well_with	771
+doesn't need	772
+doesn't_respond_to	773
+don't behave like	774
+done	775
+done for	776
+done_before	777
+done_for	778
+done_twice	779
+done_using	780
+done_when	781
+dont_look_like	782
+dosage	783
+dose_type	784
+drain_into	785
+drains	786
+drains from	787
+drains_from	788
+drains_into	789
+drains_lymph_from	790
+draw_into	791
+drawn_into	792
+drunk_before	793
+due to	794
+duration	795
+duration_depends_on	796
+dyed_with	797
+effective_against	798
+emits	799
+emptied	800
+enable_communication_with	801
+enables	802
+enables_communication_with	803
+encases	804
+encode	805
+end in	806
+end up in	807
+end_at	808
+ends up in	809
+ends_at	810
+ends_with	811
+enhances	812
+enter	813
+enters	814
+equal	815
+equal_to	816
+equivalent_to	817
+estimates	818
+evaluate_with	819
+evaluated_by	820
+evaluates	821
+evaluates_eligibility	822
+examine	823
+examined_by	824
+examines	825
+example	826
+examples	827
+exceeds	828
+excluded_by	829
+excludes	830
+excretes	831
+excretes_radiotracer_through	832
+exits	833
+exits_through	834
+expands_with	835
+experience	836
+experienced_by	837
+experiences	838
+expert_in	839
+explain	840
+explains	841
+express	842
+expressed on	843
+expresses	844
+extends	845
+extends_and_enhances	846
+extends_into	847
+extends_time_until	848
+faced	849
+facilitates	850
+factor	851
+feed	852
+feel	853
+feel_more_satisfied_by	854
+feels	855
+feels_for	856
+fight	857
+fights	858
+figures_out	859
+filter	860
+filter_out	861
+filters	862
+find	863
+finds	864
+finds and attaches itself to	865
+fixed by	866
+fixes	867
+flow_in	868
+flow_into	869
+flows in	870
+flows_into	871
+flows_through	872
+flushed out in	873
+focuses on	874
+focuses_on	875
+follow	876
+followed_by	877
+follows	878
+for	879
+form	880
+form from	881
+form_clusters_in	882
+form_from	883
+form_in	884
+form_in_response_to	885
+form_into	886
+form_of	887
+form_on	888
+formerly_known_as	889
+forms	890
+forms from	891
+forms in	892
+forms_as	893
+forms_canal_between	894
+forms_clusters_in	895
+forms_from	896
+forms_in	897
+forms_into	898
+forms_on	899
+forms_through	900
+forms_tumors_in	901
+found in	902
+found_at	903
+found_earlier	904
+found_in	905
+found_on	906
+frequency	907
+frequency of	908
+from	909
+function	910
+function_affected	911
+functions_like	912
+functions_to	913
+funded_by	914
+funds	915
+fuses with	916
+gathers	917
+generates	918
+get	919
+get_to_know	920
+gets to know	921
+gets_to_know	922
+gets_worse	923
+give	924
+give rise to	925
+give_out	926
+give_rise_to	927
+given before	928
+given with	929
+given_after	930
+given_along_with	931
+given_at	932
+given_in	933
+given_instead_of	934
+given_over	935
+given_through	936
+given_to	937
+given_when	938
+given_with	939
+gives	940
+gives off	941
+gives_birth_to	942
+gives_body_chance_to	943
+gives_clues_to	944
+gives_instructions_on	945
+gives_rise_to	946
+gives_structure_to	947
+goal	948
+goal is to	949
+goal_is	950
+goal_is_to	951
+goes into	952
+goes wrong with	953
+goes_home	954
+goes_into	955
+good_at_showing	956
+graded_by	957
+grew_through	958
+grouped_by	959
+grow	960
+grow and spread due to	961
+grow into	962
+grow_and_spread	963
+grow_faster_than	964
+grow_in	965
+grow_in_response_to	966
+grow_into	967
+grow_out_of_control	968
+grow_through	969
+grown_into	970
+grows	971
+grows through	972
+grows_back	973
+grows_from	974
+grows_in	975
+grows_into	976
+grows_on	977
+grows_outside	978
+grows_through	979
+grows_toward	980
+guide	981
+guide_decisions	982
+guided by	983
+guided_by	984
+guides	985
+had	986
+had in life	987
+had_by	988
+handles	989
+hang on	990
+happened at	991
+happens when	992
+harm	993
+harmful_to	994
+harms	995
+has	996
+has a high	997
+has access to	998
+has an impact on	999
+has chapter	1000
+has clinical stage	1001
+has component	1002
+has feature	1003
+has grown beyond	1004
+has grown or spread to	1005
+has information on	1006
+has invaded	1007
+has limited value in	1008
+has no	1009
+has not grown beyond	1010
+has not spread to	1011
+has part	1012
+has parts	1013
+has phase	1014
+has property	1015
+has risk factor	1016
+has risk of	1017
+has side effect	1018
+has similar symptoms to	1019
+has size	1020
+has spread	1021
+has spread to	1022
+has stage	1023
+has subtype	1024
+has symptom	1025
+has symptoms	1026
+has symptoms similar to	1027
+has treatment	1028
+has type	1029
+has types	1030
+has_abnormality	1031
+has_access_to	1032
+has_administration_method	1033
+has_adverse_effect	1034
+has_advice	1035
+has_after_effect	1036
+has_age_range	1037
+has_amount	1038
+has_angles	1039
+has_area	1040
+has_attachment	1041
+has_behavior	1042
+has_benefit	1043
+has_benefits	1044
+has_better	1045
+has_biomarker	1046
+has_biomarker_testing	1047
+has_biomarkers	1048
+has_biopsy	1049
+has_cancer_pattern	1050
+has_care_team	1051
+has_cause	1052
+has_causes	1053
+has_cell_type	1054
+has_cells	1055
+has_chance	1056
+has_chapter	1057
+has_chapters	1058
+has_characteristic	1059
+has_choice	1060
+has_chromosome_translocation	1061
+has_clinical_trials	1062
+has_common_site	1063
+has_complication	1064
+has_component	1065
+has_components	1066
+has_condition	1067
+has_consequence	1068
+has_contact_info	1069
+has_cost	1070
+has_costs	1071
+has_count	1072
+has_cps	1073
+has_criterion	1074
+has_ct_scan	1075
+has_cure	1076
+has_cycle	1077
+has_depth	1078
+has_design	1079
+has_detection_method	1080
+has_diagnosis	1081
+has_diagnosis_method	1082
+has_diagnosis_step	1083
+has_diagnosis_test	1084
+has_diagnostic_test	1085
+has_different_treatment_than	1086
+has_difficult_road_ahead	1087
+has_disease	1088
+has_disease_severity	1089
+has_doi	1090
+has_duration	1091
+has_duration_of	1092
+has_effect	1093
+has_effect_on	1094
+has_effectiveness	1095
+has_eligibility_criteria	1096
+has_evaluation	1097
+has_evidence	1098
+has_example	1099
+has_expertise	1100
+has_expertise_in	1101
+has_extent	1102
+has_factor	1103
+has_feature	1104
+has_features_of	1105
+has_feeling	1106
+has_folder	1107
+has_follow-up	1108
+has_follow_up	1109
+has_frequency	1110
+has_function	1111
+has_fusion_gene	1112
+has_gene	1113
+has_genetic_changes	1114
+has_genetic_testing	1115
+has_germline_mutation	1116
+has_glands	1117
+has_gleason_score	1118
+has_goal	1119
+has_grade	1120
+has_grade_group	1121
+has_grown_into	1122
+has_grown_through	1123
+has_growth_rate	1124
+has_guidelines	1125
+has_habit	1126
+has_hallmark	1127
+has_health_history	1128
+has_health_issues	1129
+has_high_levels_of	1130
+has_illustrations	1131
+has_imaging	1132
+has_imaging_test	1133
+has_impact_on	1134
+has_improved_detection_methods	1135
+has_incision_closure_options	1136
+has_increased	1137
+has_indirect_cost	1138
+has_indirect_costs	1139
+has_induction_therapy	1140
+has_info_on	1141
+has_information_on	1142
+has_initial_treatment	1143
+has_invaded	1144
+has_junction	1145
+has_knees	1146
+has_layer	1147
+has_layers	1148
+has_length	1149
+has_limitation	1150
+has_limited_value_in	1151
+has_lining	1152
+has_location	1153
+has_long-term_side_effects	1154
+has_long_term_side_effect	1155
+has_magnetic_parts	1156
+has_measurement	1157
+has_medical_name	1158
+has_member	1159
+has_members	1160
+has_metastases_in	1161
+has_metastasis	1162
+has_metastasized_to	1163
+has_minimum_size	1164
+has_misconception	1165
+has_monitoring_frequency	1166
+has_more_info	1167
+has_mutation	1168
+has_mutations	1169
+has_need	1170
+has_nerve_damage	1171
+has_no	1172
+has_no_fee	1173
+has_nodes	1174
+has_not_been_altered_by	1175
+has_not_invaded	1176
+has_not_reached	1177
+has_not_spread	1178
+has_not_spread_to	1179
+has_number	1180
+has_opening	1181
+has_option	1182
+has_options	1183
+has_organ	1184
+has_outcome	1185
+has_pain	1186
+has_part	1187
+has_phase	1188
+has_phases	1189
+has_phone_number	1190
+has_plan	1191
+has_possible_values	1192
+has_predisposition	1193
+has_priority	1194
+has_procedure	1195
+has_prognosis	1196
+has_property	1197
+has_ps	1198
+has_purpose	1199
+has_range	1200
+has_receptor	1201
+has_recovery_time	1202
+has_recurrence	1203
+has_recurrence_location	1204
+has_recurrence_risk	1205
+has_relationship_with	1206
+has_relative	1207
+has_requirement	1208
+has_requirements	1209
+has_resource	1210
+has_response	1211
+has_result	1212
+has_rights	1213
+has_risk	1214
+has_risk_factor	1215
+has_risk_factors	1216
+has_risk_group	1217
+has_risk_level	1218
+has_risk_of	1219
+has_risks	1220
+has_role	1221
+has_rules_on	1222
+has_safety	1223
+has_scanning_time	1224
+has_score	1225
+has_section	1226
+has_severe_side_effects_than	1227
+has_severity	1228
+has_shape	1229
+has_side_effect	1230
+has_side_effects	1231
+has_side_effects_on	1232
+has_sign	1233
+has_size	1234
+has_size_range	1235
+has_space	1236
+has_special_training_in	1237
+has_spread	1238
+has_spread_to	1239
+has_stage	1240
+has_stages	1241
+has_staging	1242
+has_state	1243
+has_status	1244
+has_step	1245
+has_strains	1246
+has_subdivision	1247
+has_subgroup	1248
+has_subtype	1249
+has_subtypes	1250
+has_surface_covering	1251
+has_surveillance	1252
+has_survey	1253
+has_survival_rate	1254
+has_symptom	1255
+has_symptoms	1256
+has_system	1257
+has_task	1258
+has_test	1259
+has_threshold	1260
+has_topic	1261
+has_treatment	1262
+has_treatment_approach	1263
+has_treatment_choice	1264
+has_treatment_goal	1265
+has_treatment_methods	1266
+has_treatment_option	1267
+has_treatment_options	1268
+has_treatment_outcome	1269
+has_treatment_plan	1270
+has_treatment_planning	1271
+has_type	1272
+has_types	1273
+has_value	1274
+has_website	1275
+has_worse	1276
+hasgrade	1277
+haslayer	1278
+hasrecurrence	1279
+hassideeffect	1280
+hasstage	1281
+hassymptom	1282
+have	1283
+have property	1284
+have risk	1285
+have_abnormal_count	1286
+have_age_range	1287
+have_benefits	1288
+have_best_treatment	1289
+have_cells	1290
+have_characteristic	1291
+have_condition	1292
+have_cost	1293
+have_evidence_of	1294
+have_frequency	1295
+have_function	1296
+have_grade	1297
+have_grown_beyond	1298
+have_health_history	1299
+have_location	1300
+have_misconceptions	1301
+have_names_like	1302
+have_not_spread_to	1303
+have_performed	1304
+have_phases	1305
+have_programs_focused_on	1306
+have_programs_for	1307
+have_property	1308
+have_risks	1309
+have_role	1310
+have_total	1311
+have_treated	1312
+have_treatment	1313
+have_type	1314
+have_website	1315
+healing_process	1316
+heals	1317
+heals_in	1318
+heals_through	1319
+hear and talk to	1320
+held_and_moved_on	1321
+help	1322
+help communicate with	1323
+help control	1324
+help guide	1325
+help people live	1326
+help plan	1327
+help reduce	1328
+help to control	1329
+help track	1330
+help with	1331
+help_control	1332
+help_cope	1333
+help_determine	1334
+help_diagnose	1335
+help_fight	1336
+help_guide	1337
+help_kill	1338
+help_manage	1339
+help_monitor	1340
+help_people	1341
+help_prevent	1342
+help_to	1343
+help_to_control	1344
+help_track	1345
+help_with	1346
+helpful for	1347
+helpful in	1348
+helpful_for	1349
+helps	1350
+helps determine	1351
+helps find	1352
+helps to predict	1353
+helps with	1354
+helps_avoid	1355
+helps_control	1356
+helps_determine	1357
+helps_doctors_decide	1358
+helps_empty	1359
+helps_fight	1360
+helps_find	1361
+helps_guide	1362
+helps_lessen	1363
+helps_limit	1364
+helps_make	1365
+helps_manage	1366
+helps_move	1367
+helps_pay_for	1368
+helps_people_live	1369
+helps_prevent	1370
+helps_process	1371
+helps_to	1372
+helps_to_fight	1373
+helps_track	1374
+helps_transport	1375
+helps_understand	1376
+helps_with	1377
+highlights	1378
+hold	1379
+holds	1380
+hosts	1381
+hunt for	1382
+identifies	1383
+identify	1384
+images	1385
+impacts	1386
+importance	1387
+improve	1388
+improve_with	1389
+improves	1390
+in	1391
+in back of	1392
+in_stage	1393
+include	1394
+include information about	1395
+included_in	1396
+includes	1397
+includes tests for	1398
+includes_info_on	1399
+includes_procedure	1400
+incontinence	1401
+increase	1402
+increase chances of	1403
+increase_risk_for	1404
+increase_risk_of	1405
+increased_risk	1406
+increased_risk_of	1407
+increases	1408
+increases difficulty of	1409
+increases risk of	1410
+increases_activity_of	1411
+increases_chances_of	1412
+increases_in_number	1413
+increases_risk	1414
+increases_risk_of	1415
+increases_with	1416
+indicate	1417
+indicated_by	1418
+indicated_for	1419
+indicates	1420
+indicates_kidney_function	1421
+indicates_risk	1422
+indication	1423
+infects	1424
+influence	1425
+influenced_by	1426
+influences	1427
+inform	1428
+inform of changes	1429
+inform_about	1430
+information_at	1431
+information_available_at	1432
+information_found_at	1433
+informed of	1434
+informed_about	1435
+informed_by	1436
+informed_of	1437
+informs	1438
+informs_about	1439
+infuses	1440
+inherited_from	1441
+injected into	1442
+injected_into	1443
+injects	1444
+inserted_into	1445
+inserted_through	1446
+insertion_method	1447
+inserts	1448
+interact with	1449
+interact_with	1450
+interacted_with	1451
+interacts_with	1452
+interfere with	1453
+interfere_with	1454
+interferes_with	1455
+interpret	1456
+interprets	1457
+interrupts	1458
+into	1459
+invade	1460
+invades	1461
+investigate	1462
+investigates	1463
+involve	1464
+involved in	1465
+involved_in	1466
+involves	1467
+involves placing	1468
+involves_analyzing	1469
+involves_feeling	1470
+involves_removing	1471
+involves_surgery	1472
+involves_testing	1473
+is	1474
+is a	1475
+is a factor in	1476
+is a group of	1477
+is a method of	1478
+is a part of	1479
+is a process of	1480
+is a record of	1481
+is a sign of	1482
+is a type of	1483
+is a use of	1484
+is ability to do	1485
+is about	1486
+is added to	1487
+is affected by	1488
+is also called	1489
+is also known as	1490
+is alternative to	1491
+is an	1492
+is an abnormal overgrowth of	1493
+is as effective as	1494
+is associated with	1495
+is at higher risk of	1496
+is based on	1497
+is below	1498
+is beneficial during	1499
+is beneficial for	1500
+is best for	1501
+is caused by	1502
+is caused by too much	1503
+is challenging for	1504
+is characterized by	1505
+is chemical in	1506
+is classified as	1507
+is combined with	1508
+is common in	1509
+is composed of	1510
+is connected to	1511
+is defined as	1512
+is determined by	1513
+is diagnosed by	1514
+is diagnosed in	1515
+is different from	1516
+is discussed with	1517
+is done	1518
+is done at	1519
+is done before	1520
+is done during	1521
+is done in	1522
+is done using	1523
+is effective at treating	1524
+is essentially the same as	1525
+is examined in	1526
+is examined under	1527
+is excreted in	1528
+is expert at	1529
+is expressed on	1530
+is focused on	1531
+is followed by	1532
+is for	1533
+is for those with	1534
+is found on	1535
+is from	1536
+is given	1537
+is given in	1538
+is given through	1539
+is good at	1540
+is good at making pictures of	1541
+is heard by	1542
+is identified by	1543
+is important for	1544
+is in	1545
+is influenced by	1546
+is informed of	1547
+is injected into	1548
+is inserted into	1549
+is kept for	1550
+is larger than	1551
+is less common than	1552
+is linked to	1553
+is located	1554
+is located in	1555
+is located on	1556
+is location of	1557
+is lubricated with	1558
+is made by	1559
+is made in	1560
+is made of	1561
+is measured by	1562
+is mixed with	1563
+is more accurate than	1564
+is more common than	1565
+is more likely to be the cause if	1566
+is more likely to come back	1567
+is named based on	1568
+is needed for	1569
+is needed in order to	1570
+is not	1571
+is not in	1572
+is not safe for	1573
+is numbed	1574
+is numbed with	1575
+is of	1576
+is often	1577
+is often combined with	1578
+is often paired with	1579
+is on	1580
+is option for	1581
+is over when	1582
+is part of	1583
+is passed out of	1584
+is performed	1585
+is performed after	1586
+is performed by	1587
+is performed on	1588
+is placed into	1589
+is planned using	1590
+is positioned with	1591
+is preferred for	1592
+is preferred if	1593
+is rating of	1594
+is recommended for	1595
+is recommended to look for	1596
+is related to	1597
+is released by	1598
+is removed from	1599
+is responsible for	1600
+is screening test for	1601
+is sent for	1602
+is sent to	1603
+is set up by	1604
+is shown with	1605
+is similar to	1606
+is size of	1607
+is started after	1608
+is still called	1609
+is stored in	1610
+is subtype of	1611
+is taken from	1612
+is talked to	1613
+is told about	1614
+is treated differently from	1615
+is treated with	1616
+is treatment for	1617
+is type of	1618
+is typically in	1619
+is under	1620
+is unique to	1621
+is updated by	1622
+is used by	1623
+is used for	1624
+is used if	1625
+is used in	1626
+is used instead of	1627
+is used to	1628
+is used to check	1629
+is used to determine	1630
+is used to learn	1631
+is used to look for	1632
+is used to treat	1633
+is used when	1634
+is used with	1635
+is_a	1636
+is_a_group_of	1637
+is_a_rating_of	1638
+is_a_sign_of	1639
+is_a_type_of	1640
+is_abbreviation_of	1641
+is_ability_to	1642
+is_about	1643
+is_administered_by	1644
+is_administered_through	1645
+is_administered_to	1646
+is_administered_via	1647
+is_advanced_form_of	1648
+is_affected_by	1649
+is_alias_of	1650
+is_alone_in	1651
+is_also_called	1652
+is_also_known_as	1653
+is_alternative_to	1654
+is_an	1655
+is_an_area_of	1656
+is_an_assessment_of	1657
+is_an_option_after	1658
+is_an_option_for	1659
+is_analyzed_by	1660
+is_applied_to	1661
+is_approach_to	1662
+is_approved_by	1663
+is_area_of	1664
+is_asked_about_by	1665
+is_assessed_by	1666
+is_assessment_of	1667
+is_assigned_by	1668
+is_assigned_grade_group	1669
+is_associated_with	1670
+is_attached_to	1671
+is_available_at	1672
+is_available_for	1673
+is_available_on	1674
+is_available_through	1675
+is_based_on	1676
+is_behind	1677
+is_below	1678
+is_best_for	1679
+is_best_known_way_to_treat	1680
+is_best_way_to_treat	1681
+is_between	1682
+is_billed_to	1683
+is_biomarker_for	1684
+is_biomarker_of	1685
+is_biopsied_first	1686
+is_bright_on	1687
+is_brought_to	1688
+is_calculated_by	1689
+is_called	1690
+is_candidate_for	1691
+is_carried_by	1692
+is_caused_by	1693
+is_challenging_for	1694
+is_characterized_by	1695
+is_chosen_based_on	1696
+is_closed_with	1697
+is_collected_and_frozen	1698
+is_combined_with	1699
+is_common_and	1700
+is_common_and_treatable	1701
+is_common_in	1702
+is_compared_to	1703
+is_complicated_by	1704
+is_composed_of	1705
+is_conducted_at	1706
+is_conducted_on	1707
+is_confirmed_by	1708
+is_confirmed_with	1709
+is_connected_to	1710
+is_considered	1711
+is_considered_by	1712
+is_considered_if	1713
+is_contact_for	1714
+is_contacted_by	1715
+is_contained_in	1716
+is_continued_for	1717
+is_contraindication_for	1718
+is_counseled_by	1719
+is_covered_with	1720
+is_created_by	1721
+is_cured	1722
+is_danger_sign_at	1723
+is_defined_as	1724
+is_defined_by	1725
+is_definition_of	1726
+is_delivered_by	1727
+is_dependent_on	1728
+is_described_by	1729
+is_desired_by	1730
+is_detected_by	1731
+is_determined_by	1732
+is_developed_in	1733
+is_diagnosed_and_treated_differently_than	1734
+is_diagnosed_at	1735
+is_diagnosed_by	1736
+is_diagnosed_in	1737
+is_diagnosed_less_often_in	1738
+is_different_from	1739
+is_difficult_to	1740
+is_difficult_to_distinguish_from	1741
+is_difficult_to_treat	1742
+is_disconnected_between	1743
+is_discussed_by	1744
+is_discussed_for	1745
+is_divided_into	1746
+is_done	1747
+is_done_at_same_time_as	1748
+is_done_in	1749
+is_done_on	1750
+is_done_on_basis_of	1751
+is_done_to	1752
+is_done_using	1753
+is_done_with	1754
+is_effective_against	1755
+is_effective_for	1756
+is_eligible_for	1757
+is_eliminated_through	1758
+is_encouraged_for	1759
+is_encouraged_to	1760
+is_essential_for	1761
+is_evaluated_by	1762
+is_evaluation_of	1763
+is_exam_of	1764
+is_examined_by	1765
+is_examined_under	1766
+is_excluded_from	1767
+is_exit_point_for	1768
+is_expanded_to_include	1769
+is_expert_in	1770
+is_expressed_on	1771
+is_factor_in	1772
+is_factor_of	1773
+is_fatal_for	1774
+is_fatal_if	1775
+is_fear_of	1776
+is_filtered_by	1777
+is_focus_of	1778
+is_followed_by	1779
+is_for	1780
+is_form_of	1781
+is_formed_by	1782
+is_found	1783
+is_found_during	1784
+is_found_in	1785
+is_found_near	1786
+is_found_on	1787
+is_given	1788
+is_given_after	1789
+is_given_as	1790
+is_given_at	1791
+is_given_every	1792
+is_given_for	1793
+is_given_in	1794
+is_given_instead_of	1795
+is_given_intravenously_at	1796
+is_given_over	1797
+is_given_through	1798
+is_given_to	1799
+is_given_with	1800
+is_good_at	1801
+is_good_at_showing	1802
+is_graded_based_on	1803
+is_greater_than	1804
+is_guide_for	1805
+is_guided_by	1806
+is_hallmark_of	1807
+is_hard_to	1808
+is_helpful_for	1809
+is_higher_in	1810
+is_hosted_at	1811
+is_identified_by	1812
+is_image_of	1813
+is_imaged_by	1814
+is_imaging_technique_for	1815
+is_important_for	1816
+is_important_to_know	1817
+is_improved_by	1818
+is_in	1819
+is_included_in	1820
+is_indicated_for	1821
+is_induction_therapy_option	1822
+is_influenced_by	1823
+is_informed_of	1824
+is_infused_into	1825
+is_inherited_by	1826
+is_inherited_condition	1827
+is_injected_into	1828
+is_injected_through	1829
+is_inserted_into	1830
+is_inserted_through	1831
+is_interpreted_by	1832
+is_interpreted_from	1833
+is_involved_in	1834
+is_joined_by	1835
+is_kept_for	1836
+is_larger_than	1837
+is_layer_of	1838
+is_less	1839
+is_less_than_or_equal_to	1840
+is_limited_by	1841
+is_linked_to	1842
+is_linked_with	1843
+is_listed_at	1844
+is_listened_to_through	1845
+is_located_at	1846
+is_located_between	1847
+is_located_in	1848
+is_located_near	1849
+is_located_on	1850
+is_located_within	1851
+is_location_of	1852
+is_lymph_node_location	1853
+is_made_by	1854
+is_made_from	1855
+is_made_of	1856
+is_made_up_of	1857
+is_made_using	1858
+is_managed_at	1859
+is_managed_by	1860
+is_measure_of	1861
+is_measured_by	1862
+is_measured_in	1863
+is_member_of	1864
+is_metaphor_for	1865
+is_metastasis_site	1866
+is_method_for	1867
+is_method_of	1868
+is_mixed_with	1869
+is_monitored_by	1870
+is_monitored_for	1871
+is_monitored_in	1872
+is_more_advanced_at_diagnosis_in	1873
+is_more_advanced_when_diagnosed_in	1874
+is_more_aggressive_in	1875
+is_more_common_than	1876
+is_more_effective_than	1877
+is_more_likely_to	1878
+is_more_likely_to_occur_at_earlier_age_in	1879
+is_more_serious_than	1880
+is_moved_over	1881
+is_named_after	1882
+is_near	1883
+is_needed	1884
+is_needed_before	1885
+is_needed_by	1886
+is_needed_for	1887
+is_nonmelanoma	1888
+is_not	1889
+is_not_always_an_option	1890
+is_not_appropriate_for	1891
+is_not_caused_by	1892
+is_not_found_in	1893
+is_not_helpful_for	1894
+is_not_inherited_from	1895
+is_not_just_about	1896
+is_not_option_for	1897
+is_not_recommended_for	1898
+is_not_suitable_for	1899
+is_not_the_same_for	1900
+is_not_used_often_for	1901
+is_numbered	1902
+is_obtained_through	1903
+is_of	1904
+is_of_type	1905
+is_on_page	1906
+is_option_after	1907
+is_option_for	1908
+is_option_if	1909
+is_option_of	1910
+is_ordered_as	1911
+is_ordered_by	1912
+is_ordered_with	1913
+is_packaged_into	1914
+is_paired_with	1915
+is_part_of	1916
+is_partner_in	1917
+is_passed_out_of	1918
+is_passed_with	1919
+is_performed_after	1920
+is_performed_at	1921
+is_performed_before	1922
+is_performed_by	1923
+is_performed_during	1924
+is_performed_in	1925
+is_performed_on	1926
+is_performed_under	1927
+is_picture_of	1928
+is_placed_in	1929
+is_placed_into	1930
+is_planned_by	1931
+is_planned_for	1932
+is_possible_due_to	1933
+is_possible_during	1934
+is_predicted_by	1935
+is_preferred_chemotherapy_regimen_for	1936
+is_preferred_for	1937
+is_preferred_regimen_for	1938
+is_preferred_treatment_for	1939
+is_preferred_with	1940
+is_prerequisite_for	1941
+is_prescription_cream	1942
+is_present_in	1943
+is_pressed_against	1944
+is_pressed_between	1945
+is_produced_by	1946
+is_prone_to	1947
+is_protein_in	1948
+is_protein_on	1949
+is_proven_for	1950
+is_quit_by	1951
+is_rare_but_serious_side_effect_of	1952
+is_rare_in	1953
+is_rarely_treated_with	1954
+is_rating_of	1955
+is_re-checked_after	1956
+is_reaction_to	1957
+is_received_by	1958
+is_recommended	1959
+is_recommended_after	1960
+is_recommended_after_surgery_for	1961
+is_recommended_before	1962
+is_recommended_by	1963
+is_recommended_during	1964
+is_recommended_during_and_after	1965
+is_recommended_for	1966
+is_recommended_option	1967
+is_recommended_option_for	1968
+is_recommended_regimen	1969
+is_recommended_with	1970
+is_record_of	1971
+is_related_to	1972
+is_released_by	1973
+is_relevant_to	1974
+is_removed_and_tested	1975
+is_removed_by	1976
+is_removed_during	1977
+is_removed_through	1978
+is_removed_with	1979
+is_repeated	1980
+is_repeated_every	1981
+is_required_for	1982
+is_responsible_for	1983
+is_result_of	1984
+is_reversible_with	1985
+is_reviewed_by	1986
+is_risk_factor_for	1987
+is_safe_for	1988
+is_safer_than	1989
+is_same_as	1990
+is_sampled_for	1991
+is_scale_of	1992
+is_scheduled	1993
+is_sensitive_to	1994
+is_sent_by	1995
+is_sent_to	1996
+is_shared_effort_between	1997
+is_shortened_chromosome	1998
+is_side_effect_of	1999
+is_sign_of	2000
+is_similar_for	2001
+is_similar_to	2002
+is_size_of	2003
+is_source_of	2004
+is_specialist_in	2005
+is_specialized_in	2006
+is_specific_to	2007
+is_spread_of	2008
+is_stage	2009
+is_stage_of	2010
+is_staged_by	2011
+is_standard_method_for	2012
+is_standard_of_care_for	2013
+is_standard_option	2014
+is_started_after	2015
+is_started_by	2016
+is_stayed_in	2017
+is_stopped_if	2018
+is_stored_on	2019
+is_strain_of	2020
+is_studied_in	2021
+is_study_of	2022
+is_subtype	2023
+is_subtype_of	2024
+is_suggested_for	2025
+is_suitable_for	2026
+is_supported_by	2027
+is_surrogate_marker_for	2028
+is_survey_for	2029
+is_suspected	2030
+is_suspicious_at	2031
+is_symptom_of	2032
+is_tailored_to	2033
+is_taken_by	2034
+is_taken_from	2035
+is_target_of	2036
+is_targeted_by	2037
+is_targeted_to	2038
+is_technique_for	2039
+is_test_for	2040
+is_tested_by	2041
+is_tested_for	2042
+is_tested_in	2043
+is_to	2044
+is_told_about	2045
+is_transplanted_to	2046
+is_treatable	2047
+is_treated_as	2048
+is_treated_by	2049
+is_treated_differently_from	2050
+is_treated_differently_than	2051
+is_treated_for	2052
+is_treated_like	2053
+is_treated_with	2054
+is_treatment	2055
+is_treatment_for	2056
+is_treatment_option	2057
+is_treatment_option_for	2058
+is_tried_if_possible	2059
+is_trimmed_to	2060
+is_trusted_by	2061
+is_tumor_marker_for	2062
+is_type	2063
+is_type_of	2064
+is_unavailable	2065
+is_under	2066
+is_unique_to	2067
+is_updated_by	2068
+is_used_after	2069
+is_used_as	2070
+is_used_before	2071
+is_used_by	2072
+is_used_during	2073
+is_used_for	2074
+is_used_in	2075
+is_used_in_addition_to	2076
+is_used_instead_of	2077
+is_used_to	2078
+is_used_to_determine	2079
+is_used_to_diagnose	2080
+is_used_to_examine	2081
+is_used_to_guide	2082
+is_used_to_learn_about	2083
+is_used_to_predict	2084
+is_used_to_prevent	2085
+is_used_to_see	2086
+is_used_to_test_for	2087
+is_used_to_treat	2088
+is_used_when	2089
+is_used_with	2090
+is_useful_for	2091
+is_usually_found_in	2092
+is_voluntary	2093
+is_warning_sign_of	2094
+is_when	2095
+is_written_as	2096
+isa	2097
+isbasedon	2098
+iscommonin	2099
+islocated	2100
+joins	2101
+joins_at	2102
+joins_with	2103
+keep	2104
+keep in	2105
+keep in loop	2106
+keep_up_with	2107
+keeps	2108
+keeps_informed	2109
+keeps_low	2110
+keeps_open	2111
+kill	2112
+kills	2113
+know	2114
+know_how_to	2115
+lacks_knowledge_about	2116
+lasts	2117
+lasts for	2118
+lasts_for	2119
+latch onto	2120
+lead to	2121
+lead_to	2122
+leads to	2123
+leads_to	2124
+leads_to_approval_by	2125
+leadsto	2126
+learn_about	2127
+learned	2128
+learns	2129
+learns_about	2130
+leaves	2131
+leaves body through	2132
+leaves_behind	2133
+leaves_body_through	2134
+leaves_through	2135
+left_in	2136
+less_frequently_spread_to	2137
+less_likely_to	2138
+less_than	2139
+level_indicates	2140
+level_is_higher_in	2141
+level_rises_if	2142
+lie	2143
+lie_on	2144
+lies on	2145
+lies_on	2146
+limit	2147
+limits	2148
+limits_effectiveness_of	2149
+limits_radiation_to	2150
+limits_treatment_effectiveness	2151
+line	2152
+linked to	2153
+list	2154
+lists	2155
+lives_without	2156
+located above	2157
+located at	2158
+located behind	2159
+located in	2160
+located_at	2161
+located_behind	2162
+located_between	2163
+located_in	2164
+located_in_front_of	2165
+located_near	2166
+located_on	2167
+located_under	2168
+locates	2169
+location	2170
+location_in	2171
+location_of	2172
+look	2173
+look for	2174
+look like	2175
+look to for social support	2176
+look_compared_to	2177
+look_for	2178
+look_like	2179
+looks at	2180
+looks for	2181
+looks like	2182
+looks_at	2183
+looks_different_from	2184
+looks_for	2185
+lower	2186
+lowers	2187
+lowers_risk_of	2188
+made by	2189
+made of	2190
+made up of	2191
+made_by	2192
+made_during	2193
+made_from	2194
+made_of	2195
+made_up_of	2196
+made_with	2197
+maintains	2198
+maintenance_schedule	2199
+make	2200
+make_into	2201
+make_prone_to	2202
+make_up	2203
+makes	2204
+makes clearer	2205
+makes copies of	2206
+makes pictures of	2207
+makes you want to	2208
+makes_impossible	2209
+makes_it_harder_to	2210
+makes_less_noise_than	2211
+makes_pictures	2212
+makes_pictures_of	2213
+makes_visible	2214
+manage	2215
+managed_by	2216
+manages	2217
+manifests as	2218
+manifests_as	2219
+mark	2220
+marks	2221
+matches	2222
+mature_into	2223
+matures_into	2224
+maximizes	2225
+may	2226
+may affect	2227
+may be a sign of	2228
+may be an option after	2229
+may be avoided by	2230
+may be caused by	2231
+may be combined with	2232
+may be found during	2233
+may be given during	2234
+may be given in addition to	2235
+may be in	2236
+may be low at	2237
+may be monitored for	2238
+may be omitted due to	2239
+may be ordered	2240
+may be performed with	2241
+may be treated with	2242
+may be used for	2243
+may cause	2244
+may delay	2245
+may have	2246
+may have spread to	2247
+may include	2248
+may indicate	2249
+may lead to	2250
+may make more	2251
+may mean	2252
+may measure	2253
+may not be used if	2254
+may not have	2255
+may not require	2256
+may or may not cause	2257
+may or may not contain	2258
+may require	2259
+may return during	2260
+may suggest	2261
+may_affect	2262
+may_also_be_biopsied	2263
+may_be	2264
+may_be_a_sign_of	2265
+may_be_added_to	2266
+may_be_affected_by	2267
+may_be_at_risk_for	2268
+may_be_attributed_to	2269
+may_be_avoided_by	2270
+may_be_avoided_during	2271
+may_be_caused_by	2272
+may_be_changed_due_to	2273
+may_be_given	2274
+may_be_given_for	2275
+may_be_given_in	2276
+may_be_given_with	2277
+may_be_harder_to_treat	2278
+may_be_in	2279
+may_be_needed	2280
+may_be_next_step_if	2281
+may_be_ordered_if	2282
+may_be_performed	2283
+may_be_positioned_with	2284
+may_be_recommended	2285
+may_be_recommended_after	2286
+may_be_recommended_by	2287
+may_be_removed	2288
+may_be_removed_by	2289
+may_be_removed_during	2290
+may_be_removed_or_destroyed_with	2291
+may_be_required_by	2292
+may_be_tested_for	2293
+may_be_treated_as	2294
+may_be_treated_with	2295
+may_be_used_instead_of	2296
+may_be_used_to_look_for	2297
+may_be_used_with	2298
+may_become	2299
+may_cause	2300
+may_change	2301
+may_change_due_to	2302
+may_choose_to_test_for	2303
+may_consult	2304
+may_damage	2305
+may_develop_into	2306
+may_experience	2307
+may_harm	2308
+may_have	2309
+may_have_been_performed_prior_to	2310
+may_have_found	2311
+may_have_invaded	2312
+may_have_spread	2313
+may_have_spread_to	2314
+may_have_tissue_removed	2315
+may_help_with	2316
+may_improve	2317
+may_include	2318
+may_indicate	2319
+may_invade	2320
+may_involve	2321
+may_lead_to	2322
+may_leave_behind	2323
+may_make	2324
+may_need	2325
+may_not_be	2326
+may_not_be_needed	2327
+may_not_be_needed_for	2328
+may_not_be_possible_due_to	2329
+may_not_be_right_for	2330
+may_not_have	2331
+may_not_know	2332
+may_not_receive	2333
+may_not_require	2334
+may_or_may_not_be_recommended	2335
+may_or_may_not_have	2336
+may_or_may_not_work_better_than	2337
+may_prescribe	2338
+may_prevent	2339
+may_receive	2340
+may_reduce_risk_of	2341
+may_remove	2342
+may_require	2343
+may_require_avoiding_certain	2344
+may_schedule	2345
+may_shrink	2346
+may_spread_to	2347
+may_stop_during	2348
+may_suspect	2349
+may_use	2350
+may_want_to_talk_with	2351
+mayaffect	2352
+means	2353
+measure	2354
+measured by	2355
+measured_by	2356
+measured_in	2357
+measures	2358
+meets	2359
+meets_requirements	2360
+mentions	2361
+merges_with	2362
+metastasize_to	2363
+metastasizes_to	2364
+might be done for	2365
+might be right for	2366
+might be used in combination with	2367
+might not be used for	2368
+might_be_done_in	2369
+might_be_found_due_to	2370
+might_be_right_for	2371
+might_be_tested_for	2372
+might_be_used_for	2373
+might_test	2374
+minimizes	2375
+minimum_value	2376
+mixes_with	2377
+modified by	2378
+monitor	2379
+monitor for	2380
+monitored	2381
+monitored_with	2382
+monitors	2383
+more_common_in	2384
+more_frequent_in	2385
+more_info_at	2386
+more_likely_to	2387
+most_effective_in	2388
+move	2389
+move_to	2390
+moves	2391
+moves into	2392
+moves through	2393
+moves_into	2394
+moves_out	2395
+moves_through	2396
+multiplies_quickly	2397
+multiply	2398
+multiply_to	2399
+must make	2400
+names	2401
+necessary for	2402
+need	2403
+need_to_manage	2404
+need_to_take_safety_measures	2405
+needed for	2406
+needed_by	2407
+needed_for	2408
+needed_permanently	2409
+needs	2410
+needs_to	2411
+needs_to_be_removed	2412
+needs_to_know	2413
+needs_to_remain	2414
+normally_grow_in_response_to	2415
+not_clear	2416
+not_considered	2417
+not_detect	2418
+not_effective_against	2419
+not_found_in	2420
+not_grow_in	2421
+not_inherited_from	2422
+not_needed_with	2423
+not_performed_if	2424
+not_recommended_for	2425
+not_used_for	2426
+not_used_if	2427
+notes	2428
+notices	2429
+nourishes	2430
+numb	2431
+number	2432
+observed_by	2433
+obtain	2434
+obtained through	2435
+obtained_through	2436
+obtains	2437
+obtains_pictures_of	2438
+occur in	2439
+occur when	2440
+occur_at	2441
+occur_in	2442
+occur_on	2443
+occurs	2444
+occurs in	2445
+occurs more frequently in	2446
+occurs_after	2447
+occurs_at	2448
+occurs_at_earlier_age_in	2449
+occurs_in	2450
+occurs_more_frequently_in	2451
+occurs_when	2452
+of	2453
+offer	2454
+offer_guidance_on	2455
+offers	2456
+often_returns_after	2457
+often_spread_to	2458
+often_starts_in	2459
+on	2460
+opens into	2461
+opens_during	2462
+opens_into	2463
+operates	2464
+option_for	2465
+order	2466
+orders	2467
+organize	2468
+organized_by	2469
+organized_into	2470
+organizes	2471
+originate from	2472
+originated_from	2473
+originates_from	2474
+originates_in	2475
+overcomes	2476
+overreacts and attacks	2477
+overwhelm	2478
+owns	2479
+part of	2480
+part_of	2481
+part_of_regimen	2482
+participates_in	2483
+partner in care	2484
+passed_down_from	2485
+passed_down_in	2486
+passed_on_to	2487
+passed_through	2488
+passed_to	2489
+passes	2490
+passes through	2491
+passes_through	2492
+pays_for	2493
+percentage_required_for_diagnosis	2494
+perform	2495
+perform_by	2496
+perform_function	2497
+perform_in	2498
+performed by	2499
+performed for	2500
+performed on	2501
+performed_after	2502
+performed_at	2503
+performed_before	2504
+performed_by	2505
+performed_during	2506
+performed_for	2507
+performed_if	2508
+performed_in	2509
+performed_on	2510
+performed_through	2511
+performs	2512
+performs_analysis	2513
+performs_function	2514
+personalizes	2515
+phone_number	2516
+placed in	2517
+placed_better_after	2518
+placed_in	2519
+places	2520
+plan	2521
+planned_with	2522
+plans	2523
+play a role in	2524
+play important role in	2525
+play_role_in	2526
+plays a role in	2527
+plays_role_in	2528
+possible_during	2529
+preceded_by	2530
+precedes	2531
+precludes	2532
+predicts	2533
+preferred_over	2534
+prepare	2535
+prepares	2536
+prescribe	2537
+prescribes	2538
+present_in	2539
+preserves	2540
+prevalence	2541
+prevent	2542
+prevention_method	2543
+prevents	2544
+prevents_use_of	2545
+processed_by	2546
+processes	2547
+produce	2548
+produced_by	2549
+produced_in	2550
+produces	2551
+produces too much	2552
+prohibits_use	2553
+prolongs	2554
+prolongs_life_of	2555
+protect	2556
+protected_by	2557
+protects	2558
+protects_against	2559
+provide	2560
+provide access to	2561
+provide information on	2562
+provide_access_to	2563
+provide_clues_about	2564
+provide_info_on	2565
+provide_instructions_for	2566
+provided_by	2567
+provides	2568
+provides information about	2569
+provides information on	2570
+provides_access_to	2571
+provides_clues_for	2572
+provides_diagnosis	2573
+provides_guidelines_for	2574
+provides_info_about	2575
+provides_info_for	2576
+provides_info_on	2577
+provides_information_about	2578
+provides_information_on	2579
+provides_instructions_for	2580
+published_by	2581
+publishes	2582
+purpose	2583
+push_through	2584
+pushed_through	2585
+pushes against	2586
+pushes_against	2587
+put_at_risk_for	2588
+puts pressure on	2589
+puts_into	2590
+range from	2591
+range_from	2592
+range_to	2593
+ranges from	2594
+ranges to	2595
+ranges_from	2596
+ranges_to	2597
+rarely_spreads_to	2598
+re-checked	2599
+reach	2600
+reach_out_to	2601
+reached by	2602
+reaches	2603
+reads	2604
+rebuilds	2605
+receive	2606
+receive_updates	2607
+received	2608
+receives	2609
+receives_report_from	2610
+receives_results_from	2611
+receives_treatment_at	2612
+recognizes	2613
+recommend	2614
+recommended before	2615
+recommended for	2616
+recommended_after	2617
+recommended_before	2618
+recommended_birth_control	2619
+recommended_by	2620
+recommended_during	2621
+recommended_every	2622
+recommended_for	2623
+recommends	2624
+record of	2625
+records	2626
+recovers_in	2627
+recur	2628
+recurs_in	2629
+reduce	2630
+reduces	2631
+reduces_ability_of	2632
+reduces_risk	2633
+reduces_risk_of	2634
+reduces_symptoms_of	2635
+refer_for	2636
+references	2637
+refers for	2638
+refers to	2639
+refers_for	2640
+refers_to	2641
+reflects	2642
+regulate	2643
+regulates	2644
+regulates_flow_of	2645
+reject	2646
+related to	2647
+related_to	2648
+relates_to	2649
+release	2650
+released from	2651
+released through	2652
+released_by	2653
+released_in	2654
+releases	2655
+releases_into	2656
+relieves	2657
+remain_in	2658
+remains	2659
+remains in place to mark	2660
+removal_method	2661
+remove	2662
+removed	2663
+removed_by	2664
+removed_during	2665
+removed_from	2666
+removes	2667
+repair	2668
+repairs	2669
+replace	2670
+replaced_by	2671
+replaces	2672
+reports	2673
+represents	2674
+requests	2675
+require	2676
+require_surveillance	2677
+required_for	2678
+requirement	2679
+requires	2680
+requires_avoidance_of	2681
+requires_colonoscopy	2682
+requires_knowledge_of	2683
+requires_no_special_preparations	2684
+requires_preparation	2685
+requires_test	2686
+requires_treatment	2687
+resembles	2688
+respond_better_to	2689
+responds_to	2690
+responsible_for	2691
+restores	2692
+result_in	2693
+result_of	2694
+results in	2695
+results_in	2696
+returns after	2697
+returns_after	2698
+returns_to	2699
+reveal	2700
+reveals	2701
+reviews	2702
+riskfactor	2703
+role	2704
+rules_out	2705
+run_in	2706
+runs_in	2707
+same_as	2708
+saved_for	2709
+saves	2710
+says	2711
+scan	2712
+scans	2713
+scans_area	2714
+schedule	2715
+scores	2716
+screens for	2717
+screens_for	2718
+secrete	2719
+secretes	2720
+seek out	2721
+seeks	2722
+seeks out	2723
+seeks_opinion_of	2724
+seeks_treatment	2725
+seeks_treatment_outside	2726
+sees	2727
+self-renew	2728
+sends	2729
+sends results to	2730
+sends_and_receives	2731
+sends_report_to	2732
+sends_results_to	2733
+sent_through	2734
+sent_to	2735
+separates	2736
+sessions_per_week	2737
+set up	2738
+sews_up	2739
+share	2740
+shares	2741
+shares_features_with	2742
+shed	2743
+sheds	2744
+shortage_in	2745
+should	2746
+should ask	2747
+should be asked	2748
+should be informed about	2749
+should be told about	2750
+should be treated with	2751
+should bring someone to	2752
+should create	2753
+should discuss	2754
+should get	2755
+should get to know	2756
+should keep	2757
+should organize	2758
+should take	2759
+should understand	2760
+should_ask	2761
+should_ask_about	2762
+should_ask_questions_and_make_shared_decisions_with	2763
+should_be	2764
+should_be_asked	2765
+should_be_avoided_before	2766
+should_be_consulted_before	2767
+should_be_contacted_about	2768
+should_be_created_for	2769
+should_be_discussed	2770
+should_be_discussed_by	2771
+should_be_examined_by	2772
+should_be_explained_by	2773
+should_be_given_by	2774
+should_be_informed_about	2775
+should_be_informed_of	2776
+should_be_performed_by	2777
+should_be_prevented_during	2778
+should_be_referred_to	2779
+should_be_reported_to	2780
+should_be_tested_for	2781
+should_be_told_about	2782
+should_be_treated_at	2783
+should_consider	2784
+should_consult_with	2785
+should_discuss	2786
+should_do	2787
+should_get_to_know	2788
+should_have	2789
+should_have_test	2790
+should_include	2791
+should_not_eat_or_drink	2792
+should_not_start_until	2793
+should_perform	2794
+should_speak_up_about	2795
+should_start	2796
+should_stay_connected_with	2797
+should_stop_taking	2798
+should_undergo	2799
+should_understand	2800
+show	2801
+show up as	2802
+show_up_as	2803
+shows	2804
+shrinks	2805
+side_effects	2806
+sign of	2807
+sign_of	2808
+signs	2809
+similar_to	2810
+sits	2811
+size	2812
+size of	2813
+slow	2814
+slows	2815
+slows_down	2816
+slows_down_growth_of	2817
+source_of	2818
+spares	2819
+specializes_in	2820
+specifies	2821
+specify	2822
+speeds_up	2823
+splits into	2824
+splits_into	2825
+spread	2826
+spread to	2827
+spread_from	2828
+spread_through	2829
+spread_to	2830
+spreads	2831
+spreads to	2832
+spreads_from	2833
+spreads_into	2834
+spreads_outside	2835
+spreads_through	2836
+spreads_to	2837
+stage	2838
+stages	2839
+stands for	2840
+start	2841
+start in	2842
+start_as	2843
+start_at	2844
+start_in	2845
+started on	2846
+started_after	2847
+starts	2848
+starts at	2849
+starts in	2850
+starts with	2851
+starts_as	2852
+starts_at	2853
+starts_before	2854
+starts_conversation_with	2855
+starts_in	2856
+starts_with	2857
+startsin	2858
+states	2859
+stay in place until	2860
+stays_in	2861
+stays_within	2862
+sticks_to	2863
+stimulates	2864
+stitches_wound	2865
+stop	2866
+stop the action of	2867
+stopped_before	2868
+stops	2869
+stops_cancer_growth_in	2870
+stops_growth_of	2871
+store	2872
+stores	2873
+strengthens	2874
+studied_by	2875
+studies	2876
+study	2877
+sub_type	2878
+subtype	2879
+subtype_of	2880
+suggest	2881
+suggests	2882
+supplies	2883
+support	2884
+supported by	2885
+supported_by	2886
+supports	2887
+suppresses	2888
+surround	2889
+surrounded_by	2890
+surrounds	2891
+survive longer than	2892
+suspect	2893
+suspected_by	2894
+suspected_to_have	2895
+suspects	2896
+symptom_of	2897
+synonym	2898
+take	2899
+take care of	2900
+take_notes	2901
+take_pictures_of	2902
+take_sample_from	2903
+take_time	2904
+take_up	2905
+taken_by	2906
+taken_from	2907
+taken_of	2908
+taken_with	2909
+takes	2910
+takes longer than	2911
+takes_in	2912
+takes_less_time_than	2913
+takes_longer_than	2914
+takes_pictures_of	2915
+takes_place_at	2916
+takes_place_in	2917
+takes_place_of	2918
+takes_samples_from	2919
+takes_steps_to_get	2920
+takes_up	2921
+talk_about	2922
+talk_to_about	2923
+talks_about	2924
+talks_to	2925
+talks_with	2926
+target	2927
+targeted by	2928
+targeted_by	2929
+targets	2930
+teach	2931
+tell	2932
+temporarily_increases	2933
+tend to develop	2934
+tend_to	2935
+test	2936
+tested_for	2937
+tested_in	2938
+testing_includes	2939
+tests	2940
+tests for	2941
+tests_for	2942
+thins_during	2943
+through	2944
+throughout	2945
+to	2946
+topic	2947
+total	2948
+tracked_through	2949
+tracks	2950
+trades_places_with	2951
+train_to_become	2952
+transfer	2953
+transfer oxygen to	2954
+transfer_oxygen_into	2955
+transferred_from	2956
+transferred_to	2957
+transforms	2958
+transmits	2959
+transmits_messages_between	2960
+transport	2961
+transports	2962
+transports_through	2963
+travel through	2964
+travel to	2965
+travel_into	2966
+travel_through	2967
+travel_to	2968
+travels through	2969
+travels_into	2970
+travels_through	2971
+travels_to	2972
+treat	2973
+treat_with	2974
+treated by	2975
+treated with	2976
+treated_as	2977
+treated_at	2978
+treated_by	2979
+treated_with	2980
+treatment	2981
+treatment_duration	2982
+treatment_for	2983
+treatment_improved_by	2984
+treats	2985
+treats_with	2986
+triggers	2987
+trusted_by	2988
+turns_on	2989
+type	2990
+type of	2991
+type_of	2992
+typically affects	2993
+typically_form_in	2994
+typically_forms	2995
+typically_located_in	2996
+ultimately_leads_to	2997
+unblocks	2998
+undergo	2999
+undergoes	3000
+understand	3001
+unknown_safety_for	3002
+update_about	3003
+url	3004
+use	3005
+use_for	3006
+used for	3007
+used in	3008
+used to determine	3009
+used with	3010
+used_after	3011
+used_by	3012
+used_for	3013
+used_in	3014
+used_to	3015
+used_to_describe	3016
+used_to_determine	3017
+used_to_examine	3018
+used_to_guide	3019
+used_to_prevent	3020
+used_to_remove	3021
+used_to_treat	3022
+used_with	3023
+uses	3024
+uses_contrast_type	3025
+uses_device	3026
+uses_imaging_method	3027
+uses_sample	3028
+uses_sample_of	3029
+usually occurs in	3030
+varies_by	3031
+varies_for	3032
+varies_from	3033
+vary for	3034
+vary_in_length	3035
+view	3036
+viewed_by	3037
+views	3038
+visits	3039
+volunteers_for	3040
+want_to_know	3041
+wants_to_know	3042
+was tested at	3043
+was used in	3044
+was_called	3045
+was_diagnosed_at	3046
+was_done	3047
+was_tested_at	3048
+was_treated_with	3049
+weakened_by	3050
+weakens	3051
+wears	3052
+were seen in	3053
+will be	3054
+will screen	3055
+will watch for	3056
+will_be_observed	3057
+will_benefit_from	3058
+will_consult_with	3059
+will_discuss	3060
+won't cause	3061
+work with	3062
+work_at	3063
+work_best_for	3064
+work_better	3065
+work_with	3066
+works_as	3067
+works_best_in	3068
+works_by	3069
+works_in	3070
+works_through	3071
+works_well_in	3072
+works_with	3073
+worn_by	3074
+worsen	3075
+wraps around	3076
+write	3077
+write_down	3078
+writes	3079
+written_as	3080
+year	3081
