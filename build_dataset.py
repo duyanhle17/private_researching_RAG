@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import argparse
 import random
 import logging
@@ -11,31 +12,176 @@ import numpy as np
 # Config Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def chunk_text(text, chunk_size=1000, overlap=150):
-    """Phân tách văn bản thành các đoạn nhỏ với một chút chồng chéo (overlap)."""
-    words = text.split()
+def _clean_text(text):
+    """Chuẩn hóa văn bản thô: loại bỏ khoảng trắng thừa, dòng trống, ký tự rác."""
+    # 1. Thay thế nhiều space/tab liên tiếp thành 1 space
+    text = re.sub(r'[ \t]+', ' ', text)
+    # 2. Thay thế nhiều dòng trống liên tiếp thành 1 dòng trống (giữ paragraph boundary)
+    text = re.sub(r'\n\s*\n[\s\n]*', '\n\n', text)
+    # 3. Loại bỏ dòng trống đầu/cuối
+    text = text.strip()
+    return text
+
+
+def _split_sentences(text):
+    """Tách văn bản thành danh sách các câu dựa trên dấu câu (. ? ! và xuống dòng)."""
+    # Tiền xử lý: chuẩn hóa text trước
+    text = _clean_text(text)
+    # Regex: tách tại dấu chấm câu theo sau bởi khoảng trắng hoặc xuống dòng,
+    # nhưng không tách giữa các viết tắt phổ biến (e.g., Dr., vs., etc.)
+    raw_sentences = re.split(r'(?<=[.!?])\s+|\n{2,}', text)
+    sentences = []
+    for s in raw_sentences:
+        s = s.strip()
+        if len(s) > 5:  # Bỏ câu quá ngắn (chỉ có ký tự đặc biệt hoặc rác)
+            sentences.append(s)
+    return sentences
+
+
+def chunk_text(text, chunk_size=200, overlap=30):
+    """Phân tách văn bản thành các đoạn nhỏ theo ranh giới câu (Semantic Chunking).
+    
+    Giống cách SAT (FB15k-237N) xây dựng dữ liệu: mỗi chunk là 1 đoạn văn
+    trọn vẹn gồm 3-8 câu (~150-300 từ), không cắt ngang câu.
+    
+    Args:
+        text: Văn bản đầu vào
+        chunk_size: Số từ TỐI ĐA mỗi chunk (mặc định 200)
+        overlap: Số từ overlap TỐI THIỂU giữa 2 chunk liền kề (mặc định 30, ~1-2 câu cuối)
+    """
+    sentences = _split_sentences(text)
+    if not sentences:
+        return []
+    
     chunks = []
-    i = 0
-    while i < len(words):
-        chunk = " ".join(words[i:i + chunk_size])
-        chunks.append(chunk)
-        i += chunk_size - overlap
+    current_sentences = []
+    current_word_count = 0
+    
+    for sent in sentences:
+        sent_words = len(sent.split())
+        
+        # Nếu thêm câu này vượt quá chunk_size VÀ chunk hiện tại đã có nội dung
+        if current_word_count + sent_words > chunk_size and current_sentences:
+            # Lưu chunk hiện tại
+            chunk_text_str = " ".join(current_sentences)
+            if len(chunk_text_str.split()) >= 20:  # Bỏ chunk quá ngắn (<20 từ)
+                chunks.append(chunk_text_str)
+            
+            # Tính overlap: lấy 1-2 câu cuối cùng của chunk hiện tại làm đầu chunk mới
+            overlap_sentences = []
+            overlap_count = 0
+            for s in reversed(current_sentences):
+                s_wc = len(s.split())
+                if overlap_count + s_wc <= overlap:
+                    overlap_sentences.insert(0, s)
+                    overlap_count += s_wc
+                else:
+                    break
+            
+            current_sentences = overlap_sentences
+            current_word_count = overlap_count
+        
+        current_sentences.append(sent)
+        current_word_count += sent_words
+    
+    # Chunk cuối cùng
+    if current_sentences:
+        chunk_text_str = " ".join(current_sentences)
+        if len(chunk_text_str.split()) >= 20:
+            chunks.append(chunk_text_str)
+        elif chunks:
+            # Nếu chunk cuối quá ngắn, nối vào chunk trước
+            chunks[-1] = chunks[-1] + " " + chunk_text_str
+    
     return chunks
+
+# ============= BỘ LỌC ENTITY HẬU KỲ =============
+# Danh sách từ quá mơ hồ / chung chung không nên làm entity
+VAGUE_ENTITIES = {
+    "ability", "area", "areas", "amount", "analysis", "approach", "assessment",
+    "benefit", "benefits", "book", "care", "case", "cause", "change", "changes",
+    "chance", "condition", "conditions", "concern", "copy", "data", "day",
+    "days", "detail", "details", "difference", "effect", "effects", "event",
+    "example", "experience", "factor", "factors", "feature", "features",
+    "finding", "findings", "form", "function", "goal", "group", "growth",
+    "guide", "help", "history", "hour", "hours", "impact", "increase",
+    "information", "issue", "issues", "item", "kind", "level", "levels",
+    "list", "location", "loss", "manner", "matter", "method", "minute",
+    "minutes", "month", "months", "need", "number", "option", "options",
+    "outcome", "outcomes", "part", "parts", "patient", "patients", "people",
+    "percent", "period", "place", "plan", "point", "portion", "position",
+    "possibility", "problem", "problems", "process", "program", "progress",
+    "purpose", "question", "questions", "range", "rate", "reason", "reasons",
+    "recommendation", "region", "report", "result", "results", "risk",
+    "role", "rule", "sample", "section", "set", "side", "sign", "signs",
+    "situation", "size", "source", "space", "stage", "state", "status",
+    "step", "steps", "structure", "study", "style", "subject", "support",
+    "surface", "symptom", "system", "team", "technique", "test", "testing",
+    "thing", "things", "time", "tip", "tool", "topic", "treatment",
+    "trial", "type", "types", "use", "value", "view", "way", "week",
+    "weeks", "work", "year", "years", "a test", "anything", "assistant",
+    "abbreviations", "advocate", "advancement", "after surgery", "after treatment",
+    "before surgery", "before treatment", "a", "an", "the", "he", "she",
+    "it", "they", "we", "you", "i", "me", "us", "him", "her", "them",
+}
+
+# Regex: entity chỉ có số, ký tự đặc biệt và/hoặc đơn vị đo
+_RE_NUMERIC_ONLY = re.compile(
+    r'^[\d\s.,/\-–—~<>≤≥+=%°\(\)]*'
+    r'(cm|mm|mg|ml|kg|lb|hours?|minutes?|days?|weeks?|months?|years?|'
+    r'percent|inches?|seconds?|liters?|cc|mcg|mg/m2|gy|mv)?'
+    r'[\d\s.,/\-–—~<>≤≥+=%°\(\)]*$',
+    re.IGNORECASE
+)
+
+def is_valid_entity(entity: str) -> bool:
+    """Kiểm tra xem một entity có đủ tiêu chuẩn để giữ lại không."""
+    e = entity.strip().lower()
+    
+    # 1. Quá ngắn (1 ký tự) hoặc quá dài (>80 ký tự ~ 1 câu)
+    if len(e) <= 1 or len(e) > 80:
+        return False
+    
+    # 2. Chỉ toàn số / đo lường  (VD: "1 cm", "1-2 hours", "30 minutes")
+    if _RE_NUMERIC_ONLY.match(e):
+        return False
+
+    # 3. Trong danh sách từ mơ hồ
+    if e in VAGUE_ENTITIES:
+        return False
+    
+    # 4. Entity chỉ có số (VD: "0", "10", "5")
+    if e.replace(' ', '').replace('-', '').replace('_', '').isdigit():
+        return False
+    
+    # 5. Bắt đầu hoàn toàn bằng số + "to" + số (VD: "0 to 5", "15 to 39 years")
+    if re.match(r'^\d+\s*(to|or)\s*\d+', e):
+        return False
+    
+    return True
 
 def extract_triples_from_chunk(client, model, chunk, chunk_id):
     """Gọi API NVIDIA NIM để trích xuất bộ ba (triples) từ một đoạn văn bản."""
-    prompt = """You are an expert at constructing Knowledge Graphs from medical text.
-Extract entities and relationships from the provided text.
-Return the result EXACTLY as a JSON list of lists, where each inner list represents a triple: ["head_entity", "relation", "tail_entity"].
+    prompt = """You are a medical Knowledge Graph expert. Extract ONLY the core entities and their relationships.
+Return EXACTLY a JSON list of lists: [["head_entity", "relation", "tail_entity"], ...]
 
-CRITICAL RULES FOR ENTITIES & RELATIONS:
-1. Entities MUST be valid NOUNS or NOUN PHRASES representing clear concepts (e.g., diseases, anatomical parts, medical procedures, chemicals, people, organizations, symptoms). 
-2. DO NOT extract verbs, verb phrases, actions, or full clauses as entities (e.g., WRONG: "fall asleep", "treating cancer", "takes 2 weeks").
-3. DO NOT extract measurements or vague pronouns as entities (e.g., WRONG: "1 cm", "1-2 hours", "he", "they", "4_out_of_10").
-4. Relations should be concise verbs/predicates connecting the entities (e.g., "is_a", "treats", "causes", "located_in", "has_symptom").
-5. Normalize entity names (e.g., remove unnecessary articles like "the", "a", "an", and use consistent spacing).
-If no valid relations are found, return an empty list: [].
-Do not output any markdown formatting, just the raw JSON array.
+ENTITY RULES (STRICT - only these 5 types are valid):
+1. DISEASES / CONDITIONS: Named diseases, syndromes, disorders (e.g., "lung cancer", "diabetes", "hypertension")
+2. DRUGS / CHEMICALS: Medications, vaccines, chemical compounds (e.g., "aspirin", "insulin", "selenium")
+3. ANATOMY: Body parts, organs, tissues, cells (e.g., "liver", "blood vessels", "T-cells")
+4. PATHOGENS: Viruses, bacteria, parasites (e.g., "HIV", "E. coli", "malaria parasite")
+5. PROCEDURES / TREATMENTS: Medical procedures, therapies, diagnostic tests (e.g., "chemotherapy", "MRI scan", "biopsy")
+
+INVALID ENTITIES (DO NOT EXTRACT):
+- Numbers, measurements, durations: "1 cm", "2 hours", "stage 2"
+- Pronouns: "he", "she", "it", "they", "patient"
+- Generic words: "treatment", "condition", "problem", "area", "ability"
+- Verbs or actions: "treating", "diagnosed", "prescribing"
+
+RELATION RULES: Use short verb-phrases: "treats", "causes", "is_a", "located_in", "has_symptom", "inhibits", "prevents", "diagnosed_by"
+
+If no valid triples exist, return: []
+Output raw JSON only, no markdown.
 
 Text:
 """ + chunk
@@ -49,17 +195,27 @@ Text:
         )
         content = response.choices[0].message.content.strip()
         
-        # Loại bỏ markdown nếu LLM trả về dạng ```json ... ```
-        if content.startswith("```json"):
-            content = content[7:]
-        if content.startswith("```"):
-            content = content[3:]
-        if content.endswith("```"):
-            content = content[:-3]
+        # 1. Nếu API trả về rỗng (bị block bởi guardrails, rate-limit,...)
+        if not content:
+            return {"chunk_id": chunk_id, "text": chunk, "triples": [], "status": "error", "error": "API response is empty (could be NVIDIA NIM guardrails/rate-limit)."}
             
-        triples = json.loads(content.strip())
         
-        # Validate định dạng triples
+        
+        # 2. Extract mảng JSON lớn nhất từ văn bản bằng biểu thức chính quy (Regex)
+        match = re.search(r'\[\s*\[.*?\]\s*\]', content, re.DOTALL)
+        
+        triples = []
+        if match:
+            triples = json.loads(match.group(0))
+        else:
+            # Fallback kịch bản LLM trả về đúng [] (không tìm thấy thực thể)
+            empty_match = re.search(r'\[\s*\]', content)
+            if empty_match:
+                triples = []
+            else:
+                return {"chunk_id": chunk_id, "text": chunk, "triples": [], "status": "error", "error": f"LLM rác/sai format: {content[:50]}"}
+        
+        # 3. Validate định dạng triples
         valid_triples = []
         if isinstance(triples, list):
             for t in triples:
@@ -160,6 +316,9 @@ def build_dataset(args):
             for h, r, t in item["triples"]:
                 h_norm, r_norm, t_norm = h.lower(), r.lower(), t.lower()
                 if not h_norm or not r_norm or not t_norm:
+                    continue
+                # Lọc entity rác bằng bộ lọc hậu kỳ
+                if not is_valid_entity(h_norm) or not is_valid_entity(t_norm):
                     continue
                 entities_set.add(h_norm)
                 entities_set.add(t_norm)
@@ -365,8 +524,8 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, default="meta/llama3-70b-instruct", help="Model NVIDIA NIM để trích xuất")
     parser.add_argument("--api_key", type=str, default="", help="API Key NVIDIA (hoặc dùng NVIDIA_API_KEY trong env)")
     
-    parser.add_argument("--chunk_words", type=int, default=200, help="Số từ của mỗi chunk đoạn text")
-    parser.add_argument("--overlap_words", type=int, default=20, help="Số từ trùng lặp khi chunk (overlap)")
+    parser.add_argument("--chunk_words", type=int, default=200, help="Số từ TỐI ĐA của mỗi chunk (chia theo câu, mặc định 200 ~ 5-8 câu)")
+    parser.add_argument("--overlap_words", type=int, default=30, help="Số từ overlap tối thiểu giữa các chunk liền kề (~1-2 câu cuối)")
     
     parser.add_argument("--max_workers", type=int, default=35, help="Số luồng request song song (ThreadPool)")
     parser.add_argument("--batch_size", type=int, default=100, help="Xử lý lần lượt bao nhiêu chunk mỗi vòng batch (Để API call nhịp nhàng)")

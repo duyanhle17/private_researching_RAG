@@ -1,7 +1,7 @@
 # Workflow: Build Data -> Train SAT
 
 1. **Build Data Phase**: Run `build_dataset.py`
-   - Uses NVIDIA NIM API to extract entities and relations from `novel.json`.
+   - Uses NVIDIA NIM API to extract entities and relations from `medical.json`.
    - Generates SAT-compatible graph files (`mid2id.txt`, `train.txt`, etc.).
    - Outputs files to `SAT/aligner/data/medical_kg/`.
    - *Time*: 10-30 mins depending on API rate limits and text size.
