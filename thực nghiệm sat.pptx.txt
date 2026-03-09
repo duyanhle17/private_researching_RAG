@@ -1,0 +1,232 @@
+Báo cáo thực nghiệm: paper SAT
+MinhPV
+
+1. Mục tiêu thí nghiệm
+Thực nghiệm nhằm đánh giá hiệu quả của Hierarchical Knowledge Alignment (HKA) và Structural Instruction Tuning (SIT)
+
+2. Thiết lập thí nghiệm
+Dataset: FB15K-237
+Số entity: 14,541
+Relations: 237
+Train triples: 94,323
+Test triples: 8,226
+
+2. Thiết lập thí nghiệm
+Local-level text (entity description)
+Với mỗi entity được Extracted từ Wikipedia sử dụng [WikiExtractor](https://github.com/attardi/wikiextractor)
+→ Dùng cho Local alignment
+
+2. Thiết lập thí nghiệm
+Global-level text (pseudo-document)
+Thay vì dùng GPT-4 để sinh document như paper gốc, thực nghiệm sử dụng:
+Xây dựng subgraph với bidirectional edges
+Cho mỗi entity, lấy neighbors từ pos_tails và pos_heads
+neigh_num = 3 neighbors được sample ngẫu nhiên
+sau đó tính mean pooling cho mỗi entity
+→ Dùng cho Global alignment
+
+2. Thiết lập thí nghiệm
+SAT sử dụng kiến trúc CLIP-style với 2 encoder song song
+TE ~ 63M
+GE ~ 2.1M
+-> CLIP Total ~ 65M
+
+
+2. Thiết lập thí nghiệm
+Frozen:
+Llama-2-7b ~ 6.7B
+Aligner (CLIP) ~ 65M
+Trainable:
+Predictor (GraphLlama) ~ 132M (projector + token embeddings của Llama)
+embed_tokens cần adapt để:
+Hiểu special tokens mới: <graph>, <g_patch>, <g_start>, <g_end>
+Phối hợp tốt hơn với graph embeddings
+
+
+2. Thiết lập thí nghiệm
+Chiến lược huấn luyện (HKA)
+Mục tiêu: căn chỉnh biểu diễn subgraph embedding (từ GE) với text embedding (từ TE).
+Subgraph: k-hop = 3 (lấy lân cận 3-hop quanh head theo 2 chiều).
+Hai loại mục tiêu:
+Local alignment: subgraph(head) ↔ text(head_text)
+Global alignment: subgraph(head) ↔ document(subgraph_doc)
+Training HKA dùng InfoNCE đối xứng (bi-directional cross entropy).
+Local alignment và Global alignment được joint training. 
+
+
+
+2. Thiết lập thí nghiệm
+Chiến lược huấn luyện (HKA)
+
+L = L_local + 10×L_global + 10×L_tt
+
+coi L_global và L_text-text là global alignment
+Loss
+Align giữa
+Mục đích
+L_local
+GE(entity) ↔ TE(entity_desc)
+Entity embedding ~ Description
+L_global
+GE(entity) ↔ TE(neighbors)
+Entity description ~ Neighbor descriptions
+L_tt
+TE(entity_desc) ↔ TE(neighbors)
+Entity description ~ Neighbor descriptions
+
+2. Thiết lập thí nghiệm
+Thiết lập huấn luyện HKA
+
+Hyperparameter
+Value
+Optimizer
+Adam
+Learning rate
+2e-5 (chung cho cả GE và TE)
+Epochs
+100 (Local + Global train cùng lúc)
+Batch size
+64
+Temperature τ
+0.07 
+
+2. Thiết lập thí nghiệm
+Đánh giá HKA
+Task: Graph-Text Matching (Retrieval)
+Câu hỏi: Cho 1 graph embedding, tìm text embedding tương ứng trong batch.
+Metrics:
+Accuracy
+
+2. Thiết lập thí nghiệm
+Chiến lược huấn luyện Predictor
+Task: Link Prediction
+Input: <graph> (graph embedding của head) + relation (text embedding của r)
+Output: tail
+Loss: Cross-Entropy Loss(Next Token Prediction + Teacher Forcing)
+
+
+
+
+2. Thiết lập thí nghiệm
+Đánh giá Predictor
+
+
+
+Metric
+Mô tả
+Ý nghĩa
+Hits@1
+% đúng ở top-1
+Model predict đúng ngay lần đầu
+Hits@3
+% đúng trong top-3
+Entity đúng nằm trong 3 candidates
+Hits@10
+% đúng trong top-10
+Entity đúng nằm trong 10 candidates
+MRR
+Mean Reciprocal Rank
+Trung bình 1/rank của entity đúng
+MR
+Mean Rank
+Trung bình rank của entity đúng
+
+3. Kết quả thực nghiệm - HKA 
+Quá trình training được thực hiện trên GPU NVIDIA RTX 5880 Ada Generation 48GB VRAM 
+
+Config
+Value
+Epochs
+100
+Best Epoch
+37
+Best Accuracy
+53.37%
+Final Loss
+16.97
+Training Time
+~33 h
+
+3. Kết quả thực nghiệm - HKA
+Loss Curve:
+Epoch  0: ████████████████████████████████████████ 66.82
+Epoch 20: ████████████████████ 20.80
+Epoch 50: █████████████████ 18.22
+Epoch 99: ████████████████ 16.97
+Accuracy Curve:
+Epoch  0: ████████████ 24.47%
+Epoch 20: ████████████████████████ 51.35%
+Epoch 37: ██████████████████████████ 53.37% ★ BEST
+Epoch 99: ████████████████████████ 50.56%
+
+3. Kết quả thực nghiệm - Predictor
+Step
+Loss
+Grad Norm
+Learning Rate
+1
+8.71
+44.21
+6.1e-7
+50
+9.52
+69.49
+3.05e-5
+500
+~2.5
+~30
+~2.4e-4
+1000
+~2.1
+~20
+~4.4e-4
+Final
+0.66 (avg)
+0.32
+0.0
+
+3. Kết quả thực nghiệm - Predictor
+Metric
+Value
+Train runtime
+43,412.84 seconds (~12 hours)
+Train samples / second
+10.053
+Train steps / second
+2.513
+Train loss (average)
+0.6567
+Final epoch
+5.0
+
+3. Kết quả thực nghiệm - Predictor
+Loss Curve Visualization
+
+Step      0: ████████████████████████████████████████ 8.7
+Step  1000: ████████████ 2.1
+Step 50000: ████ 0.8
+Step 109105: ███ 0.66 (average)
+
+
+3. Kết quả thực nghiệm - Predictor
+Evaluation Details:
+Time: ~10 seconds (100 samples @ ~10 it/s)
+GPU: NVIDIA RTX 5880 Ada Generation (48GB)
+Precision: FP16
+
+Metric
+Score
+EM (Exact Match)
+32%
+Accuracy
+34%
+Hit
+34%
+F1
+34%
+Precision
+34%
+Recall
+34%
+MRR
+34%

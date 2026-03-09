@@ -1,0 +1,25 @@
+2026-03-09 23:48:42 - log file: ./logs/medical/aligner_20260309_234842.log
+2026-03-09 23:48:42 - Namespace(data_path='./data\\medical', output_path='./checkpoints', data_name='medical', cpu_worker_num=0, label_smooth=0.1, gpu=0, aggregation_times=2, epoch_num=1, batch_size=16, lr=2e-05, edge_coef=10, neigh_num=3, context_length=128, embed_dim=128, transformer_heads=8, transformer_layers=12, transformer_width=512, vocab_size=49408, gnn_type='gt', gnn_input=128, gnn_hidden=128, gnn_output=128, node_num=1, gt_layers=3, att_d_model=128, gt_head=8, att_norm=True, if_pos=False, out_channels=200, ker_size=4, ker_height=8, ker_width=16, cur_time='20260309_234842')
+2026-03-09 23:48:42 - Device: cpu
+2026-03-09 23:48:42 - entity_num: 3281, relation_num: 311
+2026-03-09 23:48:42 - construct graph: ['train', 'valid', 'test']
+2026-03-09 23:48:42 - num_entity: 3281
+2026-03-09 23:48:42 - num_relation: 311
+2026-03-09 23:48:42 - num_triples: 7369
+2026-03-09 23:48:42 - load data: ['train', 'valid']
+2026-03-09 23:48:42 - num_entity: 3281
+2026-03-09 23:48:42 - num_relation: 311
+2026-03-09 23:48:42 - num_triples: 6631
+2026-03-09 23:48:42 - load data: ['test']
+2026-03-09 23:48:42 - num_entity: 3281
+2026-03-09 23:48:42 - num_relation: 311
+2026-03-09 23:48:42 - num_triples: 738
+2026-03-09 23:48:43 - ============================================================
+2026-03-09 23:48:43 -   Entities: 3281
+2026-03-09 23:48:43 -   Relations: 311
+2026-03-09 23:48:43 -   Batch Size: 16
+2026-03-09 23:48:43 -   Epochs: 1
+2026-03-09 23:48:43 -   Learning Rate: 2e-05
+2026-03-09 23:48:43 -   Device: cpu
+2026-03-09 23:48:43 - ============================================================
+2026-03-09 23:48:51 - 0th loss in 0 epoch:65.7322

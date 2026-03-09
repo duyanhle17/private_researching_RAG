@@ -16,7 +16,8 @@ Các thành phần SAT được sử dụng:
 """
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+# Chỉ set CUDA khi thực sự muốn ép dùng GPU index 0 (bỏ qua để MPS/CPU tự auto detect)
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0" 
 import sys
 
 # Thêm đường dẫn SAT model vào sys.path để import được các module gốc của SAT
@@ -43,10 +44,10 @@ from sklearn.metrics import accuracy_score
 # Import trực tiếp từ SAT/aligner/model/ (code gốc, KHÔNG chỉnh sửa)
 # ====================================================================
 from model_gt import CLIP, tokenize           # Mô hình CLIP + tokenizer
-from data_helper import get_mid2id, get_rel2id, get_id2text, load_data  # Load dữ liệu
-from data_helper import construct_graph, save_clip_data                  # Xây dựng đồ thị
-from data_helper import TAGTrainDataset, TrainDataset, EvalDataset       # Dataset classes
-from data_helper import extract_negative_triples                         # Sinh negative samples
+from medical_data_helper import get_mid2id, get_rel2id, get_id2text, load_data  # Load dữ liệu
+from medical_data_helper import construct_graph, save_clip_data                  # Xây dựng đồ thị
+from medical_data_helper import TAGTrainDataset, TrainDataset, EvalDataset       # Dataset classes
+from medical_data_helper import extract_negative_triples                         # Sinh negative samples
 
 
 # ====================================================================
@@ -299,7 +300,13 @@ if __name__ == "__main__":
     model_save_name = f"{args.data_name}/{args.gnn_type}-{args.cur_time}-og.pkl"
     model_save_path = os.path.join(args.output_path, model_save_name)
 
-    device = torch.device(f"cuda:{args.gpu}" if torch.cuda.is_available() else "cpu")
+    # Auto-detect hardware accelerator (CUDA, MPS cho Mac M1, hoặc CPU)
+    if torch.cuda.is_available():
+        device = torch.device(f"cuda:{args.gpu}")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
     logging.info(f"Device: {device}")
 
     # ---- Load dữ liệu từ data/medical/ ----
