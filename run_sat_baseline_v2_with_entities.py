@@ -42,10 +42,10 @@ from openai import RateLimitError, APITimeoutError, APIConnectionError, Internal
 # ============================================================
 # CONFIG
 # ============================================================
-SAT_DATA_DIR = "SAT/aligner/data/FB15k-237N"
-CACHE_DIR = "sat_fb15k_cache"
+SAT_DATA_DIR = "data/medical"
+CACHE_DIR = "sat_medical_cache"
 QA_PATH = "qa_eval.json"
-OUT_PATH = "sat_baseline_v2_entities_results.json"
+OUT_PATH = "sat_baseline_medical_v2_results.json"
 
 TOP_K = 15              # Tổng số chunks tối đa trong context
 BM25_TOP_K = 4          # Số chunk từ BM25 keyword search
