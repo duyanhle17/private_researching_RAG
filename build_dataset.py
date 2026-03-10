@@ -125,6 +125,29 @@ VAGUE_ENTITIES = {
     "it", "they", "we", "you", "i", "me", "us", "him", "her", "them",
 }
 
+# Viết tắt y khoa hợp lệ (cho phép giữ lại dù <= 4 ký tự)
+VALID_MEDICAL_ABBREVIATIONS = {
+    "mri", "hiv", "dna", "rna", "bcc", "cscc", "scc", "cns", "aml", "apl",
+    "cll", "cml", "all",  # ALL = acute lymphoblastic leukemia
+    "hpv", "ebrt", "bcg", "brca", "egfr", "dcis", "psa", "cea", "afp",
+    "ldh", "cbc", "ngs", "pcr", "pet", "ct", "aids", "dre", "bph",
+    "fna", "hcc", "ibc", "mds", "npc", "rcc", "ret", "fda",
+    "ebv", "wbrt", "crt", "tnm", "ajcc", "ecog", "cd20", "cd33",
+    "5-fu", "fap", "ihc", "sbrt", "imrt", "tsh", "bso",
+}
+
+# Fragment rác: chuỗi ngắn là substring phổ biến trong từ tiếng Anh
+# (LLM đôi khi trích sai ra fragment thay vì entity đầy đủ)
+NOISY_FRAGMENTS = {
+    "atm", "flu", "ain", "ions", "ion", "hip", "anc", "lab", "age",
+    "eye", "arm", "ear", "sun", "fat", "gel", "leg", "jaw", "egg",
+    "eggs", "ears", "arms", "drug", "cell", "cells", "body", "bone",
+    "diet", "skin", "bile", "anus", "clip", "erg", "fes", "fev",
+    "flt", "apr", "ret", "sll", "oud", "exam", "hra", "hrd",
+    "kps", "mps", "mss", "p16", "pcp", "phi", "rt", "fl",
+    "all",  # "all" as English word, not medical abbreviation
+}
+
 # Regex: entity chỉ có số, ký tự đặc biệt và/hoặc đơn vị đo
 _RE_NUMERIC_ONLY = re.compile(
     r'^[\d\s.,/\-–—~<>≤≥+=%°\(\)]*'
@@ -158,27 +181,47 @@ def is_valid_entity(entity: str) -> bool:
     if re.match(r'^\d+\s*(to|or)\s*\d+', e):
         return False
     
+    # 6. Fragment rác (chuỗi ngắn là substring phổ biến trong từ tiếng Anh)
+    if e in NOISY_FRAGMENTS:
+        return False
+    
+    # 7. Entity ngắn (<=4 ký tự) phải nằm trong whitelist viết tắt y khoa
+    if len(e) <= 4 and e not in VALID_MEDICAL_ABBREVIATIONS:
+        # Cho phép nếu entity có dấu gạch nối (ví dụ: "5-fu", "b12")
+        if '-' not in e and not any(c.isdigit() for c in e):
+            return False
+    
     return True
 
 def extract_triples_from_chunk(client, model, chunk, chunk_id):
     """Gọi API NVIDIA NIM để trích xuất bộ ba (triples) từ một đoạn văn bản."""
-    prompt = """You are a medical Knowledge Graph expert. Extract ONLY the core entities and their relationships.
+    prompt = """You are a medical Knowledge Graph expert. Extract ALL meaningful entities and their relationships from the text.
 Return EXACTLY a JSON list of lists: [["head_entity", "relation", "tail_entity"], ...]
 
-ENTITY RULES (STRICT - only these 5 types are valid):
-1. DISEASES / CONDITIONS: Named diseases, syndromes, disorders (e.g., "lung cancer", "diabetes", "hypertension")
-2. DRUGS / CHEMICALS: Medications, vaccines, chemical compounds (e.g., "aspirin", "insulin", "selenium")
-3. ANATOMY: Body parts, organs, tissues, cells (e.g., "liver", "blood vessels", "T-cells")
-4. PATHOGENS: Viruses, bacteria, parasites (e.g., "HIV", "E. coli", "malaria parasite")
-5. PROCEDURES / TREATMENTS: Medical procedures, therapies, diagnostic tests (e.g., "chemotherapy", "MRI scan", "biopsy")
+ENTITY RULES (STRICT - only these 6 types are valid):
+1. DISEASES / CONDITIONS: Named diseases, syndromes, disorders, cancer types (e.g., "basal cell skin cancer", "primary cns lymphoma", "squamous cell skin cancer")
+2. DRUGS / CHEMICALS: Medications, vaccines, chemical compounds (e.g., "methotrexate", "rituximab", "cisplatin")
+3. ANATOMY: Body parts, organs, tissues, cells (e.g., "liver", "lymph nodes", "basal cells", "epidermis")
+4. PATHOGENS: Viruses, bacteria, parasites (e.g., "HIV", "Epstein-Barr virus", "HPV")
+5. PROCEDURES / TREATMENTS: Medical procedures, therapies, diagnostic tests (e.g., "surgery", "radiation therapy", "systemic therapy", "biopsy", "MRI")
+6. RISK FACTORS / SYMPTOMS: Named risk factors, symptoms, signs (e.g., "sun exposure", "indoor tanning", "fair skin", "immune suppression", "recurrence")
+
+IMPORTANT EXTRACTION RULES:
+- Extract the FULL disease name, not abbreviations only (e.g., "basal cell skin cancer" not "BCC")
+- Extract ALL relationships between diseases and their risk factors, symptoms, treatments, and diagnostic methods
+- If entity A causes/is_risk_factor_for entity B, extract it even if the text is indirect
+- Use the MOST SPECIFIC entity name ("basal cell skin cancer" not just "skin cancer")
 
 INVALID ENTITIES (DO NOT EXTRACT):
 - Numbers, measurements, durations: "1 cm", "2 hours", "stage 2"
 - Pronouns: "he", "she", "it", "they", "patient"
-- Generic words: "treatment", "condition", "problem", "area", "ability"
+- Generic single words: "treatment", "condition", "problem", "area"
 - Verbs or actions: "treating", "diagnosed", "prescribing"
+- Fragments of words: "atm", "flu", "ain", "ions"
 
-RELATION RULES: Use short verb-phrases: "treats", "causes", "is_a", "located_in", "has_symptom", "inhibits", "prevents", "diagnosed_by"
+RELATION RULES: Use standard short verb-phrases:
+- "treats", "causes", "is_a", "located_in", "has_symptom", "risk_factor_for"
+- "diagnosed_by", "prevents", "has_part", "includes", "inhibits"
 
 If no valid triples exist, return: []
 Output raw JSON only, no markdown.
@@ -325,11 +368,17 @@ def build_dataset(args):
                 relations_set.add(r_norm)
                 chunk_ents.update([h_norm, t_norm])
                 
-                # Lưu text mô tả cho entity (Lấy đoạn văn đầu tiên chứa nó làm ngữ cảnh)
+                # Lưu TẤT CẢ text mô tả cho entity (gộp tất cả chunks chứa nó)
                 if h_norm not in entity_desc_map:
-                    entity_desc_map[h_norm] = clean_text
+                    entity_desc_map[h_norm] = [clean_text]
+                else:
+                    if clean_text not in entity_desc_map[h_norm]:
+                        entity_desc_map[h_norm].append(clean_text)
                 if t_norm not in entity_desc_map:
-                    entity_desc_map[t_norm] = clean_text
+                    entity_desc_map[t_norm] = [clean_text]
+                else:
+                    if clean_text not in entity_desc_map[t_norm]:
+                        entity_desc_map[t_norm].append(clean_text)
                     
                 # Lưu triple gốc để map dạng text ở global json
                 all_valid_triples.append((h_norm, r_norm, t_norm))
@@ -383,10 +432,30 @@ def build_dataset(args):
             
     # id2text.txt: id \t description
     # id2title.txt: id \t title
+    # Giống SAT FB15k-237N: mỗi entity có 1 đoạn description tổng hợp
+    # Gộp tất cả chunks liên quan, giới hạn ~2500 ký tự (giống SAT median ~460 chars)
+    MAX_DESC_CHARS = 2500
     with open(os.path.join(data_dir, "id2text.txt"), "w", encoding="utf-8") as f_text, \
          open(os.path.join(data_dir, "id2title.txt"), "w", encoding="utf-8") as f_title:
         for idx, ent in enumerate(entities_list):
-            desc = entity_desc_map.get(ent, ent)
+            chunks_list = entity_desc_map.get(ent, [ent])
+            if isinstance(chunks_list, str):
+                chunks_list = [chunks_list]
+            # Gộp các chunks, ưu tiên chunks ngắn hơn (thường chứa thông tin tập trung hơn)
+            chunks_list.sort(key=len)
+            desc = ""
+            for chunk in chunks_list:
+                if len(desc) + len(chunk) + 1 <= MAX_DESC_CHARS:
+                    desc = (desc + " " + chunk).strip() if desc else chunk
+                else:
+                    remaining = MAX_DESC_CHARS - len(desc)
+                    if remaining > 100:  # Chỉ thêm nếu còn chỗ đáng kể
+                        desc = desc + " " + chunk[:remaining]
+                    break
+            if not desc:
+                desc = ent
+            # Đảm bảo không có tab/newline trong description (SAT format yêu cầu)
+            desc = desc.replace("\t", " ").replace("\n", " ").strip()
             f_text.write(f"{idx}\t{desc}\n")
             f_title.write(f"{idx}\t{ent}\n")
 

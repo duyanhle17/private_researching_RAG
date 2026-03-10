@@ -32,10 +32,8 @@ import logging
 import math
 import re
 import numpy as np
-import faiss
 import httpx
 from collections import defaultdict
-from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 from openai import RateLimitError, APITimeoutError, APIConnectionError, InternalServerError
 
@@ -43,21 +41,83 @@ from openai import RateLimitError, APITimeoutError, APIConnectionError, Internal
 # CONFIG
 # ============================================================
 SAT_DATA_DIR = "data/medical"
-CACHE_DIR = "sat_medical_cache"
-QA_PATH = "qa_eval.json"
-OUT_PATH = "sat_baseline_medical_v2_results.json"
+CACHE_DIR = "sat_medical_cache_sat_trained"
+QA_PATH = "raw_dataset/medical_questions.json"
+OUT_PATH = "sat_baseline_v2_medical_predictions.json"
 
 TOP_K = 15              # Tổng số chunks tối đa trong context
 BM25_TOP_K = 4          # Số chunk từ BM25 keyword search
-SEMANTIC_K = 5          # Số chunk luôn lấy từ FAISS semantic search
-MAX_KG_FACTS = 8        # Số KG facts tối đa
+SEMANTIC_K = 5          # Số chunk semantic khi KHÔNG có entity match (full fallback)
+SEMANTIC_K_WITH_ENTITY = 2  # Số chunk semantic khi ĐÃ CÓ entity match (giảm loãng)
+MAX_KG_FACTS = 12        # Số KG facts tối đa (tăng cho multi-hop)
 SLEEP = 1.5
 MAX_RETRY = 3
-EMBED_MODEL = "all-MiniLM-L6-v2"
-# EMBED_MODEL = "BAAI/bge-m3"
+EMBED_MODEL = "sat-trained"
+SAT_CHECKPOINT = "checkpoints/medical/gt-og_best.pkl"
+# EMBED_MODEL = "all-MiniLM-L6-v2"
 # CACHE_DIR = f"sat_fb15k_cache_{EMBED_MODEL.replace('/', '_')}"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+
+import sys
+SAT_MODEL_DIR = os.path.join(os.path.dirname(__file__), "SAT", "aligner", "model")
+if SAT_MODEL_DIR not in sys.path:
+    sys.path.insert(0, SAT_MODEL_DIR)
+
+class SATEmbeddingModel:
+    def __init__(self, checkpoint_path, entity_num, relation_num):
+        import argparse
+        import torch
+        from model_gt import CLIP
+        
+        # Bắt buộc dùng CPU vì MPS ở Model đã huấn luyện thường bị Segmentation Fault
+        # Không ảnh hưởng nhiều đến speed vì chỉ encode đoạn text ngắn
+        device_str = "cpu"
+        self.device = torch.device(device_str)
+        self.context_length = 128
+        
+        args = argparse.Namespace()
+        args.context_length = 128
+        args.embed_dim = 128
+        args.transformer_heads = 8
+        args.transformer_layers = 12
+        args.transformer_width = 512
+        args.vocab_size = 49408
+        
+        args.gnn_type = "gt"
+        args.gnn_input = 128
+        args.gnn_hidden = 128
+        args.gnn_output = 128
+        args.node_num = 1
+        args.gt_layers = 3
+        args.att_d_model = 128
+        args.gt_head = 8
+        args.att_norm = True
+        args.if_pos = False
+        args.edge_coef = 10
+        args.lr = 2e-5
+        args.entity_num = entity_num
+        args.relation_num = relation_num
+        args.out_channels = 200
+        args.ker_size = 4
+        args.ker_height = 8
+        args.ker_width = 16
+
+        logger.info(f"Khởi tạo SAT Model (Entity: {entity_num}, Rel: {relation_num}) trên {self.device}")
+        self.model = CLIP(args).to(self.device)
+        self.model.load_state_dict(torch.load(checkpoint_path, map_location=self.device))
+        self.model.eval()
+
+    def encode(self, texts, normalize_embeddings=True, show_progress_bar=False):
+        import torch
+        from model_gt import tokenize
+        with torch.no_grad():
+            tokenized = tokenize(texts, context_length=self.context_length).to(self.device)
+            embeds = self.model.encode_text(tokenized)
+            if normalize_embeddings:
+                embeds = torch.nn.functional.normalize(embeds, p=2, dim=1)
+            return embeds.cpu().numpy()
+
 logger = logging.getLogger(__name__)
 
 
@@ -354,11 +414,30 @@ class SATGraphRAG_v2:
 
         # Reverse mapping: title_lower → eid (for entity extraction)
         # Sắp xếp theo chiều dài title giảm dần để ưu tiên match dài nhất (greedy)
+        # Lọc bỏ entity titles quá ngắn (<=4 ký tự) trừ khi là viết tắt y khoa hợp lệ
+        VALID_SHORT_TITLES = {
+            "mri", "hiv", "dna", "rna", "bcc", "cscc", "scc", "cns", "aml", "apl",
+            "cll", "cml", "hpv", "ebrt", "bcg", "brca", "egfr", "dcis", "psa",
+            "cea", "afp", "ldh", "cbc", "ngs", "pcr", "pet", "ct", "aids", "dre",
+            "bph", "fna", "hcc", "ibc", "mds", "npc", "rcc", "fda", "ebv",
+            "wbrt", "crt", "tnm", "ajcc", "ecog", "5-fu", "fap", "ihc", "sbrt",
+            "imrt", "tsh", "bso", "mohs",
+        }
         self.title2eid: dict[str, int] = {}
+        skipped_short = 0
         for eid in self.entity_ids:
             title = self.id2title.get(eid, "")
-            if title and len(title) > 2:
-                self.title2eid[title.lower()] = eid
+            title_lower = title.lower().strip()
+            if not title_lower or len(title_lower) <= 1:
+                continue
+            # Lọc entity title ngắn (<=4 chars) nếu không phải viết tắt y khoa
+            if len(title_lower) <= 4 and title_lower not in VALID_SHORT_TITLES:
+                skipped_short += 1
+                continue
+            self.title2eid[title_lower] = eid
+
+        if skipped_short > 0:
+            logger.info("  Skipped %d short non-medical entity titles", skipped_short)
 
         # Sorted titles by length (longest first) — greedy matching
         self.sorted_titles = sorted(self.title2eid.keys(), key=len, reverse=True)
@@ -389,11 +468,16 @@ class SATGraphRAG_v2:
 
         # ------ 4. Build / load FAISS index (for fallback semantic search) ------
         logger.info("Loading embedding model: %s", embed_model_name)
-        self.embed_model = SentenceTransformer(embed_model_name)
+        if embed_model_name == "sat-trained":
+            self.embed_model = SATEmbeddingModel(SAT_CHECKPOINT, len(self.mid2id), len(self.rel2id))
+        else:
+            from sentence_transformers import SentenceTransformer
+            self.embed_model = SentenceTransformer(embed_model_name)
         self._build_or_load_index()
 
     def _build_or_load_index(self):
         """Build or load cached FAISS index for semantic fallback."""
+        import faiss
         emb_path = os.path.join(self.cache_dir, "embeddings.npy")
         idx_path = os.path.join(self.cache_dir, "faiss.index")
 
@@ -423,16 +507,55 @@ class SATGraphRAG_v2:
             logger.info("  Saved cache → %s/ (%d vectors, dim=%d)", self.cache_dir, self.index.ntotal, d)
 
     # ================================================================
-    # BƯỚC 1: Entity Extraction — string match tên entity trong câu hỏi
+    # BƯỚC 1: Entity Extraction — word-boundary matching + alias expansion
     # ================================================================
+
+    # Bảng viết tắt y khoa → entity title đầy đủ
+    MEDICAL_ALIASES: dict[str, list[str]] = {
+        "bcc": ["basal cell skin cancer", "basal cell carcinoma"],
+        "cscc": ["cutaneous squamous cell carcinoma", "squamous cell skin cancer"],
+        "scc": ["squamous cell carcinoma", "squamous cell skin cancer"],
+        "pcnsl": ["primary cns lymphoma", "primary central nervous system lymphoma"],
+        "cns lymphoma": ["primary cns lymphoma"],
+        "hpv": ["human papillomavirus", "hpv"],
+        "ebv": ["epstein-barr virus", "ebv"],
+        "hiv": ["human immunodeficiency virus", "hiv"],
+        "mri": ["magnetic resonance imaging", "mri"],
+        "ct": ["computed tomography", "ct scan", "ct"],
+        "pet": ["positron emission tomography", "pet scan"],
+        "fna": ["fine needle aspiration", "fna"],
+        "aml": ["acute myeloid leukemia"],
+        "all": ["acute lymphoblastic leukemia"],
+        "cll": ["chronic lymphocytic leukemia"],
+        "cml": ["chronic myeloid leukemia"],
+        "nhl": ["non-hodgkin lymphoma"],
+        "dlbcl": ["diffuse large b-cell lymphoma"],
+        "nsclc": ["non-small cell lung cancer"],
+        "sclc": ["small cell lung cancer"],
+        "hcc": ["hepatocellular carcinoma"],
+        "rcc": ["renal cell carcinoma"],
+        "tnm": ["tnm staging", "tnm"],
+        "sbrt": ["stereotactic body radiation therapy", "sbrt"],
+        "imrt": ["intensity-modulated radiation therapy", "imrt"],
+        "wbrt": ["whole brain radiation therapy", "wbrt"],
+        "ebrt": ["external beam radiation therapy", "ebrt"],
+        "5-fu": ["5-fluorouracil", "5-fu"],
+        "mohs": ["mohs surgery", "mohs micrographic surgery"],
+        "uv": ["ultraviolet radiation", "uv radiation", "uv exposure"],
+        "tanning beds": ["indoor tanning", "tanning beds"],
+        "tanning bed": ["indoor tanning", "tanning beds"],
+        "sun exposure": ["sun exposure", "ultraviolet radiation"],
+        "immunosuppression": ["immune suppression", "immunosuppression"],
+        "immunotherapy": ["immunotherapy", "immune checkpoint inhibitor"],
+        "chemo": ["chemotherapy"],
+        "radiation": ["radiation therapy", "radiotherapy"],
+    }
+
     def extract_entities(self, question: str) -> list[tuple[int, str]]:
         """
-        Trích xuất entity từ câu hỏi bằng greedy longest-match string matching.
-
-        Cách hoạt động:
-        - So sánh từng title entity với text câu hỏi (lowercase)
-        - Ưu tiên match dài nhất (longest-first) để tránh "Essex" thay vì "University of Essex"
-        - Tránh overlap giữa các match
+        Trích xuất entity từ câu hỏi bằng:
+        1. Word-boundary greedy longest-match (tránh "atm" match trong "treatment")
+        2. Alias expansion (BCC → basal cell skin cancer)
 
         Returns:
             list of (eid, title) — các entity được nhận diện trong câu hỏi
@@ -441,18 +564,43 @@ class SATGraphRAG_v2:
         matched = []
         used_spans: list[tuple[int, int]] = []
 
+        # ---------- Phase 1: Alias expansion ----------
+        # Tìm viết tắt/alias trong câu hỏi → resolve thành entity title
+        alias_resolved_titles: set[str] = set()
+        for alias, full_names in self.MEDICAL_ALIASES.items():
+            # Word boundary match cho alias
+            pattern = r'\b' + re.escape(alias) + r'\b'
+            if re.search(pattern, question_lower):
+                for full_name in full_names:
+                    if full_name in self.title2eid:
+                        alias_resolved_titles.add(full_name)
+
+        # Thêm aliased entities trước (ưu tiên cao)
+        for title_lower in alias_resolved_titles:
+            eid = self.title2eid[title_lower]
+            original_title = self.id2title.get(eid, title_lower)
+            if not any(e == eid for e, _ in matched):
+                matched.append((eid, original_title))
+
+        # ---------- Phase 2: Word-boundary greedy longest match ----------
         for title_lower in self.sorted_titles:
-            pos = question_lower.find(title_lower)
-            if pos == -1:
+            # Dùng word boundary regex thay vì substring find
+            # Tránh "atm" match trong "treatment", "flu" match trong "influence"
+            pattern = r'\b' + re.escape(title_lower) + r'\b'
+            m = re.search(pattern, question_lower)
+            if m is None:
                 continue
 
-            end = pos + len(title_lower)
+            pos = m.start()
+            end = m.end()
             overlap = any(pos < e and end > s for s, e in used_spans)
 
             if not overlap:
                 eid = self.title2eid[title_lower]
-                original_title = self.id2title.get(eid, title_lower)
-                matched.append((eid, original_title))
+                # Kiểm tra trùng với alias đã thêm
+                if not any(e == eid for e, _ in matched):
+                    original_title = self.id2title.get(eid, title_lower)
+                    matched.append((eid, original_title))
                 used_spans.append((pos, end))
 
         return matched
@@ -526,14 +674,17 @@ class SATGraphRAG_v2:
         return results
 
     # ================================================================
-    # BƯỚC 3: Lấy chunks của neighbors (1-hop) trong KG
+    # BƯỚC 3: Lấy chunks của neighbors (1-hop + 2-hop) trong KG
     # ================================================================
-    def _get_neighbor_chunks(self, entity_ids: list[int], max_per_entity: int = 5) -> list[tuple[int, str, str]]:
+    def _get_neighbor_chunks(self, entity_ids: list[int],
+                             max_per_entity: int = 5,
+                             hops: int = 2) -> list[tuple[int, str, str]]:
         """
-        Lấy chunk (Wikipedia description) của entities lân cận trong KG (1-hop).
+        Lấy chunk (Wikipedia description) của entities lân cận trong KG (multi-hop).
 
-        Ví dụ: entity "University of Essex" có neighbor "Essex" (via location/contains)
-        → lấy Wikipedia description của "Essex" làm additional context
+        Hỗ trợ multi-hop:
+        - 1-hop: neighbors trực tiếp
+        - 2-hop: neighbors của neighbors (mở rộng coverage)
 
         Ưu tiên neighbors xuất hiện nhiều lần (shared across multiple query entities).
 
@@ -543,10 +694,20 @@ class SATGraphRAG_v2:
         neighbor_count: dict[int, int] = defaultdict(int)
         seen_entity_ids = set(entity_ids)
 
+        # 1-hop neighbors
+        hop1_eids: set[int] = set()
         for eid in entity_ids:
             for _rel, nb in self.neighbors.get(eid, set()):
                 if nb not in seen_entity_ids:
-                    neighbor_count[nb] += 1
+                    neighbor_count[nb] += 2  # Weight cao hơn cho 1-hop
+                    hop1_eids.add(nb)
+
+        # 2-hop neighbors (nếu yêu cầu)
+        if hops >= 2:
+            for nb_eid in hop1_eids:
+                for _rel, nb2 in self.neighbors.get(nb_eid, set()):
+                    if nb2 not in seen_entity_ids and nb2 not in hop1_eids:
+                        neighbor_count[nb2] += 1  # Weight thấp hơn cho 2-hop
 
         sorted_neighbors = sorted(neighbor_count.items(), key=lambda x: x[1], reverse=True)
 
@@ -612,24 +773,48 @@ class SATGraphRAG_v2:
         return results
 
     # ================================================================
-    # BƯỚC 6: Lấy KG facts (human-readable)
+    # BƯỚC 6: Lấy KG facts (human-readable) — multi-hop
     # ================================================================
     def _get_kg_facts(self, entity_ids: list[int], max_facts: int = MAX_KG_FACTS) -> list[str]:
         """
         Trích xuất KG facts dưới dạng readable: "EntityA → relation → EntityB"
-
-        Ví dụ: "University of Essex → location → Essex"
-                "Thomas Hobbes → profession → philosopher"
+        Hỗ trợ 2-hop: cũng lấy facts từ neighbors của matched entities.
         """
         facts = []
+        seen_facts: set[str] = set()
+
+        # 1-hop facts
+        hop1_neighbors: set[int] = set()
         for eid in entity_ids:
             title = self.id2title.get(eid, f"entity_{eid}")
             for rel, nb in list(self.neighbors.get(eid, set())):
                 nb_title = self.id2title.get(nb, f"entity_{nb}")
                 rel_name = make_rel_readable(rel)
-                facts.append(f"{title} → {rel_name} → {nb_title}")
+                fact_str = f"{title} → {rel_name} → {nb_title}"
+                if fact_str not in seen_facts:
+                    facts.append(fact_str)
+                    seen_facts.add(fact_str)
+                    hop1_neighbors.add(nb)
                 if len(facts) >= max_facts:
                     return facts
+
+        # 2-hop facts (từ neighbors, ưu tiên facts liên quan đến entities gốc)
+        for nb_eid in hop1_neighbors:
+            if len(facts) >= max_facts:
+                break
+            nb_title = self.id2title.get(nb_eid, f"entity_{nb_eid}")
+            for rel, nb2 in list(self.neighbors.get(nb_eid, set())):
+                if nb2 in set(entity_ids):
+                    continue  # Đã có ở 1-hop rồi
+                nb2_title = self.id2title.get(nb2, f"entity_{nb2}")
+                rel_name = make_rel_readable(rel)
+                fact_str = f"{nb_title} → {rel_name} → {nb2_title}"
+                if fact_str not in seen_facts:
+                    facts.append(fact_str)
+                    seen_facts.add(fact_str)
+                if len(facts) >= max_facts:
+                    return facts
+
         return facts
 
     # ================================================================
@@ -642,20 +827,21 @@ class SATGraphRAG_v2:
         """
         Streamlined Hybrid Retrieval Pipeline:
 
-        Stage 1 — Entity chunks (direct match, no neighbors):
-          a) Entity Extraction: tìm entity trong câu hỏi
-          b) Entity Chunks: lấy Wikipedia description của entity đó
+        Stage 1 — Entity chunks + Neighbor chunks (multi-hop):
+          a) Entity Extraction: tìm entity trong câu hỏi (word boundary + alias)
+          b) Entity Chunks: lấy description của entity đó
+          c) Neighbor Chunks: lấy description của entities 1-2 hop trong KG
 
         Stage 2 — BM25 keyword search (3-4 chunks):
-          c) BM25: tìm thêm chunks bằng keyword matching
+          d) BM25: tìm thêm chunks bằng keyword matching
 
         Stage 3 — Semantic search (4-5 chunks, luôn chạy):
-          d) FAISS: bổ sung chunks bằng semantic similarity
+          e) FAISS: bổ sung chunks bằng semantic similarity
 
         Stage 4 — Aggregate:
-          e) Deduplicate + rank (entity > bm25 > semantic)
-          f) Thêm KG facts
-          g) Build context string → LLM
+          f) Deduplicate + rank (entity > neighbor > bm25 > semantic)
+          g) Thêm KG facts (multi-hop)
+          h) Build context string → LLM
         """
         # ---- Stage 1: Entity Extraction + Entity Chunks ----
         matched = self.extract_entities(question)
@@ -669,9 +855,12 @@ class SATGraphRAG_v2:
         for idx, _text, _src in entity_chunks:
             used_indices.add(idx)
 
+        # ---- Stage 1a: Neighbor Chunks (multi-hop KG traversal) ----
+        neighbor_chunks = self._get_neighbor_chunks(matched_eids, max_per_entity=5, hops=2)
+        for idx, _text, _src in neighbor_chunks:
+            used_indices.add(idx)
+
         # ---- Stage 1b: Phrase Search (noun phrase trong câu hỏi → tìm trong chunk) ----
-        # Xử lý trường hợp tên phim/entity không có trong id2title nhưng có trong id2text
-        # VD: "Planet Terror" không phải entity title nhưng xuất hiện trong chunk Grindhouse
         phrase_chunks = self._phrase_search(question, exclude_indices=used_indices)
         for idx, _text, _src in phrase_chunks:
             used_indices.add(idx)
@@ -681,27 +870,32 @@ class SATGraphRAG_v2:
         for idx, _text, _src in bm25_chunks:
             used_indices.add(idx)
 
-        # ---- Stage 3: Semantic search (4-5 chunks, LUÔN CHẠY) ----
+        # ---- Stage 3: Adaptive Semantic search ----
+        # Nếu đã có entity → chỉ lấy 1-2 semantic chunks (tránh loãng context)
+        # Nếu không có entity → fallback lấy 4-5 semantic chunks
+        has_entity_context = len(entity_chunks) > 0 or len(neighbor_chunks) > 0
+        effective_semantic_k = SEMANTIC_K_WITH_ENTITY if has_entity_context else semantic_k
         semantic_chunks = self._semantic_fallback(
-            question, top_k=semantic_k, exclude_indices=used_indices
+            question, top_k=effective_semantic_k, exclude_indices=used_indices
         )
 
         # ---- Stage 4a: Gộp & deduplicate ----
-        # Thứ tự ưu tiên: entity > phrase > bm25 > semantic
+        # Thứ tự ưu tiên: entity > neighbor > phrase > bm25 > semantic
         all_chunks: list[tuple[int, str, str]] = []
         seen_final: set[int] = set()
 
-        for idx, text, src in (entity_chunks + phrase_chunks + bm25_chunks + semantic_chunks):
+        for idx, text, src in (entity_chunks + neighbor_chunks + phrase_chunks + bm25_chunks + semantic_chunks):
             if idx not in seen_final and len(all_chunks) < top_k:
                 all_chunks.append((idx, text, src))
                 seen_final.add(idx)
 
-        # ---- Stage 4b: KG facts ----
+        # ---- Stage 4b: KG facts (multi-hop) ----
         kg_facts = self._get_kg_facts(matched_eids)
 
         # ---- Stage 4c: Build context string ----
         source_labels = {
             "entity": "[Entity Description]",
+            "neighbor": "[KG Neighbor]",
             "phrase": "[Phrase Match]",
             "bm25": "[Keyword Match]",
             "semantic_fallback": "[Semantic Context]",
@@ -722,6 +916,7 @@ class SATGraphRAG_v2:
             "context": context,
             "matched_entities": matched_names,
             "entity_chunks": [(idx, src) for idx, _, src in entity_chunks],
+            "neighbor_chunks": [(idx, src) for idx, _, src in neighbor_chunks],
             "phrase_chunks": [(idx, src) for idx, _, src in phrase_chunks],
             "bm25_chunks": [(idx, src) for idx, _, src in bm25_chunks],
             "semantic_chunks": [(idx, src) for idx, _, src in semantic_chunks],
@@ -752,15 +947,16 @@ def main():
     print(f"   BM25 corpus size:                {rag.bm25.corpus_size}")
     print(f"{'='*65}")
     print(f"   Retrieval config:")
-    print(f"     Entity chunks:   direct match (no neighbors)")
+    print(f"     Entity chunks:   direct match + alias expansion")
+    print(f"     Neighbor chunks: 2-hop KG traversal")
     print(f"     BM25 chunks:     top-{BM25_TOP_K}")
-    print(f"     Semantic chunks: {SEMANTIC_K} (FAISS, always-on)")
+    print(f"     Semantic chunks: {SEMANTIC_K_WITH_ENTITY} (w/ entity) | {SEMANTIC_K} (fallback)")
     print(f"     Context max:     {TOP_K} chunks total")
     print(f"{'='*65}")
 
     # Load questions
     with open(QA_PATH, encoding="utf-8") as f:
-        data = json.load(f)
+        data = json.load(f)[:100]
     print(f"   Questions to evaluate: {len(data)}\n")
 
     outputs = []
@@ -791,6 +987,7 @@ def main():
             stats["entity_found"] += 1
             print(f"  🎯 Entities: {r['matched_entities']}")
             print(f"  📦 entity={len(r['entity_chunks'])} "
+                  f"+ neighbor={len(r['neighbor_chunks'])} "
                   f"+ bm25={len(r['bm25_chunks'])} "
                   f"+ semantic={len(r['semantic_chunks'])}")
         elif r["bm25_chunks"]:
@@ -817,6 +1014,7 @@ def main():
             "matched_entities": r["matched_entities"],
             "retrieval": {
                 "entity_chunks": len(r["entity_chunks"]),
+                "neighbor_chunks": len(r["neighbor_chunks"]),
                 "bm25_chunks": len(r["bm25_chunks"]),
                 "semantic_chunks": len(r["semantic_chunks"]),
                 "kg_facts": len(r["kg_facts"]),

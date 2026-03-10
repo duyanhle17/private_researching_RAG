@@ -1,0 +1,1602 @@
+[
+  {
+    "question": "What is the most common type of skin cancer?",
+    "answer": "Basal cell skin cancer (basal cell carcinoma) is the most common type of skin cancer.",
+    "groundtruth": "Basal cell carcinoma (BCC) is the most common type of skin cancer.",
+    "matched_entities": [
+      "skin cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "From which cell type does basal cell carcinoma arise?",
+    "answer": "Basal cell carcinoma arises from abnormal basal cells in the top layer of the skin (epidermis).",
+    "groundtruth": "Basal cell carcinoma arises from basal cells in the lower part of the epidermis.",
+    "matched_entities": [
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which anatomical locations are most commonly affected by basal cell carcinoma?",
+    "answer": "Basal cell carcinoma most commonly develops on sun-exposed skin areas: the face, head, neck, arms, legs, and trunk.",
+    "groundtruth": "BCC most commonly develops in sun-exposed areas such as the face, head, and neck.",
+    "matched_entities": [
+      "carcinoma",
+      "anatomic",
+      "cell",
+      "ions"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "What is the primary risk factor for basal cell carcinoma?",
+    "answer": "The primary risk factor for basal cell carcinoma is sun exposure, especially to areas like the face, head, neck, arms, legs, and trunk.",
+    "groundtruth": "UV radiation exposure is a primary risk factor for BCC.",
+    "matched_entities": [
+      "risk factor",
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "How does fair skin affect the risk of developing BCC?",
+    "answer": "Fair skin increases the risk of developing basal cell carcinoma because it has less melanin, the pigment that filters out harmful UV rays.",
+    "groundtruth": "Fair skin increases the risk of BCC.",
+    "matched_entities": [
+      "fair skin"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Does older age influence the risk of basal cell carcinoma?",
+    "answer": "Yes; the text states that risk of basal cell skin cancer increases with age because UV-exposure damage accumulates over time.",
+    "groundtruth": "Older age is associated with higher risk of BCC.",
+    "matched_entities": [
+      "carcinoma",
+      "cell",
+      "age",
+      "flu"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "How does family history impact the risk of basal cell carcinoma?",
+    "answer": "The text only states that “If you or someone in your family has had skin cancer, you’re more likely to develop any type of skin cancer,” so having a family history of skin cancer increases your risk of basal cell carcinoma, but no further details are given.",
+    "groundtruth": "Family history of skin cancer increases risk of BCC.",
+    "matched_entities": [
+      "family history",
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Is immune suppression a risk factor for BCC?",
+    "answer": "Yes. Immune suppression—such as that caused by organ transplants or autoimmune diseases—is explicitly identified as a risk factor for basal cell skin cancer.",
+    "groundtruth": "Immune suppression is a risk factor for BCC.",
+    "matched_entities": [
+      "immune suppression",
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What are common symptoms of basal cell carcinoma?",
+    "answer": "Basal cell carcinoma usually appears as a pearly or waxy bump, a flat flesh-colored or brown scar-like lesion, or a bleeding sore that heals and returns, typically on sun-exposed skin such as the face, head, neck, arms, or trunk.",
+    "groundtruth": "BCC presents as flat, pale or yellow areas, red patches, shiny bumps, open sores, or brown/black bumps with rolled borders.",
+    "matched_entities": [
+      "carcinoma",
+      "symptoms",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which diagnostic methods are used for BCC?",
+    "answer": "The text never mentions basal-cell carcinoma (BCC) or any diagnostic method specific to it.",
+    "groundtruth": "Diagnosis of BCC involves medical and family history, physical exam, skin exam, biopsy, and sometimes imaging.",
+    "matched_entities": [],
+    "retrieval": {
+      "entity_chunks": 0,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 0,
+      "total_chunks": 9
+    }
+  },
+  {
+    "question": "What is the most common treatment for basal cell carcinoma?",
+    "answer": "The most common treatment for basal cell carcinoma is surgery to remove the cancer.",
+    "groundtruth": "Surgery is the most common treatment for BCC.",
+    "matched_entities": [
+      "carcinoma",
+      "cell",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "When might radiation therapy be used in BCC?",
+    "answer": "Radiation therapy may be used for basal cell carcinoma (BCC) in people who cannot or choose not to have surgery, or for small tumors in areas like the head and neck.",
+    "groundtruth": "Radiation therapy may be used in some cases of BCC.",
+    "matched_entities": [
+      "radiation therapy"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is recurrence in the context of BCC?",
+    "answer": "Recurrence in the context of basal cell skin cancer (BCC) means the cancer returns to the original site or has spread to lymph nodes or distant parts of the body.",
+    "groundtruth": "Recurrence refers to BCC returning to the original site or spreading to lymph nodes or distant sites.",
+    "matched_entities": [
+      "recurrence"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What does follow-up for BCC typically include?",
+    "answer": "Follow-up for bladder cancer typically includes regular tests for many years to check if the cancer has returned.",
+    "groundtruth": "Follow-up includes full skin exams with a doctor at least once a year.",
+    "matched_entities": [
+      "all"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Which skin cancer subtype arises from basal cells?",
+    "answer": "Basal cell skin cancer (basal cell carcinoma, BCC) arises from basal cells.",
+    "groundtruth": "Basal cell carcinoma is the skin cancer subtype that arises from basal cells.",
+    "matched_entities": [
+      "basal cells",
+      "skin cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What anatomical layer do basal cells belong to?",
+    "answer": "Basal cells belong to the epidermis, the outermost layer of the skin.",
+    "groundtruth": "Basal cells are located in the lower part of the epidermis.",
+    "matched_entities": [
+      "basal cells",
+      "anatomic"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 3,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Is sun exposure a risk factor for BCC?",
+    "answer": "The text only discusses sun exposure as a cause of squamous cell skin cancer and actinic keratoses; it never mentions basal cell carcinoma (BCC), so whether sun exposure is a risk factor for BCC is not stated.",
+    "groundtruth": "Sun exposure is a risk factor for BCC.",
+    "matched_entities": [
+      "sun exposure",
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Do tanning beds increase the risk of BCC?",
+    "answer": "The text only states that indoor tanning increases the risk of squamous cell skin cancer (CSCC); it does not mention basal cell carcinoma (BCC).",
+    "groundtruth": "Tanning beds are a risk factor for BCC.",
+    "matched_entities": [],
+    "retrieval": {
+      "entity_chunks": 0,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 0,
+      "total_chunks": 9
+    }
+  },
+  {
+    "question": "What hair and eye colors are associated with increased BCC risk?",
+    "answer": "Fair skin, red or blond hair, and light eye color are associated with increased basal cell carcinoma (BCC) risk.",
+    "groundtruth": "Red hair, blond hair, and light eye color increase the risk of BCC.",
+    "matched_entities": [
+      "eye"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 2,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Can a history of radiation therapy increase BCC risk?",
+    "answer": "Yes. The text lists “radiation therapy—especially at a young age” as a risk factor that increases the chance of developing basal cell skin cancer.",
+    "groundtruth": "Radiation therapy is a risk factor for BCC.",
+    "matched_entities": [
+      "radiation therapy"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is a common presentation of BCC on the skin?",
+    "answer": "Basal cell carcinoma (BCC) usually appears as an abnormal-looking skin lesion on sun-exposed areas such as the face, head, neck, arms, legs, or trunk.",
+    "groundtruth": "BCC may present as a shiny bump.",
+    "matched_entities": [
+      "skin"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is the role of biopsy in BCC diagnosis?",
+    "answer": "A biopsy removes a sample of the suspicious skin lesion so a pathologist can confirm whether basal-cell carcinoma is present; it is the essential test that turns a clinical suspicion into a definite BCC diagnosis.",
+    "groundtruth": "Biopsy is used as a diagnostic method for BCC.",
+    "matched_entities": [
+      "diagnosis",
+      "biopsy"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which systemic therapy may be considered for BCC?",
+    "answer": "For basal cell skin cancer (BCC), systemic therapy is considered only in some cases—typically when surgery or radiation are not fully effective or appropriate; the text does not specify which particular systemic agents are used for BCC.",
+    "groundtruth": "Systemic therapy may be used in some cases of BCC.",
+    "matched_entities": [
+      "systemic therapy"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is included in the management of BCC recurrence?",
+    "answer": "Recurrent basal cell carcinoma is managed with several options, including surgery, radiation therapy, or systemic therapy, as outlined in Chapter 4: Treatment by risk and recurrence.",
+    "groundtruth": "Management of recurrence involves treatment options based on risk and recurrence.",
+    "matched_entities": [
+      "recurrence",
+      "age"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is the recommended frequency for full skin exams in BCC follow-up?",
+    "answer": "After treatment for basal cell skin cancer, full skin exams are recommended at least once a year.",
+    "groundtruth": "Full skin exams with a doctor are recommended at least once a year.",
+    "matched_entities": [
+      "full skin exams"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Can BCC spread to lymph nodes?",
+    "answer": "Basal-cell carcinoma (BCC) very rarely spreads to lymph nodes; it almost always stays in the skin.",
+    "groundtruth": "BCC recurrence can involve spread to lymph nodes.",
+    "matched_entities": [
+      "spread to lymph nodes"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 3,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is a brown or glossy black bump with rolled border a symptom of?",
+    "answer": "A brown or glossy black bump with a rolled border is a symptom of basal cell skin cancer, especially in darker (brown and black) skin.",
+    "groundtruth": "A brown or glossy black bump with rolled border is a symptom of BCC.",
+    "matched_entities": [
+      "brown or glossy black bump"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is the relationship between organ transplant and BCC risk?",
+    "answer": "An organ transplant weakens the immune system (via anti-rejection medicines), and a weakened immune system increases the risk of developing and recurring cutaneous squamous cell carcinoma (CSCC).",
+    "groundtruth": "Organ transplant is a risk factor for BCC.",
+    "matched_entities": [
+      "organ transplant",
+      "ions",
+      "hip"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 3,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Is autoimmune disease associated with increased BCC risk?",
+    "answer": "The text does not mention basal-cell carcinoma (BCC) at all; it only links autoimmune disease (lupus) to primary CNS lymphoma, so any BCC risk association is not stated.",
+    "groundtruth": "Autoimmune disease is a risk factor for BCC.",
+    "matched_entities": [
+      "autoimmune disease"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is the role of imaging in BCC diagnosis?",
+    "answer": "Imaging is used in basal cell carcinoma (BCC) diagnosis to look for cancer outside the skin when clinically indicated, but the primary diagnosis is made by biopsy; imaging is not routine for every BCC.",
+    "groundtruth": "Imaging may be used in the diagnosis of BCC.",
+    "matched_entities": [
+      "diagnosis",
+      "imaging"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Can BCC occur anywhere on the body?",
+    "answer": "Yes. Basal cell skin cancer usually develops on sun-exposed areas but, as stated, “it can occur anywhere on the body.”",
+    "groundtruth": "BCC can occur anywhere on the body, but most commonly in sun-exposed areas.",
+    "matched_entities": [
+      "body"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is the most common type of skin cancer?",
+    "answer": "Basal cell skin cancer (basal cell carcinoma) is the most common type of skin cancer.",
+    "groundtruth": "Basal cell carcinoma (BCC) is the most common type of skin cancer.",
+    "matched_entities": [
+      "skin cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "From which cells does basal cell carcinoma arise?",
+    "answer": "Basal cell carcinoma arises when basal cells in the epidermis (the top layer of the skin) become abnormal and grow out of control.",
+    "groundtruth": "BCC arises from basal cells in the lower part of the epidermis.",
+    "matched_entities": [
+      "carcinoma",
+      "cells"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which anatomical locations are most commonly affected by BCC?",
+    "answer": "Basal cell carcinoma most commonly develops on sun-exposed areas: the face, head, neck, arms, legs, and trunk.",
+    "groundtruth": "BCC most commonly develops in sun-exposed areas such as the face, head, and neck.",
+    "matched_entities": [
+      "anatomic",
+      "ions"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 3,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is the primary risk factor for developing basal cell carcinoma?",
+    "answer": "UV light exposure—radiation from the sun or tanning beds—is the primary risk factor for developing basal cell carcinoma.",
+    "groundtruth": "UV radiation exposure is a primary risk factor for BCC.",
+    "matched_entities": [
+      "risk factor",
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "How does fair skin affect the risk of basal cell carcinoma?",
+    "answer": "Fair skin increases the risk of basal cell carcinoma because it has less melanin to filter out harmful UV rays, making DNA damage from UV exposure more likely.",
+    "groundtruth": "Fair skin increases the risk of BCC.",
+    "matched_entities": [
+      "carcinoma",
+      "fair skin",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Does older age influence the risk of BCC?",
+    "answer": "Older age is not mentioned in the text as a risk factor for BCC (basal-cell carcinoma); the context only links increasing age to higher risk for prostate, bladder, and Hodgkin lymphoma.",
+    "groundtruth": "Older age is associated with higher risk of BCC.",
+    "matched_entities": [
+      "age",
+      "flu"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 7,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Does a family history of skin cancer affect the risk of BCC?",
+    "answer": "Yes. A family history of skin cancer increases your risk of developing basal cell skin cancer.",
+    "groundtruth": "Family history of skin cancer increases risk of BCC.",
+    "matched_entities": [
+      "history of skin cancer",
+      "family"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 4,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Is immune suppression a risk factor for basal cell carcinoma?",
+    "answer": "Yes. The text states that people with weakened immune systems from organ transplants or autoimmune diseases are at higher risk for basal cell skin cancer.",
+    "groundtruth": "Immune suppression is a risk factor for BCC.",
+    "matched_entities": [
+      "immune suppression",
+      "risk factor",
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "What are common symptoms of basal cell carcinoma?",
+    "answer": "Basal cell carcinoma usually appears as a pearly or waxy bump, a flat flesh-colored or brown scar-like lesion, or a bleeding sore that heals and returns—typically on sun-exposed skin such as the face, head, neck, arms, or trunk.",
+    "groundtruth": "BCC presents as flat, pale or yellow areas, red patches, shiny bumps, open sores, or brown/black bumps with rolled borders.",
+    "matched_entities": [
+      "carcinoma",
+      "symptoms",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What diagnostic methods are used for BCC?",
+    "answer": "Not stated in the text.",
+    "groundtruth": "Diagnosis of BCC involves medical and family history, physical exam, skin exam, biopsy, and sometimes imaging.",
+    "matched_entities": [],
+    "retrieval": {
+      "entity_chunks": 0,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 0,
+      "total_chunks": 9
+    }
+  },
+  {
+    "question": "What is the most common treatment for basal cell carcinoma?",
+    "answer": "The most common treatment for basal cell carcinoma is surgery to remove the cancer.",
+    "groundtruth": "Surgery is the most common treatment for BCC.",
+    "matched_entities": [
+      "carcinoma",
+      "cell",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "When might radiation therapy or systemic therapy be used for BCC?",
+    "answer": "Radiation therapy or systemic therapy might be used for basal cell skin cancer (BCC) when surgery is not possible or when cancer remains after surgery and further surgery is not an option.",
+    "groundtruth": "Radiation therapy or systemic therapy may be used in some cases of BCC.",
+    "matched_entities": [
+      "radiation therapy",
+      "systemic therapy"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What does recurrence mean in the context of BCC?",
+    "answer": "Recurrence of basal cell skin cancer means the cancer returns to the area where it was originally found or has spread to lymph nodes or distant parts of the body.",
+    "groundtruth": "Recurrence refers to BCC returning to the original site or spreading to lymph nodes or distant sites.",
+    "matched_entities": [
+      "recurrence"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is recommended for follow-up after BCC treatment?",
+    "answer": "Not stated in the text.",
+    "groundtruth": "Follow-up includes full skin exams with a doctor at least once a year.",
+    "matched_entities": [
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Which cell type is affected in basal cell carcinoma?",
+    "answer": "Basal cell carcinoma arises from the basal cells located in the epidermis, the top layer of the skin.",
+    "groundtruth": "Basal cells are the cell type affected in BCC.",
+    "matched_entities": [
+      "carcinoma",
+      "cell"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Is sun exposure a risk factor for BCC?",
+    "answer": "Sun exposure is not mentioned in the text as a risk factor for BCC (basal cell carcinoma); the context only links it to squamous cell skin cancer.",
+    "groundtruth": "Sun exposure is a risk factor for BCC.",
+    "matched_entities": [
+      "sun exposure",
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Are tanning beds considered a risk factor for BCC?",
+    "answer": "Yes. The text states that “Using all types of indoor tanning machines (eg, booths, beds) increases the risk of getting any type of skin cancer,” which includes basal-cell carcinoma.",
+    "groundtruth": "Tanning beds are a risk factor for BCC.",
+    "matched_entities": [
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Does having red or blond hair increase the risk of BCC?",
+    "answer": "Yes. The text lists “red or blond hair” as a risk factor that increases the chance of developing basal cell skin cancer.",
+    "groundtruth": "Red hair and blond hair increase the risk of BCC.",
+    "matched_entities": [],
+    "retrieval": {
+      "entity_chunks": 0,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 0,
+      "total_chunks": 9
+    }
+  },
+  {
+    "question": "Is light eye color associated with increased risk of BCC?",
+    "answer": "Yes—light eye color is listed among the risk factors for basal cell skin cancer, so it is associated with an increased risk.",
+    "groundtruth": "Light eye color increases the risk of BCC.",
+    "matched_entities": [
+      "increased risk",
+      "eye"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 3,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Can a history of radiation therapy increase BCC risk?",
+    "answer": "Yes. The context lists “Radiation therapy – Radiation treatment for other conditions, especially at a young age” as a risk factor that can cause basal cell skin cancer.",
+    "groundtruth": "Radiation therapy is a risk factor for BCC.",
+    "matched_entities": [
+      "radiation therapy"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Are organ transplant recipients at higher risk for BCC?",
+    "answer": "Yes. The text states that receiving an organ transplant weakens the immune system, and people with a weakened immune system have a higher risk of getting CSCC (cutaneous squamous cell carcinoma), which implies a higher risk for skin cancers like BCC as well.",
+    "groundtruth": "Organ transplant is a risk factor for BCC.",
+    "matched_entities": [
+      "organ transplant"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Is autoimmune disease a risk factor for BCC?",
+    "answer": "Autoimmune disease is not mentioned in the text as a risk factor for basal cell carcinoma (BCC).",
+    "groundtruth": "Autoimmune disease is a risk factor for BCC.",
+    "matched_entities": [
+      "autoimmune disease",
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is a flat, pale or yellow area on the skin indicative of in BCC?",
+    "answer": "In lighter skin, a flat, pale or yellow area can be a sign of basal cell skin cancer.",
+    "groundtruth": "A flat, pale or yellow area is a symptom of BCC.",
+    "matched_entities": [
+      "skin"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What does a shiny bump on the skin suggest in the context of BCC?",
+    "answer": "A shiny bump on the skin—small, pink or red and possibly with blue, brown, or black areas—can be a sign of basal cell carcinoma.",
+    "groundtruth": "A shiny bump is a symptom of BCC.",
+    "matched_entities": [
+      "skin"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What is the significance of a brown or glossy black bump with rolled border?",
+    "answer": "A brown or glossy black bump with a rolled border is a key sign of basal cell skin cancer in darker skin and can be mistaken for a normal mole.",
+    "groundtruth": "A brown or glossy black bump with rolled border is a symptom of BCC.",
+    "matched_entities": [
+      "brown or glossy black bump",
+      "anc"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 2,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which exams are essential for diagnosing BCC?",
+    "answer": "The context only discusses follow-up skin exams for squamous cell skin cancer (CSCC) and does not mention any specific exams required to diagnose basal cell carcinoma (BCC).",
+    "groundtruth": "Physical exam and skin exam are essential for diagnosing BCC.",
+    "matched_entities": [
+      "exam"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 1,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "What role does biopsy play in BCC diagnosis?",
+    "answer": "A biopsy is required to confirm a basal cell skin-cancer diagnosis; the diagnosis is based on biopsy results along with history, physical and skin exams, and sometimes imaging.",
+    "groundtruth": "Biopsy is a diagnostic method for BCC.",
+    "matched_entities": [
+      "diagnosis",
+      "biopsy"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Is imaging sometimes used in the diagnosis of BCC?",
+    "answer": "Yes. The text states that “in some cases, imaging studies” are part of the testing used to identify and diagnose basal cell skin cancer.",
+    "groundtruth": "Imaging may be used in the diagnosis of BCC.",
+    "matched_entities": [
+      "diagnosis",
+      "imaging"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What treatments are available for BCC besides surgery?",
+    "answer": "Besides surgery, basal cell skin cancer can sometimes be treated with radiation therapy or systemic therapy.",
+    "groundtruth": "Radiation therapy and systemic therapy are treatments for BCC besides surgery.",
+    "matched_entities": [
+      "treatments",
+      "surgery",
+      "lab"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "How is recurrence of BCC managed?",
+    "answer": "Recurrence of basal cell skin cancer is managed with several treatment options, as noted in the context: “But there are several options for how to treat it.”",
+    "groundtruth": "Recurrence is managed with treatment options based on risk and recurrence.",
+    "matched_entities": [
+      "recurrence",
+      "age"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is included in annual follow-up for BCC patients?",
+    "answer": "Not stated in the text.",
+    "groundtruth": "Annual follow-up includes a full skin exam.",
+    "matched_entities": [],
+    "retrieval": {
+      "entity_chunks": 0,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 0,
+      "total_chunks": 9
+    }
+  },
+  {
+    "question": "What is the primary cancer type discussed in this context?",
+    "answer": "The primary cancer type discussed is primary central nervous system (CNS) lymphoma, a rare and aggressive cancer that starts in the brain or spinal cord.",
+    "groundtruth": "Primary CNS lymphoma is the primary cancer type.",
+    "matched_entities": [
+      "cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Which cells does primary CNS lymphoma originate from?",
+    "answer": "Primary CNS lymphoma originates from lymphocytes—specifically, from a genetic abnormality in certain lymphocytes that causes them to grow out of control in the brain and spinal cord.",
+    "groundtruth": "Primary CNS lymphoma originates from lymphocytes.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "cells"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is the most common location affected by primary CNS lymphoma?",
+    "answer": "The most common location is the central part of the brain.",
+    "groundtruth": "The brain is most commonly affected by primary CNS lymphoma.",
+    "matched_entities": [
+      "primary cns lymphoma"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Name a cancer subtype of primary CNS lymphoma that affects the eyes.",
+    "answer": "Primary CNS lymphoma can involve the eyes, and when it does it is called intraocular lymphoma.",
+    "groundtruth": "Vitreoretinal lymphoma is a subtype that affects the eyes.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "cancer",
+      "eyes"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "List three anatomical sites, other than the brain, that primary CNS lymphoma can involve.",
+    "answer": "Primary CNS lymphoma can also involve the spinal cord, cerebrospinal fluid (CSF), and the eyes.",
+    "groundtruth": "Primary CNS lymphoma can involve the spinal cord, cerebrospinal fluid, and eyes.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "anatomic",
+      "brain"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is a major risk factor for developing primary CNS lymphoma?",
+    "answer": "A major risk factor for developing primary CNS lymphoma is having an impaired or weakened immune system.",
+    "groundtruth": "An impaired immune system is a major risk factor.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "risk factor"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which viral infection is considered a risk factor for primary CNS lymphoma?",
+    "answer": "HIV infection is considered a risk factor for primary CNS lymphoma because it impairs the immune system.",
+    "groundtruth": "HIV infection is a risk factor for primary CNS lymphoma.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "risk factor",
+      "infection"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Name two autoimmune conditions listed as risk factors for primary CNS lymphoma.",
+    "answer": "Lupus is explicitly named; HIV and Epstein-Barr virus are mentioned but are infections, not autoimmune diseases. No second autoimmune disorder is listed in the text.",
+    "groundtruth": "Autoimmune disease and lupus are risk factors.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "risk factors",
+      "ions"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which diagnostic imaging technique is considered most useful for identifying primary CNS lymphoma?",
+    "answer": "MRI (magnetic resonance imaging) is the most useful imaging technique for identifying primary CNS lymphoma.",
+    "groundtruth": "MRI with gadolinium contrast is the most useful imaging technique.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "imaging technique",
+      "identify"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is the standard biopsy procedure for diagnosing primary CNS lymphoma?",
+    "answer": "The standard biopsy method for diagnosing primary CNS lymphoma is a stereotactic biopsy, a precise technique used when the brain tumor is in a hard-to-reach or vital area.",
+    "groundtruth": "Stereotactic biopsy is the standard diagnostic procedure.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "procedure",
+      "biopsy"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which laboratory test is commonly used during the diagnosis of primary CNS lymphoma?",
+    "answer": "The key to confirming primary CNS lymphoma is removing a small sample of tumor tissue and testing it; this tissue is then analyzed with detailed laboratory methods such as next-generation sequencing (NGS) and PCR to detect lymphoma-specific mutations.",
+    "groundtruth": "Complete blood count (CBC) is commonly used.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "diagnosis",
+      "lab"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is a typical initial clinical assessment for suspected primary CNS lymphoma?",
+    "answer": "A typical initial clinical assessment for suspected primary CNS lymphoma includes a neurological exam and MRI imaging of the brain.",
+    "groundtruth": "A neurological exam is a typical initial clinical assessment.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "clinic"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which procedure is performed if cancer cells are found in the cerebrospinal fluid?",
+    "answer": "If cancer cells are found in the cerebrospinal fluid, another MRI is performed to check for lesions in the spine.",
+    "groundtruth": "Intrathecal chemotherapy may be used if cancer cells are found in the cerebrospinal fluid.",
+    "matched_entities": [
+      "cerebrospinal fluid",
+      "cancer cells",
+      "procedure"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What specialized treatment is given if the eyes are involved in primary CNS lymphoma?",
+    "answer": "The text does not specify any specialized treatment for eye involvement; it only states that everyone diagnosed with primary CNS lymphoma should have a thorough eye exam.",
+    "groundtruth": "Intraocular chemotherapy or radiation may be used if the eyes are involved.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "eyes",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is the main chemotherapy drug for primary CNS lymphoma?",
+    "answer": "The main chemotherapy drug used to treat primary CNS lymphoma is high-dose methotrexate.",
+    "groundtruth": "High-dose methotrexate is the main chemotherapy drug.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "chemotherapy drug",
+      "ain"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which immunotherapy drug is primarily used in the treatment of primary CNS lymphoma?",
+    "answer": "The main immunotherapy drug used for primary CNS lymphoma is rituximab (Rituxan).",
+    "groundtruth": "Rituximab is the main immunotherapy drug used.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "immunotherapy drug",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is the most commonly used radiation technique for primary CNS lymphoma?",
+    "answer": "The most commonly used radiation technique for primary CNS lymphoma is whole-brain radiation therapy (WBRT).",
+    "groundtruth": "Whole-brain radiation therapy (WBRT) is the most commonly used technique.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "radiation technique"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What are the two main treatment phases for primary CNS lymphoma?",
+    "answer": "The text does not specify distinct “phases,” but it states that treatment is “usually given in phases” and lists the options—corticosteroids, chemotherapy, radiation, immunotherapy, targeted therapy, and stem-cell rescue—so the two main phases are typically an induction phase (chemo ± steroids/immunotherapy) followed by a consolidation phase (high-dose chemo with stem-cell rescue or radiation).",
+    "groundtruth": "Treatment is typically given in phases: induction and consolidation.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "ain",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is the purpose of supportive care in primary CNS lymphoma management?",
+    "answer": "Supportive care is used to manage the symptoms and side-effects of primary CNS lymphoma and its treatment, thereby extending and enhancing patients’ quality of life.",
+    "groundtruth": "Supportive care is provided to relieve symptoms and side effects at any stage of disease.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "supportive care",
+      "age"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which performance measure is evaluated to guide treatment decisions in primary CNS lymphoma?",
+    "answer": "MRI is used to stage the extent of disease within the CNS, and this imaging-based staging guides subsequent treatment decisions.",
+    "groundtruth": "Performance status is evaluated to guide treatment decisions and eligibility for clinical trials.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "treatment decisions",
+      "anc"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is recommended for all patients with primary CNS lymphoma regarding research participation?",
+    "answer": "All patients with primary CNS lymphoma are recommended to consider participation in a clinical trial, as this is listed among the treatments for the disease.",
+    "groundtruth": "Clinical trial participation is recommended for all patients.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "all"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Name three neurological symptoms commonly caused by primary CNS lymphoma.",
+    "answer": "Primary CNS lymphoma commonly causes leg or arm weakness, problems with coordination or movement, and headaches.",
+    "groundtruth": "Leg weakness, confusion, and seizures are common neurological symptoms.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "symptoms"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which diagnostic method is used to assess eye involvement in primary CNS lymphoma?",
+    "answer": "A thorough eye exam using a slit-lamp microscope after dilating the pupils is used to assess eye involvement in primary CNS lymphoma.",
+    "groundtruth": "Eye exam is used to assess eye involvement.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "eye"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What follow-up method is recommended for surveillance after treatment of primary CNS lymphoma?",
+    "answer": "The text does not specify any follow-up surveillance method for primary CNS lymphoma; it only details surveillance for cervical, anal, and prostate cancers.",
+    "groundtruth": "Repeat MRI is recommended for follow-up surveillance.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "surveillance",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which age group is at higher risk for primary CNS lymphoma?",
+    "answer": "Older adults—specifically people in their 60s and 70s—have the highest risk of developing primary CNS lymphoma.",
+    "groundtruth": "Older adults are at higher risk.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "age"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What is the role of corticosteroids in the treatment of primary CNS lymphoma?",
+    "answer": "Corticosteroids are used as part of the treatment regimen for primary CNS lymphoma to reduce inflammation and help control tumor growth.",
+    "groundtruth": "Corticosteroids are one of the treatment options for primary CNS lymphoma.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "corticosteroids",
+      "atm"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which chemotherapy drugs, besides methotrexate, can be used in induction therapy for primary CNS lymphoma?",
+    "answer": "Besides high-dose methotrexate, induction therapy for primary CNS lymphoma may include rituximab plus temozolomide, vincristine, and/or procarbazine.",
+    "groundtruth": "Temozolomide, vincristine, procarbazine, cytarabine, pemetrexed, pomalidomide, lenalidomide, and ibrutinib can be used.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "chemotherapy drugs",
+      "methotrexate"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which procedure is included in laboratory tests for diagnosing primary CNS lymphoma?",
+    "answer": "A stereotactic biopsy is the standard laboratory procedure: a sliver of tumor is removed and sent for pathologic analysis to confirm primary CNS lymphoma.",
+    "groundtruth": "Lactate dehydrogenase (LDH) testing is included in laboratory tests.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "procedure",
+      "tests",
+      "lab"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "What is a potential site of relapse for primary CNS lymphoma?",
+    "answer": "A potential site of relapse for primary CNS lymphoma is the brain, spinal cord, or the eye.",
+    "groundtruth": "Primary CNS lymphoma can relapse in the brain, spinal cord, or eyes.",
+    "matched_entities": [
+      "primary cns lymphoma"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "How often does primary CNS lymphoma spread outside the central nervous system?",
+    "answer": "It rarely spreads to other areas of the body; it usually stays within the central nervous system.",
+    "groundtruth": "Primary CNS lymphoma rarely spreads outside the central nervous system.",
+    "matched_entities": [
+      "central nervous system",
+      "primary cns lymphoma",
+      "spread"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which imaging technique uses gadolinium contrast for better visualization in primary CNS lymphoma?",
+    "answer": "MRI (magnetic resonance imaging) is the technique that uses gadolinium contrast to improve visualization of primary CNS lymphoma.",
+    "groundtruth": "MRI uses gadolinium contrast for better visualization.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "imaging technique",
+      "gadolinium",
+      "contrast"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "What supportive care interventions are recommended for patients with primary CNS lymphoma?",
+    "answer": "Supportive care is not detailed for primary CNS lymphoma in the text, but it advises telling your care team about symptoms and needs so they can provide the best supportive care for you.",
+    "groundtruth": "Symptom management, palliative care, and quality of life interventions are recommended.",
+    "matched_entities": [
+      "primary cns lymphoma",
+      "supportive care",
+      "ions"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "What is the second most common type of skin cancer?",
+    "answer": "Squamous cell skin cancer is the second most common type of skin cancer.",
+    "groundtruth": "Squamous cell skin cancer (CSCC) is the second most common type of skin cancer.",
+    "matched_entities": [
+      "skin cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 1,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 10
+    }
+  },
+  {
+    "question": "Which cancer subtype is classified as a type of nonmelanoma skin cancer?",
+    "answer": "Cutaneous squamous cell carcinoma (CSCC) is classified as a type of nonmelanoma skin cancer.",
+    "groundtruth": "CSCC is a type of nonmelanoma skin cancer.",
+    "matched_entities": [
+      "melanoma skin cancer",
+      "cancer"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "What are the main stages of cutaneous squamous cell carcinoma (CSCC)?",
+    "answer": "The provided text does not list specific stages for cutaneous squamous cell carcinoma (CSCC); it only describes the FIGO staging system for ovarian cancer.",
+    "groundtruth": "CSCC is staged as local (confined to skin), regional (spread to lymph nodes), or metastatic (distant spread).",
+    "matched_entities": [
+      "cutaneous squamous cell carcinoma",
+      "stages",
+      "cscc",
+      "ain"
+    ],
+    "retrieval": {
+      "entity_chunks": 4,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 13
+    }
+  },
+  {
+    "question": "What is a precancerous lesion that can progress to CSCC?",
+    "answer": "Actinic keratosis is a precancerous lesion that can progress to cutaneous squamous cell carcinoma (CSCC).",
+    "groundtruth": "Actinic keratosis is a precancerous lesion that can progress to CSCC.",
+    "matched_entities": [
+      "cancer",
+      "lesion",
+      "cscc"
+    ],
+    "retrieval": {
+      "entity_chunks": 3,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 12
+    }
+  },
+  {
+    "question": "Which risk factors are major contributors to CSCC development?",
+    "answer": "Major contributors to CSCC development are long-term sun exposure, indoor tanning, and having light skin/hair/eyes; additional factors include environmental toxins (tobacco smoke, vehicle exhaust, arsenic) and chronically scarred or wounded skin.",
+    "groundtruth": "Major risk factors for CSCC include chronic sun exposure, indoor tanning, environmental toxins, actinic keratoses, genetic syndromes, weakened immune system, and chronic wounds or scars.",
+    "matched_entities": [
+      "risk factors",
+      "cscc"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  },
+  {
+    "question": "Which genetic syndromes increase the risk for CSCC?",
+    "answer": "Xeroderma pigmentosum and recessive dystrophic epidermolysis bullosa are the two genetic syndromes explicitly named in the text that increase the risk for squamous cell skin cancer (CSCC).",
+    "groundtruth": "Xeroderma pigmentosum and RDEB increase risk for CSCC.",
+    "matched_entities": [
+      "genetic syndromes",
+      "cscc"
+    ],
+    "retrieval": {
+      "entity_chunks": 2,
+      "bm25_chunks": 4,
+      "semantic_chunks": 5,
+      "kg_facts": 8,
+      "total_chunks": 11
+    }
+  }
+]
