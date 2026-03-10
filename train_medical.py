@@ -73,7 +73,25 @@ def train():
     """
     model.train()
     best_test_acc = 0
-    for epoch in range(0, args.epoch_num):
+    start_epoch = 0
+
+    # ------ AUTO-RESUME CHECK ------
+    # Quét từ Epoch cao nhất xuống 0, nếu có checkpoint thì load lên và chạy tiếp
+    for epoch in reversed(range(args.epoch_num)):
+        ckpt_path = model_save_path.replace(".pkl", f"_{epoch}th.pkl")
+        if os.path.exists(ckpt_path):
+            logging.info(f"🔄 Re-run detected! Tải lại checkpoint từ Epoch {epoch} để chạy tiếp...")
+            model.load_state_dict(torch.load(ckpt_path, map_location=device))
+            start_epoch = epoch + 1
+            break
+
+    if start_epoch >= args.epoch_num:
+        logging.info("Mô hình đã được train đủ số Epoch. Bỏ qua bước training.")
+        return
+
+    # Chạy vòng lặp từ epoch bị đứt (hoặc 0) cho tới khi hoàn tất
+    for epoch in range(start_epoch, args.epoch_num):
+        model.train()  # Sửa lỗi: Set model lại về chế độ Train ở đầu mỗi Epoch
         epoch_loss = 0.0
 
         for step, batch in tqdm(enumerate(train_loader), disable=False, total=len(train_loader)):
@@ -108,13 +126,16 @@ def train():
                 logging.info("{}th loss in {} epoch:{}".format(step, epoch, loss))
             epoch_loss += loss / len(train_loader)
         logging.info("{}th epoch mean loss:{}".format(epoch, epoch_loss))
+        # Lưu riêng lẻ từng file Epoch theo yêu cầu
         torch.save(model.state_dict(), model_save_path.replace(".pkl", f"_{epoch}th.pkl"))
 
-        test_acc = evaluate(epoch)
-        if best_test_acc < test_acc:
-            best_test_acc = test_acc
-            logging.info("{}th epoch save the best model".format(epoch))
-            torch.save(model.state_dict(), model_save_path.replace(".pkl", "_best.pkl"))
+        # Chỉ chạy Evaluation ở Epoch đầu tiên (index 0) và Epoch cuối cùng (tiết kiệm thời gian)
+        if epoch == 0 or epoch == args.epoch_num - 1:
+            test_acc = evaluate(epoch)
+            if best_test_acc < test_acc:
+                best_test_acc = test_acc
+                logging.info("{}th epoch save the best model".format(epoch))
+                torch.save(model.state_dict(), model_save_path.replace(".pkl", "_best.pkl"))
 
 
 # ====================================================================
@@ -129,37 +150,40 @@ def evaluate(epoch=0):
     """
     model.eval()
     all_true, all_pred = [], []
-    for step, batch in tqdm(enumerate(eval_loader), disable=False, total=len(eval_loader)):
-        src, rel, dst = batch[0]
-        gnn_labels = batch[1]
+    
+    with torch.no_grad(): # CHỐNG TRÀN RAM CUỐI EPOCH! Không lưu gradient tree lúc chấm điểm
+        for step, batch in tqdm(enumerate(eval_loader), disable=False, total=len(eval_loader)):
+            src, rel, dst = batch[0]
+            gnn_labels = batch[1]
 
-        src_arr = src.numpy()
-        dst_arr = dst.numpy().reshape(-1)
-        src_text, dst_text = [id2text[i] for i in src_arr], [id2text[j] for j in dst_arr]
-        src_text = tokenize(src_text, context_length=args.context_length).to(device)
-        dst_text = tokenize(dst_text, context_length=args.context_length).to(device)
+            src_arr = src.numpy()
+            dst_arr = dst.numpy().reshape(-1)
+            src_text, dst_text = [id2text[i] for i in src_arr], [id2text[j] for j in dst_arr]
+            src_text = tokenize(src_text, context_length=args.context_length).to(device)
+            dst_text = tokenize(dst_text, context_length=args.context_length).to(device)
 
-        src, rel, dst = src.to(device), rel.to(device), dst.to(device)
-        gnn_labels = gnn_labels.to(device)
+            src, rel, dst = src.to(device), rel.to(device), dst.to(device)
+            gnn_labels = gnn_labels.to(device)
 
-        s_graph_feats, s_text_feats, t_text_feats, text_labels = model(
-            whole_graph, src, rel, dst, src_text, dst_text, device
-        )
+            s_graph_feats, s_text_feats, t_text_feats, text_labels = model(
+                whole_graph, src, rel, dst, src_text, dst_text, device
+            )
 
-        s_node_pred = model.align_pred(s_graph_feats, s_text_feats, text_labels)
-        s_gt_pred = model.align_pred(s_graph_feats, t_text_feats, text_labels)
-        tt_pred = model.align_pred(s_text_feats, t_text_feats, text_labels)
+            s_node_pred = model.align_pred(s_graph_feats, s_text_feats, text_labels)
+            s_gt_pred = model.align_pred(s_graph_feats, t_text_feats, text_labels)
+            tt_pred = model.align_pred(s_text_feats, t_text_feats, text_labels)
 
-        true_label = text_labels.cpu().numpy().tolist()
-        s_node_pred = s_node_pred.cpu().detach().numpy().tolist()
-        s_gt_pred = s_gt_pred.cpu().detach().numpy().tolist()
-        tt_pred = tt_pred.cpu().detach().numpy().tolist()
-        all_true.extend(true_label)
-        all_true.extend(true_label)
-        all_true.extend(true_label)
-        all_pred.extend(s_node_pred)
-        all_pred.extend(s_gt_pred)
-        all_pred.extend(tt_pred)
+            true_label = text_labels.cpu().numpy().tolist()
+            s_node_pred = s_node_pred.cpu().detach().numpy().tolist()
+            s_gt_pred = s_gt_pred.cpu().detach().numpy().tolist()
+            tt_pred = tt_pred.cpu().detach().numpy().tolist()
+            
+            all_true.extend(true_label)
+            all_true.extend(true_label)
+            all_true.extend(true_label)
+            all_pred.extend(s_node_pred)
+            all_pred.extend(s_gt_pred)
+            all_pred.extend(tt_pred)
 
     acc = accuracy_score(all_true, all_pred)
     logging.info("{}th epoch test accuracy:{:.4f}".format(epoch, acc))
@@ -297,8 +321,10 @@ if __name__ == "__main__":
     logging.info(f"log file: {log_save_path}")
     logging.info(args)
 
-    model_save_name = f"{args.data_name}/{args.gnn_type}-{args.cur_time}-og.pkl"
+    # Tạo tên file ổn định (không gắn thời gian) để các lần chạy sau biết lấy file cũ mà nối
+    model_save_name = f"{args.data_name}/{args.gnn_type}-og.pkl"
     model_save_path = os.path.join(args.output_path, model_save_name)
+    assure_dir(model_save_path) # Thêm dòng này để tự động tạo folder checkpoints/medical nếu chưa có
 
     # Auto-detect hardware accelerator (CUDA, MPS cho Mac M1, hoặc CPU)
     if torch.cuda.is_available():

@@ -1,0 +1,10 @@
+checkpoints/
+logs/
+__pycache__/
+*.pkl
+*.log
+*.pyc
+.ipynb_checkpoints/
+data_global/
+sat_medical_cache/
+EOF
