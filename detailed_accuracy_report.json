@@ -1,0 +1,511 @@
+{
+  "summary": {
+    "total": 100,
+    "correct": 65,
+    "partial": 0,
+    "wrong": 35,
+    "average_score": 0.65
+  },
+  "details": [
+    {
+      "question": "What is the most common type of skin cancer?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that basal cell carcinoma is the most common type of skin cancer, using a slightly rephrased but equivalent statement.\n\nScore: 1.0"
+    },
+    {
+      "question": "From which cell type does basal cell carcinoma arise?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that basal cell carcinoma arises from basal cells in the lower part of the epidermis, which is identical to the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which anatomical locations are most commonly affected by basal cell carcinoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct, as it includes the correct sun-exposed areas mentioned in the ground truth (face, head, and neck), but also adds extra locations (arms, legs, and trunk) that are not mentioned in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the primary risk factor for basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the primary risk factor for basal cell carcinoma, which is UV radiation exposure, and also provides additional relevant information about the sources of UV radiation (sun and tanning beds).\n\nScore: 1.0"
+    },
+    {
+      "question": "How does fair skin affect the risk of developing BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer not only states that fair skin increases the risk of BCC, but also provides a correct explanation for why this is the case, citing the reduced melanin and subsequent DNA damage to basal cells.\n\nScore: 1.0"
+    },
+    {
+      "question": "Does older age influence the risk of basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the relationship between older age and the risk of basal cell carcinoma, matching the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "How does family history impact the risk of basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the increased risk of basal cell carcinoma associated with a family history of skin cancer, matching the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is immune suppression a risk factor for BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer incorrectly states that immune suppression is not a risk factor for BCC, whereas the ground truth confirms it as a risk factor.\n\nScore: 0.0"
+    },
+    {
+      "question": "What are common symptoms of basal cell carcinoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct, as it mentions a scaly patch or skin lesion, which is related to the ground truth, but it misses key specifics such as the various colors and shapes of the lesions (e.g. flat, pale, yellow, red, shiny, open sores, brown/black with rolled borders).\n\nScore: 0.7"
+    },
+    {
+      "question": "Which diagnostic methods are used for BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions biopsy, which is a key diagnostic method, but omits other important methods such as medical and family history, physical exam, and skin exam.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the most common treatment for basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately states that surgery is the most common treatment for basal cell carcinoma, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "When might radiation therapy be used in BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more specific information than the ground truth, but it still captures the core idea that radiation therapy may be used in some cases of BCC.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is recurrence in the context of BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions the return of cancer after treatment, but it misses the key specifics about the original site, lymph nodes, or distant sites mentioned in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What does follow-up for BCC typically include?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more detailed and specific information than the ground truth, including the frequency of skin exams and the use of imaging tests. However, it still captures the core medical fact of regular skin exams with a doctor.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which skin cancer subtype arises from basal cells?",
+      "score": 1.0,
+      "reasoning": "The model answer is essentially a rephrased version of the ground truth, conveying the same accurate information.\n\nScore: 1.0"
+    },
+    {
+      "question": "What anatomical layer do basal cells belong to?",
+      "score": 1.0,
+      "reasoning": "The model answer is essentially a more detailed version of the ground truth, providing additional information about the specific layer within the epidermis where basal cells are located.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is sun exposure a risk factor for BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the same information as the ground truth, with the added specificity of \"basal cell skin cancer\" which is a correct elaboration of \"BCC\".\n\nScore: 1.0"
+    },
+    {
+      "question": "Do tanning beds increase the risk of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that tanning beds increase the risk of BCC, and provides a clear explanation for why this is the case (UV radiation).\n\nScore: 1.0"
+    },
+    {
+      "question": "What hair and eye colors are associated with increased BCC risk?",
+      "score": 0.0,
+      "reasoning": "The model answer accurately conveys the association between lighter hair and eye color with increased BCC risk, but lacks specificity in describing the exact hair colors (red, blond) mentioned in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "Can a history of radiation therapy increase BCC risk?",
+      "score": 1.0,
+      "reasoning": "The model answer correctly infers that radiation therapy is a risk factor for BCC, although it does so indirectly by combining two separate pieces of information. The connection between radiation to the head/neck and later skin-cancer risk in that region is a logical leap that is supported by the provided text.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is a common presentation of BCC on the skin?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more detailed and specific information about the common presentation of BCC on the skin, including the color and potential for an open sore, which is not mentioned in the ground truth. However, it still captures the core fact that BCC may present as a shiny bump.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the role of biopsy in BCC diagnosis?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the role of biopsy in BCC diagnosis, including the removal of tissue and examination under a microscope to confirm the presence of basal-cell carcinoma, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which systemic therapy may be considered for BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more specific and detailed information about the systemic therapy options for BCC, which is consistent with the ground truth. It not only affirms that systemic therapy may be considered but also explains the circumstances (when surgery is not possible or effective) and lists specific examples of targeted therapy and immunotherapy.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is included in the management of BCC recurrence?",
+      "score": 0.0,
+      "reasoning": "The model answer focuses on post-treatment surveillance for local BCC, which is a part of the management of recurrence, but it does not mention treatment options based on risk and recurrence, which is a key aspect of the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the recommended frequency for full skin exams in BCC follow-up?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it provides relevant information about squamous cell skin cancer (CSCC) follow-up, but does not directly state the recommended frequency for full skin exams in BCC follow-up, which is at least once a year.\n\nScore: 0.7"
+    },
+    {
+      "question": "Can BCC spread to lymph nodes?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct, as it mentions that metastasis is extremely rare, but it contradicts the ground truth by stating that BCC \"almost never\" spreads to lymph nodes, when in fact, recurrence can involve spread to lymph nodes.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is a brown or glossy black bump with rolled border a symptom of?",
+      "score": 1.0,
+      "reasoning": "The model answer is a more detailed and specific version of the ground truth, providing additional information about the skin tone. \n\nScore: 1.0"
+    },
+    {
+      "question": "What is the relationship between organ transplant and BCC risk?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the relationship between organ transplant and BCC risk, and also provides a clear explanation for why this is the case, which is in line with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is autoimmune disease associated with increased BCC risk?",
+      "score": 0.0,
+      "reasoning": "The model answer incorrectly states that the text does not mention autoimmune disease as a risk factor, when in fact it is a risk factor for BCC.\n\nScore: 0.0"
+    },
+    {
+      "question": "What is the role of imaging in BCC diagnosis?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more specific details about the role of imaging in BCC diagnosis, such as revealing the size, location, and features of the cancer, which are not mentioned in the ground truth. However, it still captures the core fact that imaging is used in diagnosis.\n\nScore: 1.0"
+    },
+    {
+      "question": "Can BCC occur anywhere on the body?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the core medical fact that BCC can occur anywhere on the body, and also mentions the common association with sun-exposed areas, which is present in the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the most common type of skin cancer?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that basal cell carcinoma is the most common type of skin cancer, using a slightly rephrased but equivalent statement.\n\nScore: 1.0"
+    },
+    {
+      "question": "From which cells does basal cell carcinoma arise?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that basal cell carcinoma arises from basal cells in the lower part of the epidermis, which is identical to the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which anatomical locations are most commonly affected by BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions the correct sun-exposed areas (face, head, and neck) but also includes additional locations (arms, legs, and trunk) that are not specified in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the primary risk factor for developing basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the primary risk factor for developing basal cell carcinoma, which is UV radiation exposure, and also provides additional relevant information about the mechanism of DNA damage and uncontrolled cell growth.\n\nScore: 1.0"
+    },
+    {
+      "question": "How does fair skin affect the risk of basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that fair skin increases the risk of BCC, and also provides a clear explanation for why this is the case (less melanin to filter out UV radiation).\n\nScore: 1.0"
+    },
+    {
+      "question": "Does older age influence the risk of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that older age is associated with a higher risk of BCC, and provides additional relevant information about the incidence increasing with age.\n\nScore: 1.0"
+    },
+    {
+      "question": "Does a family history of skin cancer affect the risk of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys that a family history of skin cancer increases the risk of BCC, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is immune suppression a risk factor for basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that immune suppression is a risk factor for basal cell carcinoma, which is present in the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What are common symptoms of basal cell carcinoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct, as it mentions a scaly patch or skin lesion on sun-exposed areas, which is consistent with the ground truth. However, it misses key specifics such as the various colors and shapes of the lesions (flat, pale, yellow, red, shiny, open sores, brown/black with rolled borders).\n\nScore: 0.7"
+    },
+    {
+      "question": "What diagnostic methods are used for BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions biopsy, which is a key diagnostic method, but omits other important methods such as medical and family history, physical exam, and skin exam.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the most common treatment for basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately states that surgery is the primary treatment for basal cell carcinoma, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "When might radiation therapy or systemic therapy be used for BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions the use of radiation therapy for BCC in specific situations, but it does not mention the use of systemic therapy, which is mentioned in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What does recurrence mean in the context of BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions the return of cancer after treatment, but misses the key specifics about the original site, lymph nodes, or distant sites.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is recommended for follow-up after BCC treatment?",
+      "score": 1.0,
+      "reasoning": "The model answer is more specific and detailed than the ground truth, providing a range of follow-up frequency (6-12 months) and citing a credible source (NCCN experts), whereas the ground truth only mentions a general annual follow-up.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which cell type is affected in basal cell carcinoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately identifies the affected cell type as basal cells and provides additional context about their location in the epidermis, which is consistent with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is sun exposure a risk factor for BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the same information as the ground truth, with the added specificity of \"basal cell skin cancer\" which is a correct elaboration of \"BCC\".\n\nScore: 1.0"
+    },
+    {
+      "question": "Are tanning beds considered a risk factor for BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that tanning beds are a risk factor for BCC, and provides additional relevant information about UV radiation.\n\nScore: 1.0"
+    },
+    {
+      "question": "Does having red or blond hair increase the risk of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that red or blond hair increases the risk of BCC, and provides additional relevant information about the reason behind this increased risk.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is light eye color associated with increased risk of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the association between light eye color and increased risk of BCC, matching the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Can a history of radiation therapy increase BCC risk?",
+      "score": 1.0,
+      "reasoning": "The model answer correctly states that a history of radiation therapy is a risk factor for BCC, and provides additional context about the specific type of radiation therapy that increases the risk.\n\nScore: 1.0"
+    },
+    {
+      "question": "Are organ transplant recipients at higher risk for BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer is correct in stating that organ transplant recipients are at higher risk for BCC, and provides a plausible explanation for this increased risk based on immune suppression.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is autoimmune disease a risk factor for BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is incorrect as it states that autoimmune disease is not mentioned as a risk factor for BCC, when in fact, the ground truth confirms that it is a risk factor.\n\nScore: 0.0"
+    },
+    {
+      "question": "What is a flat, pale or yellow area on the skin indicative of in BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions basal cell skin cancer, which is related to BCC, but also adds extra information about the lesion resembling a scar, which is not present in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What does a shiny bump on the skin suggest in the context of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer is more specific and detailed than the ground truth, but it still captures the core medical fact that a shiny bump on the skin can be a symptom of BCC.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the significance of a brown or glossy black bump with rolled border?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions the significance of the bump being related to basal cell skin cancer, but adds an extra detail about darker skin tones, which is not present in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "Which exams are essential for diagnosing BCC?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions a diagnostic exam (skin biopsy) but omits the essential physical exam and skin exam mentioned in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What role does biopsy play in BCC diagnosis?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that biopsy is used to diagnose BCC by removing samples of cells or tissue to find cancer, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Is imaging sometimes used in the diagnosis of BCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the idea that imaging is used in the diagnosis of BCC, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What treatments are available for BCC besides surgery?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions systemic therapy, but misses radiation therapy, which is also a treatment for BCC besides surgery.\n\nScore: 0.7"
+    },
+    {
+      "question": "How is recurrence of BCC managed?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more specific details on the management of BCC recurrence, including the frequency of skin exams and potential additional treatments, which aligns with the general approach mentioned in the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is included in annual follow-up for BCC patients?",
+      "score": 1.0,
+      "reasoning": "The model answer is more detailed and specific than the ground truth, but it still captures the core medical fact of a full skin exam being part of the annual follow-up.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the primary cancer type discussed in this context?",
+      "score": 0.0,
+      "reasoning": "The model answer incorrectly identifies the primary cancer type as nasopharyngeal cancer (NPC), whereas the ground truth states it is Primary CNS lymphoma.\n\nScore: 0.0"
+    },
+    {
+      "question": "Which cells does primary CNS lymphoma originate from?",
+      "score": 1.0,
+      "reasoning": "The model answer is more specific than the ground truth, providing additional accurate information about the type of lymphocytes involved (B cells). \n\nScore: 1.0"
+    },
+    {
+      "question": "What is the most common location affected by primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it specifies a region within the brain, but it's not entirely accurate as it doesn't simply state \"the brain\" as the most common location.\n\nScore: 0.7"
+    },
+    {
+      "question": "Name a cancer subtype of primary CNS lymphoma that affects the eyes.",
+      "score": 1.0,
+      "reasoning": "The model answer perfectly matches the ground truth, capturing the core medical fact that vitreoretinal lymphoma is a subtype of primary CNS lymphoma that affects the eyes.\n\nScore: 1.0"
+    },
+    {
+      "question": "List three anatomical sites, other than the brain, that primary CNS lymphoma can involve.",
+      "score": 1.0,
+      "reasoning": "The model answer accurately lists the three anatomical sites that primary CNS lymphoma can involve, matching the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is a major risk factor for developing primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that an impaired immune system is a major risk factor for developing primary CNS lymphoma, and provides additional relevant information about immunodeficiency disorders.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which viral infection is considered a risk factor for primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is incorrect as it does not specifically mention HIV infection, which is the correct risk factor for primary CNS lymphoma.\n\nScore: 0.0"
+    },
+    {
+      "question": "Name two autoimmune conditions listed as risk factors for primary CNS lymphoma.",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions lupus, which is a correct autoimmune condition listed as a risk factor, but incorrectly mentions \"having an organ transplant\" as an autoimmune-related risk factor, when in fact, the ground truth only mentions \"autoimmune disease\" as a risk factor.\n\nScore: 0.7"
+    },
+    {
+      "question": "Which diagnostic imaging technique is considered most useful for identifying primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions MRI, but misses the key specific detail about the use of gadolinium contrast.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is the standard biopsy procedure for diagnosing primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that stereotactic biopsy is the standard diagnostic procedure for primary CNS lymphoma, and also provides additional relevant information about the technique.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which laboratory test is commonly used during the diagnosis of primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions a laboratory test (lumbar puncture) that is relevant to the diagnosis of primary CNS lymphoma, but it does not specifically mention the test that is commonly used, which is the complete blood count (CBC) according to the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is a typical initial clinical assessment for suspected primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer focuses on imaging studies (MRI scan), whereas the ground truth emphasizes a neurological exam as the typical initial clinical assessment.\n\nScore: 0.0"
+    },
+    {
+      "question": "Which procedure is performed if cancer cells are found in the cerebrospinal fluid?",
+      "score": 0.0,
+      "reasoning": "The model answer is incorrect as it mentions an MRI to check for lesions in the spine, whereas the ground truth states that intrathecal chemotherapy may be used.\n\nScore: 0.0"
+    },
+    {
+      "question": "What specialized treatment is given if the eyes are involved in primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more detailed information than the ground truth, including the specific type of lymphoma (vitreoretinal lymphoma) and diagnostic procedures (specialized eye exam and vitreous biopsy). However, it still captures the core medical fact that treatment may include radiation targeted to the eyes, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the main chemotherapy drug for primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that high-dose methotrexate is the main chemotherapy drug for primary CNS lymphoma, matching the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which immunotherapy drug is primarily used in the treatment of primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that Rituximab is the main immunotherapy drug used for primary CNS lymphoma, and provides additional relevant information about its mechanism of action.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the most commonly used radiation technique for primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that whole-brain radiation therapy (WBRT) is the most commonly used radiation technique for primary CNS lymphoma, and also provides additional relevant information about the treatment.\n\nScore: 1.0"
+    },
+    {
+      "question": "What are the two main treatment phases for primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the two main treatment phases for primary CNS lymphoma, induction and consolidation, and provides additional context that aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the purpose of supportive care in primary CNS lymphoma management?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the purpose of supportive care in primary CNS lymphoma management, including relieving symptoms and side effects, and improving quality of life at any stage of the disease, which aligns with the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which performance measure is evaluated to guide treatment decisions in primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that performance status is evaluated to guide treatment decisions, which is present in the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is recommended for all patients with primary CNS lymphoma regarding research participation?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it recommends asking about clinical trials, but it doesn't explicitly state that clinical trial participation is recommended for all patients.\n\nScore: 0.7"
+    },
+    {
+      "question": "Name three neurological symptoms commonly caused by primary CNS lymphoma.",
+      "score": 0.0,
+      "reasoning": "The model answer correctly mentions seizures and weakness (although it specifies arms or legs, which is a minor deviation from the ground truth), but replaces \"confusion\" with \"headaches\", which is not entirely accurate.\n\nScore: 0.7"
+    },
+    {
+      "question": "Which diagnostic method is used to assess eye involvement in primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer is more detailed and specific than the ground truth, but it still captures the core medical fact that an eye exam is used to assess eye involvement. The additional information about the slit-lamp microscope and vitreous biopsy is relevant and accurate.\n\nScore: 1.0"
+    },
+    {
+      "question": "What follow-up method is recommended for surveillance after treatment of primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions MRI as one of the imaging tests, but it doesn't specifically state that repeat MRI is recommended for follow-up surveillance.\n\nScore: 0.7"
+    },
+    {
+      "question": "Which age group is at higher risk for primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that older adults are at higher risk for primary CNS lymphoma, and also provides additional specific information about the typical age range of diagnosis.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the role of corticosteroids in the treatment of primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer is a more detailed and accurate representation of the role of corticosteroids in the treatment of primary CNS lymphoma, as it mentions their use in combination with other therapies.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which chemotherapy drugs, besides methotrexate, can be used in induction therapy for primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct, as it mentions some of the chemotherapy drugs that can be used in induction therapy for primary CNS lymphoma (temozolomide, vincristine, and procarbazine), but misses others mentioned in the ground truth (cytarabine, pemetrexed, pomalidomide, lenalidomide, and ibrutinib).\n\nScore: 0.7"
+    },
+    {
+      "question": "Which procedure is included in laboratory tests for diagnosing primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is partially correct as it mentions a laboratory test (lumbar puncture) related to diagnosing primary CNS lymphoma, but it does not specifically mention LDH testing, which is the key fact in the ground truth.\n\nScore: 0.7"
+    },
+    {
+      "question": "What is a potential site of relapse for primary CNS lymphoma?",
+      "score": 0.0,
+      "reasoning": "The model answer is very close to the ground truth, but it uses the singular \"eye\" instead of the plural \"eyes\". This is a minor difference, but it's still a difference.\n\nScore: 0.7"
+    },
+    {
+      "question": "How often does primary CNS lymphoma spread outside the central nervous system?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately conveys the rarity of primary CNS lymphoma spreading outside the central nervous system, and also provides additional relevant information about the eyes, which is not present in the ground truth but is still correct.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which imaging technique uses gadolinium contrast for better visualization in primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact that MRI uses gadolinium contrast for better visualization in primary CNS lymphoma, which is present in the ground truth.\n\nScore: 1.0"
+    },
+    {
+      "question": "What supportive care interventions are recommended for patients with primary CNS lymphoma?",
+      "score": 1.0,
+      "reasoning": "The model answer is more detailed and expansive than the ground truth, but it still captures the core medical facts, including symptom management, palliative care, and quality of life interventions.\n\nScore: 1.0"
+    },
+    {
+      "question": "What is the second most common type of skin cancer?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact present in the ground truth, stating that squamous cell skin cancer is the second most common type of skin cancer.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which cancer subtype is classified as a type of nonmelanoma skin cancer?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the core medical fact present in the ground truth, stating that Cutaneous squamous cell carcinoma (CSCC) is a type of nonmelanoma skin cancer.\n\nScore: 1.0"
+    },
+    {
+      "question": "What are the main stages of cutaneous squamous cell carcinoma (CSCC)?",
+      "score": 1.0,
+      "reasoning": "The model answer provides more detailed information about the staging system (TNM) and specific stages (Tis, T1-T4a), but still captures the core medical facts present in the ground truth, which are the main stages of CSCC (local, regional, and metastatic).\n\nScore: 1.0"
+    },
+    {
+      "question": "What is a precancerous lesion that can progress to CSCC?",
+      "score": 1.0,
+      "reasoning": "The model answer is essentially identical to the ground truth, with the only difference being the expansion of the abbreviation \"CSCC\" to its full form \"cutaneous squamous cell carcinoma\". This does not change the meaning or accuracy of the answer.\n\nScore: 1.0"
+    },
+    {
+      "question": "Which risk factors are major contributors to CSCC development?",
+      "score": 0.0,
+      "reasoning": "The model answer correctly identifies chronic sun exposure, indoor tanning, environmental toxins, and chronic wounds or scars as major contributors to CSCC development, but omits actinic keratoses, genetic syndromes, and weakened immune system.\n\nScore: 0.7"
+    },
+    {
+      "question": "Which genetic syndromes increase the risk for CSCC?",
+      "score": 1.0,
+      "reasoning": "The model answer accurately captures the genetic syndromes that increase the risk for CSCC, matching the ground truth.\n\nScore: 1.0"
+    }
+  ]
+}

@@ -1,0 +1,4881 @@
+0	17p deletion
+1	18-fluorodeoxyglucose
+2	2 lobes
+3	2-dimensional digital mammography
+4	3 lobes
+5	3-dimensional mammograms
+6	4kscore
+7	5-fluorouracil
+8	5-fluorouracil (5-fu)/leucovorin
+9	5-fu
+10	5-fu and cisplatin
+11	5-fu and mitomycin
+12	abdomen
+13	abdomen and pelvis
+14	abdominal and pelvic exam
+15	abdominal bloating
+16	abdominal cramping
+17	abdominal exam
+18	abdominal lining
+19	abdominal organs
+20	abdominal surgery
+21	abdominal wall
+22	abdominoperineal resection
+23	abdominoperineal resection (apr)
+24	abemaciclib
+25	abemaciclib (verzenio)
+26	ability to do daily activities
+27	ability to do day-to-day activities
+28	ability to have a baby
+29	ability to have children
+30	ability to participate in usual activities
+31	ability to perform daily self-care tasks
+32	ablative therapies
+33	abnormal amounts
+34	abnormal area
+35	abnormal areas
+36	abnormal b cells
+37	abnormal bleeding
+38	abnormal blood chemistry levels
+39	abnormal blood counts
+40	abnormal blood results
+41	abnormal cancer cells
+42	abnormal cell
+43	abnormal cell growth
+44	abnormal cells
+45	abnormal cells in the blood and/or bone marrow
+46	abnormal changes
+47	abnormal chemical levels
+48	abnormal chemical levels in blood
+49	abnormal chromosomes
+50	abnormal digital rectal exam
+51	abnormal fusion gene pml::rara
+52	abnormal gene
+53	abnormal growth
+54	abnormal growth of cells
+55	abnormal growths
+56	abnormal levels
+57	abnormal lymph nodes
+58	abnormal lymphocytes
+59	abnormal myeloblasts
+60	abnormal myeloblasts in bone marrow or blood
+61	abnormal or larger than normal
+62	abnormal pattern
+63	abnormal result
+64	abnormal skin cells
+65	abnormal skin growths
+66	abnormal t cells
+67	abnormal tissue
+68	abnormal tissue growth
+69	abnormal tumor cells
+70	abnormal ultrasound results
+71	abnormal vaginal bleeding
+72	abnormal white blood cells
+73	abnormal-looking skin
+74	abnormality
+75	above prostate
+76	absolute neutrophil count
+77	access to pain specialists
+78	accurate picture of cancer
+79	acetic acid
+80	actinic keratoses
+81	actinic keratosis
+82	active cancer cells
+83	active surveillance
+84	activities
+85	acute lymphoblastic leukemia
+86	acute lymphoblastic leukemia (all)
+87	acute myeloid leukemia
+88	acute myeloid leukemia (aml)
+89	acute promyelocytic leukemia
+90	adenocarcinoma
+91	adenocarcinoma of the esophagus
+92	adenocarcinomas
+93	adenocortical carcinoma
+94	adenoma
+95	adenosquamous carcinoma
+96	adenosquamous carcinomas
+97	adhesive ring
+98	adjuvant therapy
+99	ado-trastuzumab emtansine
+100	adolescence
+101	adolescent and young adult (aya)
+102	adolescent and young adult cancer
+103	adolescents
+104	adolescents and young adults
+105	adrenal cancer
+106	adrenal cortex
+107	adrenal gland
+108	adrenal gland cancer
+109	adrenal gland tumor
+110	adrenal glands
+111	adrenal medulla
+112	adrenal tumor
+113	adrenal tumors
+114	adrenocortical adenoma
+115	adrenocortical carcinoma
+116	adults
+117	adults aged 45 and under
+118	adults in their 40s and 50s
+119	advanced
+120	advanced breast cancer
+121	advanced cancer
+122	advanced cancers
+123	advanced kidney cancer
+124	advanced practice providers
+125	advanced prostate cancer
+126	advanced stage
+127	advanced-stage cancer
+128	advanced-stage disease
+129	advanced-stage prostate cancer
+130	affects older adults
+131	afp test
+132	africa
+133	after chemotherapy
+134	age 15 to 30
+135	age 20-40
+136	age 55 years and over
+137	age after 30
+138	age at diagnosis
+139	age at time of diagnosis
+140	age group
+141	aggressive
+142	aggressive cancer
+143	aggressive growth
+144	aggressive leukemia
+145	aggressive treatment
+146	aggressiveness
+147	aids
+148	air pollution
+149	airway
+150	airway issues
+151	airways
+152	airways of the lungs
+153	ajcc
+154	ajcc staging system
+155	ajcc system
+156	albumin-bound paclitaxel
+157	alcohol
+158	alcohol consumption
+159	alcohol use
+160	aldosterone
+161	aldosteronoma
+162	alertness
+163	alk gene fusion
+164	alkaline phosphatase
+165	allergic reaction
+166	allergic reactions
+167	allergic_reactions
+168	allergies
+169	allogeneic hematopoietic cell transplant
+170	allogeneic hematopoietic cell transplant (hct)
+171	alpelisib
+172	alpha-1-antitrypsin deficiency
+173	alpha-fetoprotein
+174	alveolar ridge
+175	alveoli
+176	amenorrhea
+177	american joint committee on cancer
+178	aml
+179	aml biomarker and genetic testing
+180	aml cancer cells
+181	aml cells
+182	aml mutation
+183	aml mutation testing
+184	aml specialist
+185	aml subtype
+186	aml treatment
+187	aml with cbf
+188	amount of cancer
+189	amplification
+190	anal adenocarcinoma
+191	anal area
+192	anal canal
+193	anal canal cancer
+194	anal cancer
+195	anal cancer foundation
+196	anal cancer patients
+197	anal cancer treatment
+198	anal dysplasia
+199	anal intraepithelial neoplasia (ain)
+200	anal itching
+201	anal melanoma
+202	anal muscles
+203	anal opening
+204	anal precancer
+205	anal sex
+206	anal skin tags
+207	anal squamous cell carcinoma
+208	anal tumor
+209	analyzing a piece of the colon tumor in a lab
+210	anaplastic
+211	anaplastic cancer
+212	anaplastic thyroid cancer
+213	anastomosis
+214	anastrozole
+215	anatomic staging
+216	anatomic tnm
+217	anatomy
+218	androgen
+219	androgen conversion to estrogen
+220	androgen deprivation therapy
+221	androgen synthesis inhibitors
+222	androgens
+223	anemia
+224	anesthesia
+225	anesthesiologist
+226	anesthetic gel
+227	anger
+228	anoscopy
+229	antacids
+230	anthracycline
+231	anthracyclines
+232	anti-androgens
+233	anti-diarrheal medicine
+234	anti-thyroglobulin antibodies
+235	anti-thyroglobulin antibodies level
+236	anti-tumor immune response
+237	antibodies
+238	antibody
+239	antibody drug conjugates (adcs)
+240	antidepressants
+241	antihistamine
+242	antimetabolite
+243	antimetabolites
+244	antioxidants
+245	antiretroviral therapy
+246	antrum
+247	anus is removed
+248	anxiety
+249	apl
+250	apl treatment
+251	appendix
+252	applicator
+253	appointments
+254	apr surgery
+255	aquaphor
+256	area between the esophagus and stomach
+257	area underneath the tongue
+258	areas of cancer easier to see
+259	areas outside the colon
+260	areola
+261	arm weakness
+262	armpit
+263	armpits
+264	aromatase
+265	aromatase inhibitors
+266	arsenic
+267	arteries
+268	arthritis
+269	artificial bladder
+270	asbestos
+271	ascending colon
+272	ascites
+273	ashkenazi jewish ancestry
+274	asian males
+275	aspirin
+276	assessing pain
+277	assistants
+278	astrocyte
+279	astrocytes
+280	astrocytoma
+281	astrocytoma idh-mutant grade 2
+282	astrocytomas
+283	attack of immune cells on cancer cells
+284	autoimmune disease
+285	autoimmune diseases
+286	autoimmune reaction
+287	available supportive care
+288	axilla
+289	axilla removal
+290	axillary
+291	axillary bed
+292	axillary lymph node
+293	axillary lymph node biopsy
+294	axillary lymph nodes
+295	azacitidine
+296	b cell
+297	b cell all (b-all)
+298	b cell surface
+299	b cells
+300	b lymphocytes
+301	b symptoms
+302	b-all
+303	b-cell all
+304	b-cell lymphoblastic lymphoma
+305	b-cell lymphoblastic lymphoma (b-ll or b-lbl)
+306	b-cell lymphocytes
+307	b12
+308	bacillus calmetteguérin
+309	back of the abdomen
+310	back of the thyroid gland
+311	back pain
+312	bacteria
+313	bad outcomes
+314	bag attached to the skin
+315	balance
+316	balversa
+317	barrett esophagus
+318	barrier methods
+319	barriers to accessing health care
+320	basal cell carcinoma
+321	basal cell nevus syndrome
+322	basal cell skin cancer
+323	basal cells
+324	basal skin cells
+325	base of the brain
+326	base of the skull
+327	base of the tongue
+328	basophils
+329	bavencio
+330	bcg
+331	bcg shortage
+332	bcg therapy
+333	bcg treatment
+334	bcr::abl protein
+335	bcr::abl1
+336	bcr::abl1 gene
+337	bcr::abl1 protein
+338	bcr::abl1-negative b-all
+339	bcr::abl1-positive b-all
+340	beckwith-wiedemann syndrome
+341	behavior changes
+342	behind bladder
+343	behind stomach
+344	behind trachea
+345	behind wisdom teeth
+346	belly
+347	belly area
+348	belly button
+349	below liver
+350	benadryl
+351	benign
+352	benign adrenal tumors
+353	benign growths
+354	benign tumors
+355	beryllium
+356	beta-2 microglobulin
+357	beta-human chorionic gonadotropin
+358	better outcomes
+359	bevacizumab
+360	bevacizumab (avastin)
+361	bicalutamide
+362	big lymph nodes
+363	bilateral mammogram
+364	bilateral oophorectomy
+365	bilateral salpingooophorectomy
+366	bilateral salpingooophorectomy (bso)
+367	bile duct cancer
+368	bile ducts
+369	biochemical tests
+370	biologic
+371	biological factors
+372	biological family members
+373	biological parents
+374	biomarker
+375	biomarker testing
+376	biomarker tests
+377	biomarker tests for profiling
+378	biomarker tumor testing
+379	biomarker-based therapy
+380	biomarkers
+381	biopsied lesions
+382	biopsies
+383	biopsy
+384	biopsy of rectal wall
+385	biopsy procedure
+386	biopsy sample
+387	biopsy samples
+388	birth
+389	birth control
+390	birth defects
+391	black males
+392	black people
+393	bladder
+394	bladder cancer
+395	bladder cancer cells
+396	bladder cancer surgery
+397	bladder control
+398	bladder function
+399	bladder function problems
+400	bladder lining
+401	bladder muscle
+402	bladder preserving treatment
+403	bladder removal
+404	bladder removal surgery
+405	bladder wall
+406	bladder’s inner layer of urothelial cells
+407	bladder’s muscle layer
+408	blast phase cml
+409	blastic plasmacytoid dendritic cell neoplasm
+410	blasts
+411	bleeding
+412	bleeding from the anus
+413	bleeding from the rectum
+414	bleeding or bruising easily
+415	blister and scab
+416	blisters
+417	bloating
+418	blockage of stool flow
+419	blocked lymph vessels
+420	blood
+421	blood and bone marrow
+422	blood and urine tests
+423	blood cancer
+424	blood cancers
+425	blood cells
+426	blood chemistry profile
+427	blood clot
+428	blood clots
+429	blood clotting
+430	blood clotting tests
+431	blood diseases
+432	blood filtration
+433	blood in the semen
+434	blood in the stool
+435	blood in the urine
+436	blood in urine
+437	blood in your urine
+438	blood not working as it should
+439	blood or particles in your urine
+440	blood pressure check
+441	blood pressure screening
+442	blood products
+443	blood relatives
+444	blood sample
+445	blood smear
+446	blood stem cells
+447	blood storage
+448	blood test
+449	blood testing
+450	blood tests
+451	blood thinners
+452	blood urea nitrogen
+453	blood vessel cells of the liver
+454	blood vessel invasion
+455	blood vessels
+456	blood-brain barrier
+457	bloodstream
+458	blue light
+459	blue light cystoscopy
+460	blurred vision
+461	blurry vision
+462	body abnormality
+463	body aches
+464	body damage
+465	body fight infection and disease
+466	body image
+467	body part far from primary tumor
+468	body parts
+469	body parts needed for fertility
+470	body weight
+471	bone cancer
+472	bone cancers
+473	bone damage
+474	bone damage from cancer
+475	bone density monitoring
+476	bone formation
+477	bone fractures
+478	bone issue
+479	bone issues
+480	bone marrow
+481	bone marrow aspirate
+482	bone marrow aspirate and biopsy
+483	bone marrow aspiration
+484	bone marrow biopsy
+485	bone marrow biopsy and aspirate
+486	bone marrow involvement
+487	bone marrow or blood not working as it should
+488	bone marrow tests
+489	bone metastases
+490	bone metastasis
+491	bone pain
+492	bone sarcomas
+493	bone scan
+494	bone tumor
+495	bone tumors
+496	bone x-ray
+497	bone, hip, or back pain
+498	bones
+499	bones and muscles behind the nasal cavity
+500	bones in your pelvis
+501	bony ridges
+502	borderline epithelial tumor
+503	bowel
+504	bowel and bladder function problems
+505	bowel blockage
+506	bowel blocked by scar tissue
+507	bowel changes
+508	bowel function
+509	bowel function problems
+510	bowel problems
+511	bowel wall
+512	bowen's lesion
+513	bowen’s disease
+514	bpdcn
+515	bph
+516	braces
+517	brachytherapy
+518	brachytherapy applicator
+519	brachytherapy machine
+520	brachytherapy treatment plan
+521	braf gene mutations
+522	braf v600e mutation
+523	brain
+524	brain cancer
+525	brain ct
+526	brain function disruption
+527	brain mri
+528	brain tissue
+529	brain tumor
+530	brain tumors
+531	braking mechanisms
+532	brca
+533	brca genes
+534	brca mutation
+535	brca mutations
+536	brca status
+537	brca-mutated cancers
+538	brca1
+539	brca1 mutation
+540	brca1 mutations
+541	brca2
+542	brca2 gene
+543	brca2 gene mutation
+544	brca2 mutation
+545	brca2 mutations
+546	break away from a tumor
+547	breast
+548	breast cancer
+549	breast cancer cells
+550	breast cancer diagnosis
+551	breast cancer growth
+552	breast cancer screening
+553	breast cancers
+554	breast carcinoma
+555	breast cells
+556	breast diagnostic radiologist
+557	breast exam
+558	breast exams
+559	breast issue
+560	breast mri
+561	breast pain
+562	breast reconstruction
+563	breast removal
+564	breast shape change
+565	breast size change
+566	breast specialist
+567	breast tissue
+568	breast tumor
+569	breastbone
+570	breastfeeding
+571	breasts
+572	breath holding
+573	breathing muscle
+574	breathing problems
+575	breathing rate check
+576	bright spot
+577	bright spots
+578	bright spots on pet scans
+579	bright spots on the scan
+580	brighter in the pictures
+581	bronchi
+582	bronchioles
+583	bronchioli
+584	bronchoscopy
+585	bronchus
+586	brown or glossy black bump
+587	bruise
+588	bruises
+589	bruising
+590	bso
+591	buccal mucosa
+592	buildup of blasts
+593	buildup of blasts in the bone marrow and blood
+594	bumps
+595	burkitt leukemia
+596	burkitt lymphoma
+597	burning
+598	burning or pain while urinating
+599	burning sensation
+600	burning sensation during urination
+601	burning sensations
+602	burns
+603	buzzing
+604	ca 19-9
+605	ca-125
+606	ca-125 level
+607	cabozantinib (cabometyx)
+608	cadmium
+609	calcipotriene
+610	calcium
+611	calcium in bloodstream
+612	calculation
+613	cancellous bone
+614	cancer
+615	cancer care
+616	cancer care plan
+617	cancer care recommendations
+618	cancer care team
+619	cancer cell pattern
+620	cancer cell patterns
+621	cancer cell test
+622	cancer cells
+623	cancer cells are found in ascites or washings
+624	cancer cells breaking off
+625	cancer cells in ascites or washings
+626	cancer cells in distant lymph nodes
+627	cancer cells in liver
+628	cancer cells in lymph nodes
+629	cancer cells in other organs outside abdomen
+630	cancer cells in spleen
+631	cancer cells in the body
+632	cancer cells in the spinal fluid
+633	cancer cells to die
+634	cancer cells to show up as bright spots on pet scans
+635	cancer cells using sugar produced by body to grow
+636	cancer center
+637	cancer changes
+638	cancer clinical trials
+639	cancer diagnosis
+640	cancer drug therapy
+641	cancer extends within the central nervous system
+642	cancer found in lymph nodes
+643	cancer gets worse
+644	cancer grade
+645	cancer grows
+646	cancer growth
+647	cancer has spread
+648	cancer has spread outside the ovaries
+649	cancer has spread to lymph nodes in the back of the abdomen
+650	cancer in abdomen
+651	cancer in bone
+652	cancer in both ovaries
+653	cancer in distant sites
+654	cancer in lymph node
+655	cancer in lymph nodes
+656	cancer in nearby lymph nodes
+657	cancer in one ovary
+658	cancer in skin or chest wall
+659	cancer in spine or spinal fluid
+660	cancer in the abdomen
+661	cancer in the bone
+662	cancer in the bones in your pelvis
+663	cancer in the liver
+664	cancer in the lymph nodes
+665	cancer in the prostate
+666	cancer in the urinary tract
+667	cancer information service
+668	cancer medicine
+669	cancer of the base of the tongue
+670	cancer of the female reproductive system
+671	cancer of the tonsils
+672	cancer on the outer surface of the ovary or fallopian tube
+673	cancer on the outside surface of the ovaries
+674	cancer recurrence
+675	cancer returning
+676	cancer returns to lymph nodes
+677	cancer risk
+678	cancer screening tests
+679	cancer screenings
+680	cancer site
+681	cancer sites
+682	cancer spread
+683	cancer spread in the body
+684	cancer spread to lung and distant lymph nodes
+685	cancer spread to parts of the neck
+686	cancer spreads to another area of the body
+687	cancer stage
+688	cancer stages
+689	cancer staging
+690	cancer staging system
+691	cancer subtype
+692	cancer survivors
+693	cancer test results
+694	cancer tests
+695	cancer that form in either the colon
+696	cancer that has spread to a lymph node
+697	cancer that has spread to chest, abdomen, and pelvis
+698	cancer therapy
+699	cancer treatment
+700	cancer treatment complications
+701	cancer treatment outcomes
+702	cancer treatments
+703	cancer type
+704	cancer within the bladder
+705	cancer-related care
+706	cancer-treatment drugs
+707	cancerous blood cells
+708	cancerous cells
+709	cancerous cells in squamous cell layer
+710	cancerous growth
+711	cancerous lesion
+712	cancerous lesions
+713	cancerous tissue
+714	cancerous tumor
+715	cancerous tumors
+716	cancers
+717	cancers of the male reproductive organs
+718	cancers of the urinary tract
+719	cannabis
+720	cannabis use
+721	capecitabine
+722	capeox
+723	carboplatin
+724	carboplatin and paclitaxel
+725	carcinoembryonic antigen
+726	carcinoembryonic antigen (cea) test
+727	carcinoma
+728	carcinoma in situ
+729	carcinoma in situ of the colon
+730	carcinomas
+731	carcinosarcoma
+732	cardia
+733	cardiovascular disease
+734	care plan
+735	care recommendations
+736	care team
+737	care_team
+738	caregivers
+739	carney complex
+740	carotid artery
+741	carotid artery encasement
+742	carry away waste
+743	carry oxygen
+744	carry oxygen throughout the body
+745	cartilage
+746	castration
+747	cat scan
+748	cataracts
+749	category
+750	catheter
+751	catheters
+752	cauterization
+753	cbc
+754	cbc measurements
+755	cd20
+756	cd20 proteins
+757	cd200
+758	cd33
+759	cdk4/6 inhibitor
+760	cdk4/6 inhibitors
+761	cdkn2a
+762	cea
+763	cea blood test
+764	cea blood tests
+765	cea testing
+766	cecum
+767	cell changes
+768	cell damage
+769	cell death
+770	cell division
+771	cell growth
+772	cell-free dna testing
+773	cell-specific chemotherapy
+774	cells in the prostate gland grow out of control
+775	cells of the breast
+776	cells that line the alveoli
+777	cells that line the bronchi
+778	cemiplimab
+779	cemiplimab-rwlc (libtayo)
+780	center
+781	central nervous system
+782	central nervous system (cns)
+783	central nervous system (cns) bleed
+784	central venous catheter
+785	centroblasts
+786	centrocytes
+787	cerebrospinal fluid
+788	cerebrospinal fluid (csf)
+789	certain areas
+790	certain autoimmune disorders
+791	certain cancers or pre-cancers
+792	certain treatments
+793	cervical biopsy
+794	cervical canal
+795	cervical cancer
+796	cervical cancer screening
+797	cervical cancers
+798	cervical caps
+799	cervical dysplasia
+800	cervical intraepithelial neoplasia
+801	cervical sarcoma
+802	cervix
+803	cervix cancer
+804	cetuximab
+805	challenging
+806	chance of a good treatment outcome
+807	change in breast shape or size
+808	change in shape or size
+809	change in taste or smell
+810	changes in behavior
+811	changes in bowel habits
+812	changes in genes and chromosomes
+813	changes in mood
+814	changes in personality or mood
+815	changes in psa level
+816	changes in sexual function
+817	changes in taste
+818	changes in the body
+819	changes in the skin
+820	changes radiation absorption
+821	channels
+822	chapter
+823	check treatment results
+824	checking blood pressure
+825	checking breathing rate
+826	checking for enlarged lymph nodes
+827	checking for swelling
+828	checking height
+829	checking pulse
+830	checking temperature
+831	checking vital signs
+832	checking weight
+833	checkpoint inhibitor
+834	checkpoint inhibitor therapy
+835	checkpoint inhibitors
+836	cheek swab
+837	cheeks
+838	chek2
+839	chemical
+840	chemical compound
+841	chemical exposure
+842	chemical imbalance
+843	chemical levels
+844	chemical levels in blood
+845	chemical peels
+846	chemicals
+847	chemicals in blood
+848	chemistry profile
+849	chemoimmunotherapy
+850	chemopreventive agents
+851	chemoradiation
+852	chemotherapies
+853	chemotherapy
+854	chemotherapy dose
+855	chemotherapy drug
+856	chemotherapy drugs
+857	chemotherapy medicine
+858	chemotherapy regimen
+859	chemotherapy treatment
+860	chest
+861	chest ct
+862	chest ct with contrast
+863	chest or liver
+864	chest pain
+865	chest wall
+866	chest x-ray
+867	childbirth
+868	children
+869	children ages 5 and under
+870	chills
+871	cholangiocarcinoma
+872	chondrosarcoma
+873	chordoma
+874	chromium
+875	chromophobe rcc
+876	chromophobe rcc cells
+877	chromosome
+878	chromosome 11
+879	chromosome 22
+880	chromosome 9
+881	chromosome abnormality
+882	chromosome translocation
+883	chromosomes
+884	chronic hepatitis
+885	chronic hepatitis b
+886	chronic inflammation of the pancreas
+887	chronic kidney disease
+888	chronic lymphocytic leukemia
+889	chronic lymphocytic leukemia (cll)
+890	chronic myeloid leukemia
+891	chronic reflux
+892	chronic wounds
+893	cin 1
+894	cin 2
+895	cin 3
+896	circulating tumor dna (ctdna) testing
+897	cirrhosis
+898	cisplatin
+899	cladribine
+900	classic hodgkin lymphoma
+901	claustrophobia
+902	clear cell carcinoma
+903	clear cell papillary renal cell tumor
+904	clear cell rcc
+905	clear cells
+906	clear, yellowish fluid
+907	clicking
+908	clinical or pre-surgery stage
+909	clinical stage
+910	clinical staging
+911	clinical trial
+912	clinical trials
+913	clip placement
+914	cll
+915	clofarabine
+916	close blood relatives with breast cancer
+917	close blood relatives with colorectal cancer
+918	close blood relatives with melanoma
+919	close blood relatives with ovarian cancer
+920	close blood relatives with pancreatic cancer
+921	close to critical structures
+922	closed mri
+923	cml
+924	cml specialist
+925	cns
+926	cns bleed
+927	coagulation factors
+928	coagulation panel
+929	coagulopathy
+930	coal smoke
+931	cognition problems
+932	cognitive problems
+933	coil device
+934	coil device placement
+935	cold knife conization
+936	colectomy
+937	colectomy with colostomy
+938	collarbone
+939	collecting and freezing sperm or eggs
+940	collecting duct rcc
+941	collection of cancerous cells
+942	coloanal anastomosis
+943	colon
+944	colon and rectum
+945	colon cancer
+946	colon cancer surgery
+947	colon polyps
+948	colon to outside of abdomen
+949	colon tumor
+950	colon wall
+951	colonoscopy
+952	color perception
+953	colorectal anastomosis
+954	colorectal cancer
+955	colorectal cancers
+956	colorectal surgeons
+957	colostomy
+958	colposcope
+959	columnar cells
+960	combination of drugs
+961	combination of therapies
+962	combination regimen
+963	combined (small and non-small) cell lung carcinoma
+964	combined positive score
+965	common bile duct
+966	common hepatic duct
+967	communication with care team
+968	compact bone
+969	complete blood count
+970	complete blood count (cbc)
+971	complete blood count (cbc) with differential
+972	complete head and neck exam
+973	complete remission
+974	complete response to chemotherapy
+975	complete skin exam
+976	complex karyotype
+977	complication
+978	complications
+979	complications after surgery
+980	compounds known to cause cancer
+981	comprehensive genomic profiling (cgp)
+982	comprehensive metabolic panel
+983	comprehensive metabolic panel (cmp)
+984	computed tomography
+985	computed tomography (ct)
+986	computer
+987	computer technology
+988	concerning amount of cancer
+989	concerning features
+990	concerning lesion
+991	concerns
+992	condition that doesn’t go away
+993	condoms
+994	cone biopsy
+995	cone biopsy margins
+996	confirm cancer
+997	confirm histology
+998	confusion
+999	connective tissue
+1000	connective tissue layer
+1001	consolidation
+1002	constipation
+1003	contact with cancer-causing chemicals
+1004	continent cutaneous pouch
+1005	continent urinary diversion
+1006	contraceptive sponge
+1007	contrast
+1008	contrast agent
+1009	contrast allergy
+1010	contrast dye
+1011	contrast material
+1012	contrast solution
+1013	contrast_material
+1014	contrast_use
+1015	control bleeding
+1016	control immune responses
+1017	controlled growth
+1018	controlling blood pressure
+1019	coordination
+1020	coordination difficulties
+1021	coordination problems
+1022	cope with side effects
+1023	core binding factor
+1024	core biopsy
+1025	core needle biopsy
+1026	core sample
+1027	core sample of marrow
+1028	core samples
+1029	cortical bone
+1030	corticosteroids
+1031	cortisol
+1032	counseling
+1033	count of white blood cells
+1034	counts of platelets
+1035	counts of red blood cells
+1036	counts of white blood cells
+1037	course of cancer
+1038	course of disease
+1039	cowden syndrome
+1040	cpg-stimulated karyotype
+1041	cracked skin
+1042	cramping
+1043	craniotomy
+1044	create blood cells
+1045	creating a permanent colostomy
+1046	creatinine
+1047	critical healthy organs damage
+1048	crohn’s disease
+1049	crowding out healthy b cells
+1050	crowding out normal bone marrow
+1051	crowding out normal cells
+1052	cryotherapy
+1053	cscc
+1054	cscc that grows in a radiated area
+1055	ct
+1056	ct imaging
+1057	ct of skull base and neck
+1058	ct of the chest, abdomen, and pelvis with contrast
+1059	ct or mri of abdomen
+1060	ct scan
+1061	ct scans
+1062	ct with contrast
+1063	ct without contrast
+1064	ctdna
+1065	ctdna testing
+1066	ctla-4
+1067	cured
+1068	curettage
+1069	curettage and electrodesiccation
+1070	current care recommendations
+1071	current treatments
+1072	cushing syndrome
+1073	cutaneous b-cell lymphoma
+1074	cutaneous b-cell lymphomas
+1075	cutaneous squamous cell carcinoma
+1076	cutaneous t-cell lymphoma
+1077	cutting through all layers of the rectal wall
+1078	cycle
+1079	cycles
+1080	cycles of treatment days
+1081	cyclophosphamide
+1082	cystectomy
+1083	cystic duct
+1084	cystoscope
+1085	cystoscopy
+1086	cytarabine
+1087	cytology
+1088	damage sperm
+1089	damage to critical healthy organs
+1090	damage to healthy cells
+1091	damage to healthy organs
+1092	damage to major organs
+1093	damage to organs
+1094	damage to ovaries
+1095	damage to perineum
+1096	damage to sperm
+1097	damage to the body
+1098	damage to the nerves that control your voice and swallowing
+1099	damaged bone marrow
+1100	damaged hematopoietic stem cells
+1101	damaged skin
+1102	damages gene function
+1103	dangerous heart rhythms
+1104	dark zone
+1105	daunorubicin
+1106	days of rest
+1107	dcis
+1108	ddmvac
+1109	death
+1110	death of fast-growing cells
+1111	debulking or cytoreductive surgery
+1112	decitabine
+1113	decreased heart function
+1114	deep iv
+1115	deep soft tissue
+1116	deep vein thrombosis
+1117	deeper, more invasive tumors
+1118	deficient mismatch repair
+1119	degarelix
+1120	dehydroepiandrosterone (dhea)
+1121	delay treatment
+1122	delayed blood count recovery
+1123	delayed reconstruction
+1124	deletion
+1125	dental checkups
+1126	dental cleanings
+1127	dental exam
+1128	dental exam with x-ray
+1129	dental procedures
+1130	dental work
+1131	dentures
+1132	depression
+1133	depth of invasion
+1134	dermabrasion
+1135	dermatologic surgeon
+1136	dermatologist
+1137	dermatologists
+1138	dermis
+1139	descending colon
+1140	detailed pictures
+1141	detect cancer growth
+1142	detect cancer spreading
+1143	detecting
+1144	detection methods
+1145	determine location of cancer
+1146	determine size of prostate
+1147	determine the size and spread of tumor
+1148	devastation
+1149	developing baby complications
+1150	device
+1151	devices
+1152	diabetes
+1153	diagnosis
+1154	diagnosis in young adults
+1155	diagnosis of follicular and oncocytic thyroid cancers
+1156	diagnostic colonoscopy
+1157	diagnostic ct
+1158	diagnostic ct scans of chest, abdomen, and pelvis
+1159	diagnostic laparoscopy
+1160	diagnostic mammogram
+1161	diagnostic method
+1162	diagnostic method for prostate cancer
+1163	diagnostic radiologist
+1164	diagnostic sample
+1165	diagnostic test
+1166	diagnostic tests
+1167	diagnostic tool
+1168	diagnostic_test
+1169	diaphragm
+1170	diaphragms
+1171	diaphysis
+1172	diarrhea
+1173	diarrhea or constipation
+1174	dic panel
+1175	diesel fumes
+1176	dietitian
+1177	different parts
+1178	different parts of the body
+1179	different substance use
+1180	differential
+1181	differentiated high-grade carcinoma
+1182	differentiated thyroid cancers
+1183	differentiation
+1184	difficult road ahead
+1185	difficulty eating
+1186	difficulty getting an erection
+1187	difficulty in diagnosis
+1188	difficulty in treatment
+1189	difficulty moving or walking
+1190	difficulty peeing
+1191	difficulty pooping
+1192	difficulty sleeping
+1193	difficulty speaking or swallowing
+1194	difficulty swallowing
+1195	difficulty urinating or painful urination
+1196	difficulty with walking, balance, or coordination
+1197	diffuse adenocarcinomas
+1198	diffuse large b-cell lymphoma
+1199	diffuse large b-cell lymphomas
+1200	diffuse sclerosing
+1201	digestive system
+1202	digestive system cancer
+1203	digestive tract
+1204	digital rectal exam
+1205	digital rectal examination (dre)
+1206	digital rectal exams
+1207	diphenhydramine
+1208	direct antiglobulin (coombs) test
+1209	direct laryngoscopy
+1210	discharge
+1211	discomfort
+1212	disease
+1213	disease stage
+1214	disease-causing germs
+1215	disease-fighting cells
+1216	diseases
+1217	diseases of the female reproductive organs
+1218	diseases of the male reproductive organs
+1219	diseases of the urinary system
+1220	disrupt brain function
+1221	disruption of brain functions
+1222	distant lymph nodes
+1223	distant metastases
+1224	distant metastasis
+1225	distant metastatic prostate cancer
+1226	distant organs
+1227	distant parts of the body
+1228	distant recurrence
+1229	distant site
+1230	distant sites
+1231	distant sites in the body
+1232	distant tumors
+1233	distress
+1234	distress during cancer care
+1235	distress screening
+1236	diversion
+1237	diverticulitis
+1238	division
+1239	dlbcl
+1240	dlbcl-nos
+1241	dmmr/msi-h cancers
+1242	dna
+1243	dna building blocks
+1244	dna damage
+1245	dna mutations
+1246	dna repair
+1247	dna repair genes
+1248	dna sequence
+1249	dna sequencing
+1250	dna synthesis
+1251	dna testing
+1252	docetaxel
+1253	doctor
+1254	doctors
+1255	doctor’s office
+1256	does not follow body's rules
+1257	donor cells
+1258	double vision
+1259	double-barreled wet colostomy
+1260	doxorubicin
+1261	doxorubicin liposomal injection
+1262	drain lymph from breast tissue
+1263	dre
+1264	dread
+1265	dread or fear of enclosed spaces
+1266	drowsiness
+1267	drug or approach
+1268	drug therapy
+1269	drugs
+1270	dry mouth
+1271	dry mouth or eyes
+1272	dryness
+1273	dual-drug liposome of cytarabine and daunorubicin
+1274	duct wall
+1275	ductal breast carcinoma
+1276	ductal carcinoma
+1277	ductal carcinoma in situ
+1278	ducts
+1279	dull pain in your groin or pelvis
+1280	duodenum
+1281	during chemotherapy
+1282	dying
+1283	dying cells
+1284	dying from breast cancer
+1285	dysplasia
+1286	ear check
+1287	ear exam
+1288	ear examination
+1289	early and locally advanced nsclc
+1290	early cervical cancer
+1291	early cscc
+1292	early detection
+1293	early nsclc
+1294	early prostate cancer
+1295	early rectal cancer
+1296	early satiety
+1297	early sexual activity
+1298	early signs
+1299	early stage bladder cancer
+1300	early treatment
+1301	early-stage cancer
+1302	early-stage colon cancer
+1303	early-stage esophageal cancer
+1304	early-stage prostate cancer
+1305	early-stage stomach cancer
+1306	eastern cooperative oncology group
+1307	eastern cooperative oncology group (ecog)
+1308	eastern cooperative oncology group (ecog) score
+1309	eastern europe
+1310	ebrt
+1311	ebv-related cancer
+1312	echocardiogram
+1313	ecog
+1314	ecog ps
+1315	ecog score
+1316	ectocervix
+1317	edema
+1318	egfr
+1319	egfr inhibitors
+1320	egg fertilization
+1321	egg freezing
+1322	ejaculation
+1323	ejection fraction
+1324	elacestrant
+1325	electric needle
+1326	electrified wire
+1327	electrocardiogram
+1328	electrocautery
+1329	electrolytes
+1330	electrons
+1331	elevated afp
+1332	elevated levels of tumor markers
+1333	eloc-mutated rcc
+1334	embryo freezing
+1335	embryo implantation
+1336	embryo insertion
+1337	emergency
+1338	emotional and spiritual support
+1339	emotional challenges
+1340	emotional experiences
+1341	empty stomach
+1342	encapsulated follicular variant of papillary thyroid cancer
+1343	end of life
+1344	end of the colon
+1345	endocervical canal
+1346	endocervical curettage
+1347	endocervix
+1348	endocrine cells
+1349	endocrine glands
+1350	endocrine problems
+1351	endocrine system
+1352	endocrine tests
+1353	endocrine therapy
+1354	endocrinologist
+1355	endometrial biopsy
+1356	endometrial cancer
+1357	endometriosis
+1358	endorectal ultrasound
+1359	endorectal ultrasound or mri with contrast
+1360	endoscope
+1361	endoscopic tests
+1362	endoscopic ultrasound
+1363	endoscopy
+1364	endoscopy procedures
+1365	endoscopy with examination under anesthesia
+1366	enlarged breast tissue
+1367	enlarged glands
+1368	enlarged lymph node
+1369	enlarged lymph nodes
+1370	enlarged prostate
+1371	enlarged spleen
+1372	enlarged thymus
+1373	ent doctor
+1374	environment
+1375	environmental factors
+1376	enzyme
+1377	enzymes
+1378	eosinophils
+1379	epidermis
+1380	epiglottis
+1381	epiphysis
+1382	epirubicin
+1383	epithelial cells
+1384	epithelial layer
+1385	epithelial ovarian cancers
+1386	epithelium
+1387	epstein-barr virus
+1388	er-low–positive invasive breast cancer
+1389	erectile dysfunction
+1390	eribulin
+1391	errors or defects
+1392	erythema
+1393	esophageal adenocarcinoma
+1394	esophageal cancer
+1395	esophageal squamous cell carcinoma
+1396	esophagogastric junction
+1397	esophagoscopy
+1398	esophagus
+1399	estimation
+1400	estrogen
+1401	estrogen hormone receptors
+1402	estrogen receptor
+1403	estrogen receptor modulators
+1404	estrogen receptor signaling
+1405	estrogen receptor status
+1406	estrogen receptor-positive breast cancer
+1407	estrogen receptorpositive cancer
+1408	estrogen receptors
+1409	ethinyl estradiol
+1410	ets gene family
+1411	etv1
+1412	etv4
+1413	everolimus
+1414	everolimus (afinitor)
+1415	every cell
+1416	every organ
+1417	every organ in the body
+1418	everyone
+1419	everyone with a prostate
+1420	ewing sarcoma
+1421	ews gene
+1422	exam of the throat
+1423	exam once a year
+1424	examination of lesions
+1425	examination of removed tissue and lymph nodes
+1426	examinations under anesthesia
+1427	examine nearby structures
+1428	examine the larynx
+1429	examining cancerous tissue
+1430	examining ears
+1431	examining eyes
+1432	examining head
+1433	examining neck
+1434	examining nose
+1435	examining throat
+1436	examining tissue
+1437	examining tissue removed during surgery
+1438	excess facial hair
+1439	excess levels of the bcl2 protein
+1440	excessive sweating
+1441	excision
+1442	excisional biopsy
+1443	excisional lymph node biopsy
+1444	exemestane
+1445	exercise
+1446	exercising
+1447	exhaust from cars or other vehicles
+1448	exocrine cells
+1449	exodx
+1450	experienced cancer centers
+1451	experienced surgeon
+1452	expert
+1453	expert hematopathologist review
+1454	expert recommendations
+1455	expertise
+1456	experts
+1457	exploratory surgery
+1458	extent of cancer
+1459	external beam radiation therapy
+1460	external genitalia
+1461	extra chromosomes
+1462	extracapsular extension
+1463	extractions
+1464	extrafascial hysterectomy
+1465	extramedullary
+1466	extranodal disease
+1467	extranodal extension
+1468	extranodal extension-positive
+1469	extrinsic muscle of tongue
+1470	eye check
+1471	eye doctor
+1472	eye exam
+1473	eye examination
+1474	eye irritation
+1475	eye problems
+1476	eye surgeon
+1477	eyeballs
+1478	f-18 fluorodeoxyglucose
+1479	fair skin
+1480	fair-skinned people
+1481	fallopian tube
+1482	fallopian tubes
+1483	fam-trastuzumab deruxtecan-nxki
+1484	familial adenomatous polyposis
+1485	familial adenomatous polyposis (fap)
+1486	familial malignant melanoma syndrome
+1487	family health history
+1488	family history
+1489	family history and genetic testing
+1490	family history of breast cancer
+1491	family history of cancer
+1492	family history of colon cancer
+1493	family history of colorectal cancer
+1494	family history of endometrial cancer
+1495	family history of leukemia
+1496	family history of ovarian cancer
+1497	family history of pancreatic cancer
+1498	family history of thyroid cancer
+1499	family members
+1500	fanca
+1501	fap
+1502	fast growing
+1503	fast growth
+1504	fast growth and spread
+1505	fast-dividing cells
+1506	fast-growing
+1507	fast-growing cancer cells
+1508	fast-growing cells
+1509	faster growth
+1510	fat around the colon
+1511	fat layer around the bladder
+1512	fatal
+1513	fatal if left untreated
+1514	fatigue
+1515	fatty layer
+1516	fatty layer of tissue
+1517	fda
+1518	fdg pet-ct
+1519	fdg-pet scan
+1520	fdg-pet/ct
+1521	fdg-pet/ct scan
+1522	features of biopsied lesions
+1523	fecal diversion
+1524	fecal incontinence
+1525	fecal urgency
+1526	feeling and listening to organs
+1527	feeling bloated
+1528	feeling body parts
+1529	feeling full fast
+1530	feeling full quickly
+1531	feeling hungry
+1532	feeling like your bladder hasn’t fully emptied
+1533	feeling lymph nodes
+1534	feeling organs
+1535	feeling sick
+1536	feeling that you haven’t fully emptied your bladder
+1537	feeling tired
+1538	female at birth
+1539	female gender
+1540	female reproductive cancers
+1541	female reproductive organs
+1542	female reproductive system
+1543	fertility
+1544	fertility and pregnancy
+1545	fertility counseling
+1546	fertility counselor
+1547	fertility impairment
+1548	fertility issues
+1549	fertility preservation
+1550	fertility preservation method
+1551	fertility preservation options
+1552	fertility problems
+1553	fertility related risks
+1554	fertility specialist
+1555	fertility specialists
+1556	fertility-related risks
+1557	fertility-sparing surgery
+1558	fertility-sparing treatment
+1559	fes pet-ct
+1560	fever
+1561	fevers
+1562	fgfr3
+1563	fgfr3 gene
+1564	fiber supplements
+1565	fiberoptic nasopharyngolaryngoscopy
+1566	fiberoptic scope
+1567	fibrolamellar hepatocellular carcinoma
+1568	fight cancer
+1569	fight infection
+1570	fight infections
+1571	figo system
+1572	filtering
+1573	filtering blood
+1574	financial and insurance stresses
+1575	financial resources
+1576	fine motor skills problems
+1577	fine needle biopsy
+1578	fine particulates
+1579	fine-needle aspiration
+1580	fine-needle aspiration (fna)
+1581	fine-needle biopsy
+1582	fine-needle biopsy (fnb)
+1583	first-degree relative with colorectal cancer
+1584	fitness level
+1585	flat bones
+1586	flat, pale or yellow areas
+1587	flatulence
+1588	flexible sigmoidoscopy
+1589	fli1
+1590	floor of the mouth
+1591	flow cytometry
+1592	flt3
+1593	flt3 mutations
+1594	flt3-itd
+1595	flt3-tkd
+1596	flu shot
+1597	fludarabine
+1598	fluid
+1599	fluid buildup
+1600	fluid imbalance
+1601	fluids
+1602	fluorescence in situ hybridization (fish)
+1603	fluoride
+1604	fluorodeoxyglucose
+1605	fluorodeoxyglucose (fdg)
+1606	fluorouracil
+1607	fluoxymesterone
+1608	flushed
+1609	flutamide
+1610	fna
+1611	folate
+1612	folate receptor alpha (frα)
+1613	folate receptor alpha (frα) expression
+1614	folate receptor alpha biomarker
+1615	folfcis
+1616	folfox
+1617	folic acid
+1618	follicles
+1619	follicular carcinoma
+1620	follicular lymphoma
+1621	follicular thyroid cancer
+1622	follicular thyroid carcinoma
+1623	follicular tumor
+1624	follicular tumors
+1625	follicular variant of papillary thyroid cancer
+1626	follow-up care
+1627	follow-up testing
+1628	follows body's rules
+1629	foreign material
+1630	form blood clots
+1631	form more tumors
+1632	formation of new tumors
+1633	fourth layer
+1634	fractions
+1635	frail
+1636	frailty
+1637	frequent bowel movements
+1638	frequent or painful urination
+1639	frequent urination
+1640	frequent urination or pain while urinating
+1641	front of the windpipe
+1642	fruits and vegetables
+1643	full health history
+1644	fulvestrant
+1645	fumarate hydratase-deficient rcc
+1646	functional adrenal tumors
+1647	functional assessment
+1648	fundus
+1649	fusion of the ets gene family
+1650	fusion of the ews gene
+1651	g1
+1652	g2
+1653	g3
+1654	g4
+1655	gadolinium
+1656	gallbladder
+1657	gastroenterologist
+1658	gastroesophageal junction
+1659	gel insertion
+1660	gemcitabine
+1661	gemtuzumab ozogamicin
+1662	gene changes
+1663	gene expression profiling
+1664	gene mutations
+1665	gene product
+1666	gene rearrangement
+1667	gene rearrangements
+1668	gene testing
+1669	general anesthesia
+1670	general assessments of health
+1671	general health
+1672	general health tests
+1673	genes
+1674	genes or mutations
+1675	genetic abnormalities
+1676	genetic abnormality
+1677	genetic and biomarker mutation testing
+1678	genetic cancer risk testing
+1679	genetic change
+1680	genetic changes
+1681	genetic code error
+1682	genetic conditions
+1683	genetic counseling
+1684	genetic counselor
+1685	genetic counselors
+1686	genetic diseases
+1687	genetic disorders
+1688	genetic factors
+1689	genetic hemochromatosis
+1690	genetic information
+1691	genetic mutation
+1692	genetic mutations
+1693	genetic risk testing
+1694	genetic syndromes
+1695	genetic test
+1696	genetic testing
+1697	genetic testing complications
+1698	genetic tests
+1699	genetic tests for inherited mutations
+1700	geneticists
+1701	genital warts
+1702	genitals
+1703	genomic testing
+1704	geriatrician
+1705	germinal center
+1706	germinal centers
+1707	germline brca mutations
+1708	germline mutation
+1709	germline mutations
+1710	germline testing
+1711	germs
+1712	gerota’s fascia
+1713	getting worse
+1714	gi tract
+1715	giant cell tumor of bone
+1716	gilteritinib
+1717	gingiva
+1718	gingko biloba
+1719	gland
+1720	gland lump
+1721	glandular cells
+1722	glandular subtype
+1723	glassy-cell carcinomas
+1724	gleason pattern
+1725	gleason patterns
+1726	gleason score
+1727	glial cells
+1728	glioblastoma
+1729	glioblastomas
+1730	glioma
+1731	glioma treatment
+1732	glioma tumor
+1733	gliomas
+1734	glucose
+1735	gnrh agonists
+1736	goal of treatment
+1737	gonadotropin-releasing hormone agonists
+1738	goserelin
+1739	grade
+1740	grade 1
+1741	grade 1 glioma
+1742	grade 2
+1743	grade 2 glioma
+1744	grade 3 glioma
+1745	grade 3a
+1746	grade 3b
+1747	grade 4 glioma
+1748	grade group
+1749	grade group 1
+1750	grade group 2
+1751	grade group 3
+1752	grade group 4
+1753	grade group 5
+1754	grade of the cancer
+1755	grading
+1756	granulocytes
+1757	greater curvature of the stomach
+1758	green tea extract
+1759	groin
+1760	groin area
+1761	grown beyond the cervix
+1762	grown into the parametrium
+1763	grown into the upper vagina
+1764	grown outside
+1765	grows more quickly
+1766	growth beyond the thyroid
+1767	growth from airway into lung tissue
+1768	growth from inner lining toward hollow center of bladder
+1769	growth into bladder muscle
+1770	growth into bladder wall
+1771	growth into nearby structures
+1772	growth into surrounding tissues
+1773	growth into veins or arteries
+1774	growth of new blood vessels
+1775	growth outside ducts or lobules
+1776	growth rate
+1777	growth signals from her2
+1778	growth through protective outer layer of lymph nodes
+1779	guidance
+1780	guide about all
+1781	guilt
+1782	gum health
+1783	gums problems
+1784	gynecologic exam
+1785	gynecologic oncologist
+1786	gynecologic oncologists
+1787	gynecologist
+1788	gynecology care team
+1789	h. pylori
+1790	h. pylori infection
+1791	hair loss
+1792	hair loss on the head
+1793	hand-foot syndrome
+1794	hands
+1795	hands-on care
+1796	hands-on techniques by a physical therapist
+1797	haptoglobin
+1798	hard palate
+1799	hard to treat cll
+1800	hardened part
+1801	hardening of the skin and soft tissue
+1802	harm to an unborn baby
+1803	harm to body
+1804	harm to developing baby
+1805	harm to the body
+1806	harmful changes in genes
+1807	harmful ultraviolet (uv) rays
+1808	harsh
+1809	harsh side effects
+1810	harvesting
+1811	having babies
+1812	having to urinate often or urgently
+1813	hcc
+1814	he4
+1815	head and body aches
+1816	head and cancer
+1817	head and neck
+1818	head and neck cancer
+1819	head and neck cancer treatment
+1820	head and neck cancers
+1821	head and neck exam
+1822	head and neck surgeons
+1823	head and neck tumors
+1824	head or neck area
+1825	head or neck area of the body
+1826	headache
+1827	headaches
+1828	health
+1829	health after treatment ends
+1830	health care
+1831	health care professional
+1832	health care professionals
+1833	health care provider
+1834	health care providers
+1835	health experts
+1836	health history
+1837	health history and physical exam
+1838	health history of family members
+1839	health issue
+1840	health issues
+1841	health issues of family members
+1842	health of kidneys
+1843	health of liver
+1844	health of other organs
+1845	health of the nerves in the back of your eyes
+1846	health problem
+1847	health problems
+1848	health risks
+1849	health status
+1850	healthier
+1851	healthy body weight
+1852	healthy diet
+1853	healthy habits
+1854	healthy lifestyle
+1855	healthy tissues and organs
+1856	hearing
+1857	hearing loss
+1858	hearing problems
+1859	hearing problems or loss
+1860	hearing test
+1861	heart
+1862	heart check
+1863	heart disease
+1864	heart exam
+1865	heart examination
+1866	heart function
+1867	heart issues
+1868	heart or blood pressure medicine
+1869	heart problems
+1870	heart rate
+1871	heart rhythm
+1872	heart rhythm problems
+1873	heart structure
+1874	heart tests
+1875	heartburn and indigestion
+1876	heavy alcohol use
+1877	height and weight check
+1878	height check
+1879	help control bleeding
+1880	help prevent and control infection
+1881	help to control bleeding
+1882	help to quit smoking
+1883	helplessness
+1884	hematologist
+1885	hematologist-oncologist
+1886	hematologist/oncologist
+1887	hematopathologist
+1888	hematopathology
+1889	hematopathology review
+1890	hematopoietic cell donors
+1891	hematopoietic cell transplant
+1892	hematopoietic stem cell transplant
+1893	hematopoietic stem cells
+1894	hematuria
+1895	hemoglobin
+1896	hemorrhoids
+1897	hepatic artery
+1898	hepatic ducts
+1899	hepatic vein
+1900	hepatic veins
+1901	hepatitis
+1902	hepatitis b
+1903	hepatitis b test
+1904	hepatitis b virus
+1905	hepatitis blood test
+1906	hepatitis c
+1907	hepatitis c test
+1908	hepatitis c virus
+1909	hepatobiliary system
+1910	hepatocellular carcinoma
+1911	her2
+1912	her2 amplification
+1913	her2 antibodies
+1914	her2 conjugates
+1915	her2 expression
+1916	her2 inhibitors
+1917	her2 overexpression
+1918	her2 receptors
+1919	her2 ret gene fusion
+1920	her2 status
+1921	her2 testing
+1922	her2 therapy
+1923	her2-
+1924	her2- cancer
+1925	her2-positive
+1926	her2-positive breast cancer
+1927	her2-targeted therapy
+1928	herbals
+1929	herbs
+1930	hereditary breast cancer
+1931	hereditary breast-ovarian cancer syndrome
+1932	hereditary cancer
+1933	hereditary cancer syndromes
+1934	hereditary colon cancer
+1935	hereditary conditions
+1936	hereditary gene testing
+1937	hereditary genetic testing
+1938	hereditary ovarian cancer
+1939	hereditary pancreatitis
+1940	hereditary paragangliomapheochromocytoma (pgl/pcc) syndrome
+1941	hereditary syndrome
+1942	hernia
+1943	high alcohol use
+1944	high amount of psa in the bloodstream
+1945	high amounts of her2
+1946	high at diagnosis of cll
+1947	high blood cell counts
+1948	high blood pressure
+1949	high blood sugar levels
+1950	high blood urea nitrogen level
+1951	high cea level
+1952	high cholesterol
+1953	high creatinine level
+1954	high doses
+1955	high enzyme levels
+1956	high grade bladder cancer
+1957	high grade cancer
+1958	high grade group
+1959	high lactate dehydrogenase level
+1960	high level
+1961	high levels
+1962	high levels of alp
+1963	high levels of beta-2 microglobulin
+1964	high levels of ldh
+1965	high number of abnormal white blood cells
+1966	high number of blasts in the blood
+1967	high number of centroblasts
+1968	high number of sexual partners
+1969	high parity
+1970	high psa density
+1971	high psa level
+1972	high psa levels
+1973	high risk
+1974	high risk features
+1975	high risk of recurrence
+1976	high sugar uptake
+1977	high thyroglobulin level
+1978	high thyroid hormone levels
+1979	high tsh level
+1980	high tumor stage
+1981	high weight
+1982	high white blood cell count
+1983	high-dose chemotherapy
+1984	high-dose chemotherapy and stem cell rescue
+1985	high-dose cytarabine
+1986	high-dose methotrexate
+1987	high-dose methotrexate chemotherapy
+1988	high-energy radiation
+1989	high-energy x-rays
+1990	high-grade
+1991	high-grade anal intraepithelial neoplasia (ain)
+1992	high-grade cancers
+1993	high-grade endometrioid carcinoma
+1994	high-grade glioma
+1995	high-grade gliomas
+1996	high-grade serous carcinoma
+1997	high-grade serous tumor
+1998	high-grade squamous intraepithelial lesion
+1999	high-grade squamous intraepithelial lesion (hsil)
+2000	high-grade squamous intraepithelial lesions (hsil)
+2001	high-grade tumor
+2002	high-intensity physical activity
+2003	high-resolution anoscopy
+2004	high-risk
+2005	high-risk cancer
+2006	high-risk cscc
+2007	high-risk features
+2008	high-risk local
+2009	high-risk location
+2010	high-risk or very high-risk
+2011	high-volume center or hospital
+2012	highenergy x-rays
+2013	higher amounts of her2
+2014	higher cea level
+2015	higher gleason pattern number
+2016	higher levels
+2017	higher risk
+2018	higher-grade cancers
+2019	highest risk
+2020	hip bone
+2021	hip joints
+2022	hispanic males
+2023	histologic analysis
+2024	histology
+2025	histopathology
+2026	history of anal sex or sexually transmitted infection
+2027	history of skin cancer
+2028	hiv
+2029	hiv blood test
+2030	hiv infection
+2031	hiv testing
+2032	hives
+2033	hla typing
+2034	hobnail
+2035	hodgkin lymphoma
+2036	hold breast in place
+2037	hollow tubes
+2038	homologous recombination deficiency
+2039	homologous recombination deficiency (hrd) status
+2040	hormonal birth control
+2041	hormonal changes
+2042	hormone
+2043	hormone deficiency
+2044	hormone injections
+2045	hormone production
+2046	hormone receptor stat
+2047	hormone receptor status
+2048	hormone receptor testing
+2049	hormone receptor-negative breast cancer
+2050	hormone receptor-positive breast cancer
+2051	hormone receptor-positive cancer
+2052	hormone receptors
+2053	hormone replacement
+2054	hormone replacement therapy
+2055	hormone secretion
+2056	hormone symptoms
+2057	hormone therapies
+2058	hormone therapy
+2059	hormone-related symptoms
+2060	hormones
+2061	hormones in the body
+2062	hormones made by the thyroid
+2063	hospice care
+2064	hospital
+2065	hot flashes
+2066	how well the drug or approach works
+2067	how well treatment is working
+2068	hpv
+2069	hpv infection
+2070	hpv infections
+2071	hpv testing
+2072	hpv type 16
+2073	hpv vaccine
+2074	hpv-16
+2075	hpv-18
+2076	hpv-other
+2077	hpv-positive throat cancer
+2078	hpv-related cancer
+2079	hpv/pap co-test
+2080	hpv16
+2081	hpv18
+2082	hpv33
+2083	hr deficiency
+2084	hr deficient cancers
+2085	hrd positive
+2086	human epidermal growth factor receptor 2
+2087	human epidermal growth factor receptor 2 status
+2088	human immunodeficiency virus (hiv)
+2089	human leukocyte antigen (hla) typing
+2090	human papillomavirus
+2091	human papillomavirus (hpv)
+2092	human papillomavirus infection
+2093	hurt developing baby
+2094	hurt to developing baby
+2095	hyoid bone
+2096	hypercalcemia
+2097	hyperkeratosis
+2098	hyperplastic polyp
+2099	hypersensitivity reaction
+2100	hypersensitivity reactions
+2101	hyperthermic intraperitoneal chemotherapy
+2102	hyperthyroidism
+2103	hypomethylating agent
+2104	hypomethylating agents
+2105	hypoparathyroidism
+2106	hypopharynx
+2107	hypothalamus
+2108	hypothyroidism
+2109	hysterectomy
+2110	hürthle cell carcinoma
+2111	ibrutinib
+2112	idarubicin
+2113	identifying a brain tumor
+2114	idh gene mutation
+2115	idh-mutant
+2116	idh1 mutation
+2117	ighv mutation
+2118	ihc
+2119	ileal conduit
+2120	ileum
+2121	illness
+2122	illnesses
+2123	images
+2124	images of organs and structures
+2125	imaging
+2126	imaging and pathology results
+2127	imaging results
+2128	imaging scans
+2129	imaging studies
+2130	imaging technique
+2131	imaging test
+2132	imaging tests
+2133	imaging_results
+2134	imiquimod
+2135	immature
+2136	immature lymphocytes
+2137	immature white blood cells
+2138	immune cells
+2139	immune checkpoint inhibitor
+2140	immune checkpoint inhibitor therapy
+2141	immune checkpoint inhibitors
+2142	immune checkpoint inhibitors side effects
+2143	immune protein
+2144	immune proteins
+2145	immune responses
+2146	immune stressor
+2147	immune suppression
+2148	immune system
+2149	immune system activity
+2150	immune-related adverse events
+2151	immunizations
+2152	immunodeficiency disorder
+2153	immunohistochemistry
+2154	immunophenotyping
+2155	immunosuppressant use
+2156	immunosuppressants
+2157	immunotherapies
+2158	immunotherapy
+2159	immunotherapy drugs
+2160	impaired fertility
+2161	impaired immune system
+2162	implants
+2163	impossibility to have children
+2164	improved detection methods
+2165	improving picture quality
+2166	improving treatment
+2167	imrt
+2168	in front of spine
+2169	in situ hybridization
+2170	in vitro fertilization
+2171	inability to become pregnant naturally
+2172	inability to do everyday activities
+2173	inability to have pelvic mri
+2174	inaccurate diagnosis
+2175	inactive versions of real medicines
+2176	incisional biopsy
+2177	incontinence
+2178	increased amount of lymphoid or myeloid progenitor cells
+2179	increased amount of myeloid progenitor cells
+2180	increased growth of cancer cells
+2181	increased level of ca
+2182	increased level of ca 15-3
+2183	increased level of carcinoembryonic antigen (cea)
+2184	increased risk of infection
+2185	increased vaginal discharge
+2186	indiana pouch
+2187	individualized ebrt
+2188	indoor tanning
+2189	induction
+2190	induction treatment
+2191	infant all
+2192	infants
+2193	infection
+2194	infection in the urinary tract
+2195	infections
+2196	infectious mononucleosis
+2197	inferior vena cava
+2198	infertility
+2199	inflamed skin
+2200	inflammation
+2201	inflammatory breast cancer
+2202	inflammatory carcinoma
+2203	inflammatory polyp
+2204	influenza
+2205	information about the cancer and your general health
+2206	information gained after surgery
+2207	information on fertility preservation
+2208	information on how to manage side effects
+2209	infraclavicular
+2210	infraclavicular region
+2211	ingual lymph node
+2212	ingual lymph node exams
+2213	ingual lymph nodes
+2214	inguinal lymph nodes
+2215	inherited cancer risk
+2216	inherited cancer risk gene
+2217	inherited cancer syndrome
+2218	inherited cancer syndromes
+2219	inherited condition
+2220	inherited gene mutation
+2221	inherited genetic mutation
+2222	inherited genetic mutations
+2223	inherited mutations
+2224	inherited mutations of the mmr genes
+2225	inherited risk
+2226	inherited syndrome
+2227	inhibin a
+2228	inhibin b
+2229	inhibitors
+2230	initial treatment
+2231	injectable agents
+2232	injections
+2233	injury
+2234	ink marks
+2235	inner airways
+2236	inner cheeks
+2237	inner layer
+2238	inner lining
+2239	inner lining of the bladder
+2240	inner lining of the esophagus
+2241	inner lips
+2242	inner membrane
+2243	inner or outer surfaces of the body
+2244	inner wall of the abdomen
+2245	innermost layer
+2246	insertion
+2247	inside lining of the bladder
+2248	inside of your body
+2249	instructions
+2250	insurance
+2251	insurance company
+2252	insurance plan
+2253	intact capsule of the ovary
+2254	intact capsules of the ovaries
+2255	integrative medicine
+2256	intelligence
+2257	intensity-modulated radiation therapy
+2258	intensity-modulated radiation therapy (imrt)
+2259	intensitymodulated radiation therapy
+2260	intermediate risk
+2261	internal carotid artery
+2262	internal mammary
+2263	internal organ
+2264	internal organs
+2265	internal radiation therapy
+2266	international federation of gynecology and obstetrics
+2267	interpretation of genetic test results
+2268	interstitial brachytherapy
+2269	interval cytoreductive surgery
+2270	interventional radiologist
+2271	intestinal adenocarcinomas
+2272	intestinal cancer
+2273	intestine
+2274	intestines
+2275	intracavitary brachytherapy
+2276	intrahepatic bile duct cancer
+2277	intrahepatic cholangiocarcinoma
+2278	intraperitoneal chemotherapy
+2279	intrathecal chemotherapy
+2280	intrauterine devices (iuds)
+2281	intravenous chemotherapy
+2282	intravenously
+2283	intravesical bcg
+2284	intravesical bcg therapy
+2285	intravesical chemotherapy
+2286	intravesical therapy
+2287	intravesical treatment with chemotherapy
+2288	invasion of bladder wall
+2289	invasion of blood vessels
+2290	invasion of brain tissue
+2291	invasion of fatty tissue surrounding the bladder
+2292	invasion of muscle layer
+2293	invasion of nearby reproductive organs
+2294	invasion of nearby tissue
+2295	invasion of normal brain parts
+2296	invasion of normal tissue
+2297	invasion of prostate gland
+2298	invasion of the sphincter
+2299	invasion of uterus
+2300	invasion of vagina
+2301	invasion of wall of pelvis or abdomen
+2302	invasive
+2303	invasive bladder cancer
+2304	invasive breast cancer
+2305	invasive cancer
+2306	invasive colon cancer
+2307	invasive ductal carcinoma
+2308	invasive rectal cancer
+2309	invasive test
+2310	inversion
+2311	investigational drug
+2312	investigational treatments
+2313	iodine
+2314	iodine uptake
+2315	iodine-131
+2316	iodized salt
+2317	ipilimumab
+2318	ipilimumab (yervoy)
+2319	irinotecan
+2320	iron deficiency
+2321	iron overload
+2322	irregular or hardened part of the prostate
+2323	irregular part
+2324	irregular periods
+2325	isopsa
+2326	isthmus
+2327	itching
+2328	itching and redness
+2329	iv contrast
+2330	ivosidenib (tibsovo)
+2331	jaundice
+2332	jaw health
+2333	jaw problems
+2334	joint pain
+2335	jugular vein
+2336	karnofsky performance status (kps)
+2337	karyotype
+2338	kegel exercises
+2339	keratinized squamous epithelium
+2340	keytruda
+2341	kidney
+2342	kidney cancer
+2343	kidney conditions
+2344	kidney damage
+2345	kidney disease
+2346	kidney dysfunction
+2347	kidney failure
+2348	kidney function
+2349	kidney function test
+2350	kidney function tests
+2351	kidney problems
+2352	kidney stone
+2353	kidney swelling
+2354	kidney tumor
+2355	kidney_failure
+2356	kidneys
+2357	kidneys aren’t working well
+2358	kidneys not working as they should
+2359	kill tumor cells
+2360	kinase inhibitors
+2361	knowing family history
+2362	knowing if the cancer has spread to your lymph nodes
+2363	lab test
+2364	lab testing
+2365	laboratory
+2366	lactate dehydrogenase
+2367	lactate dehydrogenase (ldh)
+2368	lactate dehydrogenase (ldh) test
+2369	lactation consultant
+2370	lactic acid dehydrogenase
+2371	lamina propria
+2372	language
+2373	language impairment
+2374	laparoscopic surgery
+2375	laparoscopic surgical staging
+2376	laparoscopy
+2377	laparotomy
+2378	lapatinib
+2379	large bowel
+2380	large cell carcinoma
+2381	large cells
+2382	large cells that are found throughout the airways
+2383	large intestine
+2384	large lymph nodes
+2385	large mediastinal mass
+2386	large tumor
+2387	large vein
+2388	larger prostate
+2389	larger than 4 cm
+2390	larger than 5 mm but smaller than 2 cm
+2391	laryngeal cancer
+2392	laryngoscope
+2393	laryngoscopy
+2394	larynx
+2395	laser
+2396	late and long-term side effects
+2397	late diagnosis
+2398	lateral nasopharynx
+2399	lateral pterygoid muscle
+2400	latest research
+2401	layer of connective tissue in the bladder wall
+2402	layers of tissue
+2403	ldh
+2404	ldh release
+2405	ldh test
+2406	leaking from the spot where the colon was reconnected
+2407	lef1
+2408	left hepatic duct
+2409	left lobe
+2410	left lung
+2411	left ventricular ejection fraction (lvef)
+2412	leg swelling
+2413	leg type
+2414	leg weakness
+2415	lenalidomide
+2416	lenvatinib (lenvima)
+2417	lesion
+2418	lesions
+2419	lesions in the spine
+2420	less blood being made
+2421	less common ovarian cancers
+2422	less healthy diet
+2423	less than one day
+2424	lesser curvature of the stomach
+2425	letrozole
+2426	leucovorin
+2427	leukemia
+2428	leukemia cells
+2429	leukemia outside the bone marrow
+2430	leukemia predisposition syndrome
+2431	leukemia predisposition syndromes
+2432	leukemic blasts
+2433	leukemic meningitis
+2434	leuprolide
+2435	level of fitness
+2436	levothyroxine
+2437	lhrh agonist
+2438	lhrh agonist anti-androgen
+2439	lhrh agonists
+2440	lhrh antagonist
+2441	lhrh antagonists
+2442	lhrh production
+2443	li-fraumeni syndrome
+2444	life expectancy
+2445	life-long disease
+2446	life-threatening
+2447	life-threatening condition
+2448	ligaments
+2449	light
+2450	light eye color
+2451	light skin
+2452	light zone
+2453	lighter eyes
+2454	lighter hair
+2455	lighter skin
+2456	lighter-skinned people
+2457	lightsensitive drug
+2458	likely course and outcome
+2459	linear accelerator
+2460	lining
+2461	lining of the brain
+2462	lining of the vagina
+2463	liquid
+2464	liquid and cells from the marrow
+2465	liquid biopsy
+2466	liquid bone marrow
+2467	liquid nitrogen
+2468	liquids from the prostate
+2469	liquids from the seminal vesicles
+2470	listening to heart
+2471	listening to lungs
+2472	liver
+2473	liver cancer
+2474	liver cancer risk
+2475	liver cancer screening
+2476	liver cells
+2477	liver damage
+2478	liver disease
+2479	liver disorders
+2480	liver failure
+2481	liver function
+2482	liver function test
+2483	liver function tests
+2484	liver harm
+2485	liver issues
+2486	liver not working as they should
+2487	liver tumors
+2488	lobectomy
+2489	lobes
+2490	lobular breast carcinoma
+2491	lobular carcinoma
+2492	lobules
+2493	local cscc
+2494	local cutaneous squamous cell carcinoma
+2495	local excision
+2496	local metastasis
+2497	local recurrence
+2498	local spread
+2499	local therapies
+2500	local therapy
+2501	localized prostate cancer
+2502	locally advanced
+2503	locally advanced cancer
+2504	locally advanced cancers
+2505	locally advanced cervical cancer
+2506	locally advanced cervical cancers
+2507	locally advanced nsclc
+2508	location of the tumor
+2509	locoregional disease
+2510	locoregional esophageal cancer
+2511	locoregional or locally advanced
+2512	locoregional or locally advanced stomach cancer
+2513	long bones
+2514	long, thin finger-like growths
+2515	long-term corticosteroid use
+2516	long-term infection with hpv
+2517	long-term side effects
+2518	look for bleeding
+2519	loop electrosurgical excision procedure
+2520	losing one’s sense of self
+2521	losing weight
+2522	loss of appetite
+2523	loss of awareness
+2524	loss of feeling
+2525	loss of fertility
+2526	loss of movement
+2527	loss of peripheral vision
+2528	loss of voice
+2529	loss of weight without trying
+2530	low anterior resection
+2531	low at diagnosis of cll
+2532	low blood cell counts
+2533	low blood count
+2534	low counts of healthy blood cells
+2535	low dose x-rays
+2536	low enzyme levels
+2537	low grade bladder cancer
+2538	low grade cancer
+2539	low iron levels
+2540	low levels
+2541	low levels of calcium in the blood
+2542	low neutrophils
+2543	low platelets
+2544	low risk
+2545	low tsh level
+2546	low white blood cell counts
+2547	low-grade cancers
+2548	low-grade endometrioid carcinoma
+2549	low-grade glioma
+2550	low-grade serous carcinoma
+2551	low-grade squamous intraepithelial lesion
+2552	low-grade squamous intraepithelial lesion (lsil)
+2553	low-grade tumor
+2554	low-risk
+2555	low-risk cscc
+2556	lower abdomen
+2557	lower body
+2558	lower ejection fraction
+2559	lower esophagus
+2560	lower gleason pattern number
+2561	lower jaw
+2562	lower part
+2563	lower part of the throat behind the larynx
+2564	lower quality of life
+2565	lower rectum
+2566	lower risk
+2567	lumbar puncture
+2568	lumbar puncture (lp)
+2569	lump or mass near the anus
+2570	lumpectomy
+2571	lumps
+2572	lung and breathing problems
+2573	lung cancer
+2574	lung cancer cells
+2575	lung cancer screening
+2576	lung cancers
+2577	lung carcinoma
+2578	lung carcinomas
+2579	lung cells
+2580	lung check
+2581	lung diseases
+2582	lung exam
+2583	lung examination
+2584	lung function tests
+2585	lung nodule
+2586	lung nodule experts
+2587	lung nodules
+2588	lung problems
+2589	lung tissue
+2590	lung tumors
+2591	lungs
+2592	lupus
+2593	luteinizing hormone-releasing hormone
+2594	luteinizing hormone-releasing hormone agonists
+2595	lymph
+2596	lymph fluid
+2597	lymph node
+2598	lymph node area
+2599	lymph node biopsy
+2600	lymph node check
+2601	lymph node dissection
+2602	lymph node evaluation
+2603	lymph node exam
+2604	lymph node examination
+2605	lymph node exams
+2606	lymph node involvement
+2607	lymph node metastasis
+2608	lymph node status
+2609	lymph nodes
+2610	lymph nodes above the collar bone
+2611	lymph nodes are bigger than normal
+2612	lymph nodes in the groin
+2613	lymph nodes near the breastbone
+2614	lymph nodes near the collarbone
+2615	lymph nodes removal
+2616	lymph nodes suspicious for cancer
+2617	lymph nodes under the arm
+2618	lymph nodes with cancer
+2619	lymph system
+2620	lymph tissue
+2621	lymph vessels
+2622	lymphadenectomy
+2623	lymphatic fluid
+2624	lymphatic system
+2625	lymphatic vessels
+2626	lymphoblasts
+2627	lymphocyte
+2628	lymphocytes
+2629	lymphocytic lymphoma
+2630	lymphoepithelioma-like subtype
+2631	lymphoid progenitor cells
+2632	lymphoma
+2633	lymphoma cells
+2634	lymphoma cells can’t multiply and spread as quickly
+2635	lymphoma in the eyes
+2636	lymphomas
+2637	lymphoma’s location
+2638	lymphoma’s size
+2639	lymphovascular invasion
+2640	lymphovascular space invasion
+2641	lymphovascular space invasion (lvsi)
+2642	lynch syndrome
+2643	m score
+2644	m1
+2645	m1a
+2646	m1b
+2647	machine
+2648	magnet
+2649	magnetic bottom
+2650	magnetic field
+2651	magnetic resonance imaging (mri)
+2652	magnetic top
+2653	magnetic top and bottom
+2654	main tumor and neck
+2655	maintaining a healthy weight
+2656	maintenance therapy
+2657	major arteries
+2658	major side effects
+2659	make antibodies
+2660	make eggs
+2661	make milk
+2662	make proteins
+2663	make treatment decisions
+2664	making hormones
+2665	male at birth
+2666	male reproductive organs
+2667	male reproductive system
+2668	malignant
+2669	malignant adrenal tumors
+2670	malignant brain tumor
+2671	malignant cell clusters
+2672	malignant germ cell tumors
+2673	malignant pleural effusion
+2674	malignant polyp
+2675	malignant sex-cord stromal tumors
+2676	mammogram
+2677	mammograms
+2678	mammography
+2679	mandible
+2680	mantle cell lymphoma
+2681	margetuximab-cmkb
+2682	marjolin's ulcer
+2683	marjolin’s ulcer
+2684	mass of tissue
+2685	masses
+2686	mastectomy
+2687	masticator space
+2688	mature b-cell all
+2689	mature b-cell all (burkitt leukemia)
+2690	mature blood cells
+2691	maxilla
+2692	maxillary sinus
+2693	mds
+2694	measurement
+2695	measuring psa level
+2696	meat and dairy products
+2697	medial pterygoid
+2698	mediastinal gray zone lymphoma
+2699	mediastinum
+2700	medical binder
+2701	medical care
+2702	medical geneticist
+2703	medical history
+2704	medical office
+2705	medical oncologist
+2706	medical oncologists
+2707	medical photographs
+2708	medical procedure
+2709	medical professional
+2710	medical providers
+2711	medical records
+2712	medical research study
+2713	medication
+2714	medications
+2715	medicine
+2716	medicines
+2717	meditation
+2718	medullary thyroid cancer
+2719	meeting with a nutrition expert
+2720	megestrol acetate
+2721	melanin
+2722	melanocytes
+2723	melanoma
+2724	melanoma skin cancer
+2725	memory impairment
+2726	memory loss
+2727	memory problems
+2728	meninges
+2729	meningitis
+2730	menopausal hormone therapy
+2731	menopause
+2732	menstrual periods
+2733	menstruation
+2734	menstruation stop
+2735	mental
+2736	mental health
+2737	mental health conditions
+2738	mental health provider
+2739	mental health resources
+2740	mental, behavioral, and emotional issues
+2741	metal in body
+2742	metal objects
+2743	metamucil
+2744	metaphysis
+2745	metastases
+2746	metastasis
+2747	metastasis score
+2748	metastasize
+2749	metastasized
+2750	metastasized to other areas in the body
+2751	metastatic
+2752	metastatic anal cancer
+2753	metastatic bladder cancer
+2754	metastatic breast cancer
+2755	metastatic cancer
+2756	metastatic cancers
+2757	metastatic cervical cancer
+2758	metastatic cervical cancers
+2759	metastatic colon cancer
+2760	metastatic colon cancer to the liver
+2761	metastatic cscc
+2762	metastatic disease
+2763	metastatic esophageal cancer
+2764	metastatic follicular thyroid cancer
+2765	metastatic liver cancer
+2766	metastatic oncocytic thyroid cancer
+2767	metastatic or unresectable tmb cancers
+2768	metastatic papillary thyroid cancer
+2769	metastatic prostate cancer
+2770	metastatic squamous cell skin cancer
+2771	metastatic stomach cancer
+2772	metastatic thyroid cancer
+2773	metastatic tumors
+2774	methotrexate
+2775	methyl groups
+2776	microcystic and tubular subtype
+2777	micrometastases
+2778	micropapillary subtype
+2779	microsatellite instability
+2780	microsatellite instability (msi)
+2781	microsatellite instability-high
+2782	microsatellite stable
+2783	microsatellites
+2784	microscope
+2785	microscopic disease
+2786	microscopic metastases
+2787	microscopic rectal cancer cells
+2788	mid to upper rectum
+2789	middle esophagus
+2790	middle part
+2791	midostaurin
+2792	mild change in skin color
+2793	mild discomfort
+2794	milk ducts
+2795	milk glands
+2796	mind and body therapists
+2797	minimal residual disease
+2798	minimal treatment
+2799	minimally invasive
+2800	minor bleeding
+2801	mir sentinel
+2802	mirror
+2803	mirror and fiberoptic exam
+2804	mirvetuximab soravtansine-gynx
+2805	misconceptions
+2806	mismatch repair (mmr)
+2807	mismatch repair (mmr) proteins
+2808	mismatch repair deficiency
+2809	mismatch repair deficient
+2810	mismatch repair genes
+2811	mismatch repair proficient
+2812	mismatch repair proteins
+2813	mismatch repair testing
+2814	missing chromosomes
+2815	mitomycin
+2816	mitomycin and 5-fu
+2817	mitomycin and capecitabine
+2818	mitoxantrone
+2819	mixed-type tumor
+2820	mlh1
+2821	moderately differentiated
+2822	moderately or very advanced disease
+2823	modified radical hysterectomy
+2824	modified radical mastectomy
+2825	mohs surgeons
+2826	mohs surgery
+2827	molecular biomarker test
+2828	molecular biomarker tests
+2829	molecular components
+2830	molecular features
+2831	molecular testing
+2832	molecular tests
+2833	molecular tumor marker
+2834	monitoring
+2835	monoclonal antibody
+2836	monoclonal b lymphocytes
+2837	monocytes
+2838	mononucleosis
+2839	mood changes
+2840	more aggressive type
+2841	more common than t-all
+2842	more than one pattern of cells
+2843	most bones
+2844	most cells
+2845	most people
+2846	mouth
+2847	mouth area lump
+2848	mouth cancer
+2849	mouth or nose body
+2850	mouth sores
+2851	move oxygen and nutrients
+2852	movement difficulties
+2853	movement problems
+2854	moving nutrients
+2855	moving waste
+2856	mri
+2857	mri machine
+2858	mri scan
+2859	mri scanner
+2860	mri scans
+2861	mri with and without contrast
+2862	mri with contrast
+2863	mri-trus fusion
+2864	msh2
+2865	msh6
+2866	msi-h/dmmr
+2867	msi-h/dmmr mutation
+2868	msi-h/dmmr tumors
+2869	mtor inhibitor
+2870	mtor inhibitors
+2871	mucinous carcinoma
+2872	mucosa
+2873	mucosa of the lip
+2874	mucous membranes of the mouth
+2875	mucus membranes
+2876	mucus membranes of the nasopharynx
+2877	mucus-making cells
+2878	multi-agent chemotherapy
+2879	multi-agent regimen
+2880	multidisciplinary care
+2881	multidisciplinary care team
+2882	multidisciplinary consult
+2883	multidisciplinary team
+2884	multidisciplinary team (mdt)
+2885	multiple endocrine neoplasia (men)
+2886	multiple endocrine neoplasia type 1 (men 1)
+2887	multiple endocrine neoplasia type 2 (men 2)
+2888	multiple locations
+2889	multiple lymph nodes with cancer
+2890	multiple myeloma
+2891	multiple tumors
+2892	muscle
+2893	muscle aches
+2894	muscle fatigue
+2895	muscle flap reconstruction
+2896	muscle invasion
+2897	muscle layer
+2898	muscle layer of the bladder wall
+2899	muscle weakness
+2900	muscle-invasive
+2901	muscle-invasive bladder cancer
+2902	muscles
+2903	muscles of the jaw
+2904	muscularis mucosa
+2905	muscularis mucosae
+2906	muscularis propria
+2907	mutation
+2908	mutation testing
+2909	mutations
+2910	mutations in brca1
+2911	mutations in brca2
+2912	mycosis fungoides
+2913	myeloblasts
+2914	myeloblasts in blood
+2915	myeloblasts in bone marrow
+2916	myelodysplastic syndrome
+2917	myelodysplastic syndrome (mds)
+2918	myeloid blasts
+2919	myeloid growth factors
+2920	myeloid progenitor cells
+2921	myths
+2922	n score
+2923	nafld
+2924	nanograms per milliliter
+2925	narrow-band imaging
+2926	narrowing and shortening of the vagina
+2927	nasal cavity
+2928	nasal cavity and paranasal sinuses
+2929	nasolaryngoscopy
+2930	nasopharyngeal cancer
+2931	nasopharyngeal cancers
+2932	nasopharyngeal carcinoma
+2933	nasopharynx
+2934	national cancer institute
+2935	national comprehensive cancer network
+2936	native america
+2937	natural killer cells
+2938	natural pregnancy
+2939	nausea
+2940	nausea and vomiting
+2941	nausea/vomiting
+2942	nccn experts
+2943	nccn guidelines for patients
+2944	nccn guidelines for patients: colon cancer
+2945	nccn patient guides for cancer app
+2946	nccn.org/patientguidelines
+2947	near-normal bowel movements
+2948	nearby
+2949	nearby areas
+2950	nearby body part
+2951	nearby lymph nodes
+2952	nearby organs
+2953	nearby structures
+2954	neck area
+2955	neck dissection
+2956	neck lump
+2957	neck lymph nodes
+2958	neck pain
+2959	neck ultrasound
+2960	nectin-4
+2961	need chemotherapy
+2962	need for chemotherapy
+2963	need for financial help
+2964	need for hormone replacement therapy
+2965	need for more treatment
+2966	need for thyroid hormone replacement therapy
+2967	needing to urinate often or urgently
+2968	needle
+2969	needle biopsies
+2970	needle biopsy
+2971	neoadjuvant therapy
+2972	neobladder
+2973	nephroblastoma
+2974	neratinib
+2975	nerve cells
+2976	nerve damage
+2977	nerve growth
+2978	nerves
+2979	nervous system
+2980	nervous system damage
+2981	nervousness
+2982	nested subtype
+2983	neuro-oncologist
+2984	neuroblastoma
+2985	neuroendocrine carcinoma of the cervix
+2986	neuroendocrine tumor
+2987	neuroendocrine tumors
+2988	neurofibromatosis type 1 (nf1)
+2989	neurological exam
+2990	neurological illnesses
+2991	neuropathologist
+2992	neuropathy
+2993	neurosurgeon
+2994	neutrophils
+2995	new blood stem cells
+2996	new cancer
+2997	new drug
+2998	new lung tumors
+2999	new symptoms
+3000	new treatment approach
+3001	new treatments
+3002	new tumors
+3003	new_growth
+3004	next steps
+3005	next-generation sequencing
+3006	next-generation sequencing (ngs)
+3007	ngs
+3008	nickel
+3009	nicotine
+3010	nicotine addiction
+3011	nicotine withdrawal
+3012	niftp
+3013	night sweats
+3014	nilutamide
+3015	nipple
+3016	nipple discharge
+3017	nipple thickening
+3018	nipple-areola complex
+3019	niraparib
+3020	nitrogen oxides
+3021	nivolumab
+3022	nivolumab (opdivo)
+3023	nlphl
+3024	no cancer cells in ascites or washings
+3025	no cancer on the outside surface of the ovaries
+3026	no cancer on the outside surface of the ovary
+3027	no menstruation
+3028	no natural way for stool to exit the body
+3029	no protein at all
+3030	no radiation therapy
+3031	no signs of cancer
+3032	no signs of cancer in the body
+3033	no smoking history
+3034	no symptoms
+3035	no symptoms or signs of cancer
+3036	nodal disease
+3037	node score
+3038	nodule
+3039	nodules
+3040	nomograms
+3041	non-alcoholic fatty liver disease (nafld)
+3042	non-cancer cells
+3043	non-clear cell rcc
+3044	non-healing ulcers
+3045	non-hodgkin lymphoma
+3046	non-hormonal birth control methods
+3047	non-hormonal medicine
+3048	non-hormone therapy
+3049	non-invasive
+3050	non-invasive bladder cancer
+3051	non-lymphoid blood cells
+3052	non-mediastinal gray zone lymphomas
+3053	non-metastatic cancer
+3054	non-metastatic colon cancer
+3055	non-muscle-invasive
+3056	non-platinum chemotherapy
+3057	non-small cell lung cancer
+3058	none mentioned
+3059	noninvasive
+3060	noninvasive cancer
+3061	noninvasive thyroid tumor
+3062	nonkeratinized squamous epithelium
+3063	non–muscle-invasive bladder cancer
+3064	non–muscleinvasive bladder cancer
+3065	normal and healthy cells
+3066	normal cells
+3067	normal result
+3068	north africa
+3069	north america
+3070	nose check
+3071	nose exam
+3072	nose examination
+3073	not being able to have children
+3074	not eating properly
+3075	not enough healthy red blood cells, platelets, and white blood cells
+3076	not getting enough exercise
+3077	not spread to the bones
+3078	not spread to the liver
+3079	not spread to the lungs
+3080	not spreading to nearby lymph nodes
+3081	not working well
+3082	notochordal cells
+3083	npc
+3084	nsclc
+3085	ntrk gene fusion
+3086	ntrk gene fusions
+3087	nuclear medicine doctor
+3088	nuclear medicine specialist
+3089	nucleus
+3090	numb the throat
+3091	number of sessions
+3092	numbered stage
+3093	numbered stages
+3094	numbness
+3095	nurse practitioners
+3096	nurses
+3097	nutrition assessment
+3098	nutrition expert
+3099	nutrition level
+3100	nutrition, speech, and swallowing evaluation
+3101	nutritional advice
+3102	nutritionist
+3103	nutritionist or dietitian
+3104	nutritionists
+3105	obesity
+3106	observation
+3107	obstetrician
+3108	occipital lobe
+3109	occupational therapists
+3110	olaparib
+3111	old age
+3112	old wounds
+3113	older
+3114	older adult
+3115	older adults
+3116	older age
+3117	oligodendrocyte
+3118	oligodendrocytes
+3119	oligodendroglioma
+3120	oligodendrogliomas
+3121	omentum
+3122	on and off switches
+3123	oncocytic carcinoma
+3124	oncocytic thyroid cancer
+3125	oncocytic tumor
+3126	oncocytic tumors
+3127	oncologist
+3128	oncology care team
+3129	oncology nurse
+3130	oncology nurses
+3131	oncology pharmacists
+3132	online patient portal
+3133	oocyte cryopreservation
+3134	oocyte preservation
+3135	oophoropexy
+3136	opdivo
+3137	open biopsy
+3138	open mri
+3139	open sores
+3140	ophthalmologist
+3141	options for fertility preservation
+3142	oral cancer
+3143	oral cavity
+3144	oral cavity cancer
+3145	oral cavity exam
+3146	oral contraceptive use
+3147	oral contrast
+3148	oral mucosa
+3149	orchiectomy
+3150	organ
+3151	organ check
+3152	organ damage
+3153	organ dysfunction
+3154	organ function
+3155	organ not working well
+3156	organ palpation
+3157	organ transplant
+3158	organ transplantation
+3159	organs
+3160	organs near or in direct contact with the esophagus
+3161	organs to stop working
+3162	organs to stop working well
+3163	oropharynx
+3164	ossification
+3165	osteoblasts
+3166	osteoclasts
+3167	osteoporosis
+3168	osteosarcoma
+3169	osteosarcomas
+3170	ostomy
+3171	ostomy bag
+3172	ostomy care
+3173	ostomy nurse
+3174	ostomy support group
+3175	otc medicines
+3176	other areas of the body
+3177	other blood cells
+3178	other bones
+3179	other cancers
+3180	other challenges
+3181	other common health problems
+3182	other diseases
+3183	other features
+3184	other genes that play a role in hereditary cancer
+3185	other health conditions
+3186	other health issues
+3187	other health issues related to the cancer
+3188	other medical conditions
+3189	other organs
+3190	other organs and tissues
+3191	other parts of the body
+3192	other structures
+3193	other testing and care
+3194	other tissues
+3195	other tissues and organs
+3196	other type of scan
+3197	other types of cancer treatment
+3198	out-of-pocket costs
+3199	outcome of disease
+3200	outdoor work
+3201	outer fatty layer
+3202	outside of the abdomen
+3203	outside of the mouth
+3204	outside the blood and bone marrow (extramedullary)
+3205	ovarian ablation
+3206	ovarian cancer
+3207	ovarian cancer surgery
+3208	ovarian cancer treatment
+3209	ovarian cancers
+3210	ovarian damage
+3211	ovarian hormone
+3212	ovarian hormone production
+3213	ovarian suppression
+3214	ovarian tissue banking
+3215	ovarian transposition
+3216	ovaries
+3217	ovary
+3218	ovary preservation
+3219	over-the-counter (otc) medicines
+3220	over-the-counter medicines
+3221	over-the-counter ointments
+3222	overall health
+3223	overall well-being
+3224	overexpression of p16
+3225	overgrowth of cells
+3226	overgrowth of pancreatic cancer cells
+3227	overview
+3228	overwhelming normal cells
+3229	ovoid
+3230	oxaliplatin
+3231	oxygen
+3232	oxygen transfer
+3233	ozone
+3234	p16 (hpv)-positive
+3235	p16 testing
+3236	p16- throat cancer
+3237	p16-negative
+3238	p16-positive
+3239	pacemaker
+3240	paclitaxel
+3241	paclitaxel with carboplatin
+3242	padcev
+3243	pain caused by the cancer
+3244	pain during pelvic exams
+3245	pain during sex
+3246	pain during surgery or procedures
+3247	pain in neck
+3248	pain in the anal area
+3249	pain in the belly
+3250	pain in the pelvis or abdomen
+3251	pain in your side or back
+3252	pain on the palms of the hands, bottoms of feet, or both
+3253	pain or difficulty when urinating
+3254	pain or pressure in the pelvis or belly
+3255	pain specialist
+3256	pain swallowing
+3257	painful blisters
+3258	painful ejaculation
+3259	painful urination
+3260	palate
+3261	palb2
+3262	palbociclib
+3263	palbociclib (ibrance)
+3264	pale cells
+3265	pale cells, larger than clear cells
+3266	palliative care
+3267	palliative care provider
+3268	palliative care specialist
+3269	palliative radiation therapy
+3270	palpation
+3271	pancreas
+3272	pancreatic adenocarcinomas
+3273	pancreatic cancer
+3274	pancreatic cancer cells
+3275	pancreatic duct
+3276	pancreatic ductal adenocarcinoma (pdac)
+3277	panendoscopy
+3278	panoramic dental x-ray
+3279	pap smears
+3280	pap test
+3281	pap tests
+3282	papillary cancer
+3283	papillary carcinoma
+3284	papillary rcc
+3285	papillary renal cell tumor
+3286	papillary thyroid cancer
+3287	papillary thyroid carcinoma
+3288	papules
+3289	para-aortic
+3290	para-aortic lymph nodes
+3291	para-aortic node
+3292	para-aortic nodes
+3293	parametrium
+3294	parapharyngeal space
+3295	parathyroid glands
+3296	parietal lobe
+3297	parp inhibitor
+3298	parp inhibitors
+3299	partial cystectomy
+3300	particles
+3301	particular disease
+3302	parts of the brain
+3303	patch of skin
+3304	pathogen
+3305	pathologic examination
+3306	pathologic stage
+3307	pathologist
+3308	pathologist examines the removed tissue
+3309	pathology report
+3310	pathology results
+3311	pathology review
+3312	patients with genetic mutations
+3313	pc-dlbcl
+3314	pca3
+3315	pcfcl
+3316	pcmzl
+3317	pcr
+3318	pd-1
+3319	pd-1 inhibitor
+3320	pd-1 inhibitors
+3321	pd-l1
+3322	pd-l1 biomarker
+3323	pd-l1 expression
+3324	pd-l1 testing
+3325	pd-l1-positive tumors
+3326	pd-l1–positive
+3327	pd-l1–positive cancers
+3328	pdema
+3329	pdema/mohs procedure
+3330	pdema/mohs surgery
+3331	peau d’orange
+3332	pectoral muscle
+3333	pediatric
+3334	pedunculated polyps
+3335	peeing frequently
+3336	peer-to-peer support program
+3337	pelvic
+3338	pelvic and rectovaginal exam
+3339	pelvic area
+3340	pelvic bone
+3341	pelvic exam
+3342	pelvic examination
+3343	pelvic exams
+3344	pelvic exenteration
+3345	pelvic exenteration surgery
+3346	pelvic floor
+3347	pelvic floor exercises
+3348	pelvic floor physical therapy
+3349	pelvic floor therapy
+3350	pelvic lymph node
+3351	pelvic lymph node dissection
+3352	pelvic lymph node evaluation
+3353	pelvic lymph nodes
+3354	pelvic magnetic resonance imaging
+3355	pelvic mri
+3356	pelvic nodes
+3357	pelvic or paraaortic lymph nodes
+3358	pelvic radiation
+3359	pelvic wall
+3360	pelvic wall growth
+3361	pelvis
+3362	pelvis or belly
+3363	pembrolizumab
+3364	pembrolizumab (keytruda)
+3365	pemetrexed
+3366	penile cancer
+3367	penis
+3368	people after resection
+3369	people at high risk for lung cancer
+3370	people from parts of asia
+3371	people under age 13
+3372	people who cannot or choose not to have surgery
+3373	people who have certain genetic conditions
+3374	people who have connective tissue diseases
+3375	people with cancer
+3376	people with certain heart monitors
+3377	people with pacemakers
+3378	people with some types of surgical clips
+3379	performance status
+3380	perianal cancer
+3381	perianal cancers
+3382	perianal region
+3383	perimuscular fibrous tissue
+3384	perineum
+3385	perineural invasion
+3386	peripheral blood
+3387	peripheral neuropathy
+3388	peritoneal washing
+3389	permanent side effects
+3390	persistent disease
+3391	personality changes
+3392	persons assigned female at birth
+3393	pertuzumab
+3394	pesticides
+3395	pet
+3396	pet imaging
+3397	pet scan
+3398	pet scans
+3399	pet-ct
+3400	pet-ct scan
+3401	pet/ct
+3402	pet/ct scan
+3403	pet/mri scan
+3404	peutz-jeghers syndrome
+3405	pharmacist
+3406	pharmacists
+3407	pharmacogenomic testing
+3408	pharyngoscopy
+3409	pharynx
+3410	phase 1 trials
+3411	phase 2 trials
+3412	phase 3 trials
+3413	phase 4 trials
+3414	phase i trials
+3415	pheochromocytoma
+3416	phesgo
+3417	philadelphia chromosome
+3418	photodynamic therapy
+3419	photons
+3420	physical
+3421	physical and pelvic exams
+3422	physical challenges
+3423	physical exam
+3424	physical examination
+3425	physical exams
+3426	physical experiences
+3427	physical impairment
+3428	physical therapist
+3429	physical therapists
+3430	physical therapy
+3431	physically and emotionally challenging
+3432	physically fit
+3433	physician
+3434	physician assistants
+3435	picc line
+3436	pictures
+3437	pictures of both breasts
+3438	pictures of the inside of the body
+3439	pictures of the inside of your body
+3440	pictures of the insides of your body
+3441	pik3ca
+3442	pik3ca inhibitor
+3443	pik3ca mutation
+3444	pills
+3445	pink color
+3446	pink or purple stretch marks on the skin
+3447	pituitary gland
+3448	pituitary glands
+3449	placebo
+3450	plan treatment
+3451	planning session
+3452	planning surgery
+3453	plasma
+3454	plasmacytoid subtype
+3455	plastic surgeon
+3456	platelets
+3457	platinum
+3458	platinum chemotherapy
+3459	platinum drug
+3460	platinum-based chemotherapy
+3461	platinum-resistant ovarian cancer
+3462	platinum-sensitive cancer
+3463	pleural membrane
+3464	pml::rara
+3465	pmmr/mss cancers
+3466	pms2
+3467	point mutation
+3468	polymerase chain reaction
+3469	polymerase chain reaction (pcr)
+3470	polyp
+3471	polypectomy
+3472	polyps
+3473	polyps with cancer
+3474	pomalidomide
+3475	poor prognosis
+3476	poorly differentiated
+3477	popcornshaped cells
+3478	portal vein
+3479	position your body accurately
+3480	positron emission tomography (pet)
+3481	powerful magnets
+3482	practices at leading cancer centers
+3483	pre-anesthesia assessment
+3484	pre-cancer
+3485	pre-cancerous changes
+3486	pre-cancerous lesions
+3487	precancer
+3488	precancerous cells
+3489	precancerous changes
+3490	precision oncology
+3491	predisposition condition
+3492	prednisone
+3493	preferences about treatment
+3494	preferred therapies
+3495	pregnancy
+3496	pregnancy complications
+3497	pregnancy during and after treatment
+3498	pregnancy isn't possible
+3499	pregnancy prevention
+3500	pregnancy test
+3501	premature menopause
+3502	premenopause
+3503	prescription drugs
+3504	presence of cancer
+3505	presence of philadelphia chromosome
+3506	pressure on nearby organs
+3507	pressure on the brain
+3508	pressure on windpipe and blood vessels
+3509	prevent bleeding
+3510	prevent infection
+3511	preventing bleeding
+3512	preventing pregnancy
+3513	previous injuries
+3514	previous treatments
+3515	primary bone cancer
+3516	primary brain tumors
+3517	primary care doctor
+3518	primary care physician
+3519	primary care provider
+3520	primary central nervous system (cns) lymphoma
+3521	primary cns lymphoma
+3522	primary cutaneous b-cell lymphomas
+3523	primary cutaneous diffuse large b-cell lymphoma, leg type
+3524	primary cutaneous follicle center lymphoma
+3525	primary cutaneous lymphoma
+3526	primary cutaneous lymphomas
+3527	primary cutaneous marginal zone lymphoma
+3528	primary cutaneous t-cell lymphoproliferative disorders
+3529	primary liver cancer
+3530	primary mediastinal b-cell lymphoma
+3531	primary mediastinal large b-cell lymphoma
+3532	primary or adjuvant chemotherapy
+3533	primary peritoneal cancer
+3534	primary sites
+3535	primary tumor
+3536	probe insertion
+3537	probes
+3538	problems swallowing
+3539	problems with alertness
+3540	problems with balance
+3541	problems with coordination
+3542	problems with eye health
+3543	problems with hearing
+3544	problems with other senses
+3545	problems with performance status
+3546	problems with reflexes
+3547	problems with thinking and speech
+3548	procarbazine
+3549	procedure
+3550	procedure/treatment
+3551	proctoscope
+3552	proctoscopies
+3553	proctoscopies and imaging
+3554	proctoscopy
+3555	produce hormones
+3556	producing more than 1 hormone
+3557	progenitor cells
+3558	progesterone
+3559	progesterone receptor
+3560	progesterone receptor status
+3561	progesterone receptors
+3562	prognosis
+3563	prognostic stage
+3564	prognostic staging
+3565	programmed cell death protein
+3566	programmed cell death protein 1
+3567	programmed death ligand 1
+3568	programmed death protein 1
+3569	programmed death-ligand
+3570	programmed death-ligand 1
+3571	progression
+3572	progressive disease
+3573	prolonged corrected qt interval
+3574	prolonged qtc
+3575	propel semen
+3576	prostate
+3577	prostate biopsies
+3578	prostate biopsy
+3579	prostate cancer
+3580	prostate cancer cells
+3581	prostate cancer grow
+3582	prostate cancer screening tests
+3583	prostate cancer treatment
+3584	prostate cells
+3585	prostate exam
+3586	prostate gland
+3587	prostate health
+3588	prostate size
+3589	prostate tests
+3590	prostate tissue
+3591	prostate tumor
+3592	prostate tumors
+3593	prostate-specific antigen
+3594	prostate-specific membrane antigen (psma)
+3595	prostatespecific membrane antigen
+3596	protect organs
+3597	protein
+3598	protein involved in normal cell growth
+3599	protein levels
+3600	proteins
+3601	provide structure and support
+3602	provider
+3603	proximal urethra
+3604	ps scale
+3605	psa
+3606	psa density
+3607	psa level
+3608	psa level and prostate size
+3609	psa test
+3610	psma-pet scan
+3611	psma/pet
+3612	psychiatrists
+3613	psychologist
+3614	psychologists
+3615	psychosocial care professionals
+3616	psyllium-based products
+3617	pten hamartoma tumor syndrome (phts)
+3618	pterygoid plates
+3619	pulmonary function tests
+3620	pulmonologist
+3621	pulse check
+3622	pyelogram
+3623	pylorus
+3624	quality of life
+3625	quantitative immunoglobulins
+3626	questions about allergies to drugs or medicines
+3627	questions about appearance and function change
+3628	questions about medical history
+3629	questions about past surgery experiences
+3630	questions about prognosis
+3631	questions about treatment options
+3632	questions about understanding of the procedure
+3633	quick growth
+3634	quick growth and spread
+3635	quitting programs
+3636	quitting smoking
+3637	quizartinib
+3638	racing heart
+3639	radiation
+3640	radiation beam
+3641	radiation beams
+3642	radiation damage
+3643	radiation dose
+3644	radiation exposure
+3645	radiation field
+3646	radiation oncologist
+3647	radiation oncologists
+3648	radiation source
+3649	radiation therapy
+3650	radiation to external genitalia
+3651	radiation to hip joints
+3652	radiation to normal tissue
+3653	radiation treatment
+3654	radiation treatments
+3655	radiation-induced menopause
+3656	radical cystectomy
+3657	radical hysterectomy
+3658	radical surgery
+3659	radical trachelectomy
+3660	radio waves
+3661	radioactive drug
+3662	radioactive glucose
+3663	radioactive iodine
+3664	radioactive iodine therapy
+3665	radioactive iodine uptake test
+3666	radioactive material
+3667	radioactive materials
+3668	radioactive substance
+3669	radioactive sugar
+3670	radioactive tracer
+3671	radiologist
+3672	radiology department
+3673	radiopharmaceuticals
+3674	radiotracer
+3675	radiotracer injection
+3676	radon
+3677	rai therapy
+3678	range of symptoms
+3679	rapid growth
+3680	rapid heartbeat
+3681	rapid spread
+3682	rashes
+3683	rashes and other skin problems
+3684	rating
+3685	rating of cancer growth and spread
+3686	re-excision
+3687	reading
+3688	real medicines
+3689	rearranged chromosomes
+3690	receptor
+3691	recessive dystrophic epidermolysis bullosa
+3692	recommended therapies
+3693	reconstruction after surgery
+3694	reconstructive surgeon
+3695	record
+3696	records
+3697	rectal cancer
+3698	rectal cancer cells
+3699	rectal tumor
+3700	rectal wall
+3701	rectum
+3702	rectum is removed
+3703	rectus abdominus
+3704	recurrence
+3705	recurrence chemotherapy regimen
+3706	recurrence treatment
+3707	recurrent and/or metastatic cervical cancer
+3708	recurrent cancer
+3709	recurrent non-metastatic anal cancer
+3710	recurrent tumors
+3711	red and swollen breast
+3712	red blood cell formation
+3713	red blood cells
+3714	red breast
+3715	red color
+3716	red marrow
+3717	red or blond hair
+3718	red patches
+3719	redness
+3720	reduced cells that fight infection
+3721	reduced immune system
+3722	reduced sex drive
+3723	reed-sternberg cells
+3724	reedsternberg cells
+3725	reflexes
+3726	regional
+3727	regional cscc
+3728	regional lymph node metastases
+3729	regional lymph nodes
+3730	regional prostate cancer
+3731	regional squamous cell skin cancer
+3732	registered dietitian
+3733	registered nurses
+3734	regular tests
+3735	rehabilitation specialists
+3736	relapse
+3737	relapses
+3738	release hormones
+3739	relugolix
+3740	remaining cancer cells
+3741	remission
+3742	remnant ablation
+3743	remodeling
+3744	removal of breast
+3745	removal of cervix
+3746	removal of chest wall muscle
+3747	removal of connective tissue
+3748	removal of isthmus
+3749	removal of lymph nodes
+3750	removal of nearby lymph nodes
+3751	removal of part or all of sigmoid colon
+3752	removal of part or all of the last section of the colon
+3753	removal of pelvic lymph nodes
+3754	removal of rectal tumor
+3755	removal of surrounding healthy tissue
+3756	removal of top quarter of vagina
+3757	removal of tumor and nearby lymph nodes
+3758	removal of tumor tissue and nearby lymph nodes
+3759	removal of upper part of vagina
+3760	removal of uterus
+3761	removal of vagina
+3762	removed tissue
+3763	removing a sample of the lesion
+3764	removing as much of the cancer as possible
+3765	removing both fallopian tubes
+3766	removing both ovaries
+3767	removing cancer and surrounding normal rectal tissue
+3768	removing fallopian tubes
+3769	removing lymph nodes
+3770	removing one or both ovaries
+3771	removing organs
+3772	removing ovaries
+3773	removing the anus
+3774	removing the cervix
+3775	removing the uterus
+3776	removing tumor
+3777	renal artery
+3778	renal capsule
+3779	renal cell carcinoma
+3780	renal medullary carcinoma
+3781	renal pelvis
+3782	renal sarcoma
+3783	renal tubules
+3784	renal ultrasound
+3785	renal vein
+3786	repair damaged cells
+3787	reports
+3788	reproductive endocrinologist
+3789	reproductive organs
+3790	reproductive specialists
+3791	resectable tumor
+3792	resection
+3793	resection of new cancer growth
+3794	resection with pdema
+3795	reservoir
+3796	resistance to various treatments
+3797	respiration
+3798	respiratory system
+3799	response to cancer treatment
+3800	response to treatment
+3801	rest days
+3802	results of imaging tests
+3803	results of x-rays
+3804	resurfacing techniques
+3805	ret gene fusion
+3806	ret mutations
+3807	reticulocyte count
+3808	retina
+3809	retromolar trigone
+3810	retroperitoneal lymph nodes
+3811	return
+3812	reveal cancer
+3813	ribociclib
+3814	ribociclib (kisqali)
+3815	richter transformation
+3816	right hepatic duct
+3817	right lobe
+3818	right lung
+3819	right side
+3820	right side of the body
+3821	right side of the liver
+3822	risk assessment
+3823	risk factor
+3824	risk factor for prostate cancer
+3825	risk factors
+3826	risk groups
+3827	risk level of skin cancer
+3828	risk of dying
+3829	risks
+3830	rituximab
+3831	roof of mouth
+3832	roof of the mouth
+3833	rough skin
+3834	routine operation
+3835	rt-pcr
+3836	rucaparib
+3837	rules
+3838	sacrum
+3839	sadness
+3840	safety
+3841	safety and side effects
+3842	saliva
+3843	saliva sample
+3844	saliva test
+3845	salivary gland
+3846	same general area
+3847	sample of tissue
+3848	sample of tissue or fluid
+3849	sarcoma
+3850	sarcoma cancer center
+3851	sarcomas
+3852	sarcomatoid carcinoma
+3853	sarcomatoid features
+3854	sarcomatoid rcc
+3855	sarcomatoid renal cancers
+3856	sarcomatoid renal cell carcinoma
+3857	sarcomatoid subtype
+3858	saw palmetto
+3859	scalp
+3860	scalpel
+3861	scaly patches
+3862	scaly skin
+3863	scan of chest and abdomen
+3864	scan of liver
+3865	scan of lungs
+3866	scan of other organs
+3867	scans
+3868	scapula
+3869	scar tissue
+3870	scarred skin
+3871	scarring
+3872	scarring of the liver
+3873	scars
+3874	scleroderma
+3875	scope
+3876	scoping procedures
+3877	screen for depression
+3878	screening
+3879	screening for cervical cancer
+3880	screening mammogram
+3881	screening test for many diseases
+3882	screening tests
+3883	screenings for breast cancer
+3884	screenings for prostate cancer
+3885	screenings for skin cancer
+3886	second cancer
+3887	second opinion
+3888	second-hand smoke
+3889	secondary cns lymphoma
+3890	secondary cytoreductive surgery
+3891	secondary liver cancer
+3892	secondhand smoke
+3893	sedation
+3894	sedative
+3895	seizures
+3896	selectmdx
+3897	self-care
+3898	self-renew
+3899	semen
+3900	semen cryopreservation
+3901	seminal vesicles
+3902	sensation
+3903	sense of well-being
+3904	senses of touch and smell
+3905	sensitivity to light
+3906	sensory perception
+3907	sentinel lymph node
+3908	sentinel lymph node biopsy
+3909	sentinel lymph nodes
+3910	sentinel nodes
+3911	serds
+3912	serious allergy
+3913	serious blood clots
+3914	serious condition
+3915	serious health issues
+3916	serious illness
+3917	serious_allergy
+3918	serms
+3919	serosa
+3920	serous membrane
+3921	sessile polyps
+3922	several factors
+3923	severe skin damage
+3924	sex organs
+3925	sexual dysfunction
+3926	sexual function
+3927	sexual function and arousal
+3928	sexual health experts
+3929	sexual health problems
+3930	sexual health programs
+3931	sexual health therapist
+3932	sexual problems
+3933	sexual side effects
+3934	sexually transmitted infection
+3935	sexually transmitted infection (sti)
+3936	sexually transmitted virus
+3937	sharp pains
+3938	shave excision
+3939	shellfish
+3940	shins
+3941	short
+3942	short-term side effects
+3943	shortage of mature blood cells
+3944	shortness of breath
+3945	showing soft tissues
+3946	shrinking testicles
+3947	sickle cell disease
+3948	sickle cell trait
+3949	sickling of the red blood cells
+3950	side and back walls of the throat
+3951	side and back walls of throat
+3952	side effect
+3953	side effects
+3954	side effects of cancer therapies
+3955	side effects of cancer treatment
+3956	sigmoid colon
+3957	signs and symptoms
+3958	signs and symptoms of the lymphoma
+3959	signs of cancer
+3960	signs of cancer spread
+3961	signs of disease
+3962	signs of inadequate nutrition
+3963	signs of lung cancer
+3964	silica
+3965	silvadene
+3966	similar symptoms to other conditions
+3967	simulation
+3968	single agent
+3969	single chemotherapy drug
+3970	sinuses
+3971	siscca
+3972	size of the cancer
+3973	size of the tumor
+3974	skeletal system examination
+3975	skeleton
+3976	skin biopsy
+3977	skin cancer
+3978	skin cancer screening
+3979	skin cancers
+3980	skin cells
+3981	skin changes
+3982	skin checks
+3983	skin color
+3984	skin conditions
+3985	skin damage
+3986	skin darkening or lightening
+3987	skin exam
+3988	skin exams
+3989	skin graft
+3990	skin grafts
+3991	skin irritation
+3992	skin lesion biopsy
+3993	skin lesions
+3994	skin looks 'funny'
+3995	skin of the breast
+3996	skin of the face
+3997	skin punch biopsy
+3998	skin rash or redness
+3999	skin redness
+4000	skin redness and irritation
+4001	skin shave biopsy
+4002	skin surface
+4003	skin thickening
+4004	skull
+4005	skull base
+4006	sleep
+4007	sleep issues
+4008	sleeping problems
+4009	slit lamp
+4010	slow growing
+4011	slow growth
+4012	slow tumor growth
+4013	slow wound healing
+4014	slowed thinking
+4015	slower thinking
+4016	slows the flow of urine
+4017	small areas of cancer
+4018	small bowel
+4019	small cell carcinoma
+4020	small cell lung cancer
+4021	small cell neuroendocrine carcinoma of the cervix
+4022	small cell neuroendocrine carcinoma of the cervix (necc)
+4023	small intestine
+4024	small light and camera lens
+4025	small lymphocytic lymphoma
+4026	small lymphocytic lymphoma (sll)
+4027	small mass of tissue
+4028	small metastases
+4029	small papillary tumors
+4030	small scaly spots
+4031	small tool
+4032	small tumor
+4033	small tumors
+4034	small, pink or red, shiny bumps
+4035	smaller than 5 mm
+4036	smoking
+4037	smoking cigarettes
+4038	smoking tobacco
+4039	social
+4040	social worker
+4041	social workers
+4042	sodium fluoride pet-ct
+4043	sodium fluoride pet/ ct
+4044	sodium fluoride pet/ct
+4045	soft palate
+4046	soft tissue
+4047	soft tissue sarcomas
+4048	softer bowel movements or diarrhea
+4049	solid and misshapen
+4050	somatic brca mutations
+4051	somatic change
+4052	somatic mutation
+4053	somatostatin
+4054	somatostatin receptor antagonist
+4055	some risk
+4056	some stage 2 cancers
+4057	sorafenib
+4058	sorafenib (nexavar)
+4059	soreness in your pelvic area
+4060	sores in the mouth and lining of the anus
+4061	sores or skin breakdown
+4062	sound waves
+4063	space behind the nose
+4064	special camera
+4065	special dye
+4066	special mirror
+4067	specialized therapy
+4068	specialized treatment
+4069	specific dna mutations
+4070	specific therapies
+4071	specific tumor features
+4072	specific type of cancer
+4073	speculum
+4074	speech and swallowing assessment
+4075	speech difficulties
+4076	speech difficulty
+4077	speech or swallowing therapist
+4078	speech therapists
+4079	spending time with loved ones
+4080	sperm
+4081	sperm banking
+4082	sperm damage
+4083	sperm from the testicles
+4084	sphincter
+4085	sphincter muscle
+4086	spider veins
+4087	spinal column
+4088	spinal cord
+4089	spinal fluid
+4090	spine
+4091	spine mri
+4092	spiritual
+4093	spleen
+4094	spongey bone
+4095	spread
+4096	spread into deeper layers of the colon wall
+4097	spread into surrounding tissue
+4098	spread of cancer
+4099	spread of cancer cells
+4100	spread of cancer to distant sites
+4101	spread of cancer to nearby lymph nodes
+4102	spread outside breast and lymph nodes
+4103	spread outside the bladder
+4104	spread outside the bloodstream
+4105	spread outside the breast and lymph nodes under the arm
+4106	spread through lymph or blood
+4107	spread to bones
+4108	spread to distant organs
+4109	spread to distant parts of the body
+4110	spread to distant sites
+4111	spread to liver
+4112	spread to lungs
+4113	spread to lymph nodes
+4114	spread to lymph nodes far from the bladder
+4115	spread to lymph nodes or other parts of the body
+4116	spread to nearby area
+4117	spread to nearby areas
+4118	spread to nearby lymph nodes
+4119	spread to nearby tissue
+4120	spread to organs
+4121	spread to organs far from the bladder
+4122	spread to organs nearby
+4123	spread to other areas
+4124	spread to other areas within the nervous system
+4125	spread to other organs
+4126	spread to other parts of the body
+4127	spread to other parts of the body, including lung and distant lymph nodes
+4128	spread to outside the prostate
+4129	spread to pelvic or paraaortic lymph nodes
+4130	spread to tissue, organs, or lymph nodes in the head and neck
+4131	spread to tissues next to the cervix
+4132	spread to tissues outside the cervix
+4133	spread to upper vagina
+4134	spreading
+4135	spreading quickly
+4136	spreading to bones
+4137	spreading to other parts of the body
+4138	spreads
+4139	spreads to other parts of the body
+4140	squamo-columnar junction
+4141	squamous cell
+4142	squamous cell carcinoma
+4143	squamous cell carcinoma of the head and neck
+4144	squamous cell carcinomas
+4145	squamous cell carcinomas of the throat
+4146	squamous cell layer
+4147	squamous cell skin cancer
+4148	squamous cell subtype
+4149	squamous cells
+4150	sstr-pet
+4151	sstr-pet/ct scan
+4152	st. john’s wort
+4153	stage 0
+4154	stage 0 anal cancer
+4155	stage 0 bladder cancer
+4156	stage 0 colon cancer
+4157	stage 0 pancreatic cancer
+4158	stage 0a bladder cancer
+4159	stage 1
+4160	stage 1 bladder cancer
+4161	stage 1 cancer
+4162	stage 1 cancers
+4163	stage 1 colon cancer
+4164	stage 1 nsclc
+4165	stage 1 ovarian cancer
+4166	stage 1 pancreatic cancer
+4167	stage 1a
+4168	stage 1a cervical cancer
+4169	stage 1a ovarian cancer
+4170	stage 1a1
+4171	stage 1a1 cancer
+4172	stage 1a1 cancers
+4173	stage 1a2 cancer
+4174	stage 1a2 cancers
+4175	stage 1ac cervical cancer
+4176	stage 1b
+4177	stage 1b cancer
+4178	stage 1b ovarian cancer
+4179	stage 1b1 cancer
+4180	stage 1b1 cancers
+4181	stage 1b1 cervical cancer
+4182	stage 1b2 cancer
+4183	stage 1b2 cervical cancer
+4184	stage 1b3
+4185	stage 1b3 cervical cancer
+4186	stage 1c cancer
+4187	stage 1c1
+4188	stage 1c2
+4189	stage 1c3
+4190	stage 2
+4191	stage 2 bladder cancer
+4192	stage 2 cervical cancer
+4193	stage 2 colon cancer
+4194	stage 2 nsclc
+4195	stage 2 ovarian cancer
+4196	stage 2 pancreatic cancer
+4197	stage 2 pmmr/mss cancers
+4198	stage 2 rectal cancer
+4199	stage 2a
+4200	stage 2a and 2b dmmr/msi-h cancers
+4201	stage 2a cancer
+4202	stage 2a cervical cancer
+4203	stage 2a1 cervical cancer
+4204	stage 2a2
+4205	stage 2a2 cervical cancer
+4206	stage 2b
+4207	stage 2b cervical cancer
+4208	stage 2c dmmr/msi-h cancers
+4209	stage 3
+4210	stage 3 bladder cancer
+4211	stage 3 cancers
+4212	stage 3 nsclc
+4213	stage 3 or 4 disease
+4214	stage 3 ovarian cancer
+4215	stage 3 pancreatic cancer
+4216	stage 3 rectal cancer
+4217	stage 3a bladder cancer
+4218	stage 3a1
+4219	stage 3b bladder cancer
+4220	stage 4
+4221	stage 4 bladder cancer
+4222	stage 4 cancer
+4223	stage 4 cancers
+4224	stage 4 nsclc
+4225	stage 4 ovarian cancer
+4226	stage 4 pancreatic cancer
+4227	stage 4 primary biliary cholangitis
+4228	stage 4a
+4229	stage 4a bladder cancer
+4230	stage 4b
+4231	stage 4b bladder cancer
+4232	stage i
+4233	stage i anal cancer
+4234	stage ii
+4235	stage ii anal cancer
+4236	stage iii
+4237	stage iii anal cancer
+4238	stage iiia
+4239	stage iiib
+4240	stage iiic
+4241	stage iv
+4242	stage iv anal cancer
+4243	staging
+4244	staging system
+4245	standard cancer care
+4246	standard of care
+4247	standard surgical excision
+4248	standard treatment
+4249	standard treatments
+4250	standard-of-care approaches
+4251	stem cell removal
+4252	stem cell replacement
+4253	stem cell rescue
+4254	stem cell transplant
+4255	stem cells
+4256	stent
+4257	stereotactic biopsy
+4258	stereotactic body radiation therapy
+4259	stereotactic body radiotherapy (sbrt)
+4260	steroid
+4261	steroid therapy
+4262	steroids
+4263	stiffness in neck
+4264	stillness
+4265	stinging
+4266	stoma
+4267	stomach
+4268	stomach cancer
+4269	stomach glands
+4270	stomach wall
+4271	stool
+4272	stool exits the body through the stoma
+4273	stop the activity of the bcr::abl1 protein
+4274	store chemicals
+4275	strap placement
+4276	stratified squamous cells
+4277	strength
+4278	stress
+4279	stress and anxiety
+4280	stressful
+4281	striated muscle
+4282	stroke
+4283	strong cancer family history
+4284	structures or organs outside of the rectum
+4285	structures outside the liver
+4286	study drug
+4287	study of anatomy
+4288	study of hormones and receptors
+4289	submucosa
+4290	subserosa
+4291	substance
+4292	substances
+4293	substances in blood
+4294	subtype
+4295	subtype of acute myeloid leukemia
+4296	subtype of aml
+4297	sudden drop in estrogen
+4298	sugar
+4299	sugar produced by body
+4300	sugar radiotracer
+4301	suggesting best foods and fluids
+4302	sulfur dioxide
+4303	sun exposure
+4304	sun-damaged skin
+4305	sunburn
+4306	sunlight/outdoor tanning
+4307	superficial treatments
+4308	superficial tumors
+4309	supplements
+4310	support and counseling
+4311	support groups
+4312	support immune system
+4313	supportive care
+4314	supraclavicular
+4315	supraclavicular area
+4316	surface epithelium
+4317	surface of abdomen
+4318	surface of cells
+4319	surface of prostate cancer cells
+4320	surface of the abdomen
+4321	surface proteins
+4322	surgeon
+4323	surgeries
+4324	surgery
+4325	surgery or chemotherapy
+4326	surgical biopsy
+4327	surgical castration
+4328	surgical endocrine therapy
+4329	surgical excision
+4330	surgical margin
+4331	surgical menopause
+4332	surgical oncologist
+4333	surgical oncologists
+4334	surgical procedure
+4335	surgical procedures
+4336	surgical removal
+4337	surgical scalpel
+4338	surgical spill
+4339	surgical stage
+4340	surgical staging
+4341	surgical suite
+4342	surrogacy
+4343	surrogate pregnancy
+4344	surrounding breast tissue
+4345	surrounding fat
+4346	surrounding normal tissue
+4347	surrounding structures and tissues
+4348	surrounding tissue
+4349	surrounding tissues
+4350	surveillance
+4351	surveillance testing
+4352	survival
+4353	survivorship
+4354	survivorship care plan
+4355	suspicious areas
+4356	suspicious imaging tests
+4357	swallowing difficulties
+4358	swallowing difficulty
+4359	swallowing issues
+4360	sweating
+4361	swelling
+4362	swelling in the ankles, feet, and hands
+4363	swelling in the brain
+4364	swollen breast
+4365	swollen glands
+4366	swollen lymph nodes
+4367	swollen nipple area
+4368	swollen outer layer of the brain
+4369	swollen spleen
+4370	symptoms
+4371	symptoms and complications of cll
+4372	symptoms of cancer
+4373	symptoms of cancer recurrence
+4374	symptoms of prostate cancer
+4375	syndromes
+4376	syndromes related to colon cancer
+4377	systemic chemotherapy
+4378	systemic therapies
+4379	systemic therapy
+4380	systemic treatment
+4381	sézary syndrome
+4382	t cell
+4383	t cell all (t-all)
+4384	t cells
+4385	t lymphocytes
+4386	t score
+4387	t, n, and m scores
+4388	t-all
+4389	t-cell all
+4390	t-cell lymphoblastic lymphoma
+4391	t-cell lymphocytes
+4392	t-lbl
+4393	t-ll
+4394	t1 tumors
+4395	t2 tumor
+4396	t2 tumors
+4397	t3 cancers
+4398	table
+4399	tablet
+4400	take a tumor sample
+4401	taking tissue from another area of the body
+4402	talazoparib
+4403	talk therapy
+4404	tall-cell/columnar cell
+4405	tamoxifen
+4406	tan color
+4407	tandem
+4408	tanning beds
+4409	target the tumor
+4410	targetable changes
+4411	targetable changes of a cancer
+4412	targeted therapies
+4413	targeted therapy
+4414	targeted treatment
+4415	taxane
+4416	tazarotene
+4417	tecentriq
+4418	technicians
+4419	teeth
+4420	teeth health
+4421	teeth problems
+4422	temozolomide
+4423	temperature check
+4424	tenderness
+4425	terminal duct lobular units
+4426	test results
+4427	testicles
+4428	testicles cancer
+4429	testicles to stop making testosterone
+4430	testing and staging
+4431	testing for her2 receptors
+4432	testing for hormone receptors
+4433	testing for lynch syndrome
+4434	testing for syndromes related to colon cancer
+4435	testosterone
+4436	testosterone production
+4437	tests
+4438	tests for up to 14 chemicals in the blood
+4439	tests of blood and urine
+4440	tg ab
+4441	thawing
+4442	therapies
+4443	therapies used in certain cases
+4444	therapy
+4445	thick saliva
+4446	thickening of the outer layer of skin
+4447	thin lining
+4448	thin, flat cells
+4449	thin, long tube
+4450	thinking
+4451	thinner and drier
+4452	thoracic radiologist
+4453	thoracic surgeon
+4454	thorax
+4455	those at risk for developing lung cancer
+4456	those with ovaries
+4457	three-dimensional picture
+4458	throat
+4459	throat cancer
+4460	throat cancers
+4461	throat check
+4462	throat exam
+4463	throat examination
+4464	throat tumors
+4465	thymus
+4466	thyrogen
+4467	thyroglobulin
+4468	thyroglobulin level
+4469	thyroid
+4470	thyroid cancer
+4471	thyroid cancer cells
+4472	thyroid cancers
+4473	thyroid condition
+4474	thyroid endocrine levels
+4475	thyroid gland
+4476	thyroid glands
+4477	thyroid hormone
+4478	thyroid hormone replacement therapy
+4479	thyroid nodule
+4480	thyroid nodules
+4481	thyroid tissue
+4482	thyroid-stimulating hormone (tsh) test
+4483	thyroid-stimulating hormone level
+4484	thyroidectomy
+4485	thyrotoxicosis
+4486	thyrotropin alfa
+4487	thyroxine
+4488	tingling
+4489	tinnitus
+4490	tirbanibulin
+4491	tiredness
+4492	tisotumab vedotin-tftv
+4493	tissue
+4494	tissue damage
+4495	tissue lining the abdomen
+4496	tissue or fluid
+4497	tissue sample
+4498	tissue samples
+4499	tissue tests
+4500	tissues
+4501	tissues next to the tumor
+4502	tissues of the cervix
+4503	tissues of the uterus
+4504	tissues of the vagina
+4505	tissues outside the cervix
+4506	tmb-h
+4507	tmb-h cancer
+4508	tmb-h tumors
+4509	tnm score
+4510	tnm scores
+4511	tnm system
+4512	tobacco
+4513	tobacco smoke
+4514	tobacco use
+4515	tomosynthesis
+4516	tongue
+4517	tongue lump
+4518	tonsil lymphoid tissue
+4519	tonsils
+4520	too few platelets
+4521	too many immature white blood cells in the bone marrow and blood
+4522	too many platelets
+4523	too many white blood cells
+4524	too much cortisol
+4525	too much iron in the body
+4526	top of the tongue
+4527	topical diclofenac
+4528	topical keratolytics
+4529	topical spray
+4530	topical therapies
+4531	topical therapy
+4532	topotecan
+4533	toremifene
+4534	total thyroidectomy
+4535	tough decisions under pressure
+4536	toxins
+4537	tp53 mutation
+4538	tracer
+4539	trachea
+4540	trachelectomy
+4541	traits
+4542	transabdominal resection
+4543	transabdominal surgery
+4544	transabdominal ultrasound
+4545	transanal endoscopic microsurgery
+4546	transanal local excision
+4547	transanal minimally invasive surgery
+4548	transducer
+4549	transfer of gases
+4550	transformation zone
+4551	transformed fl
+4552	transfusion
+4553	transitional cell cancer
+4554	translocation
+4555	translocation rcc
+4556	transmit sperm
+4557	transperineal biopsy
+4558	transplant
+4559	transplantation
+4560	transrectal ultrasound
+4561	transurethral resection of bladder tumor
+4562	transurethral resection of bladder tumor (turbt)
+4563	transvaginal ultrasound
+4564	transverse colon
+4565	trastuzumab
+4566	treated area
+4567	treatment advice
+4568	treatment approach
+4569	treatment area
+4570	treatment center
+4571	treatment days
+4572	treatment decisions
+4573	treatment dose
+4574	treatment efficacy
+4575	treatment for cancer
+4576	treatment for cll
+4577	treatment history
+4578	treatment length
+4579	treatment of head and neck tumors
+4580	treatment option
+4581	treatment options
+4582	treatment outcomes
+4583	treatment plan
+4584	treatment planning
+4585	treatment response
+4586	treatment results
+4587	treatment sessions
+4588	treatment setting
+4589	treatment side effects
+4590	treatment team
+4591	treatment toxicity
+4592	treatment trials
+4593	treatment type(s)
+4594	treatment-related complications and side effects
+4595	treatment-related side effects
+4596	treatments
+4597	triiodothyronine
+4598	trimodal therapy
+4599	triptorelin
+4600	trodelvy
+4601	trop-2
+4602	trouble breathing
+4603	trouble controlling the flow of urine
+4604	trouble eating
+4605	trouble eating or feeling full fast
+4606	trouble holding in urine
+4607	trouble sleeping
+4608	trouble speaking
+4609	trouble urinating or straining to urinate
+4610	trunk
+4611	tsh
+4612	tsh level
+4613	tsh test
+4614	tucatinib
+4615	tumor
+4616	tumor biopsy
+4617	tumor cells
+4618	tumor deposits
+4619	tumor extension
+4620	tumor gene testing
+4621	tumor genomic aberration testing
+4622	tumor grade
+4623	tumor growth
+4624	tumor has grown large
+4625	tumor histology
+4626	tumor in nearby soft tissue
+4627	tumor in parapharyngeal space
+4628	tumor in the mid to upper rectum
+4629	tumor in the muscle layer of the rectal wall
+4630	tumor larger than 4 cm
+4631	tumor location
+4632	tumor marker
+4633	tumor markers
+4634	tumor micrometastasis
+4635	tumor mutation
+4636	tumor mutation testing
+4637	tumor mutational burden
+4638	tumor mutational burden (tmb)
+4639	tumor mutational burden-high
+4640	tumor of any size
+4641	tumor profiling
+4642	tumor removal
+4643	tumor sample
+4644	tumor score
+4645	tumor sequencing
+4646	tumor shape
+4647	tumor shrinkage
+4648	tumor size
+4649	tumor size 1 to 4 cm
+4650	tumor spread
+4651	tumor spread to tissue, organs, or lymph nodes
+4652	tumor stage
+4653	tumor staging
+4654	tumor subtype
+4655	tumor testing
+4656	tumor thickness
+4657	tumor tissue
+4658	tumor tissue analysis
+4659	tumor type
+4660	tumors
+4661	tumors higher in the rectum
+4662	tumors in areas such as the head and neck
+4663	tumors in the head and neck
+4664	tumor’s growth
+4665	tunica adventitia
+4666	tunnel
+4667	tunnel-like machine
+4668	turbt
+4669	turmeric
+4670	two or more chemotherapy drugs
+4671	type of biopsied lesions
+4672	type of immune cell
+4673	type of white blood cell
+4674	u.s. food and drug administration
+4675	ulcer
+4676	ulcers
+4677	ultrasound
+4678	ultrasound image
+4679	ultrasound probe
+4680	ultrasound-guided fine-needle aspiration
+4681	ultrasounds
+4682	ultraviolet (uv) rays
+4683	unable to fully perform ordinary daily activities
+4684	unclassified rcc
+4685	uncomfortable
+4686	uncomfortable lymph nodes
+4687	uncomfortable or painful vaginal examinations
+4688	uncommon
+4689	uncontrolled blood cell growth
+4690	uncontrolled cell growth
+4691	uncontrolled division
+4692	uncontrolled growth
+4693	uncontrolled movement
+4694	underarm
+4695	uneven tumor shape
+4696	unexplained weight loss
+4697	unhealthy condition
+4698	unilateral salpingooophorectomy
+4699	unintentional weight loss
+4700	unique features
+4701	united states
+4702	unknown
+4703	unknown factors
+4704	unknown risk factors
+4705	unknown symptoms
+4706	unpleasant condition
+4707	unregulated growth
+4708	unresectable cancer
+4709	unresectable cancers
+4710	unresectable tumor
+4711	unsafe to remove
+4712	untreated
+4713	upper and lower jaws
+4714	upper arm
+4715	upper body
+4716	upper chest
+4717	upper endoscopy
+4718	upper esophagus
+4719	upper jaw
+4720	upper part
+4721	upper part of the brain
+4722	upper part of the throat near the nasal cavity
+4723	upper vagina
+4724	upset stomach
+4725	ureter
+4726	ureteroscopy
+4727	ureters
+4728	urethra
+4729	urge to urinate
+4730	urgency to urinate
+4731	uric acid
+4732	urinary diversion
+4733	urinary incontinence
+4734	urinary system
+4735	urinary tract
+4736	urinary tract infection
+4737	urinating frequently
+4738	urinating more often
+4739	urination
+4740	urine
+4741	urine cytology
+4742	urine leakage
+4743	urine sample
+4744	urine tests
+4745	urogram
+4746	urologic oncologist
+4747	urologist
+4748	urothelial cancer
+4749	urothelial carcinoma
+4750	urothelial cell cancer
+4751	urothelial cells
+4752	urothelial layer
+4753	urothelium
+4754	using rectus abdominis
+4755	using skin, fat, and blood vessels
+4756	using sugar faster than normal cells
+4757	uterine cancer
+4758	uterine sarcomas
+4759	uterus
+4760	uterus in place
+4761	uv light exposure
+4762	uv radiation
+4763	vaccine
+4764	vacuum-assisted core biopsy
+4765	vagina
+4766	vaginal atrophy
+4767	vaginal brachytherapy
+4768	vaginal cancer
+4769	vaginal dilator therapy
+4770	vaginal dryness
+4771	vaginal growth
+4772	vaginal lining
+4773	vaginal muscles
+4774	vaginal reconstruction
+4775	vaginal stenosis
+4776	valve
+4777	vaping
+4778	vaping nicotine
+4779	vas deferens
+4780	veins
+4781	veins and arteries
+4782	vena cava
+4783	vermilion lip
+4784	vermillion lip
+4785	vertebrae
+4786	very advanced disease
+4787	very cold liquid
+4788	very high risk
+4789	very high-risk
+4790	very high-risk cscc
+4791	very small collection of cancerous cells
+4792	video display
+4793	viewing monitor images
+4794	vigorous exercise
+4795	vigorous physical activity
+4796	vinblastine
+4797	vincristine
+4798	vinorelbine
+4799	virus
+4800	virus-infected cells
+4801	viruses
+4802	visible lump in the neck
+4803	visible tumor
+4804	vision
+4805	vision problems
+4806	visual image of the prostate
+4807	visual symptoms
+4808	vitamin d
+4809	vitamins
+4810	vitrectomy
+4811	vitreoretinal lymphoma
+4812	vitreous
+4813	vocal cords
+4814	voice box
+4815	voice changes
+4816	vomiting
+4817	von hippel-lindau syndrome (vhl)
+4818	vulva
+4819	vulvar cancer
+4820	wafer
+4821	walls
+4822	warm breast
+4823	warmth
+4824	warmth to the touch
+4825	warts
+4826	waste
+4827	waste product
+4828	watch and wait
+4829	water
+4830	watertight barrier
+4831	watery eyes
+4832	watery stool
+4833	watery vaginal discharge
+4834	way to describe cancer growth rate
+4835	way to describe cancer spread
+4836	wbrt
+4837	weak or intermittent urine stream
+4838	weakened bones
+4839	weakened immune system
+4840	weakened immune systems
+4841	weakness
+4842	weakness or problems moving
+4843	weight check
+4844	weight gain
+4845	weight loss
+4846	well differentiated
+4847	well-defined tumor shape
+4848	wellness
+4849	western europe
+4850	white blood cell
+4851	white blood cell counts
+4852	white blood cell formation
+4853	white blood cells
+4854	white blood cells grow out of control
+4855	white color
+4856	white light
+4857	whole body
+4858	whole breast
+4859	whole-body rai scan
+4860	whole-brain radiation therapy
+4861	wider margin
+4862	wilms tumor
+4863	windpipe
+4864	worry
+4865	worsening symptoms
+4866	wound
+4867	wound healing
+4868	wound healing complications
+4869	wrong type of protein
+4870	x-ray
+4871	x-rays
+4872	xeroderma pigmentosum
+4873	yellow marrow
+4874	yellowed eyes
+4875	yellowed skin
+4876	young adulthood
+4877	young adults
+4878	young people of african descent
+4879	younger age
+4880	younger people

@@ -26,6 +26,8 @@ Lưu ý data structure:
 """
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# Fix cho lỗi OpenMP trên Mac (libomp.dylib initialized)
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import json
 import time
 import logging
