@@ -1,0 +1,14 @@
+scikit-learn
+tqdm
+openai
+numpy
+torch
+torchvision
+torchaudio
+argparse
+requests
+# Nếu bạn cần train SAT Aligner, có thể cần thêm các thư viện sau:
+pandas
+networkx
+matplotlib
+scipy
