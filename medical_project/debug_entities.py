@@ -1,9 +1,10 @@
 """Debug entity extraction for failing questions."""
 import sys
+from typing import Dict, List, Tuple
 
 with open('data/medical/id2title.txt') as f:
-    title2eid = {}
-    id2title = {}
+    title2eid: Dict[str, int] = {}
+    id2title: Dict[int, str] = {}
     for line in f:
         parts = line.strip().split('\t', 1)
         if len(parts) == 2:
@@ -15,10 +16,10 @@ with open('data/medical/id2title.txt') as f:
 
 sorted_titles = sorted(title2eid.keys(), key=len, reverse=True)
 
-def extract_entities(question):
+def extract_entities(question: str) -> List[Tuple[int, str]]:
     question_lower = question.lower()
-    matched = []
-    used_spans = []
+    matched: List[Tuple[int, str]] = []
+    used_spans: List[Tuple[int, int]] = []
     for title_lower in sorted_titles:
         pos = question_lower.find(title_lower)
         if pos == -1:
@@ -60,7 +61,7 @@ print("\n=== SUBSTRING MATCH ANALYSIS ===\n")
 test_words = ['treatment', 'follow-up', 'diagnostic', 'tanning beds', 'BCC', 'annual', 'diagnosing']
 for word in test_words:
     word_lower = word.lower()
-    matches = []
+    matches: List[Tuple[int, str, str]] = []
     for title_lower, eid in title2eid.items():
         if title_lower in word_lower or word_lower in title_lower:
             matches.append((eid, id2title[eid], title_lower))
@@ -74,7 +75,7 @@ for word in test_words:
 
 # Count how many titles are substrings of common English words
 print("\n=== NOISY SHORT ENTITIES (len 3-4) ===\n")
-noisy = [(eid, t) for t, eid in title2eid.items() if 3 <= len(t) <= 4]
+noisy: List[Tuple[int, str]] = [(eid, t) for t, eid in title2eid.items() if 3 <= len(t) <= 4]
 noisy.sort(key=lambda x: x[1])
 print(f"Total entities with title length 3-4: {len(noisy)}")
 for eid, title in noisy[:50]:  # Show first 50

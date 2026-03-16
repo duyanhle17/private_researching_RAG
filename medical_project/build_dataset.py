@@ -5,6 +5,7 @@ import argparse
 import random
 import logging
 import concurrent.futures
+from typing import List, Dict, Any, Set, Tuple
 from tqdm import tqdm
 from openai import OpenAI
 import numpy as np
@@ -290,8 +291,8 @@ def build_dataset(args):
 
     # 2. Chunking text
     logging.info("Chia nhỏ văn bản (Chunking)...")
-    all_chunks = []
-    chunk_counter = 0
+    all_chunks: List[Dict[str, str]] = []
+    chunk_counter: int = 0
     for item in raw_data:
         context = item.get('context', '')
         # Nếu context là list (một số định dạng bị lỗi hiển thị thành list), nối lại
@@ -310,8 +311,8 @@ def build_dataset(args):
 
     # 3. Trích xuất đa luồng bằng ThreadPoolExecutor & Checkpoint
     checkpoint_file = f"checkpoint_{args.output_name}.json"
-    extracted_data = []
-    processed_chunk_ids = set()
+    extracted_data: List[Dict[str, Any]] = []
+    processed_chunk_ids: Set[str] = set()
     
     if os.path.exists(checkpoint_file):
         with open(checkpoint_file, 'r', encoding='utf-8') as f:
@@ -344,12 +345,12 @@ def build_dataset(args):
 
     # 4. Hợp nhất, làm sạch và gán ID
     logging.info("Hợp nhất, làm sạch thực thể và quan hệ...")
-    entities_set = set()
-    relations_set = set()
-    all_valid_triples = []
+    entities_set: Set[str] = set()
+    relations_set: Set[str] = set()
+    all_valid_triples: List[Tuple[str, str, str]] = []
     
-    valid_chunks_for_global = []
-    entity_desc_map = {}
+    valid_chunks_for_global: List[Dict[str, Any]] = []
+    entity_desc_map: Dict[str, List[str]] = {}
 
     for item in extracted_data:
         if item["status"] == "success" and len(item["triples"]) > 0:
@@ -525,13 +526,13 @@ def build_dataset(args):
     
     # text2graph_filter.json
     with open(os.path.join(data_global_dir, "text2graph_filter.json"), "w", encoding="utf-8") as f:
-        filter_out = []
+        filter_out: List[Dict[str, Any]] = []
         for c in valid_chunks_for_global:
             filter_out.append({
                 "id": c["id"],
                 "text": c["text"],
                 "entities": c["entities"],
-                "triples": c["triples_str"] + ".",
+                "triples": str(c["triples_str"]) + ".",
                 "triple_list": c["triple_list"],
                 "filter_triple_list": []  # Có thể tính toán thêm filter nếu muốn
             })
