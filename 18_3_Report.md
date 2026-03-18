@@ -1,62 +1,55 @@
-# Báo Cáo Tiến Độ Dự Án FactKG (Ngày 18/03)
+# Báo Cáo Tiến Độ Dự Án FactKG (Cập nhật ngày 18/03)
 
-## 1. Tổng Quan Về Bài Báo (Paper Overview)
-**FACTKG: Fact Verification via Reasoning on Knowledge Graphs** là một nghiên cứu của nhóm tác giả từ KAIST và Amazon (công bố năm 2023). 
-*   **Mục tiêu**: Giới thiệu dataset mới gồm 108k claim để giải bài toán kiểm chứng sự thật dựa trên Knowledge Graph (KG).
-*   **Động lực**: KG có độ tin cậy cao hơn văn bản thuần túy và có cấu trúc logic rõ ràng, giúp giải thích kết quả (explainability) tốt hơn cho các hệ thống như Amazon Alexa hay Google Assistant.
-
----
-
-## 2. Chi Tiết Dataset & Kiểu Suy Luận (Reasoning Types)
-FACTKG sử dụng **DBpedia** (0.1 tỷ triple) làm nguồn bằng chứng. Dataset bao gồm 108,674 claims, được xây dựng với 5 kiểu suy luận cốt lõi:
-
-| Kiểu Suy Luận | Mô Tả | Ví dụ thực tế |
-| :--- | :--- | :--- |
-| **One-hop** | Kiểm tra 1 triple đơn lẻ | "AIDAstella was built by Meyer Werft." |
-| **Conjunction** | Kiểm tra nhiều triple cùng lúc (câu ghép) | "AIDAstella was built by Meyer Werft and operated by AIDA." |
-| **Existence** | Kiểm tra sự tồn tại của quan hệ | "Meyer Werft had a parent company." |
-| **Multi-hop** | Suy luận qua chuỗi quan hệ (entity ẩn) | "AIDAstella was built by a company in Papenburg." |
-| **Negation** | Phủ định các kiểu trên (chứa "not", "no") | "AIDAstella was not built by Meyer Werft." |
-
-**Phân bổ tập dữ liệu thực tế trên máy:**
-*   **Train Set**: 86,367 câu (Dùng để huấn luyện).
-*   **Dev Set**: 13,266 câu (Dùng để kiểm tra nhanh).
-*   **Test Set**: 9,041 câu (Dùng để đánh giá cuối cùng).
-*   **Tổng cộng**: **108,674 câu** (Khớp với con số trong Paper).
+## 1. Mục Đích Cốt Lõi Của Bài Báo (Core Goal)
+Bài báo giới thiệu **FACTKG**, một bộ dữ liệu chuẩn (benchmark) quy mô lớn (108k claims) nhằm đánh giá khả năng kiểm chứng sự thật của AI thông qua suy luận trực tiếp trên **Knowledge Graph (KG)**.
+*   **Giải quyết lỗ hổng**: Thay thế các nghiên cứu cũ chỉ dùng văn bản thô hoặc chỉ suy luận 1-hop đơn giản.
+*   **Thao trường logic**: Cung cấp 5 kiểu suy luận phức tạp để huấn luyện AI cách ánh xạ ngôn ngữ tự nhiên vào cấu trúc đồ thị (node/edge).
+*   **Tính giải thích (Explainability)**: Sử dụng KG cho phép AI chỉ ra chính xác chuỗi logic (đường đi trên đồ thị) để kết luận Đúng/Sai thay vì chỉ đưa ra kết quả từ "hộp đen".
 
 ---
 
-## 3. Thực Nghiệm Pipeline A (Claim Only Baseline)
-Chúng ta đã thực hiện huấn luyện và đánh giá mô hình **BERT (Base Uncased)** trên máy Mac M1 Pro để làm mốc so sánh.
+## 2. Phân Tích Hai Nhánh Tiếp Cận (Methodology)
 
-### 3.1 Mô hình & Quá trình thực hiện
-*   **Model**: `bert-base-uncased` (110M parameters).
-*   **Huấn luyện**: Chạy hoàn tất 3 Epochs trên tập Train (86k câu).
-*   **Đánh giá**: Thực hiện đo lường trên toàn bộ 100% tập Test (9,041 câu).
+Trong dự án FactKG, tác giả chia làm hai nhánh thí nghiệm chính với mục tiêu hoàn toàn khác nhau:
 
-### 3.2 Bảng so sánh Kết quả (Accuracy %)
-Dưới đây là sự so sánh giữa con số lý tưởng trong Paper và kết quả thực tế chúng ta đạt được trên thiết bị cá nhân:
+### 2.1 Nhánh "Claim Only" (Chỉ dùng Văn bản)
+*   **Đối tượng**: BERT, BlueBERT (được fine-tune), Flan-T5 (chạy zero-shot).
+*   **Bản chất**: Đây là bài toán **Phân loại nhị phân (Binary Classification)**. Mô hình học cách ánh xạ trực tiếp từ câu nhận định sang nhãn `SUPPORTED` (Đúng) hoặc `REFUTED` (Sai).
+*   **Đặc điểm**: **Không truy xuất KG**. Mô hình chỉ dựa vào kiến thức có sẵn trong trọng số (pretrained) và các pattern học được từ tập train. Việc huấn luyện sinh ra Loss/Accuracy là quá trình mô hình "học thuộc" các đặc điểm văn bản của sự thật.
 
-| Chỉ số Accuracy (%) | One-hop | Conjunction | Existence | Multi-hop | Negation | **Total** |
+### 2.2 Nhánh "With Graphical Evidence" (Dùng Bằng chứng Đồ thị)
+*   **Đối tượng**: Mô hình **GEAR** (Graph Evidence Aware Reasoning).
+*   **Bản chất**: Đây là một hệ thống phức tạp chia làm nhiều bài toán con:
+    1.  **Retriever**: Dự đoán quan hệ (Relation) và số bước (Hop) cần tìm trên KG.
+    2.  **Verification**: Kết hợp câu nhận định với các "đường dẫn bằng chứng" (evidence paths) tìm được để đưa ra phán quyết.
+*   **Sự khác biệt**: GEAR không phải là BERT thêm dữ liệu, mà là một quy trình **Graph-RAG** thực thụ (Truy xuất -> Suy luận -> Kết luận).
+
+---
+
+## 3. Thống Kê Dữ Liệu & Kết Quả Thực Nghiệm
+
+### 3.1 Dataset Statistics
+*   **Tổng số câu**: 108,674 (Train: 86k, Dev: 13k, Test: 9k).
+*   **Phong cách**: Kết hợp cả văn nói (Colloquial) và văn viết (Written).
+
+### 3.2 Bảng So Sánh Accuracy (%)
+
+| Mô hình | One-hop | Conjunction | Existence | Multi-hop | Negation | **Total** |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **BERT (Trong Paper)** | 69.64 | 63.31 | 61.84 | 70.06 | 63.62 | **65.20** |
-| **BERT (Thực tế M1 Pro)** | 55.43 | 44.25 | 47.59 | 51.33 | 45.89 | **48.65** |
+| **BERT (Paper)** | 69.64 | 63.31 | 61.84 | 70.06 | 63.62 | **65.20** |
+| **BERT (M1 Pro)** | 55.43 | 44.25 | 47.59 | 51.33 | 45.89 | **48.65** |
+| **GEAR (Paper)** | 83.23 | 77.68 | 81.61 | 68.84 | 79.41 | **77.65** |
 
-**Giải thích sự chênh lệch:**
-1.  **Quy mô mô hình**: Paper sử dụng các dòng `Large` hoặc `RoBERTa` mạnh hơn bản `Base` chúng ta đang dùng.
-2.  **Thời gian huấn luyện**: Tác giả huấn luyện với số lượng Epoch lớn hơn và Batch size khổng lồ trên cụm GPU chuyên dụng (A100).
-3.  **Môi trường**: Kết quả thực tế 48.65% cho thấy nếu chỉ dựa vào văn bản, mô hình BERT trên máy cá nhân gần như chỉ đạt ngưỡng "đoán mò" (50/50), củng cố thêm lý do tại sao cần Pipeline B.
+**Phân tích**: 
+*   Kết quả thực tế 48.65% của BERT trên máy cá nhân cho thấy mô hình khi "đọc chay" gần như chỉ đoán mò. 
+*   GEAR vượt trội ở hầu hết các hạng mục (đặc biệt là Negation tăng +15%) nhờ có bằng chứng từ KG cứu vãn những chỗ logic văn bản bị rối.
 
 ---
 
-## 4. Phân Tích & Định Hướng Tiếp Theo
-Dựa trên kết quả thực nghiệm và lý thuyết của Paper:
-*   **Điểm yếu của Baseline**: BERT cực kỳ kém ở mảng **Negation** (Phủ định) và **Conjunction** (Câu ghép) vì nó chỉ học thuộc mặt chữ mà không hiểu logic thực sự.
-*   **Sức mạnh của GEAR (Pipeline B)**: Paper chứng minh khi có Evidence từ KG, điểm số có thể tăng vọt lên **77.65%** (Tổng). Đặc biệt Negation tăng tới +15% so với BERT.
-*   **Hành động tiếp theo**: Triển khai Pipeline B (With Evidence) bao gồm các bước:
-    1.  Tiền xử lý đồ thị DBpedia từ các file Pickle.
-    2.  Huấn luyện Module **Retriever** (Relation & Hop Predictor) để tìm bằng chứng.
-    3.  Huấn luyện Module **Classifier** (Sử dụng kiến trúc GEAR) để đưa ra phán quyết cuối cùng.
+## 4. Ý Nghĩa Đối Với Hệ Thống GraphRAG
+FACTKG không chỉ là bài toán phân loại, mà còn là một **bộ dữ liệu huấn luyện lý tưởng cho GraphRAG**:
+*   Cung cấp các **đường dẫn đồ thị chuẩn (ground-truth paths)** đi kèm mỗi câu hỏi.
+*   Giúp đo lường chính xác khả năng trích xuất đồ thị con (subgraph extraction) và suy luận đa chặng (multi-hop) của các hệ thống RAG hiện đại.
 
 ---
 *Người thực hiện: Duy Anh Le*
