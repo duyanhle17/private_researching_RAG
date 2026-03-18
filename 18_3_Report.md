@@ -20,9 +20,11 @@ Tác giả đã xây dựng bộ dữ liệu 108,674 claims một cách cực k�
     *   *Existence*: Rút gọn triple thành template (Ví dụ: "{Head} had a {Relation}").
     *   *Multi-hop*: Khuyết danh một thực thể trung gian bằng Type Name (VD: thay "Meyer Werft" thành "a company in Papenburg").
 2.  **Tạo Claim Phủ Định (Negative - REFUTED)**:
-    *   *Entity Substitution*: Thay thực thể bằng một thực thể cùng loại nhưng nằm ngoài 4-hop trên DBpedia, dùng kiểm tra NLI 2 chiều để đảm bảo thực sự mâu thuẫn (Contradiction).
+    *   *Entity Substitution*: Thay thực thể bằng một thực thể cùng loại nhưng nằm ngoài 4-hop trên DBpedia, dùng kiểm tra NLI 2 chiều để đảm bảo thực sự mâu thuẫn.
+        *   *(**NLI - Natural Language Inference**: Là bài toán AI chuyên xác định xem 2 câu có mâu thuẫn (Contradiction), đồng nghĩa (Entailment) hay không liên quan. Việc dùng NLI 2 chiều giúp tác giả chắc chắn 100% câu vừa tạo ra thực sự mang nghĩa "Sai" so với câu gốc).*
     *   *Relation Substitution*: Đánh tráo quan hệ bằng một quan hệ khác có cùng cấu trúc Head/Tail.
     *   *Negation*: Sinh câu phủ định (thêm "not") kết hợp mô hình GPT-J cho các câu phức tạp, nhãn được gán chặt chẽ theo logic của đường đi trên đồ thị.
+        *   *(**GPT-J**: Là một Mô hình Ngôn ngữ Lớn - LLM mã nguồn mở rất mạnh của EleutherAI với 6.4 tỷ tham số. Tác giả dùng GPT-J để sinh ra các câu phủ định nghe tự nhiên như người thật nói, thay vì chỉ chèn chữ "not" một cách cứng nhắc bằng code lập trình).*
 3.  **Đa dạng hóa ngôn ngữ (Style Transfer)**:
     *   *Colloquial (Văn nói)*: Fine-tune FLAN-T5-large trên Wizard of Wikipedia để chuyển văn viết sang văn nói.
     *   *Lọc gắt gao*: Kiểm tra bằng Edit Distance, bảo toàn Entity/Verb, kiểm tra NLI, và đối kháng AFLITE để chọn câu tự nhiên nhất.
