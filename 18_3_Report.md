@@ -58,21 +58,24 @@ Chúng ta đã hoàn thành việc tái lập thí nghiệm Baseline thuộc nh�
 - Metric đánh giá chính: **Accuracy** (Độ chính xác)
 - Batch size khi đo BERT: 32 | Batch size Flan-T5 mô phỏng: 16
 
-| Loại Suy Luận | Kết quả Paper (BERT) | BERT (M1 Pro) | Flan-T5 Zero-shot (M1 Pro) | GEAR (Có Evidence - Paper) |
+| Loại Suy Luận | Kết quả Paper (BERT) | BERT (M1 Pro) **(Best: 51.35%)** | Flan-T5 Zero-shot (M1 Pro) | GEAR (Có Evidence - Paper) |
 | :--- | :---: | :---: | :---: | :---: |
-| One-hop | 69.64% | 55.43% | **57.68%** | 83.23% |
-| Conjunction | 63.31% | 44.25% | **59.86%** | 77.68% |
-| Existence | 61.84% | 47.59% | **54.14%** | 81.61% |
-| Multi-hop | 70.06% | 51.33% | **55.71%** | 68.84% |
-| Negation | 63.62% | 45.89% | **50.04%** | 79.41% |
-| **TỔNG CỘNG** | **65.20%** | **48.65%** | **56.56%** | **77.65%** |
+| One-hop | 69.64% | 44.57% | **57.68%** | 83.23% |
+| Conjunction | 63.31% | 55.75% | **59.86%** | 77.68% |
+| Existence | 61.84% | 52.41% | **54.14%** | 81.61% |
+| Multi-hop | 70.06% | 48.67% | **55.71%** | 68.84% |
+| Negation | 63.62% | **54.11%** | 50.04% | 79.41% |
+| **TỔNG CỘNG** | **65.20%** | **51.35%** | **56.56%** | **77.65%** |
 
 **Phân tích & Lý giải chi tiết**:
 
 **1. Về cơ chế Zero-shot của Flan-T5 (Tại sao không Train?)**
 *   **Mục đích trong bài báo**: Trong paper, Flan-T5 được đưa vào nhánh *Claim Only* dưới dạng **Zero-shot**. Nghĩa là tác giả muốn đo lường xem: Nếu chúng ta lấy một mô hình LLM siêu khổng lồ, đã có lượng "kiến thức nền" (world knowledge) cực tốt từ trước nhưng lại **không được cung cấp bằng chứng (evidence) và không được huấn luyện trên dataset này**, thì nó có làm tốt việc xác thực sự thật (Fact Verification) hay không?
-*   **Cơ chế hoạt động**: Ta đưa câu lệnh nguyên thủy (Prompt Task): `"Is this claim True or False? Claim: [Nội dung câu]"` vào Flan-T5 và yêu cầu nó tự sinh ra câu trả lời (Generative).
-*   **Kết luận**: Kết quả của Flan-T5 tăng vọt lên **56.56%** (đặc biệt các phần ghép nối logic tăng mạnh), chứng tỏ LLM có lượng kiến thức nội tại tốt hơn hẳn BERT Base. Thế nhưng, đối với các câu gài bẫy như **Negation (Phủ định)**, nó vẫn ngập ngừng ở **50.04%** (Bằng đoán bừa đồng xu), chứng minh việc chỉ dùng sức mạnh LLM mà **KHÔNG CÓ GRAPH EVIDENCE** thì tỷ lệ "ảo giác" vẫn rất cao.
+*   **Cơ chế hoạt động**   **BERT Baseline (51.35%)**: Kết quả này được lấy từ Checkpoint Epoch 0 (Peak tốt nhất). Hiện tại kết quả đang thấp hơn Paper (65.2%) do hai lý do kỹ thuật chính:
+    1.  **Batch Size mismatch**: Paper dùng 64, trong khi quá trình chạy thực tế dùng 16 (do giới hạn VRAM/MPS). Việc này làm thay đổi động lực học của Gradient khi dùng LR cao (1e-4).
+    2.  **Repo Bug**: Qua kiểm tra code `bert_classification.py`, phát hiện tác giả quên không gọi `scheduler.step()` trong vòng lặp training, khiến Learning Rate bị "kẹt" ở mức 1e-4 rất cao làm mô hình khó hội tụ sâu.
+*   Khi đánh giá không cần huấn luyện với mô hình cao cấp hơn **Flan-T5 Zero-shot**, Accuracy đã cải thiện mạnh lên **56.56%** (đặc biệt Conjunction tăng từ 44% lên ~60%). Điều này chứng tỏ kiến thức nền (world knowledge) của T5 lớn hơn BERT rất nhiều.
+*   Tuy nhiên, các loại suy luận đỏi hòi mạch logic dài/phức tạp như **Negation** (50.04% ở T5 vs 54% ở BERT) vẫn chỉ quanh mức đoán bừa. Xu hướng này khớp với Paper gốc, phản ánh đúng giới hạn của việc **Claim Only** (Không dùng Evidence) – AI sẽ dễ bị đánh lừa khi không có bằng chứng thực tế từ đồ thị.
 
 **2. Giải thích con số tập dữ liệu (Total num: 9040)**
 *   Theo Paper, đúng là FactKG có tổng cộng khoảng **108k Claims (hơn 108.000 nhận định)**. 
