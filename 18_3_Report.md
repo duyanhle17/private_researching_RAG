@@ -53,18 +53,38 @@ Chúng ta đã hoàn thành việc tái lập thí nghiệm Baseline thuộc nh�
 
 ### 3. Đối Chiếu Kết Quả (Accuracy Comparison)
 
-| Loại Suy Luận | Kết quả Paper (BERT) | Kết quả thực tế (M1 Pro) | GEAR (Có Evidence - Paper) |
-| :--- | :---: | :---: | :---: |
-| One-hop | 69.64% | **55.43%** | 83.23% |
-| Conjunction | 63.31% | **44.25%** | 77.68% |
-| Existence | 61.84% | **47.59%** | 81.61% |
-| Multi-hop | 70.06% | **51.33%** | 68.84% |
-| Negation | 63.62% | **45.89%** | 79.41% |
-| **TỔNG CỘNG** | **65.20%** | **48.65%** | **77.65%** |
+*Các thông số quan trọng trong lúc chạy thí nghiệm:*
+- Dữ liệu đánh giá: `factkg_test.pickle` (Tổng số câu: **9041 câu**)
+- Metric đánh giá chính: **Accuracy** (Độ chính xác)
+- Batch size khi đo BERT: 32 | Batch size Flan-T5 mô phỏng: 16
 
-**Phân tích sự khác biệt**:
-*   Kết quả thực tế **48.65%** cho thấy khi dùng mô hình bản `Base` trên văn bản thô, AI gần như phải đoán bừa. Lý do là BERT chỉ học xác suất của cụm từ mà không truy cập vào tri thức thực sự.
-*   Sự chênh lệch giữa thực tế và Paper (65%) giải thích bởi cấu hình phần cứng hạng nặng và mô hình bản `Large` mà tác giả sử dụng. Tuy nhiên, xu hướng các loại suy luận khó (Negation/Conjunction) có điểm thấp nhất là tương tự nhau, phản ánh đúng giới hạn của việc không dùng Evidence (Claim Only).
+| Loại Suy Luận | Kết quả Paper (BERT) | BERT (M1 Pro) | Flan-T5 Zero-shot (M1 Pro) | GEAR (Có Evidence - Paper) |
+| :--- | :---: | :---: | :---: | :---: |
+| One-hop | 69.64% | 55.43% | **57.68%** | 83.23% |
+| Conjunction | 63.31% | 44.25% | **59.86%** | 77.68% |
+| Existence | 61.84% | 47.59% | **54.14%** | 81.61% |
+| Multi-hop | 70.06% | 51.33% | **55.71%** | 68.84% |
+| Negation | 63.62% | 45.89% | **50.04%** | 79.41% |
+| **TỔNG CỘNG** | **65.20%** | **48.65%** | **56.56%** | **77.65%** |
+
+**Phân tích & Lý giải chi tiết**:
+
+**1. Về cơ chế Zero-shot của Flan-T5 (Tại sao không Train?)**
+*   **Mục đích trong bài báo**: Trong paper, Flan-T5 được đưa vào nhánh *Claim Only* dưới dạng **Zero-shot**. Nghĩa là tác giả muốn đo lường xem: Nếu chúng ta lấy một mô hình LLM siêu khổng lồ, đã có lượng "kiến thức nền" (world knowledge) cực tốt từ trước nhưng lại **không được cung cấp bằng chứng (evidence) và không được huấn luyện trên dataset này**, thì nó có làm tốt việc xác thực sự thật (Fact Verification) hay không?
+*   **Cơ chế hoạt động**: Ta đưa câu lệnh nguyên thủy (Prompt Task): `"Is this claim True or False? Claim: [Nội dung câu]"` vào Flan-T5 và yêu cầu nó tự sinh ra câu trả lời (Generative).
+*   **Kết luận**: Kết quả của Flan-T5 tăng vọt lên **56.56%** (đặc biệt các phần ghép nối logic tăng mạnh), chứng tỏ LLM có lượng kiến thức nội tại tốt hơn hẳn BERT Base. Thế nhưng, đối với các câu gài bẫy như **Negation (Phủ định)**, nó vẫn ngập ngừng ở **50.04%** (Bằng đoán bừa đồng xu), chứng minh việc chỉ dùng sức mạnh LLM mà **KHÔNG CÓ GRAPH EVIDENCE** thì tỷ lệ "ảo giác" vẫn rất cao.
+
+**2. Giải thích con số tập dữ liệu (Total num: 9040)**
+*   Theo Paper, đúng là FactKG có tổng cộng khoảng **108k Claims (hơn 108.000 nhận định)**. 
+*   Tuy nhiên, theo quy chuẩn khoa học, dữ liệu này phải được chia theo tỷ lệ (Split Rate):
+    *   **Train Set (~86k câu)**: Đã được dùng để chạy huấn luyện cho BERT Baseline trong mười mấy tiếng trước đây.
+    *   **Validation/Dev Set (vài nghìn câu)**: Dành để hiệu chỉnh siêu tham số khi train.
+    *   **Test Set (Chính xác là 9.041 câu)**: Dành để "đo lường" một cách công bằng.
+*   Vì Flan-T5 đang làm nhiệm vụ ĐO LƯỜNG (Inference Evaluation) chứ không học (Train), nên script đã được code để load chính xác file `factkg_test.pickle`. Terminal hiện `9041/9041` chính là toàn bộ Test Set của bộ dữ liệu 108k câu này. Việc chạy qua hết hơn 9.000 câu bằng Large Language Model trong 1 phút 43 giây (87 vòng lặp/giây) là một tốc độ "óng ánh bão táp" chỉ có ở GPU xịn (MPS của Mac M1).
+
+*   **BERT Baseline vs Flan-T5 Zero-shot**:
+    *   BERT (M1 Pro - Base model): Học trên 86k câu Train, đo trên 9k câu Test → Kết quả 48.65%. Mặc dù đã cố gắng học bài nhưng do kích thước bộ não nhỏ cộng với không có evidence, AI gần như phải đoán bừa, cho ra kết quả bệt.
+    *   Flan-T5 (M1 Pro - Base model): Không học gì cả (Zero-shot), dùng bản năng thế giới để đo trên 9k câu Test → Kết quả 56.56%. Khôn hơn BERT dù không cần học bài, nhưng khi đối diện với vấn đề đánh tráo khái niệm thì vẫn bó tay.
 
 ---
 
