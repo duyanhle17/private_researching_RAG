@@ -77,7 +77,7 @@ Quá trình huấn luyện nhằm thiết lập ngưỡng so sánh cơ bản d�
 
 ## PHẦN III: BẢNG TỔNG HỢP KẾT QUẢ ACCURACY
 
-| Loại Suy Luận | BERT (Paper) | BlueBERT (Paper) | Flan-T5 (Paper) | BERT (Ta - Lần 1: Lỗi) | BERT (Ta - Lần 2: Fix) | Flan-T5 (Ta - Zero-shot) |
+| Loại Suy Luận | BERT (Paper) | BlueBERT (Paper) | Flan-T5 (Paper) | BERT (Lần 1: Lỗi) | BERT (Lần 2: Fix) | Flan-T5 (Zero-shot) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | One-hop | 69.64% | 60.03% | 62.17% | 44.57% | **68.08%** | 57.68% |
 | Conjunction | 63.31% | 60.15% | 69.66% | 55.75% | **63.77%** | 59.86% |
