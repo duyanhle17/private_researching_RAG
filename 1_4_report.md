@@ -73,3 +73,20 @@ Dựa vào việc đối sánh trực tiếp với kết quả từ bài báo g�
    - Sử dụng các LLM mạnh (như GPT-4 hoặc Claude) để sinh ra nhiễu/sinh ra cặp thực thể giả lập nhằm huấn luyện mô hình phân loại tính đúng/sai cứng cáp hơn với dạng Negative Sampling (Lấy mẫu phủ định có tính "gây hiểu lầm" cao).
 4. **Hệ Cơ Sở Graph RAG (Tích hợp Retrieval Mật Độ Cao):**
    - Không chỉ dựa vào Text Encoder (BERT), cần tích hợp Vector Database để lấy bằng chứng có Semantic Similarity cao song hành cấu trúc topology (Graph) nhằm đối phó với những biến thể câu Multi-hop "lắt léo".
+5. **Xây dựng Framework Benchmark Động (Dynamic Benchmark Generation Framework):**
+   - Thay vì tạo một dataset tĩnh thông thường, đề xuất xây dựng một framework generation có khả năng tạo **fresh benchmark splits** theo yêu cầu để giải quyết bài toán benchmarking. Framework này sẽ mang ba đặc tính đồng thời mà chưa có benchmark hiện tại nào đáp ứng:
+     - **Controllable reasoning complexity**: Hỗ trợ 4 loại reasoning (chain, intersection, aggregation, counterfactual) với độ sâu (hop depth) từ 1–4, có thể tham số hóa (parameterize) tùy theo nhu cầu đánh giá.
+     - **Anti-contamination by design**: Dynamic re-generation trực tiếp từ Wikidata đảm bảo tạo ra các fresh splits mỗi lần evaluate, ngăn chặn hiện tượng mô hình học vẹt (gọi là data contamination/memorization).
+     - **Verifiable gold reasoning paths**: Mỗi câu hỏi sinh ra đều kèm theo SPARQL path đầy đủ làm "đáp án vàng" (gold path), cho phép hệ thống đánh giá tự động (evaluate) từng bước suy luận trung gian (intermediate steps) thay vì chỉ đánh giá giới hạn ở câu trả lời cuối cùng (final answer).
+6. **Mở rộng Benchmark với Temporal Reasoning (Suy luận theo thời gian):**
+   - Temporal Reasoning sẽ là một dạng benchmark split bổ sung được tích hợp trực tiếp bên trong framework ở trên, sử dụng chung một pipeline 3 bước, điểm khác biệt duy nhất là sự thay đổi ở **SPARQL Motif** để trích xuất các đồ thị con (subgraphs) có chứa thuộc tính thời gian (như P580 - start time / P582 - end time của Wikidata):
+     - **Static benchmark**: Sử dụng SPARQL Motif không có điều kiện thời gian → tập trung đánh giá các khả năng chain, intersection, aggregation, counterfactual thuần túy.
+     - **Temporal benchmark**: Sử dụng SPARQL Motif có điều kiện ràng buộc bởi `?startTime` & `?endTime` → đánh giá thêm khả năng suy luận động của mô hình trên dòng thời gian thực tế.
+7. **Kiểm chứng sự thiếu hụt thông tin (Open-World Assumption & NEI):**
+   - Thay vì chỉ ép mô hình chọn Đúng (Supported) hoặc Sai (Refuted), benchmark mới cần bổ sung nhãn **Not Enough Information (NEI)**. Bằng cách thiết kế các Claim mà đồ thị cung cấp bị khuyết thiếu cố ý ở điểm mấu chốt, chúng ta ép mô hình phải biết từ chối trả lời (hoặc đánh giá chưa đủ dữ kiện), qua đó kiểm tra khắt khe tính trung thực (Faithfulness) và ngăn chặn hiện tượng "ảo giác đoán mò" (hallucination).
+8. **Giải quyết Xung đột Tri thức (Knowledge Conflict Resolution):**
+   - Đưa vào bộ benchmark các tập dữ liệu chứa **Counterfactual Knowledge** (Kiến thức nghịch đảo thực tế). Động thái này nhằm gài bẫy các mô hình ngôn ngữ lớn (LLMs), kiểm tra xem mô hình thực sự bám sát "bằng chứng từ Đồ thị" (Evidence) hay vẫn bị thiên kiến bởi "trí nhớ sẵn có từ quá trình pre-train" (Parametric Knowledge).
+9. **Suy luận Định lượng và So sánh (Numerical & Comparative Reasoning):**
+   - Bổ sung các Claim đòi hỏi phân tích giá trị số học và so sánh thuộc tính của Node/Edge (ví dụ: lớn hơn, nhỏ hơn, thời điểm trước/sau). Việc tính toán và so sánh logic chéo giữa các node cách xa nhau nhiều hop là lỗ hổng mà FactKG hay các benchmark hiện hành chưa tập trung khai thác toàn diện.
+10. **Kiểm tra Tính minh bạch đường đi (Explanability & Faithful Traversal Evaluation):**
+    - Chấm dứt việc chỉ tính điểm dựa trên kết quả cuối cùng (Final Answer Accuracy). Benchmark yêu cầu tính **Subgraph Overlap Score**: mô hình phải "nộp lại" đúng Sub-graph chứa các chuỗi truy vết đã dùng để ra quyết định. Nếu dự đoán đúng nhãn nhưng trích xuất sai bằng chứng (Shortcut learning / học vẹt dấu hiệu), mô hình sẽ bị trừ điểm hoặc không được công nhận.
