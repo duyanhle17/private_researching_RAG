@@ -50,12 +50,27 @@ Hiện nay, điểm benchmark chủ yếu dựa vào kết quả đúng sai cu�
 *   **Walk-based GNN / Generative Graph Traversal (như RoG - Reasoning on Graphs):** Mô hình không "đọc" toàn bộ Graph trong 1 lượt. Agent đóng vai trò người nhảy (Walker).
 *   Từ Head Entity, mô hình sẽ step-by-step dự đoán bước nhảy tới Node/Edge kế tiếp. Kết thúc hành trình, nó lấy chính hành trình mình đã đi qua để đưa ra kết luận. Hành trình này tự động trở thành lời giải trình minh bạch tuyệt đối.
 
+## 4. Nâng cấp Suy luận Đa bước (Advanced Multi-hop Reasoning)
+
+### Tại sao cần cải thiện?
+Các framework hiện tại (như FactKG, MetaQA) đã đo số lượng bước nhảy (hops), nhưng chỉ dừng lại ở việc "nối các dấu chấm" trong một môi trường sạch. Nghiên cứu sắp tới sẽ nâng cấp Multi-hop thành một "phông nền" bài toán thực tế hơn, không chỉ đo **số lượng** mà đo **chất lượng** tư duy.
+
+### Các hướng kiểm tra hợp lý:
+*   **Multi-hop kết hợp Khử nhiễu (Reasoning under Noise):** 
+    *   Thay vì chỉ cung cấp đường dẫn "vàng" (Gold Path), benchmark sẽ cung cấp một Subgraph lớn chứa nhiều thông tin nhiễu có ngữ nghĩa gần giống (Semantic Noise).
+    *   *Mục tiêu:* Kiểm tra khả năng "gạn đục khơi trong" của mô hình khi số lượng Hop tăng lên (giảm thiểu hiện tượng Lost-in-the-middle).
+*   **Multi-hop kết hợp Logic phức hợp (Hybrid Logic Hops):** 
+    *   Mỗi bước nhảy (hop) sẽ yêu cầu một loại hình tư duy khác nhau. 
+    *   *Ví dụ:* Hop 1 (Truy xuất thực thể) -> Hop 2 (So sánh thuộc tính số) -> Hop 3 (Phủ định kết quả).
+    *   *Mục tiêu:* Đánh giá sự bền bỉ của chuỗi logic khi phải chuyển đổi trạng thái tư duy liên tục.
+*   **Chiến lược tích hợp:** Multi-hop sẽ không đứng độc lập mà được dùng làm "biến số độ khó" (multiplier) cho tiêu chí **Numerical Reasoning** và **Explainability**. 
+
 ---
 
 ## Tóm Lược Thuyết Trình Đề Xuất
 
 **Tuyên bố tầm nhìn:**
-> *"Để vượt qua giới hạn của FactKG và tạo ra một benchmark thực tế khắt khe cho RAG doanh nghiệp, tập dữ liệu mới không đọ nhau ở khả năng đoán dựa vào văn bản ép phẳng. Benchmark sẽ tập trung vào 3 thử thách lớn nhất: (1) Tính trung thành tuyệt đối với Knowledge Graph bất chấp mâu thuẫn từ trí nhớ của LLM; (2) Có khả năng làm phép toán và so sánh thuộc tính siêu liên kết giữa các Node; (3) Buộc mô hình phải trả đúng nguyên mẫu đường đi thuật toán (Reasoning Path) thay vì đoán mò."*
+> *"Để vượt qua giới hạn của FactKG và tạo ra một benchmark thực tế khắt khe cho RAG doanh nghiệp, tập dữ liệu mới không đọ nhau ở khả năng đoán dựa vào văn bản ép phẳng. Benchmark sẽ tập trung vào 4 thử thách lớn nhất: (1) Tính trung thành tuyệt đối với Knowledge Graph bất chấp mâu thuẫn từ trí nhớ của LLM; (2) Có khả năng làm phép toán và so sánh thuộc tính siêu liên kết giữa các Node; (3) Buộc mô hình phải trả đúng nguyên mẫu đường đi thuật toán (Reasoning Path) thay vì đoán mò; và (4) Khả năng suy luận đa bước phức hợp trong môi trường đầy nhiễu."*
 
 **Tuyên bố công nghệ:**
-> *"Hướng đi tiềm năng nhất không nằm ở Text Encoder truyền thống. Kiến trúc đề xuất sẽ là **Agentic Graph-RAG / Neuro-symbolic**, nơi mô hình có khả năng sinh công cụ (Tool-use) để làm phép toán, và tuần tự nhảy qua từng node thay vì đọc lướt thụ động."*
+> *"Hướng đi tiềm năng nhất không nằm ở Text Encoder truyền thống. Kiến trúc đề xuất sẽ là **Agentic Graph-RAG / Neuro-symbolic**, nơi mô hình có khả năng sinh công cụ (Tool-use) để làm phép toán, và tuần tự nhảy qua từng node thay vì đọc lướt thụ động. Đây là chìa khóa để giải quyết bài toán Multi-hop phức hợp mà vẫn đảm bảo tính minh bạch."*
